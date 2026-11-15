@@ -1,0 +1,20 @@
+# Tournaments to pull match history from, one search term per line (lines starting with # are ignored).
+# The script looks each one up on CricketData.org and downloads its finished matches, newest first.
+# Add more, e.g.: ICC Mens T20 World Cup 2026, Asia Cup, Vijay Hazare Trophy, Syed Mushtaq Ali, SA20, Big Bash League
+Indian Premier League 2026
+
+# Added Nov 2026: men's series/tournaments since the IPL ended (one search term per line)
+Afghanistan tour of India
+India tour of Ireland
+India tour of England
+Asian Games
+West Indies tour of India
+India tour of New Zealand
+Pakistan tour of England
+Sri Lanka tour of England
+Australia tour of South Africa
+Duleep Trophy
+Irani Cup
+Ranji Trophy
+Syed Mushtaq Ali Trophy
+Vijay Hazare Trophy

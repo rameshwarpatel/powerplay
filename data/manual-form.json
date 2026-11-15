@@ -1,0 +1,388 @@
+{
+ "Rohit Sharma": {
+  "bat": [
+   {
+    "date": "2026-11-09",
+    "format": "ODI",
+    "matchNo": 5061,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Hamilton",
+    "runs": 0,
+    "balls": null,
+    "out": false,
+    "dnb": true
+   },
+   {
+    "date": "2026-11-06",
+    "format": "ODI",
+    "matchNo": 5060,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Wellington",
+    "runs": 23,
+    "balls": null,
+    "out": true
+   },
+   {
+    "date": "2026-11-03",
+    "format": "ODI",
+    "matchNo": 5058,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Auckland",
+    "runs": 0,
+    "balls": null,
+    "out": true
+   },
+   {
+    "date": "2026-10-02",
+    "format": "ODI",
+    "matchNo": 5024,
+    "competition": "West Indies tour of India, 2026",
+    "team": "IND",
+    "opponent": "WI",
+    "venue": "New Chandigarh",
+    "runs": 92,
+    "balls": null,
+    "out": true
+   },
+   {
+    "date": "2026-09-29",
+    "format": "ODI",
+    "matchNo": 5022,
+    "competition": "West Indies tour of India, 2026",
+    "team": "IND",
+    "opponent": "WI",
+    "venue": "Guwahati",
+    "runs": 101,
+    "balls": null,
+    "out": true
+   }
+  ],
+  "bowl": []
+ },
+ "Arshdeep Singh": {
+  "bat": [
+   {
+    "date": "2026-11-09",
+    "format": "ODI",
+    "matchNo": 5061,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Hamilton",
+    "runs": 0,
+    "balls": null,
+    "out": false,
+    "dnb": true
+   },
+   {
+    "date": "2026-10-31",
+    "format": "T20I",
+    "matchNo": 4225,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Hamilton",
+    "runs": 1,
+    "balls": null,
+    "out": false
+   },
+   {
+    "date": "2026-10-29",
+    "format": "T20I",
+    "matchNo": 4224,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Auckland",
+    "runs": 0,
+    "balls": null,
+    "out": true
+   }
+  ],
+  "bowl": [
+   {
+    "date": "2026-11-06",
+    "format": "ODI",
+    "matchNo": 5060,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Wellington",
+    "wkts": 0,
+    "runs": 16,
+    "overs": null
+   },
+   {
+    "date": "2026-11-03",
+    "format": "ODI",
+    "matchNo": 5058,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Auckland",
+    "wkts": 4,
+    "runs": 70,
+    "overs": null
+   },
+   {
+    "date": "2026-10-31",
+    "format": "T20I",
+    "matchNo": 4225,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Hamilton",
+    "wkts": 1,
+    "runs": 40,
+    "overs": null
+   },
+   {
+    "date": "2026-10-29",
+    "format": "T20I",
+    "matchNo": 4224,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Auckland",
+    "wkts": 1,
+    "runs": 38,
+    "overs": null
+   }
+  ]
+ },
+ "Virat Kohli": {
+  "bat": [
+   {
+    "date": "2026-11-09",
+    "format": "ODI",
+    "matchNo": 5061,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Hamilton",
+    "runs": 0,
+    "balls": null,
+    "out": false,
+    "dnb": true
+   },
+   {
+    "date": "2026-11-06",
+    "format": "ODI",
+    "matchNo": 5060,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Wellington",
+    "runs": 7,
+    "balls": null,
+    "out": true
+   },
+   {
+    "date": "2026-11-03",
+    "format": "ODI",
+    "matchNo": 5058,
+    "competition": "India tour of New Zealand, 2026",
+    "team": "IND",
+    "opponent": "NZ",
+    "venue": "Auckland",
+    "runs": 74,
+    "balls": null,
+    "out": true
+   },
+   {
+    "date": "2026-10-02",
+    "format": "ODI",
+    "matchNo": 5024,
+    "competition": "West Indies tour of India, 2026",
+    "team": "IND",
+    "opponent": "WI",
+    "venue": "New Chandigarh",
+    "runs": 0,
+    "balls": null,
+    "out": true
+   },
+   {
+    "date": "2026-09-29",
+    "format": "ODI",
+    "matchNo": 5022,
+    "competition": "West Indies tour of India, 2026",
+    "team": "IND",
+    "opponent": "WI",
+    "venue": "Guwahati",
+    "runs": 29,
+    "balls": null,
+    "out": true
+   }
+  ],
+  "bowl": []
+ },
+ "Jasprit Bumrah": {
+  "bat": [
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "team": "IND",
+    "opponent": "ENG",
+    "venue": "Cardiff",
+    "runs": 20,
+    "balls": null,
+    "out": false,
+    "matchNo": 4988
+   },
+   {
+    "date": "2026-04-23",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "CSK",
+    "venue": "Wankhede",
+    "runs": 2,
+    "balls": null,
+    "out": true
+   }
+  ],
+  "bowl": [
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "team": "IND",
+    "opponent": "ENG",
+    "venue": "Cardiff",
+    "wkts": 1,
+    "runs": 45,
+    "overs": null,
+    "matchNo": 4988
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "team": "IND",
+    "opponent": "ENG",
+    "venue": "Birmingham",
+    "wkts": 1,
+    "runs": 31,
+    "overs": null,
+    "matchNo": 4987
+   },
+   {
+    "date": "2026-05-20",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "KKR",
+    "venue": "Eden Gardens",
+    "wkts": 1,
+    "runs": 26,
+    "overs": null
+   },
+   {
+    "date": "2026-05-14",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "PBKS",
+    "venue": "Dharamsala",
+    "wkts": 0,
+    "runs": 35,
+    "overs": null
+   },
+   {
+    "date": "2026-05-10",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "RCB",
+    "venue": "Raipur",
+    "wkts": 0,
+    "runs": 20,
+    "overs": null
+   },
+   {
+    "date": "2026-05-04",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "LSG",
+    "venue": "Wankhede",
+    "wkts": 0,
+    "runs": 45,
+    "overs": null
+   },
+   {
+    "date": "2026-05-02",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "CSK",
+    "venue": "Chennai",
+    "wkts": 1,
+    "runs": 20,
+    "overs": null
+   },
+   {
+    "date": "2026-04-29",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "SRH",
+    "venue": "Wankhede",
+    "wkts": 0,
+    "runs": 54,
+    "overs": null
+   },
+   {
+    "date": "2026-04-23",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "CSK",
+    "venue": "Wankhede",
+    "wkts": 1,
+    "runs": 31,
+    "overs": null
+   },
+   {
+    "date": "2026-04-20",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "GT",
+    "venue": "Ahmedabad",
+    "wkts": 1,
+    "runs": 15,
+    "overs": null
+   },
+   {
+    "date": "2026-04-16",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "PBKS",
+    "venue": "Wankhede",
+    "wkts": 0,
+    "runs": 41,
+    "overs": null
+   },
+   {
+    "date": "2026-04-12",
+    "format": "T20",
+    "competition": "Indian Premier League 2026",
+    "team": "MI",
+    "opponent": "RCB",
+    "venue": "Wankhede",
+    "wkts": 0,
+    "runs": 35,
+    "overs": null
+   }
+  ]
+ }
+}

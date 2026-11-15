@@ -1,0 +1,14 @@
+# Cricsheet zips to download (one per line). Names come from https://cricsheet.org/downloads/
+ipl
+odis
+t20s
+tests
+recently_added_30
+# Optional extras:
+# psl
+# bbl
+sma
+# ranji - Cricsheet has no Ranji Trophy file
+# ctc
+# t20blast
+# wpl (women's, ignored)
