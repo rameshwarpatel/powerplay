@@ -564,6 +564,32 @@ window.IPL_FORM = {
  "Ishan Kishan": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 46,
+    "balls": 58,
+    "out": true,
+    "top": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 27,
+    "balls": 53,
+    "out": true,
+    "top": true
+   },
+   {
     "date": "2026-11-01",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -723,30 +749,6 @@ window.IPL_FORM = {
     "out": true,
     "top": true,
     "potm": true
-   },
-   {
-    "date": "2026-07-23",
-    "format": "T20I",
-    "competition": "India tour of Zimbabwe 2026",
-    "venue": "Harare Sports Club",
-    "result": "India won by 7 wickets",
-    "team": "IND",
-    "opponent": "ZIM",
-    "runs": 35,
-    "balls": 24,
-    "out": true
-   },
-   {
-    "date": "2026-07-19",
-    "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Lord's, London",
-    "result": "England won by 27 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 14,
-    "balls": 12,
-    "out": true
    }
   ],
   "bowl": []
@@ -1921,6 +1923,30 @@ window.IPL_FORM = {
  "Jacob Duffy": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 9,
+    "balls": 12,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 1,
+    "balls": 3,
+    "out": false
+   },
+   {
     "date": "2026-07-21",
     "format": "ODI",
     "competition": "New Zealand tour of West Indies 2026",
@@ -1958,6 +1984,30 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "overs": 8.1,
+    "runs": 60,
+    "wkts": 3
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "overs": 7,
+    "runs": 35,
+    "wkts": 3
+   },
    {
     "date": "2026-11-01",
     "format": "T20I",
@@ -2113,31 +2163,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 58,
     "wkts": 1
-   },
-   {
-    "date": "2026-04-05",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Royal Challengers Bengaluru won by 43 runs",
-    "team": "RCB",
-    "opponent": "CSK",
-    "overs": 4,
-    "runs": 58,
-    "wkts": 2
-   },
-   {
-    "date": "2026-03-28",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Royal Challengers Bengaluru won by 6 wickets",
-    "team": "RCB",
-    "opponent": "SRH",
-    "overs": 4,
-    "runs": 22,
-    "wkts": 3,
-    "potm": true
    }
   ]
  },
@@ -3324,6 +3349,30 @@ window.IPL_FORM = {
  "Virat Kohli": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 5,
+    "balls": 7,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 0,
+    "balls": 4,
+    "out": true
+   },
+   {
     "date": "2026-11-09",
     "format": "ODI",
     "matchNo": 5061,
@@ -3335,6 +3384,18 @@ window.IPL_FORM = {
     "balls": null,
     "out": false,
     "dnb": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 7,
+    "balls": 7,
+    "out": true
    },
    {
     "date": "2026-11-06",
@@ -3469,44 +3530,6 @@ window.IPL_FORM = {
     "opponent": "SRH",
     "runs": 15,
     "balls": 11,
-    "out": true
-   },
-   {
-    "date": "2026-05-17",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-    "result": "Royal Challengers Bengaluru won by 23 runs",
-    "team": "RCB",
-    "opponent": "PBKS",
-    "runs": 58,
-    "balls": 37,
-    "out": true
-   },
-   {
-    "date": "2026-05-13",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-    "result": "Royal Challengers Bengaluru won by 6 wickets",
-    "team": "RCB",
-    "opponent": "KKR",
-    "runs": 105,
-    "balls": 60,
-    "out": false,
-    "top": true,
-    "potm": true
-   },
-   {
-    "date": "2026-05-10",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-    "result": "Royal Challengers Bengaluru won by 2 wickets",
-    "team": "RCB",
-    "opponent": "MI",
-    "runs": 0,
-    "balls": 1,
     "out": true
    }
   ],
@@ -4767,6 +4790,30 @@ window.IPL_FORM = {
  "Finn Allen": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 1,
+    "balls": 5,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 41,
+    "balls": 30,
+    "out": true
+   },
+   {
     "date": "2026-11-01",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -4923,30 +4970,6 @@ window.IPL_FORM = {
     "opponent": "LSG",
     "runs": 9,
     "balls": 8,
-    "out": true
-   },
-   {
-    "date": "2026-04-06",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Eden Gardens, Kolkata",
-    "result": "no result",
-    "team": "KKR",
-    "opponent": "PBKS",
-    "runs": 6,
-    "balls": 7,
-    "out": true
-   },
-   {
-    "date": "2026-04-02",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Eden Gardens, Kolkata",
-    "result": "Sunrisers Hyderabad won by 65 runs",
-    "team": "KKR",
-    "opponent": "SRH",
-    "runs": 28,
-    "balls": 7,
     "out": true
    }
   ],
@@ -6821,6 +6844,30 @@ window.IPL_FORM = {
  "Rohit Sharma": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 7,
+    "balls": 13,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
     "date": "2026-11-09",
     "format": "ODI",
     "matchNo": 5061,
@@ -6832,6 +6879,18 @@ window.IPL_FORM = {
     "balls": null,
     "out": false,
     "dnb": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 23,
+    "balls": 28,
+    "out": true
    },
    {
     "date": "2026-11-06",
@@ -6965,43 +7024,6 @@ window.IPL_FORM = {
     "runs": 25,
     "balls": 26,
     "out": true
-   },
-   {
-    "date": "2026-05-10",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-    "result": "Royal Challengers Bengaluru won by 2 wickets",
-    "team": "MI",
-    "opponent": "RCB",
-    "runs": 22,
-    "balls": 10,
-    "out": true
-   },
-   {
-    "date": "2026-05-04",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Mumbai Indians won by 6 wickets",
-    "team": "MI",
-    "opponent": "LSG",
-    "runs": 84,
-    "balls": 44,
-    "out": true,
-    "top": true
-   },
-   {
-    "date": "2026-04-12",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Royal Challengers Bengaluru won by 18 runs",
-    "team": "MI",
-    "opponent": "RCB",
-    "runs": 19,
-    "balls": 13,
-    "out": false
    }
   ],
   "bowl": []
@@ -7373,6 +7395,42 @@ window.IPL_FORM = {
  "Naman Dhir": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 22,
+    "balls": 31,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 21,
+    "balls": 24,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 12,
+    "balls": 16,
+    "out": true
+   },
+   {
     "date": "2026-11-01",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -7515,45 +7573,33 @@ window.IPL_FORM = {
     "runs": 0,
     "balls": 3,
     "out": true
-   },
-   {
-    "date": "2026-05-14",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-    "result": "Mumbai Indians won by 6 wickets",
-    "team": "MI",
-    "opponent": "PBKS",
-    "runs": 9,
-    "balls": 6,
-    "out": true
-   },
-   {
-    "date": "2026-05-10",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-    "result": "Royal Challengers Bengaluru won by 2 wickets",
-    "team": "MI",
-    "opponent": "RCB",
-    "runs": 47,
-    "balls": 32,
-    "out": true
-   },
-   {
-    "date": "2026-05-04",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Mumbai Indians won by 6 wickets",
-    "team": "MI",
-    "opponent": "LSG",
-    "runs": 23,
-    "balls": 12,
-    "out": false
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 2,
+    "runs": 4,
+    "wkts": 1
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 4,
+    "runs": 29,
+    "wkts": 1
+   },
    {
     "date": "2026-10-30",
     "format": "T20I",
@@ -9156,6 +9202,30 @@ window.IPL_FORM = {
  "Ruturaj Gaikwad": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 18,
+    "balls": 27,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 5,
+    "balls": 13,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -9312,30 +9382,6 @@ window.IPL_FORM = {
     "opponent": "KKR",
     "runs": 7,
     "balls": 6,
-    "out": true
-   },
-   {
-    "date": "2026-04-11",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Chennai Super Kings won by 23 runs",
-    "team": "CSK",
-    "opponent": "DC",
-    "runs": 15,
-    "balls": 18,
-    "out": true
-   },
-   {
-    "date": "2026-04-05",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Royal Challengers Bengaluru won by 43 runs",
-    "team": "CSK",
-    "opponent": "RCB",
-    "runs": 7,
-    "balls": 3,
     "out": true
    }
   ],
@@ -10760,6 +10806,18 @@ window.IPL_FORM = {
  "Matt Henry": {
   "bat": [
    {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 2,
+    "balls": 2,
+    "out": true
+   },
+   {
     "date": "2026-06-17",
     "format": "Test",
     "competition": "New Zealand tour of England 2026",
@@ -10839,6 +10897,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "overs": 9.4,
+    "runs": 27,
+    "wkts": 6
+   },
    {
     "date": "2026-10-24",
     "format": "T20I",
@@ -10958,6 +11028,18 @@ window.IPL_FORM = {
  "Anshul Kamboj": {
   "bat": [
    {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 1,
+    "balls": 3,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -11019,6 +11101,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 8,
+    "runs": 25,
+    "wkts": 2
+   },
    {
     "date": "2026-10-03",
     "format": "ODI",
@@ -11185,18 +11279,6 @@ window.IPL_FORM = {
     "opponent": "PBKS",
     "overs": 3.4,
     "runs": 43,
-    "wkts": 2
-   },
-   {
-    "date": "2026-03-30",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Barsapara Cricket Stadium, Guwahati",
-    "result": "Rajasthan Royals won by 8 wickets",
-    "team": "CSK",
-    "opponent": "RR",
-    "overs": 3,
-    "runs": 27,
     "wkts": 2
    }
   ]
@@ -13701,6 +13783,18 @@ window.IPL_FORM = {
  "Shubman Gill": {
   "bat": [
    {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -13876,18 +13970,6 @@ window.IPL_FORM = {
     "balls": 49,
     "out": true,
     "top": true
-   },
-   {
-    "date": "2026-05-12",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 82 runs",
-    "team": "GT",
-    "opponent": "SRH",
-    "runs": 5,
-    "balls": 7,
-    "out": true
    }
   ],
   "bowl": [
@@ -14097,6 +14179,18 @@ window.IPL_FORM = {
  "Glenn Phillips": {
   "bat": [
    {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 0,
+    "balls": 4,
+    "out": true
+   },
+   {
     "date": "2026-11-01",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -14273,18 +14367,6 @@ window.IPL_FORM = {
     "opponent": "RR",
     "runs": 3,
     "balls": 4,
-    "out": true
-   },
-   {
-    "date": "2026-03-31",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
-    "result": "Punjab Kings won by 3 wickets",
-    "team": "GT",
-    "opponent": "PBKS",
-    "runs": 25,
-    "balls": 17,
     "out": true
    }
   ],
@@ -15147,6 +15229,30 @@ window.IPL_FORM = {
  "Arshdeep Singh": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 14,
+    "balls": 4,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 0,
+    "balls": 3,
+    "out": false
+   },
+   {
     "date": "2026-11-09",
     "format": "ODI",
     "matchNo": 5061,
@@ -15282,6 +15388,42 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 30,
+    "wkts": 3
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 55,
+    "wkts": 1
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 7,
+    "runs": 16,
+    "wkts": 0
+   },
    {
     "date": "2026-11-06",
     "format": "ODI",
@@ -15425,42 +15567,6 @@ window.IPL_FORM = {
     "opponent": "ENG",
     "overs": 10,
     "runs": 72,
-    "wkts": 0
-   },
-   {
-    "date": "2026-07-11",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "The Rose Bowl, Southampton",
-    "result": "England won by 56 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 4,
-    "runs": 33,
-    "wkts": 0
-   },
-   {
-    "date": "2026-07-09",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "County Ground, Bristol",
-    "result": "England won by 9 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 3.5,
-    "runs": 41,
-    "wkts": 1
-   },
-   {
-    "date": "2026-07-07",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Trent Bridge, Nottingham",
-    "result": "England won by 125 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 4,
-    "runs": 36,
     "wkts": 0
    }
   ]
@@ -17077,6 +17183,43 @@ window.IPL_FORM = {
  "Shreyas Iyer": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 22,
+    "balls": 26,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 30,
+    "balls": 46,
+    "out": true,
+    "top": true
+   },
+   {
     "date": "2026-11-01",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -17220,44 +17363,6 @@ window.IPL_FORM = {
     "opponent": "SL",
     "runs": 13,
     "balls": 13,
-    "out": true
-   },
-   {
-    "date": "2026-09-22",
-    "format": "T20I",
-    "competition": "India tour of Japan 2026",
-    "venue": "Sano International Cricket Ground",
-    "result": "India won by 2 runs",
-    "team": "IND",
-    "opponent": "J",
-    "runs": 16,
-    "balls": 12,
-    "out": true,
-    "top": true,
-    "potm": true
-   },
-   {
-    "date": "2026-07-26",
-    "format": "T20I",
-    "competition": "India tour of Zimbabwe 2026",
-    "venue": "Harare Sports Club",
-    "result": "India won by 35 runs",
-    "team": "IND",
-    "opponent": "ZIM",
-    "runs": 27,
-    "balls": 18,
-    "out": true
-   },
-   {
-    "date": "2026-07-25",
-    "format": "T20I",
-    "competition": "India tour of Zimbabwe 2026",
-    "venue": "Harare Sports Club",
-    "result": "India won by 90 runs",
-    "team": "IND",
-    "opponent": "ZIM",
-    "runs": 25,
-    "balls": 20,
     "out": true
    }
   ],
@@ -17669,6 +17774,18 @@ window.IPL_FORM = {
  "Mohammed Siraj": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 14,
+    "balls": 20,
+    "out": false
+   },
+   {
     "date": "2026-08-23",
     "format": "Test",
     "competition": "India tour of Sri Lanka 2026",
@@ -17733,6 +17850,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 50,
+    "wkts": 2
+   },
    {
     "date": "2026-10-03",
     "format": "ODI",
@@ -17904,18 +18033,6 @@ window.IPL_FORM = {
     "opponent": "RCB",
     "overs": 4,
     "runs": 38,
-    "wkts": 1
-   },
-   {
-    "date": "2026-04-26",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Gujarat Titans won by 8 wickets",
-    "team": "GT",
-    "opponent": "CSK",
-    "overs": 4,
-    "runs": 23,
     "wkts": 1
    }
   ]
@@ -20606,6 +20723,43 @@ window.IPL_FORM = {
  "Axar Patel": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 46,
+    "balls": 55,
+    "out": true,
+    "top": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 21,
+    "balls": 36,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 7,
+    "balls": 17,
+    "out": true
+   },
+   {
     "date": "2026-10-30",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -20749,45 +20903,45 @@ window.IPL_FORM = {
     "runs": 1,
     "balls": 2,
     "out": true
-   },
-   {
-    "date": "2026-07-07",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Trent Bridge, Nottingham",
-    "result": "England won by 125 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 10,
-    "balls": 4,
-    "out": true
-   },
-   {
-    "date": "2026-07-04",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Old Trafford, Manchester",
-    "result": "England won by 4 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 2,
-    "balls": 3,
-    "out": true
-   },
-   {
-    "date": "2026-07-01",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Riverside Ground, Chester-le-Street",
-    "result": "no result",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 3,
-    "balls": 4,
-    "out": true
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 6.1,
+    "runs": 28,
+    "wkts": 2
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 39,
+    "wkts": 2
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 9,
+    "runs": 28,
+    "wkts": 2
+   },
    {
     "date": "2026-10-30",
     "format": "T20I",
@@ -20930,43 +21084,6 @@ window.IPL_FORM = {
     "opponent": "ENG",
     "overs": 10,
     "runs": 61,
-    "wkts": 0
-   },
-   {
-    "date": "2026-07-16",
-    "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Sophia Gardens, Cardiff",
-    "result": "England won by 4 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 9,
-    "runs": 35,
-    "wkts": 1
-   },
-   {
-    "date": "2026-07-14",
-    "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Edgbaston, Birmingham",
-    "result": "India won by 6 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 9.5,
-    "runs": 62,
-    "wkts": 4,
-    "potm": true
-   },
-   {
-    "date": "2026-07-11",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "The Rose Bowl, Southampton",
-    "result": "England won by 56 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 4,
-    "runs": 63,
     "wkts": 0
    }
   ]
@@ -21112,6 +21229,18 @@ window.IPL_FORM = {
  "Kuldeep Yadav": {
   "bat": [
    {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 1,
+    "balls": 4,
+    "out": true
+   },
+   {
     "date": "2026-08-15",
     "format": "Test",
     "competition": "India tour of Sri Lanka 2026",
@@ -21187,6 +21316,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 8,
+    "runs": 73,
+    "wkts": 0
+   },
    {
     "date": "2026-10-09",
     "format": "T20I",
@@ -21358,18 +21499,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 32,
     "wkts": 2
-   },
-   {
-    "date": "2026-04-11",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Chennai Super Kings won by 23 runs",
-    "team": "DC",
-    "opponent": "CSK",
-    "overs": 2,
-    "runs": 24,
-    "wkts": 0
    }
   ]
  },
@@ -21465,6 +21594,18 @@ window.IPL_FORM = {
  },
  "KL Rahul": {
   "bat": [
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 26,
+    "balls": 38,
+    "out": false
+   },
    {
     "date": "2026-10-03",
     "format": "ODI",
@@ -21642,18 +21783,6 @@ window.IPL_FORM = {
     "out": false,
     "top": true,
     "potm": true
-   },
-   {
-    "date": "2026-04-21",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
-    "result": "Sunrisers Hyderabad won by 47 runs",
-    "team": "DC",
-    "opponent": "SRH",
-    "runs": 37,
-    "balls": 23,
-    "out": true
    }
   ],
   "bowl": []
@@ -23098,6 +23227,42 @@ window.IPL_FORM = {
  "Mitchell Santner": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 24,
+    "balls": 31,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 24,
+    "balls": 29,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 31,
+    "balls": 38,
+    "out": true
+   },
+   {
     "date": "2026-10-30",
     "format": "T20I",
     "competition": "India tour of New Zealand 2026/27",
@@ -23210,6 +23375,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "overs": 10,
+    "runs": 47,
+    "wkts": 3
+   },
    {
     "date": "2026-11-01",
     "format": "T20I",
@@ -23380,18 +23557,6 @@ window.IPL_FORM = {
     "overs": 3,
     "runs": 16,
     "wkts": 2
-   },
-   {
-    "date": "2026-04-12",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Royal Challengers Bengaluru won by 18 runs",
-    "team": "MI",
-    "opponent": "RCB",
-    "overs": 4,
-    "runs": 43,
-    "wkts": 1
    }
   ]
  },
@@ -25418,6 +25583,42 @@ window.IPL_FORM = {
  "Auqib Nabi": {
   "bat": [
    {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 5,
+    "balls": 9,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 5,
+    "balls": 8,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 1,
+    "balls": 1,
+    "out": false
+   },
+   {
     "date": "2026-05-11",
     "format": "T20",
     "competition": "Indian Premier League 2026",
@@ -25443,6 +25644,42 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 37,
+    "wkts": 1
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 8,
+    "runs": 59,
+    "wkts": 2
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 7,
+    "runs": 31,
+    "wkts": 2
+   },
    {
     "date": "2026-09-30",
     "format": "ODI",
@@ -26826,6 +27063,42 @@ window.IPL_FORM = {
  },
  "Tim Seifert": {
   "bat": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 14,
+    "balls": 21,
+    "out": true
+   },
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 58,
+    "balls": 48,
+    "out": true
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 0,
+    "balls": 5,
+    "out": true
+   },
    {
     "date": "2026-11-01",
     "format": "T20I",
@@ -28702,6 +28975,30 @@ window.IPL_FORM = {
  "Kyle Jamieson": {
   "bat": [
    {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 19,
+    "balls": 21,
+    "out": false
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "runs": 7,
+    "balls": 14,
+    "out": true
+   },
+   {
     "date": "2026-06-17",
     "format": "Test",
     "competition": "New Zealand tour of England 2026",
@@ -28768,6 +29065,30 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "New Zealand",
+    "opponent": "India",
+    "overs": 6,
+    "runs": 12,
+    "wkts": 1
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "New Zealand",
+    "opponent": "India",
+    "overs": 10,
+    "runs": 35,
+    "wkts": 3
+   },
    {
     "date": "2026-10-27",
     "format": "T20I",
@@ -30983,8 +31304,33 @@ window.IPL_FORM = {
   ]
  },
  "Yash Thakur": {
-  "bat": [],
+  "bat": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 0,
+    "balls": 4,
+    "out": true
+   }
+  ],
   "bowl": [
+   {
+    "date": "2026-11-15",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "India won by 22 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 38,
+    "wkts": 1
+   },
    {
     "date": "2026-07-26",
     "format": "T20I",
@@ -32877,6 +33223,18 @@ window.IPL_FORM = {
  "Gurnoor Singh Brar": {
   "bat": [
    {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "runs": 2,
+    "balls": 13,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -32914,6 +33272,30 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-13",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Bay Oval, Mount Maunganui",
+    "result": "New Zealand won by 244 runs",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 69,
+    "wkts": 2
+   },
+   {
+    "date": "2026-11-07",
+    "format": "",
+    "competition": "India tour of New Zealand 2026",
+    "venue": "Hnry Stadium, Wellington",
+    "result": "India won by 4 runs (DLS method)",
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 10,
+    "runs": 30,
+    "wkts": 4
+   },
    {
     "date": "2026-10-03",
     "format": "ODI",
@@ -33802,4 +34184,4 @@ window.IPL_FORM = {
   ]
  }
 };
-window.IPL_FORM_META = {"updated": "2026-11-15", "since": "2026-03-28", "matches": 656, "players": 211};
+window.IPL_FORM_META = {"updated": "2026-11-15", "since": "2026-03-28", "matches": 659, "players": 211};
