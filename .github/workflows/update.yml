@@ -1,0 +1,59 @@
+name: Update IPL form data
+
+on:
+  schedule:
+    - cron: "17 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-form
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: form-cache-${{ github.run_id }}
+          restore-keys: form-cache-
+
+      - name: Fetch new matches and rebuild data
+        env:
+          CRICAPI_KEY: ${{ secrets.CRICAPI_KEY }}
+        run: |
+          if [ -n "$CRICAPI_KEY" ]; then
+            python3 scripts/update_form.py
+          else
+            echo "No CRICAPI_KEY secret set, using Cricsheet only."
+            python3 scripts/update_form.py --no-api
+          fi
+
+      - name: Bump cache-busting version
+        run: |
+          V=$(date +%Y%m%d%H)
+          sed -i -E "s#(data/(form|roster)\.js\?v=)[^\"]*#\1$V#" index.html
+
+      - name: Commit changes
+        run: |
+          git config user.name "powerplay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/form.js data/roster.js index.html
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Update form data $(date -u +%F)"
+            git push
+          fi
