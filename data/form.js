@@ -34184,4 +34184,4 @@ window.IPL_FORM = {
   ]
  }
 };
-window.IPL_FORM_META = {"updated": "2026-11-15", "since": "2026-03-28", "matches": 659, "players": 211};
+window.IPL_FORM_META = {"updated": "2026-11-16", "since": "2026-03-28", "matches": 659, "players": 211};
