@@ -488,6 +488,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
+    "overs": 2,
+    "runs": 23,
+    "wkts": 0
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -495,6 +507,18 @@ window.IPL_FORM = {
     "result": "India won by 124 runs",
     "team": "IND",
     "opponent": "SL",
+    "overs": 0.5,
+    "runs": 2,
+    "wkts": 2
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
     "overs": 0.5,
     "runs": 2,
     "wkts": 2
@@ -738,6 +762,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 37,
+    "balls": 18,
+    "out": true
+   },
+   {
     "date": "2026-10-09",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -748,18 +784,6 @@ window.IPL_FORM = {
     "runs": 43,
     "balls": 22,
     "out": true
-   },
-   {
-    "date": "2026-10-06",
-    "format": "T20I",
-    "competition": "West Indies tour of India 2026/27",
-    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-    "result": "India won by 8 wickets",
-    "team": "IND",
-    "opponent": "WI",
-    "runs": 37,
-    "balls": 27,
-    "out": false
    }
   ],
   "bowl": []
@@ -899,6 +923,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 21,
+    "balls": 14,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -906,6 +942,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 5 wickets",
     "team": "IND",
     "opponent": "WI",
+    "runs": 9,
+    "balls": 16,
+    "out": true
+   },
+   {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
     "runs": 9,
     "balls": 16,
     "out": true
@@ -922,30 +970,6 @@ window.IPL_FORM = {
     "balls": 20,
     "out": true,
     "top": true
-   },
-   {
-    "date": "2026-05-22",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
-    "result": "Sunrisers Hyderabad won by 55 runs",
-    "team": "SRH",
-    "opponent": "RCB",
-    "runs": 29,
-    "balls": 12,
-    "out": false
-   },
-   {
-    "date": "2026-05-18",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Sunrisers Hyderabad won by 5 wickets",
-    "team": "SRH",
-    "opponent": "CSK",
-    "runs": 11,
-    "balls": 7,
-    "out": true
    }
   ],
   "bowl": [
@@ -1106,6 +1130,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 2,
+    "runs": 19,
+    "wkts": 1
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -1116,18 +1152,6 @@ window.IPL_FORM = {
     "overs": 6.5,
     "runs": 50,
     "wkts": 0
-   },
-   {
-    "date": "2026-09-27",
-    "format": "ODI",
-    "competition": "West Indies tour of India 2026/27",
-    "venue": "Greenfield International Stadium, Thiruvananthapuram",
-    "result": "India won by 8 wickets",
-    "team": "IND",
-    "opponent": "WI",
-    "overs": 5,
-    "runs": 45,
-    "wkts": 1
    }
   ]
  },
@@ -2505,6 +2529,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 34,
+    "balls": 13,
+    "out": false
+   },
+   {
     "date": "2026-10-06",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -2512,6 +2548,18 @@ window.IPL_FORM = {
     "result": "India won by 8 wickets",
     "team": "WI",
     "opponent": "IND",
+    "runs": 7,
+    "balls": 5,
+    "out": true
+   },
+   {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "runs": 7,
     "balls": 5,
     "out": true
@@ -2687,6 +2735,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "overs": 3.4,
+    "runs": 47,
+    "wkts": 0
+   },
+   {
     "date": "2026-10-06",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -2694,6 +2754,18 @@ window.IPL_FORM = {
     "result": "India won by 8 wickets",
     "team": "WI",
     "opponent": "IND",
+    "overs": 2,
+    "runs": 24,
+    "wkts": 0
+   },
+   {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "overs": 2,
     "runs": 24,
     "wkts": 0
@@ -2780,30 +2852,6 @@ window.IPL_FORM = {
     "opponent": "LSG",
     "overs": 1,
     "runs": 16,
-    "wkts": 0
-   },
-   {
-    "date": "2026-04-30",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 4 wickets",
-    "team": "RCB",
-    "opponent": "GT",
-    "overs": 4,
-    "runs": 30,
-    "wkts": 2
-   },
-   {
-    "date": "2026-04-27",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Arun Jaitley Stadium, Delhi",
-    "result": "Royal Challengers Bengaluru won by 9 wickets",
-    "team": "RCB",
-    "opponent": "DC",
-    "overs": 2,
-    "runs": 21,
     "wkts": 0
    }
   ]
@@ -3482,6 +3530,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
     "date": "2026-09-30",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -3555,18 +3615,6 @@ window.IPL_FORM = {
     "out": false,
     "top": true,
     "potm": true
-   },
-   {
-    "date": "2026-05-26",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-    "result": "Royal Challengers Bengaluru won by 92 runs",
-    "team": "RCB",
-    "opponent": "GT",
-    "runs": 43,
-    "balls": 25,
-    "out": true
    }
   ],
   "bowl": []
@@ -6345,6 +6393,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
+    "overs": 4,
+    "runs": 33,
+    "wkts": 0
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -6352,6 +6412,18 @@ window.IPL_FORM = {
     "result": "India won by 124 runs",
     "team": "IND",
     "opponent": "SL",
+    "overs": 2,
+    "runs": 7,
+    "wkts": 2
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
     "overs": 2,
     "runs": 7,
     "wkts": 2
@@ -6486,30 +6558,6 @@ window.IPL_FORM = {
     "opponent": "PBKS",
     "overs": 4,
     "runs": 41,
-    "wkts": 0
-   },
-   {
-    "date": "2026-04-12",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Royal Challengers Bengaluru won by 18 runs",
-    "team": "MI",
-    "opponent": "RCB",
-    "overs": 4,
-    "runs": 35,
-    "wkts": 0
-   },
-   {
-    "date": "2026-04-07",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Barsapara Cricket Stadium, Guwahati",
-    "result": "Rajasthan Royals won by 27 runs",
-    "team": "MI",
-    "opponent": "RR",
-    "overs": 3,
-    "runs": 32,
     "wkts": 0
    }
   ]
@@ -6975,6 +7023,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 92,
+    "balls": 85,
+    "out": true
+   },
+   {
     "date": "2026-09-30",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -7045,18 +7105,6 @@ window.IPL_FORM = {
     "opponent": "RR",
     "runs": 0,
     "balls": 4,
-    "out": true
-   },
-   {
-    "date": "2026-05-20",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Eden Gardens, Kolkata",
-    "result": "Kolkata Knight Riders won by 4 wickets",
-    "team": "MI",
-    "opponent": "KKR",
-    "runs": 15,
-    "balls": 13,
     "out": true
    }
   ],
@@ -7721,6 +7769,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 3,
+    "runs": 39,
+    "wkts": 2
+   },
+   {
     "date": "2026-10-09",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -7728,6 +7788,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 6 wickets",
     "team": "IND",
     "opponent": "WI",
+    "overs": 2,
+    "runs": 25,
+    "wkts": 0
+   },
+   {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "India",
+    "opponent": "West Indies",
     "overs": 2,
     "runs": 25,
     "wkts": 0
@@ -7745,6 +7817,18 @@ window.IPL_FORM = {
     "wkts": 3
    },
    {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 4,
+    "runs": 31,
+    "wkts": 3
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -7755,30 +7839,6 @@ window.IPL_FORM = {
     "overs": 5.2,
     "runs": 33,
     "wkts": 1
-   },
-   {
-    "date": "2026-09-30",
-    "format": "ODI",
-    "competition": "West Indies tour of India 2026/27",
-    "venue": "Barsapara Cricket Stadium, Guwahati",
-    "result": "India won by 8 wickets",
-    "team": "IND",
-    "opponent": "WI",
-    "overs": 6.1,
-    "runs": 38,
-    "wkts": 0
-   },
-   {
-    "date": "2026-09-27",
-    "format": "ODI",
-    "competition": "West Indies tour of India 2026/27",
-    "venue": "Greenfield International Stadium, Thiruvananthapuram",
-    "result": "India won by 8 wickets",
-    "team": "IND",
-    "opponent": "WI",
-    "overs": 5,
-    "runs": 33,
-    "wkts": 0
    }
   ]
  },
@@ -9311,6 +9371,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 57,
+    "balls": 69,
+    "out": true
+   },
+   {
     "date": "2026-09-30",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -9443,18 +9515,6 @@ window.IPL_FORM = {
     "opponent": "SRH",
     "runs": 19,
     "balls": 13,
-    "out": true
-   },
-   {
-    "date": "2026-04-14",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Chennai Super Kings won by 32 runs",
-    "team": "CSK",
-    "opponent": "KKR",
-    "runs": 7,
-    "balls": 6,
     "out": true
    }
   ],
@@ -9981,6 +10041,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 7,
+    "balls": 10,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -9993,6 +10065,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
+    "runs": 27,
+    "balls": 15,
+    "out": true
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -10000,6 +10084,18 @@ window.IPL_FORM = {
     "result": "India won by 124 runs",
     "team": "IND",
     "opponent": "SL",
+    "runs": 3,
+    "balls": 9,
+    "out": true
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
     "runs": 3,
     "balls": 9,
     "out": true
@@ -10111,43 +10207,6 @@ window.IPL_FORM = {
     "runs": 20,
     "balls": 16,
     "out": true
-   },
-   {
-    "date": "2026-06-26",
-    "format": "T20I",
-    "competition": "India tour of Ireland 2026",
-    "venue": "Civil Service Cricket Club, Stormont, Belfast",
-    "result": "Ireland won by 34 runs",
-    "team": "IND",
-    "opponent": "IRE",
-    "runs": 25,
-    "balls": 14,
-    "out": true
-   },
-   {
-    "date": "2026-05-21",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 89 runs",
-    "team": "CSK",
-    "opponent": "GT",
-    "runs": 47,
-    "balls": 17,
-    "out": true,
-    "top": true
-   },
-   {
-    "date": "2026-05-18",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Sunrisers Hyderabad won by 5 wickets",
-    "team": "CSK",
-    "opponent": "SRH",
-    "runs": 26,
-    "balls": 23,
-    "out": true
    }
   ],
   "bowl": [
@@ -10164,6 +10223,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 2,
+    "runs": 30,
+    "wkts": 0
+   },
+   {
     "date": "2026-10-03",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -10171,6 +10242,18 @@ window.IPL_FORM = {
     "result": "India won by 19 runs",
     "team": "IND",
     "opponent": "PAK",
+    "overs": 3,
+    "runs": 33,
+    "wkts": 2
+   },
+   {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
     "overs": 3,
     "runs": 33,
     "wkts": 2
@@ -10306,30 +10389,6 @@ window.IPL_FORM = {
     "overs": 1,
     "runs": 12,
     "wkts": 0
-   },
-   {
-    "date": "2026-04-26",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Gujarat Titans won by 8 wickets",
-    "team": "CSK",
-    "opponent": "GT",
-    "overs": 1,
-    "runs": 7,
-    "wkts": 0
-   },
-   {
-    "date": "2026-04-05",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Royal Challengers Bengaluru won by 43 runs",
-    "team": "CSK",
-    "opponent": "RCB",
-    "overs": 2,
-    "runs": 30,
-    "wkts": 1
    }
   ]
  },
@@ -11149,6 +11208,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 17,
+    "balls": 9,
+    "out": true
+   },
+   {
     "date": "2026-05-21",
     "format": "T20",
     "competition": "Indian Premier League 2026",
@@ -11230,6 +11301,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 5 wickets",
     "team": "IND",
     "opponent": "WI",
+    "overs": 9,
+    "runs": 82,
+    "wkts": 0
+   },
+   {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "overs": 9,
     "runs": 82,
     "wkts": 0
@@ -11365,18 +11448,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 35,
     "wkts": 3
-   },
-   {
-    "date": "2026-04-05",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Royal Challengers Bengaluru won by 43 runs",
-    "team": "CSK",
-    "opponent": "RCB",
-    "overs": 4,
-    "runs": 52,
-    "wkts": 1
    }
   ]
  },
@@ -12264,6 +12335,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
+    "overs": 3,
+    "runs": 44,
+    "wkts": 0
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -12271,6 +12354,18 @@ window.IPL_FORM = {
     "result": "India won by 124 runs",
     "team": "IND",
     "opponent": "SL",
+    "overs": 1,
+    "runs": 4,
+    "wkts": 0
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
     "overs": 1,
     "runs": 4,
     "wkts": 0
@@ -12406,31 +12501,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 32,
     "wkts": 2
-   },
-   {
-    "date": "2026-04-07",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Barsapara Cricket Stadium, Guwahati",
-    "result": "Rajasthan Royals won by 27 runs",
-    "team": "RR",
-    "opponent": "MI",
-    "overs": 2,
-    "runs": 25,
-    "wkts": 2
-   },
-   {
-    "date": "2026-04-04",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Rajasthan Royals won by 6 runs",
-    "team": "RR",
-    "opponent": "GT",
-    "overs": 4,
-    "runs": 41,
-    "wkts": 4,
-    "potm": true
    }
   ]
  },
@@ -13064,6 +13134,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
+    "runs": 15,
+    "balls": 9,
+    "out": true
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -13071,6 +13153,18 @@ window.IPL_FORM = {
     "result": "India won by 124 runs",
     "team": "IND",
     "opponent": "SL",
+    "runs": 38,
+    "balls": 21,
+    "out": true
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
     "runs": 38,
     "balls": 21,
     "out": true
@@ -13163,32 +13257,6 @@ window.IPL_FORM = {
     "balls": 47,
     "out": true,
     "top": true
-   },
-   {
-    "date": "2026-05-27",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
-    "result": "Rajasthan Royals won by 47 runs",
-    "team": "RR",
-    "opponent": "SRH",
-    "runs": 97,
-    "balls": 29,
-    "out": true,
-    "top": true,
-    "potm": true
-   },
-   {
-    "date": "2026-05-24",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Rajasthan Royals won by 30 runs",
-    "team": "RR",
-    "opponent": "MI",
-    "runs": 4,
-    "balls": 6,
-    "out": true
    }
   ],
   "bowl": []
@@ -13914,6 +13982,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 1,
+    "balls": 6,
+    "out": true
+   },
+   {
     "date": "2026-09-30",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -14051,18 +14131,6 @@ window.IPL_FORM = {
     "opponent": "RCB",
     "runs": 2,
     "balls": 7,
-    "out": true
-   },
-   {
-    "date": "2026-05-21",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 89 runs",
-    "team": "GT",
-    "opponent": "CSK",
-    "runs": 64,
-    "balls": 37,
     "out": true
    }
   ],
@@ -14481,6 +14549,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
+    "runs": 7,
+    "balls": 3,
+    "out": false
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -14636,18 +14716,6 @@ window.IPL_FORM = {
     "runs": 1,
     "balls": 1,
     "out": false
-   },
-   {
-    "date": "2026-04-24",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Royal Challengers Bengaluru won by 5 wickets",
-    "team": "GT",
-    "opponent": "RCB",
-    "runs": 19,
-    "balls": 12,
-    "out": false
    }
   ],
   "bowl": [
@@ -14664,6 +14732,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "India",
+    "opponent": "Pakistan",
+    "overs": 4,
+    "runs": 29,
+    "wkts": 2
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -14671,6 +14751,18 @@ window.IPL_FORM = {
     "result": "India won by 124 runs",
     "team": "IND",
     "opponent": "SL",
+    "overs": 3,
+    "runs": 18,
+    "wkts": 1
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 124 runs",
+    "team": "India",
+    "opponent": "Sri Lanka",
     "overs": 3,
     "runs": 18,
     "wkts": 1
@@ -15445,6 +15537,18 @@ window.IPL_FORM = {
     "potm": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 11,
+    "balls": 8,
+    "out": true
+   },
+   {
     "date": "2026-07-19",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -15491,18 +15595,6 @@ window.IPL_FORM = {
     "runs": 4,
     "balls": 5,
     "out": false
-   },
-   {
-    "date": "2026-06-26",
-    "format": "T20I",
-    "competition": "India tour of Ireland 2026",
-    "venue": "Civil Service Cricket Club, Stormont, Belfast",
-    "result": "Ireland won by 34 runs",
-    "team": "IND",
-    "opponent": "IRE",
-    "runs": 2,
-    "balls": 4,
-    "out": true
    }
   ],
   "bowl": [
@@ -17990,6 +18082,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "overs": 8,
+    "runs": 52,
+    "wkts": 1
+   },
+   {
     "date": "2026-08-23",
     "format": "Test",
     "competition": "India tour of Sri Lanka 2026",
@@ -18137,18 +18241,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 28,
     "wkts": 2
-   },
-   {
-    "date": "2026-04-30",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 4 wickets",
-    "team": "GT",
-    "opponent": "RCB",
-    "overs": 4,
-    "runs": 38,
-    "wkts": 1
    }
   ]
  },
@@ -19878,6 +19970,31 @@ window.IPL_FORM = {
  "Abdul Samad": {
   "bat": [
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "India won by 19 runs",
+    "team": "Pakistan",
+    "opponent": "India",
+    "runs": 9,
+    "balls": 9,
+    "out": true
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "Pakistan won by 6 wkts (13 overs game due to rain)",
+    "team": "Pakistan",
+    "opponent": "Bangladesh",
+    "runs": 30,
+    "balls": 15,
+    "out": false,
+    "top": true
+   },
+   {
     "date": "2026-05-23",
     "format": "T20",
     "competition": "Indian Premier League 2026",
@@ -20995,6 +21112,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 20,
+    "balls": 14,
+    "out": true
+   },
+   {
     "date": "2026-10-03",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -21005,18 +21134,6 @@ window.IPL_FORM = {
     "runs": 1,
     "balls": 1,
     "out": false
-   },
-   {
-    "date": "2026-10-01",
-    "format": "T20I",
-    "competition": "Asian Games Men's Cricket Competition 2026",
-    "venue": "Korogi Sports Park, Nisshin",
-    "result": "India won by 124 runs",
-    "team": "IND",
-    "opponent": "SL",
-    "runs": 8,
-    "balls": 13,
-    "out": true
    }
   ],
   "bowl": [
@@ -21455,6 +21572,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 4,
+    "runs": 53,
+    "wkts": 1
+   },
+   {
     "date": "2026-10-06",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -21467,6 +21596,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 4,
+    "runs": 33,
+    "wkts": 2
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -21474,6 +21615,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 5 wickets",
     "team": "IND",
     "opponent": "WI",
+    "overs": 10,
+    "runs": 62,
+    "wkts": 1
+   },
+   {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "overs": 10,
     "runs": 62,
     "wkts": 1
@@ -21577,42 +21730,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 41,
     "wkts": 0
-   },
-   {
-    "date": "2026-04-25",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Arun Jaitley Stadium, Delhi",
-    "result": "Punjab Kings won by 6 wickets",
-    "team": "DC",
-    "opponent": "PBKS",
-    "overs": 4,
-    "runs": 46,
-    "wkts": 2
-   },
-   {
-    "date": "2026-04-21",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
-    "result": "Sunrisers Hyderabad won by 47 runs",
-    "team": "DC",
-    "opponent": "SRH",
-    "overs": 2,
-    "runs": 30,
-    "wkts": 0
-   },
-   {
-    "date": "2026-04-18",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "M Chinnaswamy Stadium, Bengaluru",
-    "result": "Delhi Capitals won by 6 wickets",
-    "team": "DC",
-    "opponent": "RCB",
-    "overs": 4,
-    "runs": 32,
-    "wkts": 2
    }
   ]
  },
@@ -21740,6 +21857,19 @@ window.IPL_FORM = {
     "result": "West Indies won by 5 wickets",
     "team": "IND",
     "opponent": "WI",
+    "runs": 129,
+    "balls": 87,
+    "out": false,
+    "top": true
+   },
+   {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
     "runs": 129,
     "balls": 87,
     "out": false,
@@ -21883,18 +22013,6 @@ window.IPL_FORM = {
     "out": true,
     "top": true,
     "potm": true
-   },
-   {
-    "date": "2026-04-27",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Arun Jaitley Stadium, Delhi",
-    "result": "Royal Challengers Bengaluru won by 9 wickets",
-    "team": "DC",
-    "opponent": "RCB",
-    "runs": 1,
-    "balls": 3,
-    "out": true
    }
   ],
   "bowl": []
@@ -22625,6 +22743,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 13,
+    "balls": 6,
+    "out": false
+   },
+   {
     "date": "2026-07-07",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -22795,6 +22925,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 4,
+    "runs": 37,
+    "wkts": 0
+   },
+   {
     "date": "2026-07-25",
     "format": "T20I",
     "competition": "India tour of Zimbabwe 2026",
@@ -22829,18 +22971,6 @@ window.IPL_FORM = {
     "overs": 10,
     "runs": 79,
     "wkts": 1
-   },
-   {
-    "date": "2026-07-11",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "The Rose Bowl, Southampton",
-    "result": "England won by 56 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 4,
-    "runs": 60,
-    "wkts": 0
    }
   ]
  },
@@ -23260,6 +23390,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 32,
+    "balls": 20,
+    "out": true
+   },
+   {
     "date": "2026-10-09",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -23267,6 +23409,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 6 wickets",
     "team": "WI",
     "opponent": "IND",
+    "runs": 84,
+    "balls": 37,
+    "out": true
+   },
+   {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "runs": 84,
     "balls": 37,
     "out": true
@@ -23285,6 +23439,19 @@ window.IPL_FORM = {
     "top": true
    },
    {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 56,
+    "balls": 34,
+    "out": true,
+    "top": true
+   },
+   {
     "date": "2026-10-03",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -23292,6 +23459,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 5 wickets",
     "team": "WI",
     "opponent": "IND",
+    "runs": 24,
+    "balls": 25,
+    "out": true
+   },
+   {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
     "runs": 24,
     "balls": 25,
     "out": true
@@ -23306,54 +23485,6 @@ window.IPL_FORM = {
     "opponent": "IND",
     "runs": 0,
     "balls": 1,
-    "out": true
-   },
-   {
-    "date": "2026-07-21",
-    "format": "ODI",
-    "competition": "New Zealand tour of West Indies 2026",
-    "venue": "Kensington Oval, Bridgetown",
-    "result": "West Indies won by 2 wickets",
-    "team": "WI",
-    "opponent": "NZ",
-    "runs": 61,
-    "balls": 58,
-    "out": true
-   },
-   {
-    "date": "2026-07-19",
-    "format": "ODI",
-    "competition": "New Zealand tour of West Indies 2026",
-    "venue": "Kensington Oval, Bridgetown",
-    "result": "New Zealand won by 1 wickets",
-    "team": "WI",
-    "opponent": "NZ",
-    "runs": 6,
-    "balls": 10,
-    "out": true
-   },
-   {
-    "date": "2026-07-16",
-    "format": "ODI",
-    "competition": "New Zealand tour of West Indies 2026",
-    "venue": "Providence Stadium, Guyana",
-    "result": "New Zealand won by 6 wickets",
-    "team": "WI",
-    "opponent": "NZ",
-    "runs": 4,
-    "balls": 14,
-    "out": true
-   },
-   {
-    "date": "2026-07-13",
-    "format": "ODI",
-    "competition": "New Zealand tour of West Indies 2026",
-    "venue": "Providence Stadium, Guyana",
-    "result": "New Zealand won by 5 wickets",
-    "team": "WI",
-    "opponent": "NZ",
-    "runs": 8,
-    "balls": 8,
     "out": true
    }
   ],
@@ -24294,6 +24425,19 @@ window.IPL_FORM = {
     "top": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 43,
+    "balls": 26,
+    "out": true,
+    "top": true
+   },
+   {
     "date": "2026-10-09",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -24306,6 +24450,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
     "date": "2026-10-06",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -24313,6 +24469,18 @@ window.IPL_FORM = {
     "result": "India won by 8 wickets",
     "team": "WI",
     "opponent": "IND",
+    "runs": 5,
+    "balls": 2,
+    "out": true
+   },
+   {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "runs": 5,
     "balls": 2,
     "out": true
@@ -24401,42 +24569,6 @@ window.IPL_FORM = {
     "opponent": "GT",
     "runs": 6,
     "balls": 7,
-    "out": true
-   },
-   {
-    "date": "2026-04-25",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Sawai Mansingh Stadium, Jaipur",
-    "result": "Sunrisers Hyderabad won by 5 wickets",
-    "team": "RR",
-    "opponent": "SRH",
-    "runs": 11,
-    "balls": 10,
-    "out": true
-   },
-   {
-    "date": "2026-04-22",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-    "result": "Rajasthan Royals won by 40 runs",
-    "team": "RR",
-    "opponent": "LSG",
-    "runs": 22,
-    "balls": 18,
-    "out": true
-   },
-   {
-    "date": "2026-04-19",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Eden Gardens, Kolkata",
-    "result": "Kolkata Knight Riders won by 4 wickets",
-    "team": "RR",
-    "opponent": "KKR",
-    "runs": 15,
-    "balls": 18,
     "out": true
    }
   ],
@@ -25183,6 +25315,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 5,
+    "balls": 7,
+    "out": true
+   },
+   {
     "date": "2026-10-09",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -25195,6 +25339,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 24,
+    "balls": 13,
+    "out": true
+   },
+   {
     "date": "2026-10-06",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -25202,6 +25358,18 @@ window.IPL_FORM = {
     "result": "India won by 8 wickets",
     "team": "WI",
     "opponent": "IND",
+    "runs": 0,
+    "balls": 3,
+    "out": true
+   },
+   {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "runs": 0,
     "balls": 3,
     "out": true
@@ -25290,42 +25458,6 @@ window.IPL_FORM = {
     "runs": 23,
     "balls": 20,
     "out": true
-   },
-   {
-    "date": "2026-04-17",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 5 wickets",
-    "team": "KKR",
-    "opponent": "GT",
-    "runs": 27,
-    "balls": 20,
-    "out": true
-   },
-   {
-    "date": "2026-04-14",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Chennai Super Kings won by 32 runs",
-    "team": "KKR",
-    "opponent": "CSK",
-    "runs": 31,
-    "balls": 22,
-    "out": false
-   },
-   {
-    "date": "2026-04-09",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Eden Gardens, Kolkata",
-    "result": "Lucknow Super Giants won by 3 wickets",
-    "team": "KKR",
-    "opponent": "LSG",
-    "runs": 39,
-    "balls": 24,
-    "out": false
    }
   ],
   "bowl": [
@@ -25337,6 +25469,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 6 wickets",
     "team": "WI",
     "opponent": "IND",
+    "overs": 0.2,
+    "runs": 7,
+    "wkts": 0
+   },
+   {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "overs": 0.2,
     "runs": 7,
     "wkts": 0
@@ -26076,6 +26220,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "runs": 15,
+    "balls": 9,
+    "out": true
+   },
+   {
     "date": "2026-06-13",
     "format": "T20I",
     "competition": "Sri Lanka tour of West Indies 2026",
@@ -26138,6 +26294,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "West Indies",
+    "opponent": "India",
+    "overs": 3,
+    "runs": 46,
+    "wkts": 0
+   },
+   {
     "date": "2026-10-06",
     "format": "T20I",
     "competition": "West Indies tour of India 2026/27",
@@ -26145,6 +26313,18 @@ window.IPL_FORM = {
     "result": "India won by 8 wickets",
     "team": "WI",
     "opponent": "IND",
+    "overs": 4,
+    "runs": 37,
+    "wkts": 1
+   },
+   {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "overs": 4,
     "runs": 37,
     "wkts": 1
@@ -33623,6 +33803,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 8,
+    "balls": 6,
+    "out": false
+   },
+   {
     "date": "2026-07-19",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -33692,6 +33884,18 @@ window.IPL_FORM = {
     "result": "West Indies won by 5 wickets",
     "team": "IND",
     "opponent": "WI",
+    "overs": 9.1,
+    "runs": 64,
+    "wkts": 1
+   },
+   {
+    "date": "2026-10-03",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "PCA International Cricket Stadium, Ground A, New Chandigarh",
+    "result": "West Indies won by 5 wkts",
+    "team": "West Indies",
+    "opponent": "India",
     "overs": 9.1,
     "runs": 64,
     "wkts": 1
@@ -33785,6 +33989,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "Sri Lanka won by 63 runs",
+    "team": "Bangladesh",
+    "opponent": "Sri Lanka",
+    "runs": 3,
+    "balls": 6,
+    "out": false
+   },
+   {
     "date": "2026-07-06",
     "format": "ODI",
     "competition": "Bangladesh tour of Zimbabwe 2026",
@@ -33847,6 +34063,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "Sri Lanka won by 63 runs",
+    "team": "Bangladesh",
+    "opponent": "Sri Lanka",
+    "overs": 3,
+    "runs": 43,
+    "wkts": 2
+   },
+   {
     "date": "2026-10-01",
     "format": "T20I",
     "competition": "Asian Games Men's Cricket Competition 2026",
@@ -33854,6 +34082,18 @@ window.IPL_FORM = {
     "result": "Pakistan won by 6 wickets",
     "team": "BAN",
     "opponent": "PAK",
+    "overs": 2,
+    "runs": 41,
+    "wkts": 1
+   },
+   {
+    "date": "2026-10-01",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "Pakistan won by 6 wkts (13 overs game due to rain)",
+    "team": "Bangladesh",
+    "opponent": "Pakistan",
     "overs": 2,
     "runs": 41,
     "wkts": 1
@@ -34037,6 +34277,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "Sri Lanka won by 63 runs",
+    "team": "Sri Lanka",
+    "opponent": "Bangladesh",
+    "runs": 2,
+    "balls": 1,
+    "out": false
+   },
+   {
     "date": "2026-09-19",
     "format": "T20I",
     "competition": "Sri Lanka tour of England 2026",
@@ -34094,6 +34346,18 @@ window.IPL_FORM = {
     "result": "Sri Lanka won by 63 runs",
     "team": "SL",
     "opponent": "BAN",
+    "overs": 4,
+    "runs": 18,
+    "wkts": 2
+   },
+   {
+    "date": "2026-10-03",
+    "format": "",
+    "competition": "Asian Games in Japan 2026",
+    "venue": "Korogi Sports Park, Nisshin",
+    "result": "Sri Lanka won by 63 runs",
+    "team": "Sri Lanka",
+    "opponent": "Bangladesh",
     "overs": 4,
     "runs": 18,
     "wkts": 2
@@ -34596,6 +34860,18 @@ window.IPL_FORM = {
     "runs": 0,
     "balls": 1,
     "out": false
+   },
+   {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "runs": 0,
+    "balls": 1,
+    "out": true
    }
   ],
   "bowl": [
@@ -34634,8 +34910,44 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 52,
     "wkts": 0
+   },
+   {
+    "date": "2026-10-11",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "India won by 14 runs",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 4,
+    "runs": 34,
+    "wkts": 0
+   },
+   {
+    "date": "2026-10-09",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "JSCA International Stadium Complex, Ranchi",
+    "result": "West Indies won by 6 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 3,
+    "runs": 36,
+    "wkts": 3
+   },
+   {
+    "date": "2026-10-06",
+    "format": "ODI",
+    "competition": "West Indies tour of India, 2026",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "result": "India won by 8 wkts",
+    "team": "India",
+    "opponent": "West Indies",
+    "overs": 4,
+    "runs": 40,
+    "wkts": 1
    }
   ]
  }
 };
-window.IPL_FORM_META = {"updated": "2026-11-17", "since": "2026-03-28", "matches": 667, "players": 212};
+window.IPL_FORM_META = {"updated": "2026-11-17", "since": "2026-03-28", "matches": 675, "players": 212};
