@@ -3604,15 +3604,15 @@ window.IPL_FORM = {
     "out": true
    },
    {
-    "date": "2026-07-16",
+    "date": "2026-07-19",
     "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Sophia Gardens, Cardiff",
-    "result": "England won by 4 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 65,
-    "balls": 66,
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 74,
+    "balls": 60,
     "out": true
    }
   ],
@@ -6354,6 +6354,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "runs": 20,
+    "balls": 13,
+    "out": false
+   },
+   {
     "date": "2026-04-23",
     "format": "T20",
     "competition": "Indian Premier League 2026",
@@ -6440,6 +6452,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "overs": 10,
+    "runs": 45,
+    "wkts": 1
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -6447,6 +6471,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "overs": 9,
+    "runs": 31,
+    "wkts": 1
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "India",
+    "opponent": "England",
     "overs": 9,
     "runs": 31,
     "wkts": 1
@@ -6534,30 +6570,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 31,
     "wkts": 1
-   },
-   {
-    "date": "2026-04-20",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Mumbai Indians won by 99 runs",
-    "team": "MI",
-    "opponent": "GT",
-    "overs": 3,
-    "runs": 15,
-    "wkts": 1
-   },
-   {
-    "date": "2026-04-16",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Punjab Kings won by 7 wickets",
-    "team": "MI",
-    "opponent": "PBKS",
-    "overs": 4,
-    "runs": 41,
-    "wkts": 0
    }
   ]
  },
@@ -7095,16 +7107,17 @@ window.IPL_FORM = {
     "top": true
    },
    {
-    "date": "2026-07-16",
+    "date": "2026-07-19",
     "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Sophia Gardens, Cardiff",
-    "result": "England won by 4 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 26,
-    "balls": 47,
-    "out": true
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 138,
+    "balls": 110,
+    "out": true,
+    "top": true
    }
   ],
   "bowl": []
@@ -10136,6 +10149,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -10143,6 +10168,18 @@ window.IPL_FORM = {
     "result": "England won by 56 runs",
     "team": "IND",
     "opponent": "ENG",
+    "runs": 14,
+    "balls": 10,
+    "out": true
+   },
+   {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "India",
+    "opponent": "England",
     "runs": 14,
     "balls": 10,
     "out": true
@@ -10181,30 +10218,6 @@ window.IPL_FORM = {
     "opponent": "ENG",
     "runs": 5,
     "balls": 7,
-    "out": true
-   },
-   {
-    "date": "2026-07-01",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Riverside Ground, Chester-le-Street",
-    "result": "no result",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 42,
-    "balls": 21,
-    "out": false
-   },
-   {
-    "date": "2026-06-28",
-    "format": "T20I",
-    "competition": "India tour of Ireland 2026",
-    "venue": "Civil Service Cricket Club, Stormont, Belfast",
-    "result": "Ireland won by 1 runs",
-    "team": "IND",
-    "opponent": "IRE",
-    "runs": 20,
-    "balls": 16,
     "out": true
    }
   ],
@@ -10294,6 +10307,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "overs": 6,
+    "runs": 32,
+    "wkts": 1
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -10306,6 +10331,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "India",
+    "opponent": "England",
+    "overs": 6,
+    "runs": 27,
+    "wkts": 1
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -10313,6 +10350,18 @@ window.IPL_FORM = {
     "result": "England won by 56 runs",
     "team": "IND",
     "opponent": "ENG",
+    "overs": 1,
+    "runs": 22,
+    "wkts": 2
+   },
+   {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "India",
+    "opponent": "England",
     "overs": 1,
     "runs": 22,
     "wkts": 2
@@ -10352,42 +10401,6 @@ window.IPL_FORM = {
     "overs": 3,
     "runs": 25,
     "wkts": 2
-   },
-   {
-    "date": "2026-06-26",
-    "format": "T20I",
-    "competition": "India tour of Ireland 2026",
-    "venue": "Civil Service Cricket Club, Stormont, Belfast",
-    "result": "Ireland won by 34 runs",
-    "team": "IND",
-    "opponent": "IRE",
-    "overs": 3,
-    "runs": 18,
-    "wkts": 1
-   },
-   {
-    "date": "2026-05-21",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 89 runs",
-    "team": "CSK",
-    "opponent": "GT",
-    "overs": 1,
-    "runs": 15,
-    "wkts": 0
-   },
-   {
-    "date": "2026-05-18",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Sunrisers Hyderabad won by 5 wickets",
-    "team": "CSK",
-    "opponent": "SRH",
-    "overs": 1,
-    "runs": 12,
-    "wkts": 0
    }
   ]
  },
@@ -11541,6 +11554,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "England",
+    "opponent": "India",
+    "runs": 12,
+    "balls": 6,
+    "out": true
+   },
+   {
     "date": "2026-07-07",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -11627,18 +11652,6 @@ window.IPL_FORM = {
     "opponent": "GT",
     "runs": 7,
     "balls": 4,
-    "out": true
-   },
-   {
-    "date": "2026-05-27",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
-    "result": "Rajasthan Royals won by 47 runs",
-    "team": "RR",
-    "opponent": "SRH",
-    "runs": 4,
-    "balls": 5,
     "out": true
    }
   ],
@@ -11794,6 +11807,18 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "India",
+    "opponent": "England",
+    "overs": 10,
+    "runs": 63,
+    "wkts": 1
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -11806,28 +11831,16 @@ window.IPL_FORM = {
     "wkts": 3
    },
    {
-    "date": "2026-07-14",
+    "date": "2026-07-16",
     "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Edgbaston, Birmingham",
-    "result": "India won by 6 wickets",
-    "team": "ENG",
-    "opponent": "IND",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "England",
+    "opponent": "India",
     "overs": 10,
-    "runs": 60,
-    "wkts": 1
-   },
-   {
-    "date": "2026-07-11",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "The Rose Bowl, Southampton",
-    "result": "England won by 56 runs",
-    "team": "ENG",
-    "opponent": "IND",
-    "overs": 4,
-    "runs": 41,
-    "wkts": 1
+    "runs": 47,
+    "wkts": 3
    }
   ]
  },
@@ -14094,6 +14107,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 77,
+    "balls": 84,
+    "out": true
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -14106,28 +14131,15 @@ window.IPL_FORM = {
     "out": true
    },
    {
-    "date": "2026-07-14",
+    "date": "2026-07-16",
     "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Edgbaston, Birmingham",
-    "result": "India won by 6 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 80,
-    "balls": 75,
-    "out": false,
-    "top": true
-   },
-   {
-    "date": "2026-05-31",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Royal Challengers Bengaluru won by 5 wickets",
-    "team": "GT",
-    "opponent": "RCB",
-    "runs": 10,
-    "balls": 8,
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "runs": 31,
+    "balls": 30,
     "out": true
    }
   ],
@@ -14223,6 +14235,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 41,
+    "balls": 13,
+    "out": false
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -14230,6 +14254,18 @@ window.IPL_FORM = {
     "result": "England won by 4 wickets",
     "team": "ENG",
     "opponent": "IND",
+    "runs": 17,
+    "balls": 18,
+    "out": true
+   },
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "England",
+    "opponent": "India",
     "runs": 17,
     "balls": 18,
     "out": true
@@ -14247,6 +14283,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "England",
+    "opponent": "India",
+    "runs": 5,
+    "balls": 14,
+    "out": true
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -14259,6 +14307,19 @@ window.IPL_FORM = {
     "out": true,
     "top": true,
     "potm": true
+   },
+   {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 131,
+    "balls": 64,
+    "out": true,
+    "top": true
    },
    {
     "date": "2026-07-09",
@@ -14282,54 +14343,6 @@ window.IPL_FORM = {
     "opponent": "IND",
     "runs": 36,
     "balls": 21,
-    "out": true
-   },
-   {
-    "date": "2026-07-04",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Old Trafford, Manchester",
-    "result": "England won by 4 wickets",
-    "team": "ENG",
-    "opponent": "IND",
-    "runs": 0,
-    "balls": 3,
-    "out": true
-   },
-   {
-    "date": "2026-05-31",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Royal Challengers Bengaluru won by 5 wickets",
-    "team": "GT",
-    "opponent": "RCB",
-    "runs": 19,
-    "balls": 23,
-    "out": true
-   },
-   {
-    "date": "2026-05-29",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
-    "result": "Gujarat Titans won by 7 wickets",
-    "team": "GT",
-    "opponent": "RR",
-    "runs": 9,
-    "balls": 9,
-    "out": false
-   },
-   {
-    "date": "2026-05-26",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-    "result": "Royal Challengers Bengaluru won by 92 runs",
-    "team": "GT",
-    "opponent": "RCB",
-    "runs": 29,
-    "balls": 11,
     "out": true
    }
   ],
@@ -14570,6 +14583,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "runs": 2,
+    "balls": 5,
+    "out": true
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -14577,6 +14602,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "runs": 52,
+    "balls": 63,
+    "out": false
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "England",
+    "opponent": "India",
     "runs": 52,
     "balls": 63,
     "out": false
@@ -14689,30 +14726,6 @@ window.IPL_FORM = {
     "runs": 40,
     "balls": 23,
     "out": false
-   },
-   {
-    "date": "2026-04-30",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Gujarat Titans won by 4 wickets",
-    "team": "GT",
-    "opponent": "RCB",
-    "runs": 12,
-    "balls": 12,
-    "out": true
-   },
-   {
-    "date": "2026-04-26",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Gujarat Titans won by 8 wickets",
-    "team": "GT",
-    "opponent": "CSK",
-    "runs": 1,
-    "balls": 1,
-    "out": false
    }
   ],
   "bowl": [
@@ -14784,6 +14797,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "overs": 4,
+    "runs": 13,
+    "wkts": 0
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "India",
+    "opponent": "England",
     "overs": 4,
     "runs": 13,
     "wkts": 0
@@ -15558,6 +15583,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 15,
+    "balls": 6,
+    "out": false
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -15570,25 +15607,13 @@ window.IPL_FORM = {
     "out": false
    },
    {
-    "date": "2026-07-07",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Trent Bridge, Nottingham",
-    "result": "England won by 125 runs",
-    "team": "IND",
-    "opponent": "ENG",
-    "runs": 4,
-    "balls": 4,
-    "out": true
-   },
-   {
-    "date": "2026-06-28",
-    "format": "T20I",
-    "competition": "India tour of Ireland 2026",
-    "venue": "Civil Service Cricket Club, Stormont, Belfast",
-    "result": "Ireland won by 1 runs",
-    "team": "IND",
-    "opponent": "IRE",
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "India",
+    "opponent": "England",
     "runs": 4,
     "balls": 5,
     "out": false
@@ -18700,6 +18725,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "runs": 0,
+    "balls": 3,
+    "out": true
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -18707,6 +18744,18 @@ window.IPL_FORM = {
     "result": "England won by 56 runs",
     "team": "IND",
     "opponent": "ENG",
+    "runs": 1,
+    "balls": 1,
+    "out": false
+   },
+   {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "India",
+    "opponent": "England",
     "runs": 1,
     "balls": 1,
     "out": false
@@ -18850,6 +18899,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "India",
+    "opponent": "England",
+    "overs": 10,
+    "runs": 69,
+    "wkts": 2
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -18857,6 +18918,18 @@ window.IPL_FORM = {
     "result": "England won by 4 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "overs": 9.1,
+    "runs": 52,
+    "wkts": 1
+   },
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
     "overs": 9.1,
     "runs": 52,
     "wkts": 1
@@ -18874,6 +18947,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "India",
+    "opponent": "England",
+    "overs": 10,
+    "runs": 50,
+    "wkts": 2
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -18884,42 +18969,6 @@ window.IPL_FORM = {
     "overs": 4,
     "runs": 38,
     "wkts": 1
-   },
-   {
-    "date": "2026-07-09",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "County Ground, Bristol",
-    "result": "England won by 9 wickets",
-    "team": "IND",
-    "opponent": "ENG",
-    "overs": 3,
-    "runs": 26,
-    "wkts": 0
-   },
-   {
-    "date": "2026-06-26",
-    "format": "T20I",
-    "competition": "India tour of Ireland 2026",
-    "venue": "Civil Service Cricket Club, Stormont, Belfast",
-    "result": "Ireland won by 34 runs",
-    "team": "IND",
-    "opponent": "IRE",
-    "overs": 4,
-    "runs": 57,
-    "wkts": 0
-   },
-   {
-    "date": "2026-05-31",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Narendra Modi Stadium, Ahmedabad",
-    "result": "Royal Challengers Bengaluru won by 5 wickets",
-    "team": "GT",
-    "opponent": "RCB",
-    "overs": 1,
-    "runs": 7,
-    "wkts": 0
    }
   ]
  },
@@ -21924,6 +21973,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 12,
+    "balls": 8,
+    "out": true
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -21931,6 +21992,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "runs": 1,
+    "balls": 3,
+    "out": true
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "England",
+    "opponent": "India",
     "runs": 1,
     "balls": 3,
     "out": true
@@ -21984,32 +22057,6 @@ window.IPL_FORM = {
     "runs": 23,
     "balls": 14,
     "out": true
-   },
-   {
-    "date": "2026-05-05",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Arun Jaitley Stadium, Delhi",
-    "result": "Chennai Super Kings won by 8 wickets",
-    "team": "DC",
-    "opponent": "CSK",
-    "runs": 12,
-    "balls": 13,
-    "out": true
-   },
-   {
-    "date": "2026-05-01",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Sawai Mansingh Stadium, Jaipur",
-    "result": "Delhi Capitals won by 7 wickets",
-    "team": "DC",
-    "opponent": "RR",
-    "runs": 75,
-    "balls": 40,
-    "out": true,
-    "top": true,
-    "potm": true
    }
   ],
   "bowl": []
@@ -28381,6 +28428,18 @@ window.IPL_FORM = {
     "potm": true
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 91,
+    "balls": 93,
+    "out": true
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -28388,6 +28447,18 @@ window.IPL_FORM = {
     "result": "England won by 4 wickets",
     "team": "ENG",
     "opponent": "IND",
+    "runs": 4,
+    "balls": 10,
+    "out": true
+   },
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "England",
+    "opponent": "India",
     "runs": 4,
     "balls": 10,
     "out": true
@@ -28405,6 +28476,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "England",
+    "opponent": "India",
+    "runs": 14,
+    "balls": 31,
+    "out": true
+   },
+   {
     "date": "2026-07-11",
     "format": "T20I",
     "competition": "India tour of England 2026",
@@ -28412,6 +28495,18 @@ window.IPL_FORM = {
     "result": "England won by 56 runs",
     "team": "ENG",
     "opponent": "IND",
+    "runs": 0,
+    "balls": 1,
+    "out": true
+   },
+   {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "England",
+    "opponent": "India",
     "runs": 0,
     "balls": 1,
     "out": true
@@ -28506,55 +28601,6 @@ window.IPL_FORM = {
     "balls": 35,
     "out": true,
     "inn": 2
-   },
-   {
-    "date": "2026-06-04",
-    "format": "Test",
-    "competition": "New Zealand tour of England 2026",
-    "venue": "Lord's, London",
-    "result": "England won by 115 runs",
-    "team": "ENG",
-    "opponent": "NZ",
-    "runs": 6,
-    "balls": 22,
-    "out": true,
-    "inn": 1
-   },
-   {
-    "date": "2026-05-17",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-    "result": "Royal Challengers Bengaluru won by 23 runs",
-    "team": "RCB",
-    "opponent": "PBKS",
-    "runs": 11,
-    "balls": 7,
-    "out": true
-   },
-   {
-    "date": "2026-05-13",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-    "result": "Royal Challengers Bengaluru won by 6 wickets",
-    "team": "RCB",
-    "opponent": "KKR",
-    "runs": 15,
-    "balls": 12,
-    "out": true
-   },
-   {
-    "date": "2026-05-10",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-    "result": "Royal Challengers Bengaluru won by 2 wickets",
-    "team": "RCB",
-    "opponent": "MI",
-    "runs": 27,
-    "balls": 27,
-    "out": true
    }
   ],
   "bowl": [
@@ -28572,6 +28618,18 @@ window.IPL_FORM = {
     "potm": true
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "India",
+    "opponent": "England",
+    "overs": 7,
+    "runs": 49,
+    "wkts": 1
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -28579,6 +28637,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "ENG",
     "opponent": "IND",
+    "overs": 1,
+    "runs": 10,
+    "wkts": 0
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "India",
+    "opponent": "England",
     "overs": 1,
     "runs": 10,
     "wkts": 0
@@ -29873,6 +29943,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "India",
+    "opponent": "England",
+    "runs": 7,
+    "balls": 6,
+    "out": true
+   },
+   {
     "date": "2026-06-28",
     "format": "T20I",
     "competition": "India tour of Ireland 2026",
@@ -29991,6 +30073,18 @@ window.IPL_FORM = {
     "result": "England won by 56 runs",
     "team": "IND",
     "opponent": "ENG",
+    "overs": 3,
+    "runs": 39,
+    "wkts": 0
+   },
+   {
+    "date": "2026-07-11",
+    "format": "T20",
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "India",
+    "opponent": "England",
     "overs": 3,
     "runs": 39,
     "wkts": 0
@@ -30264,6 +30358,18 @@ window.IPL_FORM = {
     "out": true
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "England",
+    "opponent": "India",
+    "runs": 30,
+    "balls": 44,
+    "out": true
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -30271,6 +30377,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "ENG",
     "opponent": "IND",
+    "runs": 20,
+    "balls": 19,
+    "out": true
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "England",
+    "opponent": "India",
     "runs": 20,
     "balls": 19,
     "out": true
@@ -30288,40 +30406,16 @@ window.IPL_FORM = {
     "out": false
    },
    {
-    "date": "2026-07-07",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Trent Bridge, Nottingham",
-    "result": "England won by 125 runs",
-    "team": "ENG",
-    "opponent": "IND",
-    "runs": 14,
-    "balls": 7,
-    "out": true
-   },
-   {
-    "date": "2026-07-04",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "Old Trafford, Manchester",
-    "result": "England won by 4 wickets",
-    "team": "ENG",
-    "opponent": "IND",
-    "runs": 9,
-    "balls": 8,
-    "out": true
-   },
-   {
-    "date": "2026-05-24",
+    "date": "2026-07-11",
     "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Wankhede Stadium, Mumbai",
-    "result": "Rajasthan Royals won by 30 runs",
-    "team": "MI",
-    "opponent": "RR",
-    "runs": 33,
-    "balls": 18,
-    "out": true
+    "competition": "India tour of England, 2026",
+    "venue": "The Rose Bowl, Southampton",
+    "result": "England won by 56 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 7,
+    "balls": 2,
+    "out": false
    }
   ],
   "bowl": [
@@ -30459,6 +30553,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "India",
+    "opponent": "England",
+    "overs": 4,
+    "runs": 38,
+    "wkts": 0
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -30466,6 +30572,18 @@ window.IPL_FORM = {
     "result": "England won by 4 wickets",
     "team": "ENG",
     "opponent": "IND",
+    "overs": 5,
+    "runs": 21,
+    "wkts": 1
+   },
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "England",
+    "opponent": "India",
     "overs": 5,
     "runs": 21,
     "wkts": 1
@@ -30481,30 +30599,6 @@ window.IPL_FORM = {
     "overs": 7,
     "runs": 43,
     "wkts": 0
-   },
-   {
-    "date": "2026-07-11",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "The Rose Bowl, Southampton",
-    "result": "England won by 56 runs",
-    "team": "ENG",
-    "opponent": "IND",
-    "overs": 3,
-    "runs": 32,
-    "wkts": 0
-   },
-   {
-    "date": "2026-07-09",
-    "format": "T20I",
-    "competition": "India tour of England 2026",
-    "venue": "County Ground, Bristol",
-    "result": "England won by 9 wickets",
-    "team": "ENG",
-    "opponent": "IND",
-    "overs": 4,
-    "runs": 28,
-    "wkts": 1
    }
   ]
  },
@@ -32908,6 +33002,19 @@ window.IPL_FORM = {
     "top": true
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 141,
+    "balls": 135,
+    "out": true,
+    "top": true
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -32917,18 +33024,6 @@ window.IPL_FORM = {
     "opponent": "IND",
     "runs": 0,
     "balls": 1,
-    "out": true
-   },
-   {
-    "date": "2026-07-14",
-    "format": "ODI",
-    "competition": "India tour of England 2026",
-    "venue": "Edgbaston, Birmingham",
-    "result": "India won by 6 wickets",
-    "team": "ENG",
-    "opponent": "IND",
-    "runs": 43,
-    "balls": 45,
     "out": true
    }
   ],
@@ -33836,6 +33931,18 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "England",
+    "opponent": "India",
+    "runs": 18,
+    "balls": 14,
+    "out": false
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -33843,6 +33950,18 @@ window.IPL_FORM = {
     "result": "England won by 4 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "runs": 7,
+    "balls": 15,
+    "out": true
+   },
+   {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
     "runs": 7,
     "balls": 15,
     "out": true
@@ -33970,6 +34089,18 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
+    "date": "2026-07-19",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Lord's, London",
+    "result": "England won by 27 runs",
+    "team": "India",
+    "opponent": "England",
+    "overs": 10,
+    "runs": 97,
+    "wkts": 0
+   },
+   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -33982,6 +34113,18 @@ window.IPL_FORM = {
     "wkts": 2
    },
    {
+    "date": "2026-07-16",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "Sophia Gardens, Cardiff",
+    "result": "England won by 4 wkts",
+    "team": "India",
+    "opponent": "England",
+    "overs": 10,
+    "runs": 67,
+    "wkts": 2
+   },
+   {
     "date": "2026-07-14",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -33989,6 +34132,18 @@ window.IPL_FORM = {
     "result": "India won by 6 wickets",
     "team": "IND",
     "opponent": "ENG",
+    "overs": 9,
+    "runs": 61,
+    "wkts": 2
+   },
+   {
+    "date": "2026-07-14",
+    "format": "ODI",
+    "competition": "India tour of England, 2026",
+    "venue": "",
+    "result": "",
+    "team": "India",
+    "opponent": "England",
     "overs": 9,
     "runs": 61,
     "wkts": 2
@@ -34983,4 +35138,4 @@ window.IPL_FORM = {
   ]
  }
 };
-window.IPL_FORM_META = {"updated": "2026-11-18", "since": "2026-03-28", "matches": 678, "players": 212};
+window.IPL_FORM_META = {"updated": "2026-11-19", "since": "2026-03-28", "matches": 686, "players": 212};
