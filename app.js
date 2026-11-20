@@ -1,4 +1,4 @@
-const R = window.IPL_ROSTER, F = window.IPL_FORM || {}, META = window.IPL_FORM_META || {};
+const R = window.IPL_ROSTER, F = window.IPL_FORM || {}, META = window.IPL_FORM_META || {}, L = window.IPL_LAST || {season: "", stats: {}, matches: {}};
 const ink = hex => { const [r,g,b] = [1,3,5].map(i => parseInt(hex.slice(i,i+2),16)/255);
   return (0.2126*r + 0.7152*g + 0.0722*b) > 0.6 ? "#1a2233" : "#fff"; };
 let team = "HOME", fmt = "ALL", sortBy = "bat", groupBy = "none";
@@ -53,7 +53,15 @@ const TROPHY = '<svg class="tro" viewBox="0 0 24 24" aria-hidden="true"><path d=
 const potmKeys = name => { const s = new Set(); ["bat", "bowl"].forEach(k => list(name, k).forEach(i => { if (i.potm) s.add([i.date, i.opponent, i.inn || ""].join("|")); })); return s; };
 const potmBadge = name => { const n = potmKeys(name).size; return n ? `<span class="potm-n" title="Player of the Match in ${n} of the recent matches shown">${TROPHY}${n > 1 ? "×" + n : ""}</span>` : ""; };
 const bat = i => `<span class="chip ${cls(i.runs)}${i.potm ? " potm" : ""}" title="${tip(i)}">${i.runs}${i.out ? "" : "*"}</span>`;
-const bowl = i => `<span class="chip ${i.wkts >= 3 ? "hi" : ""}${i.potm ? " potm" : ""}" title="${tip(i)}">${i.wkts}/${i.runs}</span>`;
+// bowling spell colour: green = 3+ wickets, or 2+ at under 7 an over; mid = 2 wickets, or a wicket at a good rate; red = wicketless and expensive (30+ runs, or over 11 an over)
+const bowlCls = i => {
+  const ov = +i.overs || 0, eco = ov ? i.runs / ov : null;
+  if (i.wkts >= 3 || (i.wkts >= 2 && eco != null && eco <= 7)) return "hi";
+  if (i.wkts >= 2 || (i.wkts === 1 && eco != null && eco <= 7.5)) return "mid";
+  if (i.wkts === 0 && (i.runs >= 30 || (eco != null && eco >= 11))) return "lo";
+  return "";
+};
+const bowl = i => `<span class="chip ${bowlCls(i)}${i.potm ? " potm" : ""}" title="${tip(i)}">${i.wkts}/${i.runs}</span>`;
 
 const city = v => { const p = String(v || "").split(",").map(x => x.trim()).filter(Boolean); return p.length > 1 ? p[p.length - 1] : (p[0] || "–"); };
 const fdate = d => String(d || "–").slice(0, 10);
@@ -105,6 +113,7 @@ function catchup() {
   const cut = ld(Date.now() - catchDays * 864e5), today = ld(Date.now());
   const byTeam = {};
   R.players.forEach(p => {
+    if (p.released) return;
     const f = F[p.name] || {}, bat = (f.bat || []).filter(i => i.date >= cut), bowl = (f.bowl || []).filter(i => i.date >= cut);
     if (!bat.length && !bowl.length) return;
     const games = new Set([...bat, ...bowl].map(i => i.date + "|" + (i.opponent || "") + "|" + (i.inn || "")));
@@ -122,19 +131,30 @@ function catchup() {
   teams.forEach(t => {
     const col = (R.colors || {})[t] || "#2f6bff";
     byTeam[t].sort((x, y) => (y.runs + y.wk * 20) - (x.runs + x.wk * 20) || x.p.name.localeCompare(y.p.name));
-    h += `<div class="ct" style="--c:${col};--ink:${ink(col)}"><div class="ct-h"><span class="ct-mark">${esc(t)}</span><b>${esc(R.teams[t])}</b><small>${byTeam[t].length} player${byTeam[t].length === 1 ? "" : "s"}</small></div>` +
+    h += `<div class="ct" style="--c:${col};--ink:${ink(col)}"><div class="ct-h"><span class="ct-mark">${esc(t)}</span><b>${esc(R.teams[t])}</b><small>${byTeam[t].length} player${byTeam[t].length === 1 ? "" : "s"}${byTeam[t].some(r => r.p.released) ? " · " + byTeam[t].filter(r => r.p.released).length + " released" : ""}</small></div>` +
       `<div class="ct-wrap"><table><thead><tr><th>Player</th><th>M</th><th>Batting</th><th>Bowling</th></tr></thead><tbody>` +
       byTeam[t].map(r => {
         const bc = r.bat.length ? r.bat.map(bat).join("") + `<small class="ct-s">${r.runs} runs${r.avg != null ? " · avg " + r.avg.toFixed(1) : ""}</small>` : '<span class="dim">–</span>';
         const bwc = r.bowl.length ? r.bowl.map(bowl).join("") + `<small class="ct-s">${r.wk} wkt${r.wk === 1 ? "" : "s"}${r.wk ? " · avg " + (r.rc / r.wk).toFixed(1) : ""}</small>` : '<span class="dim">–</span>';
-        return `<tr data-n="${esc(r.p.name)}" tabindex="0"><td class="ct-p"><b>${esc(r.p.name)}${capBadge(r.p)}</b><span>${flag(r.p.country)}${roleBadge(r.p.role)}</span></td><td class="ct-m">${r.n}</td><td>${bc}</td><td>${bwc}</td></tr>`;
+        return `<tr data-n="${esc(r.p.name)}" tabindex="0"><td class="ct-p"><b>${esc(r.p.name)}${capBadge(r.p)}${r.p.released ? ' <span class="rl">released</span>' : ""}</b><span>${flag(r.p.country)}${roleBadge(r.p.role)}</span></td><td class="ct-m">${r.n}</td><td>${bc}</td><td>${bwc}</td></tr>`;
       }).join("") + `</tbody></table></div></div>`;
   });
   sec.innerHTML = h;
   sec.querySelectorAll(".catch-d button").forEach(b => b.onclick = () => { catchDays = +b.dataset.d; render(); });
+  // tapping a player opens their recent matches right under the row; it stays on this tab
   sec.querySelectorAll("tbody tr").forEach(tr => {
-    const go = () => focusPlayer(R.players.find(p => p.name === tr.dataset.n));
-    tr.onclick = go; tr.onkeydown = e => { if (e.key === "Enter") go(); };
+    const wire = (box, all) => { const vm = box.querySelector(".vm"); if (vm) vm.onclick = e => { e.stopPropagation(); box.innerHTML = detail(tr.dataset.n, vm.dataset.all === "1"); wire(box, vm.dataset.all === "1"); }; };
+    const go = () => {
+      const nxt = tr.nextElementSibling;
+      if (nxt && nxt.classList.contains("ct-open")) { nxt.remove(); tr.classList.remove("open"); return; }
+      const row = document.createElement("tr"); row.className = "ct-open";
+      const td = document.createElement("td"); td.colSpan = 4; td.innerHTML = detail(tr.dataset.n, false);
+      row.appendChild(td); tr.after(row); tr.classList.add("open");
+      const fit = () => { const w = tr.closest(".ct-wrap"); td.style.setProperty("--vw", (w ? w.clientWidth : 360) - 20 + "px"); };
+      fit(); wire(td, false);
+      row.onclick = e => e.stopPropagation();
+    };
+    tr.onclick = go; tr.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } };
   });
   return sec;
 }
@@ -145,15 +165,77 @@ const getFav = () => { try { const t = localStorage.getItem(FKEY); return t && R
 const setFav = t => { try { t ? localStorage.setItem(FKEY, t) : localStorage.removeItem(FKEY); } catch {} };
 const STAR = '<svg class="fs" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>';
 
+// open/close a card's recent-matches panel (shared by team pages and the Released tab)
+function wireCards(grid) {
+  const wire = (card, m) => {
+    const show = () => { m.innerHTML = detail(card.dataset.n, m.dataset.all === "1"); wire(card, m); };
+    const vm = m.querySelector(".vm"); if (vm) vm.onclick = e => { e.stopPropagation(); m.dataset.all = vm.dataset.all; show(); };
+  };
+  grid.querySelectorAll(".card").forEach(card => {
+    const toggle = () => {
+      const m = card.querySelector(".more");
+      if (card.classList.toggle("open")) { m.dataset.all = "0"; m.innerHTML = detail(card.dataset.n, false); wire(card, m); } else m.innerHTML = "";
+    };
+    card.onclick = e => { if (!e.target.closest(".more")) toggle(); };
+    card.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } };
+  });
+}
+
+// Released tab: everyone let go ahead of the 2027 auction, grouped by the team that released them, with last IPL's numbers
+const LSEASON = (L.season || "IPL").replace("Indian Premier League", "IPL");
+const lastList = (name, kind) => ((L.matches[name] || {})[kind] || []);
+const ssT = (v, l) => `<span><b>${v}</b><small>${l}</small></span>`;
+function releasedCard(p) {
+  const st = L.stats[p.name], b = st && st.bat, w = st && st.bowl, bowler = p.role === "BOWL";
+  const ini = p.name.split(/\s+/).filter(Boolean).map(x => x[0]).slice(0, 2).join("").toUpperCase();
+  const last = [list(p.name, "bat")[0], list(p.name, "bowl")[0]].filter(Boolean).sort((x, y) => y.date.localeCompare(x.date))[0];
+  const key = !st ? null : (bowler && w) || !b ? (w ? [w.wkts, "IPL wkts"] : null) : [b.runs, "IPL runs"];
+  const keyCls = !st ? "" : (bowler && w) || !b ? bowlAvgTier(w && w.avg) : batAvgTier(b && b.avg);
+  const meta = st ? `${st.m} match${st.m === 1 ? "" : "es"} in ${esc(LSEASON)}${st.potm ? ` <span class="potm-n" title="Player of the Match">${TROPHY}${st.potm > 1 ? "×" + st.potm : ""}</span>` : ""}`
+    : `Did not play in ${esc(LSEASON)}${last ? " · last played " + esc(last.date) : ""}`;
+  const dash = '<span class="dim">–</span>';
+  const bt = lastList(p.name, "bat"), bw = lastList(p.name, "bowl");
+  return `<article class="card rcard" tabindex="0" data-n="${esc(p.name)}">` +
+    `<div class="top"><span class="av">${esc(ini)}</span><div class="who"><b class="nm">${esc(p.name)}${capBadge(p)}</b><span class="meta">${flag(p.country)}${roleBadge(p.role)}<small>${meta}${p.note ? ' · <span class="rl">' + esc(p.note) + "</span>" : ""}</small></span></div>` +
+    `<div class="avg">${key ? `<b class="${keyCls}">${key[0]}</b><small>${key[1]}</small>` : `<b class="dimv">–</b><small>no ${esc(LSEASON)}</small>`}</div></div>` +
+    (b ? `<div class="ss"><em>Batting</em>${ssT(b.runs, "Runs")}${ssT(b.avg == null ? "–" : b.avg.toFixed(1), "Avg")}${ssT(b.sr == null ? "–" : b.sr.toFixed(0), "SR")}${ssT(b.hs + (b.hsno ? "*" : ""), "HS")}${ssT(b.f + "/" + b.h, "50/100")}</div>` : "") +
+    (w ? `<div class="ss"><em>Bowling</em>${ssT(w.wkts, "Wkts")}${ssT(w.econ.toFixed(1), "Econ")}${ssT(w.avg == null ? "–" : w.avg.toFixed(1), "Avg")}${ssT(w.best, "Best")}${ssT(w.overs, "Overs")}</div>` : "") +
+    (bt.length ? `<div class="row"><span class="lbl">Batting</span><span>${bt.map(bat).join("")}</span></div>` : "") +
+    (bw.length ? `<div class="row"><span class="lbl">Bowling</span><span>${bw.map(bowl).join("")}</span></div>` : "") +
+    (!st && !last ? `<div class="row"><span class="lbl">Data</span><span>${dash}</span></div>` : "") +
+    `<div class="more"></div></article>`;
+}
+function renderReleased(q, main) {
+  const all = R.players.filter(p => p.released), shown = all.filter(p => p.name.toLowerCase().includes(q));
+  const played = all.filter(p => L.stats[p.name]).length;
+  const head = document.createElement("div"); head.className = "rel-head";
+  head.innerHTML = `<h2>Released players</h2><p>${all.length} players were released or retired ahead of the IPL 2027 auction (16 December, Goa). Cards show their ${esc(LSEASON)} season, ${played} of them played, grouped by the team that let them go. Tap a card for recent matches.</p>`;
+  main.appendChild(head);
+  Object.entries(R.teams).forEach(([c, n]) => {
+    const ps = shown.filter(p => p.team === c);
+    if (!ps.length) return;
+    const key = p => { const st = L.stats[p.name] || {}; return sortBy === "bowl" ? (st.bowl ? st.bowl.wkts : -1) : (st.bat ? st.bat.runs : -1); };
+    ps.sort((x, y) => sortBy === "name" ? x.name.localeCompare(y.name) : (key(y) - key(x)) || x.name.localeCompare(y.name));
+    const sec = document.createElement("section");
+    const col = (R.colors || {})[c]; if (col) { sec.style.setProperty("--c", col); sec.style.setProperty("--ink", ink(col)); }
+    sec.innerHTML = `<h2><span class="lm sm" aria-hidden="true">${LM[c] || ""}</span>${esc(n)} (${c}) <small class="rel-n">${ps.length} released</small></h2>`;
+    const grid = document.createElement("div"); grid.className = "cards"; grid.innerHTML = ps.map(releasedCard).join("");
+    wireCards(grid); sec.appendChild(grid); main.appendChild(sec);
+  });
+  if (!shown.length) main.insertAdjacentHTML("beforeend", '<p class="b-help">No released player matches that search.</p>');
+}
+
 function render() {
   const q = document.getElementById("q").value.toLowerCase();
+  if (team === "COMPARE" && PPusers.list().length < 2) team = "HOME";
   const tabs = document.getElementById("tabs"); tabs.innerHTML = "";
   const FAV = getFav();
   document.documentElement.style.setProperty("--fav", FAV ? ((R.colors || {})[FAV] || "transparent") : "transparent");
   document.documentElement.classList.toggle("has-fav", !!FAV);
-  [...(FAV ? [FAV] : []), "HOME", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), "BUILD", "PREDICT"].forEach(t => {
-    const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t; b.className = t === team ? "on" : "";
+  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "BUILD", "PREDICT", ...(PPusers.list().length > 1 ? ["COMPARE"] : [])].forEach(t => {
+    const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t; b.className = t === team ? "on" : "";
     if (t === "PREDICT") b.classList.add("predict");
+    if (t === "RELEASED") b.classList.add("relt");
     if (t === "BUILD") { b.classList.add("build"); b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Build XII'; }
     const col = (R.colors || {})[t];
     if (col) { b.style.setProperty("--c", col); b.style.setProperty("--ink", ink(col)); b.classList.add("tm"); }
@@ -166,8 +248,15 @@ function render() {
     ? `Form data updated ${META.updated} from ${META.matches} scorecards. Chips: batting runs (* = not out) and bowling wickets/runs, newest first.`
     : "Chips will show batting runs (* = not out) and bowling wickets/runs, newest first.";
   const main = document.getElementById("teams"); main.innerHTML = "";
+  let bb = document.getElementById("backbar");
+  if (!bb) { bb = document.createElement("div"); bb.id = "backbar"; main.parentNode.insertBefore(bb, main); }
+  bb.innerHTML = team === "HOME" ? "" : '<button type="button" class="back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Home</button>';
+  if (team !== "HOME") bb.firstChild.onclick = () => { document.getElementById("q").value = ""; sgHide(); team = "HOME"; render(); window.scrollTo(0, 0); };
   if (team === "BUILD") { window.renderBuilder(); return; }
   if (team === "PREDICT") { window.renderPredict(); return; }
+  if (team === "COMPARE") { window.renderCompare(); return; }
+  if (team === "RELEASED") { renderReleased(q, main); return; }
+  if (team === "CATCHUP") { main.appendChild(catchup()); return; }
   if (team === "HOME" && !q) {
     const hero = document.createElement("div"); hero.className = "hero";
     hero.innerHTML = `<img src="assets/final.jpeg" alt="IPL 2026 champions celebrating on the field" onerror="this.parentNode.remove()"><div class="hero-txt"><small>IPL 2026 final</small><h2>Champions</h2><p>Royal Challengers Bengaluru lift the trophy</p></div><span class="credit">Photo: BCCI</span>`;
@@ -180,12 +269,11 @@ function render() {
     pc.innerHTML = `<span class="cta-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v3a5 5 0 0 1-4 4.9V15h3v2H8v-2h3v-3.1A5 5 0 0 1 7 7zM5 5h2v2a3 3 0 0 1-2-2zm14 0a3 3 0 0 1-2 2V5z"/></svg></span><span class="cta-t"><b>Predict IPL 2027</b><small>Pick the bracket, the champion and both caps. No money, only bragging rights.</small></span><span class="cta-go"><span>Predict </span>→</span>`;
     pc.onclick = () => { team = "PREDICT"; render(); window.scrollTo(0, 0); };
     main.appendChild(pc);
-    main.appendChild(catchup());
     const g = document.createElement("div"); g.className = "tiles";
     Object.entries(R.teams).sort(([x], [y]) => (y === FAV) - (x === FAV)).forEach(([c, n]) => {
       const col = (R.colors || {})[c] || "#0b1f4d";
-      const cnt = R.players.filter(p => p.team === c).length;
-      const withForm = R.players.filter(p => p.team === c && list(p.name, "bat").length + list(p.name, "bowl").length).length;
+      const cnt = R.players.filter(p => p.team === c && !p.released).length;
+      const withForm = R.players.filter(p => p.team === c && !p.released && list(p.name, "bat").length + list(p.name, "bowl").length).length;
       const t = document.createElement("button"); t.className = "tile";
       t.style.setProperty("--c", col); t.style.setProperty("--ink", ink(col));
       if (c === FAV) t.classList.add("fav");
@@ -209,6 +297,7 @@ function render() {
     s.innerHTML = `<h2><span class="lm sm" aria-hidden="true">${LM[c] || ""}</span>${esc(n)} (${c})<button class="h2-fav${getFav() === c ? " on" : ""}" data-t="${c}" aria-pressed="${getFav() === c}">${STAR}${getFav() === c ? "Favourite" : "Set as favourite"}</button><button class="h2-build" data-t="${c}">★ Build XII</button></h2>`;
     s.querySelector(".h2-fav").onclick = () => { setFav(getFav() === c ? null : c); render(); };
     s.querySelector(".h2-build").onclick = () => { window.buildTeam = c; team = "BUILD"; render(); window.scrollTo(0, 0); };
+    const mkGrid = ps => {
     const grid = document.createElement("div"); grid.className = "cards";
     grid.innerHTML = ps.map(({p, b, w, a, ba}, idx) => {
       const bowler = p.role === "BOWL", stat = bowler ? ba : a;
@@ -219,7 +308,7 @@ function render() {
       const stale = last && META.since && last.date < META.since;
       return hd + `<article class="card${stale ? " stale" : ""}" tabindex="0" data-n="${esc(p.name)}">` +
         `<div class="top"><span class="av">${esc(ini)}${photo(p.name)}</span><div class="who"><b class="nm">${esc(p.name)}${capBadge(p)}${potmBadge(p.name)}</b><span class="meta">${flag(p.country)}${roleBadge(p.role)}` +
-        `<small>${last ? "Last played " + esc(last.date) + (stale ? ' · <span class="old">not recent</span>' : "") : "No matches found"}${p.withdrawn ? ' · <span class="wd">withdrawn</span>' : ""}</small></span></div>` +
+        `<small>${last ? "Last played " + esc(last.date) + (stale ? ' · <span class="old">not recent</span>' : "") : "No matches found"}${p.released ? ' · <span class="rl">' + esc(p.note || "released") + "</span>" : p.withdrawn ? ' · <span class="wd">withdrawn</span>' : ""}</small></span></div>` +
         `<div class="avg"><b class="${bowler ? bowlAvgTier(stat) : batAvgTier(stat)}">${stat == null ? "–" : stat.toFixed(1)}</b><small>${bowler ? "bowl avg" : "bat avg"}</small></div></div>` +
         (p.role === "AR"
           ? `<div class="ar"><div class="ar-h"><span>Recent matches</span><span class="ar-k">Bat&nbsp;|&nbsp;Bowl</span></div><div class="pairs">${pairs(p.name).map(pairChip).join("") || dash}</div></div>`
@@ -227,19 +316,16 @@ function render() {
             `<div class="row"><span class="lbl">Bowling</span><span>${w.slice(0, 5).map(bowl).join("") || dash}</span></div>`) +
         `<div class="more"></div></article>`;
     }).join("");
-    const wire = (card, m) => {
-      const show = () => { m.innerHTML = detail(card.dataset.n, m.dataset.all === "1"); wire(card, m); };
-      const vm = m.querySelector(".vm"); if (vm) vm.onclick = e => { e.stopPropagation(); m.dataset.all = vm.dataset.all; show(); };
-    };
-    grid.querySelectorAll(".card").forEach(card => {
-      const toggle = () => {
-        const m = card.querySelector(".more");
-        if (card.classList.toggle("open")) { m.dataset.all = "0"; m.innerHTML = detail(card.dataset.n, false); wire(card, m); } else m.innerHTML = "";
-      };
-      card.onclick = e => { if (!e.target.closest(".more")) toggle(); };
-      card.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } };
-    });
-    s.appendChild(grid); main.appendChild(s);
+    wireCards(grid);
+    return grid; };
+    const cur = ps.filter(x => !x.p.released), rel = ps.filter(x => x.p.released);
+    s.appendChild(mkGrid(cur));
+    if (rel.length) {
+      const d = document.createElement("details"); d.className = "rel"; d.open = !!q;
+      d.innerHTML = `<summary>Released ahead of the 2027 auction <small>${rel.length}</small></summary>`;
+      d.appendChild(mkGrid(rel)); s.appendChild(d);
+    }
+    main.appendChild(s);
   });
 }
 // type-ahead: 3+ characters list matching players; picking one jumps to that player's card
@@ -258,7 +344,7 @@ function sgShow() {
   sg.hidden = false; sgIdx = -1;
 }
 function focusPlayer(p) {
-  qEl.value = ""; sgHide(); team = p.team; render();
+  qEl.value = ""; sgHide(); team = p.released ? "RELEASED" : p.team; render();
   const card = [...document.querySelectorAll(".card")].find(c => c.dataset.n === p.name);
   if (!card) return;
   card.scrollIntoView({behavior: "smooth", block: "center"});
@@ -278,18 +364,71 @@ qEl.onkeydown = e => {
 };
 document.getElementById("sort").onchange = e => { sortBy = e.target.value; render(); };
 document.getElementById("group").onchange = e => { groupBy = e.target.value; e.target.classList.toggle("on", groupBy !== "none"); render(); };
+// ---- Players: several people can build XIIs and predictions on one device ----
+const PPusers = (() => {
+  const K = "pp-users", MAX = 6, COLORS = ["#2f6bff", "#ff7a1a", "#1fb86a", "#e0408f", "#8a5cf6", "#0fb5c4"];
+  let st = {list: [{id: "u1", name: "Me", c: COLORS[0]}], active: "u1"}, mode = null;
+  try { const j = JSON.parse(localStorage.getItem(K) || "null");
+    if (j && Array.isArray(j.list) && j.list.length) st = j; } catch {}
+  if (!st.list.some(u => u.id === st.active)) st.active = st.list[0].id;
+  const persist = () => { try { localStorage.setItem(K, JSON.stringify(st)); } catch {} };
+  // the first player keeps the original storage keys, so nothing saved earlier is lost
+  const key = (base, id = st.active) => id === "u1" ? base : base + "@" + id;
+  const list = () => st.list, active = () => st.list.find(u => u.id === st.active);
+  const ini = n => (n.trim()[0] || "?").toUpperCase();
+  const wipe = id => { try { Object.keys(localStorage).forEach(k => {
+    if (id === "u1" ? (k === "pp-predict-2027" || /^ipl-xii-[A-Za-z0-9]+$/.test(k)) : k.endsWith("@" + id)) localStorage.removeItem(k); }); } catch {} };
+  const uniq = (n, skip) => { let b = n, i = 2; while (st.list.some(u => u.id !== skip && u.name.toLowerCase() === n.toLowerCase())) n = b + " " + i++; return n; };
+  const bar = () => {
+    const a = active();
+    const chips = st.list.map(u => `<button type="button" class="ub-c${u.id === st.active ? " on" : ""}" data-u="${u.id}" style="--c:${u.c};--ink:${ink(u.c)}" aria-pressed="${u.id === st.active}"><i>${esc(ini(u.name))}</i>${esc(u.name)}</button>`).join("");
+    const add = st.list.length < MAX ? `<button type="button" class="ub-add" data-act="add">+ Add player</button>` : "";
+    let form = "";
+    if (mode === "add") form = `<form class="ub-f" data-form="add"><input name="n" maxlength="14" placeholder="Name, e.g. Dad" aria-label="New player name" autocomplete="off"><button class="ub-go">Add</button><button type="button" class="ub-x" data-act="cancel">Cancel</button></form>`;
+    if (mode === "edit") form = `<form class="ub-f" data-form="edit"><input name="n" maxlength="14" value="${esc(a.name)}" aria-label="Player name" autocomplete="off"><button class="ub-go">Rename</button>${st.list.length > 1 ? `<button type="button" class="ub-del" data-act="del">Remove</button>` : ""}<button type="button" class="ub-x" data-act="cancel">Cancel</button></form>`;
+    if (mode === "del") form = `<div class="ub-f"><span class="ub-msg">Remove <b>${esc(a.name)}</b> and all their saved picks?</span><button type="button" class="ub-del solid" data-act="del2">Remove</button><button type="button" class="ub-x" data-act="cancel">Cancel</button></div>`;
+    return `<div class="ubar"><div class="ub-row"><span class="ub-l">Playing as</span><div class="ub-chips">${chips}</div>${add}</div>${form}</div>`;
+  };
+  // draws the bar under a page header; onChange re-draws the page after the player changes
+  function mount(root, onChange) {
+    const head = root.querySelector(".b-head"); if (!head) return;
+    const host = document.createElement("div"); host.className = "ub-host"; head.insertAdjacentElement("afterend", host);
+    const paint = (focus) => { host.innerHTML = bar(); wire(); if (focus) { const i = host.querySelector("input"); if (i) { i.focus(); i.select(); } } };
+    const wire = () => {
+      host.querySelectorAll(".ub-c").forEach(b => b.onclick = () => {
+        if (b.dataset.u === st.active) { mode = mode === "edit" ? null : "edit"; return paint(mode === "edit"); }
+        st.active = b.dataset.u; mode = null; persist(); onChange(); });
+      host.querySelectorAll("[data-act]").forEach(b => b.onclick = () => {
+        const a = b.dataset.act;
+        if (a === "add") { mode = "add"; paint(true); }
+        else if (a === "cancel") { mode = null; paint(); }
+        else if (a === "del") { mode = "del"; paint(); }
+        else if (a === "del2") {
+          const id = st.active; wipe(id); st.list = st.list.filter(u => u.id !== id); st.active = st.list[0].id; mode = null; persist(); onChange(); } });
+      host.querySelectorAll("form").forEach(f => f.onsubmit = e => {
+        e.preventDefault(); const n = f.n.value.trim().slice(0, 14); if (!n) return f.n.focus();
+        if (f.dataset.form === "add") {
+          const used = new Set(st.list.map(u => u.c)), u = {id: "u" + Date.now().toString(36), name: uniq(n), c: COLORS.find(c => !used.has(c)) || COLORS[st.list.length % COLORS.length]};
+          st.list.push(u); st.active = u.id; mode = null; persist(); onChange();
+        } else { active().name = uniq(n, st.active); mode = null; persist(); onChange(); } });
+    };
+    paint();
+  }
+  return {key, list, active, mount, ini};
+})();
+
 // Playing-XII builder: 11 + Impact Player, IPL squad rules, drag-and-drop (desktop) and tap (phone).
 (() => {
   const MAX_OS_XI = 4, MAX_OS_12 = 4;       // overseas: 4 maximum across the whole XII
-  let bteam = null, slots = Array(12).fill(null), msg = "", mt = 0, q = "";
+  let bteam = null, slots = Array(12).fill(null), msg = "", mt = 0, q = "", lu = PPusers.active().id;
   const ORDER = ["BAT", "WK", "AR", "BOWL"], GROUP = {BAT: "Batters", WK: "Wicket-keepers", AR: "All-rounders", BOWL: "Bowlers", "": "Role not set"};
   const ORD = p => { const i = ORDER.indexOf(p.role); return i < 0 ? 4 : i; };
-  const KEY = t => "ipl-xii-" + t;
+  const KEY = t => PPusers.key("ipl-xii-" + t);
   const isOS = p => (p.country || "in") !== "in";
   const byName = n => R.players.find(p => p.name === n);
-  const squad = t => R.players.filter(p => p.team === t && !p.withdrawn);
-  const load = t => { try { const s = JSON.parse(localStorage.getItem(KEY(t)) || "null");
-    slots = Array.isArray(s) && s.length === 12 ? s.map(n => byName(n) && byName(n).team === t ? n : null) : Array(12).fill(null); } catch { slots = Array(12).fill(null); } };
+  const squad = t => R.players.filter(p => p.team === t && !p.withdrawn && !p.released);
+  const load = t => { lu = PPusers.active().id; try { const s = JSON.parse(localStorage.getItem(KEY(t)) || "null");
+    slots = Array.isArray(s) && s.length === 12 ? s.map(n => byName(n) && byName(n).team === t && !byName(n).released ? n : null) : Array(12).fill(null); } catch { slots = Array(12).fill(null); } };
   const save = () => { try { localStorage.setItem(KEY(bteam), JSON.stringify(slots)); } catch {} };
   const toast = m => { msg = m; clearTimeout(mt); mt = setTimeout(() => { msg = ""; const e = document.querySelector(".b-toast"); if (e) e.remove(); }, 3500); };
 
@@ -364,6 +503,7 @@ document.getElementById("group").onchange = e => { groupBy = e.target.value; e.t
       `<section class="b-col"><div class="b-sh"><h3>Your XII</h3><span><button class="b-act share" id="bshare">Share</button><button class="b-act" id="bcopy">Copy</button><button class="b-act" id="bclr">Clear</button></span></div>` +
       checks() + `<ol class="b-xi">${Array.from({length: 11}, (_, i) => slotHtml(i)).join("")}</ol><ol class="b-xi b-impwrap">${slotHtml(11)}</ol></section></div></div>`;
     wire(main);
+    PPusers.mount(main, () => window.render());
   }
 
   function wire(main) {
@@ -377,7 +517,7 @@ document.getElementById("group").onchange = e => { groupBy = e.target.value; e.t
     main.querySelector("#bclr").onclick = () => { slots = Array(12).fill(null); save(); render(); };
     main.querySelector("#bshare").onclick = () => window.PPshare.xii(bteam, slots);
     main.querySelector("#bcopy").onclick = () => {
-      const t = `${R.teams[bteam]} XII\n` + slots.slice(0, 11).map((n, i) => `${i + 1}. ${n || "-"}`).join("\n") + `\nImpact Player: ${slots[11] || "-"}`;
+      const t = `${PPusers.list().length > 1 ? PPusers.active().name + "’s " : ""}${R.teams[bteam]} XII\n` + slots.slice(0, 11).map((n, i) => `${i + 1}. ${n || "-"}`).join("\n") + `\nImpact Player: ${slots[11] || "-"}`;
       (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => { toast("Copied to clipboard."); render(); }, () => { toast("Copy is not available here."); render(); }); };
     // drag and drop
     let drag = null;
@@ -400,6 +540,7 @@ document.getElementById("group").onchange = e => { groupBy = e.target.value; e.t
     window.buildTeam = null;
     if (want && want !== bteam) { bteam = want; q = ""; load(bteam); }
     else if (!bteam) { bteam = getFav() || Object.keys(R.teams)[0]; load(bteam); }
+    else if (lu !== PPusers.active().id) load(bteam);
     render();
   };
 })();
@@ -432,11 +573,12 @@ render();
 
 // ---------- IPL 2027 predictions: playoff bracket, Orange Cap, Purple Cap ----------
 (() => {
-  const KEY = "pp-predict-2027";
+  const KEY = () => PPusers.key("pp-predict-2027");
   const blank = () => ({top4: [null, null, null, null], q1: null, el: null, q2: null, fin: null, orange: [null, null, null], orangeRuns: "", purple: [null, null, null], purpleWkts: ""});
-  let S = blank(), cq = {orange: "", purple: ""}, copied = "";
-  try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY) || "{}")); } catch {}
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch {} };
+  let S = blank(), cq = {orange: "", purple: ""}, copied = "", lu = PPusers.active().id;
+  const reload = () => { lu = PPusers.active().id; cq = {orange: "", purple: ""}; try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY()) || "{}")); } catch { S = blank(); } };
+  reload();
+  const save = () => { try { localStorage.setItem(KEY(), JSON.stringify(S)); } catch {} };
   const col = t => (R.colors || {})[t] || "#2f6bff";
   const tn = t => t ? R.teams[t] : "";
   const chip = (t, extra = "") => `<span class="pt" style="--c:${col(t)};--ink:${ink(col(t))}"><b>${esc(t)}</b>${extra}</span>`;
@@ -491,7 +633,7 @@ render();
     const ru = S.fin ? lost(S.q1, S.q2, S.fin) : null;
     const o = S.orange[0], p = S.purple[0];
     const row = (l, v) => `<div class="ps-r"><small>${l}</small><b>${v || '<span class="dim">–</span>'}</b></div>`;
-    return `<section class="psum"><div class="ps-h"><h3>My IPL 2027 predictions</h3><span><button class="b-act share" id="pshare">Share</button><button class="b-act" id="pcopy">${copied || "Copy"}</button><button class="b-act" id="pclr">Clear all</button></span></div>` +
+    return `<section class="psum"><div class="ps-h"><h3>${esc(PPusers.list().length > 1 ? PPusers.active().name + "’s" : "My")} IPL 2027 predictions</h3><span><button class="b-act share" id="pshare">Share</button><button class="b-act" id="pcopy">${copied || "Copy"}</button><button class="b-act" id="pclr">Clear all</button></span></div>` +
       `<div class="ps-g">${row("Champion", S.fin ? chip(S.fin) + " " + esc(tn(S.fin)) : "")}${row("Runner-up", ru ? chip(ru) + " " + esc(tn(ru)) : "")}` +
       `${row("Orange Cap", o ? esc(o) + (S.orangeRuns ? ` · ${esc(S.orangeRuns)} runs` : "") : "")}${row("Purple Cap", p ? esc(p) + (S.purpleWkts ? ` · ${esc(S.purpleWkts)} wkts` : "") : "")}</div></section>`;
   }
@@ -528,6 +670,7 @@ render();
 
   function render_() {
     const main = document.getElementById("teams"); if (!main) return;
+    if (lu !== PPusers.active().id) reload();
     clean(); save();
     const [t1, t2, t3, t4] = S.top4, used = new Set(S.top4.filter(Boolean));
     const free = Object.keys(R.teams).filter(t => !used.has(t));
@@ -543,6 +686,7 @@ render();
       `<h4>2. Pick the winners</h4>` + treeHtml() + `</section>` +
       `<div class="pgrid">${capBlock("orange")}${capBlock("purple")}</div></div>`;
     wire(main);
+    PPusers.mount(main, () => window.render());
   }
 
   function wire(main) {
@@ -558,7 +702,7 @@ render();
     main.querySelector("#pclr").onclick = () => { S = blank(); cq = {orange: "", purple: ""}; render_(); };
     main.querySelector("#pcopy").onclick = () => {
       const ru = S.fin ? lost(S.q1, S.q2, S.fin) : null;
-      const t = `My IPL 2027 predictions\nTop 4: ${S.top4.map(x => x || "-").join(", ")}\nChampion: ${S.fin ? tn(S.fin) : "-"}\nRunner-up: ${ru ? tn(ru) : "-"}\nOrange Cap: ${S.orange[0] || "-"}${S.orangeRuns ? " (" + S.orangeRuns + " runs)" : ""}\nPurple Cap: ${S.purple[0] || "-"}${S.purpleWkts ? " (" + S.purpleWkts + " wkts)" : ""}`;
+      const t = `${PPusers.list().length > 1 ? PPusers.active().name + "’s" : "My"} IPL 2027 predictions\nTop 4: ${S.top4.map(x => x || "-").join(", ")}\nChampion: ${S.fin ? tn(S.fin) : "-"}\nRunner-up: ${ru ? tn(ru) : "-"}\nOrange Cap: ${S.orange[0] || "-"}${S.orangeRuns ? " (" + S.orangeRuns + " runs)" : ""}\nPurple Cap: ${S.purple[0] || "-"}${S.purpleWkts ? " (" + S.purpleWkts + " wkts)" : ""}`;
       (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => { copied = "Copied ✓"; render_(); setTimeout(() => { copied = ""; if (team === "PREDICT") render_(); }, 1800); }, () => { copied = "Copy unavailable"; render_(); });
     };
   }
@@ -627,6 +771,63 @@ render();
   window.renderPredict = render_;
 })();
 
+// ---- Compare: every player's picks side by side ----
+(() => {
+  const blankP = () => ({top4: [null, null, null, null], q1: null, el: null, q2: null, fin: null, orange: [null, null, null], orangeRuns: "", purple: [null, null, null], purpleWkts: ""});
+  const readP = id => { try { return Object.assign(blankP(), JSON.parse(localStorage.getItem(PPusers.key("pp-predict-2027", id)) || "{}")); } catch { return blankP(); } };
+  const readX = (id, t) => { try { const x = JSON.parse(localStorage.getItem(PPusers.key("ipl-xii-" + t, id)) || "null"); return Array.isArray(x) && x.length === 12 && x.some(Boolean) ? x : null; } catch { return null; } };
+  const col = t => (R.colors || {})[t] || "#2f6bff";
+  const chip = t => t ? `<span class="pt" style="--c:${col(t)};--ink:${ink(col(t))}"><b>${esc(t)}</b></span>` : '<span class="dim">–</span>';
+  const pl = (n, extra) => n ? `<b class="cmp-n">${esc(n)}</b>${extra ? `<small>${esc(extra)}</small>` : ""}` : '<span class="dim">–</span>';
+  const head = us => `<thead><tr><th></th>${us.map(u => `<th><span class="cmp-u" style="--c:${u.c};--ink:${ink(u.c)}"><i>${esc(PPusers.ini(u.name))}</i>${esc(u.name)}</span></th>`).join("")}</tr></thead>`;
+  let tab = "pred", ct = null;
+
+  function predTable(us) {
+    const P = us.map(u => readP(u.id));
+    const runner = p => p.fin && p.q1 && p.q2 ? (p.fin === p.q1 ? p.q2 : p.q1) : null;
+    const rows = [
+      ...["1st", "2nd", "3rd", "4th"].map((l, i) => [l + " place", p => p.top4[i], chip]),
+      ["Champion", p => p.fin, chip], ["Runner-up", runner, chip],
+      ["Orange Cap", p => p.orange[0], (v, p) => pl(v, p.orangeRuns ? p.orangeRuns + " runs" : "")],
+      ["Purple Cap", p => p.purple[0], (v, p) => pl(v, p.purpleWkts ? p.purpleWkts + " wkts" : "")]];
+    let agree = 0;
+    const body = rows.map(([label, get, cell]) => {
+      const v = P.map(get), same = v.every(Boolean) && v.every(x => x === v[0]);
+      if (same) agree++;
+      return `<tr class="${same ? "agree" : ""}"><th>${label}${same ? "<small>✓ agree</small>" : ""}</th>${v.map((x, i) => `<td>${cell(x, P[i])}</td>`).join("")}</tr>`;
+    }).join("");
+    const filled = P.map(p => rows.filter(([, get]) => get(p)).length);
+    const empty = us.filter((u, i) => !filled[i]).map(u => u.name);
+    return `<p class="cmp-sum">${agree ? `You all agree on <b>${agree}</b> of ${rows.length} calls.` : "No calls match yet."}${empty.length ? ` ${esc(empty.join(", "))} ${empty.length > 1 ? "haven't" : "hasn't"} made predictions yet.` : ""}</p>` +
+      `<div class="cmp-wrap"><table class="cmp" style="--n:${us.length}">${head(us)}<tbody>${body}</tbody></table></div>`;
+  }
+
+  function xiTable(us) {
+    const teams = Object.keys(R.teams).filter(t => us.some(u => readX(u.id, t)));
+    if (!teams.length) return '<p class="cmp-sum">Nobody has built a XII yet. Pick Build XII, choose a team and add players. Each player\'s XII is saved under their own name.</p>';
+    if (!ct || !teams.includes(ct)) ct = teams.includes(window.buildTeam) ? window.buildTeam : teams[0];
+    const X = us.map(u => readX(u.id, ct)), have = X.filter(Boolean);
+    const sets = have.map(x => new Set(x.filter(Boolean)));
+    const common = have.length > 1 ? [...sets[0]].filter(n => sets.every(s => s.has(n))) : [];
+    const pills = `<div class="b-teams cmp-teams">${teams.map(t => `<button type="button" class="${t === ct ? "on" : ""}" data-ct="${t}" style="--c:${col(t)};--ink:${ink(col(t))}">${t}</button>`).join("")}</div>`;
+    const rows = Array.from({length: 12}, (_, i) => `<tr class="${i === 11 ? "imp" : ""}"><th>${i === 11 ? "Impact" : i + 1}</th>${X.map(x => { const n = x && x[i];
+      return `<td class="${n && common.includes(n) ? "common" : ""}">${n ? `<b class="cmp-n">${esc(n)}</b>` : '<span class="dim">–</span>'}</td>`; }).join("")}</tr>`).join("");
+    const missing = us.filter((u, i) => !X[i]).map(u => u.name);
+    return pills + `<p class="cmp-sum">${have.length > 1 ? `<b>${common.length}</b> of 12 players picked by everyone who built a ${esc(R.teams[ct])} XII.` : `Only one ${esc(R.teams[ct])} XII so far.`}${missing.length ? ` ${esc(missing.join(", "))} ${missing.length > 1 ? "haven't" : "hasn't"} built one for this team.` : ""}</p>` +
+      `<div class="cmp-wrap"><table class="cmp" style="--n:${us.length}">${head(us)}<tbody>${rows}</tbody></table></div>`;
+  }
+
+  window.renderCompare = () => {
+    const main = document.getElementById("teams"), us = PPusers.list();
+    main.innerHTML = `<div class="cmp-page"><div class="b-head"><h2>Compare picks</h2><div class="b-teams cmp-tabs" style="--c:var(--primary);--ink:#fff">` +
+      `<button type="button" class="${tab === "pred" ? "on" : ""}" data-tab="pred">Predictions</button><button type="button" class="${tab === "xii" ? "on" : ""}" data-tab="xii">Playing XII</button></div></div>` +
+      `<p class="b-help">Everyone's picks from this device, side by side. Switch player in Build XII or Predict 2027 to change anyone's picks.</p>` +
+      (tab === "pred" ? predTable(us) : xiTable(us)) + `</div>`;
+    main.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; window.renderCompare(); });
+    main.querySelectorAll("[data-ct]").forEach(b => b.onclick = () => { ct = b.dataset.ct; window.renderCompare(); });
+  };
+})();
+
 // ---------- Share cards: render a picture of the XII or the predictions, then share or download it ----------
 (() => {
   const W = 1080, H = 1350, PAD = 64;
@@ -647,7 +848,7 @@ render();
     c.fillStyle = cc; c.fillRect(0, 0, W, 14);
     text(c, "POWERPLAY", PAD, 96, font(800, 26), "rgba(255,255,255,.7)");
     text(c, R.teams[team], PAD, 178, font(800, 62), "#fff", "left", W - PAD * 2);
-    text(c, "MY PLAYING XII", PAD, 228, font(700, 28), cc === "#000000" ? "#fff" : "rgba(255,255,255,.85)");
+    text(c, (PPusers.list().length > 1 ? PPusers.active().name.toUpperCase() + "’S" : "MY") + " PLAYING XII", PAD, 228, font(700, 28), cc === "#000000" ? "#fff" : "rgba(255,255,255,.85)");
     const row = (i, y, label, n, imp) => {
       const p = n && byName(n);
       c.fillStyle = imp ? "rgba(255,213,74,.20)" : "rgba(0,0,0,.30)"; rr(c, PAD, y, W - PAD * 2, 68, 18); c.fill();
@@ -672,7 +873,7 @@ render();
     const bar = c.createLinearGradient(0, 0, W, 0); bar.addColorStop(0, "#ff9f1c"); bar.addColorStop(1, "#8e44ff");
     c.fillStyle = bar; c.fillRect(0, 0, W, 14);
     text(c, "POWERPLAY", PAD, 96, font(800, 26), "rgba(255,255,255,.7)");
-    text(c, "My IPL 2027 predictions", PAD, 172, font(800, 56), "#fff", "left", W - PAD * 2);
+    text(c, (PPusers.list().length > 1 ? PPusers.active().name + "’s" : "My") + " IPL 2027 predictions", PAD, 172, font(800, 56), "#fff", "left", W - PAD * 2);
     // champion banner
     const f = S.fin, runner = f ? (f === S.q1 ? S.q2 : S.q1) : null;
     const cc = f ? col(f) : "#444";
