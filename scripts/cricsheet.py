@@ -281,3 +281,27 @@ def history(cache, roster, aliases, have, since, keep=15):
     except Exception:
         pass
     return form, rep
+
+
+def covered(cache, since):
+    """Matches Cricsheet already holds: list of (date, [team names]) so the API quota is not spent on them."""
+    out = []
+    for z in sorted((cache / "cricsheet").glob("*.zip")) if (cache / "cricsheet").exists() else []:
+        try:
+            zf = zipfile.ZipFile(z)
+        except Exception:
+            continue
+        for n in zf.namelist():
+            if not n.endswith(".json"):
+                continue
+            with zf.open(n) as fh:
+                head = fh.read(4000)
+                if head_date(head) < since:
+                    continue
+                try:
+                    info = json.loads(head + fh.read()).get("info", {})
+                except Exception:
+                    continue
+            if info.get("gender") == "male" and info.get("dates") and len(info.get("teams", [])) == 2:
+                out.append((str(info["dates"][0]), info["teams"]))
+    return out

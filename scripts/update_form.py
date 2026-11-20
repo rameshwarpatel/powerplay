@@ -11,10 +11,11 @@ Usage:  python3 scripts/update_form.py              (fetch new matches, then reb
         python3 scripts/update_form.py --build-only (no network, just rebuild the site data)
         python3 scripts/update_form.py --no-api     (Cricsheet only, no API key/quota)
 """
-import datetime, json, os, re, sys, urllib.error, urllib.parse, urllib.request
+import datetime, difflib, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cricsheet
+import highlightly
 
 ROOT = Path(os.environ.get("IPL_ROOT") or Path(__file__).resolve().parent.parent)
 DATA, CACHE = ROOT / "data", ROOT / "data" / "cache"
@@ -22,7 +23,7 @@ SC_DIR = CACHE / "scorecards"
 BASE = "https://api.cricapi.com/v1"
 RESERVE = 5          # hits to leave unused each day
 LIST_PAGES = 2       # pages of the recent-match list per run (25 matches each, 1 hit per page)
-IDS_PER_RUN = 15     # player ids to look up per run for ambiguous names (1 hit each, cached forever)
+IDS_PER_RUN = 5     # player ids to look up per run for ambiguous names (1 hit each, cached forever)
 KEEP = 15            # innings / spells kept per player
 SKIP = re.compile(r"\b(women|womens|girls|ladies)\b", re.I)
 
@@ -58,6 +59,9 @@ class Client:
         info = j.get("info") or {}
         if "hitsLimit" in info and "hitsToday" in info:
             self.left = info["hitsLimit"] - info["hitsToday"]
+            if not getattr(self, "shown", False):
+                self.shown = True
+                print(f"CricketData quota: {info['hitsToday']} of {info['hitsLimit']} used so far today (UTC time now {datetime.datetime.now(datetime.timezone.utc):%Y-%m-%d %H:%M}).")
         if j.get("status") != "success":
             reason = str(j.get("reason", "unknown error"))
             if "limit" in reason.lower() or "quota" in reason.lower():
@@ -120,6 +124,45 @@ def pull_followed(client, matches):
             print(f"  {s['name']}: {len(ml)} matches, {sum(1 for m in ml if m.get('matchEnded'))} finished")
 
 
+NO_ROSTER = {"nepal", "united arab emirates", "uae", "namibia", "oman", "usa", "united states", "united states of america", "canada", "ireland", "scotland",
+             "netherlands", "japan", "hong kong", "kuwait", "qatar", "bahrain", "saudi arabia", "malaysia", "singapore", "thailand", "italy", "germany",
+             "denmark", "norway", "sweden", "jersey", "guernsey", "uganda", "kenya", "tanzania", "nigeria", "rwanda", "botswana", "malawi", "papua new guinea", "pakistan"}
+YOUTH_A = re.compile(r"\b(under[- ]?\d+|u-?\d{2}|emerging|shaheens|a team|\w+ a vs|\w+ a,)\b|\bA vs\b|\bvs [\w ]+ A,", re.I)
+
+
+def _tok(t):
+    return set(norm(t)) - {"cricket", "team", "club", "xi", "the", "of"}
+
+
+def _same(a, b):
+    ta, tb = _tok(a), _tok(b)
+    return bool(ta & tb) and (ta <= tb or tb <= ta or len(ta & tb) >= 2 or difflib.SequenceMatcher(None, " ".join(norm(a)), " ".join(norm(b))).ratio() >= 0.8)
+
+
+def worth_a_hit(todo):
+    """Drop matches that cannot add anything: ones Cricsheet already has, youth/A-team games, and games between nations with no roster players."""
+    have = cricsheet.covered(CACHE, SINCE) + [((m.get("date") or "")[:10], m.get("teams") or []) for k, m in load_json(CACHE / "matches.json", {}).items() if k.startswith("hl_")]
+    by_date = {}
+    for d, teams in have:
+        by_date.setdefault(d, []).append(teams)
+    keep = []
+    for m in todo:
+        d = (m.get("date") or m.get("dateTimeGMT") or "")[:10]
+        teams = m.get("teams") or []
+        if YOUTH_A.search(m.get("name", "")):
+            continue
+        if len(teams) == 2 and all(" ".join(norm(t)) in NO_ROSTER for t in teams):
+            continue
+        if len(teams) == 2:
+            day = datetime.date.fromisoformat(d) if d else None
+            near = [d] + ([str(day - datetime.timedelta(1)), str(day + datetime.timedelta(1))] if day else [])
+            if any(_same(teams[0], c[0]) and _same(teams[1], c[1]) or _same(teams[0], c[1]) and _same(teams[1], c[0])
+                   for dd in near for c in by_date.get(dd, [])):
+                continue
+        keep.append(m)
+    return keep, len(todo) - len(keep)
+
+
 def fetch(client):
     matches = load_json(CACHE / "matches.json", {})
     try:
@@ -136,10 +179,12 @@ def fetch(client):
     todo = [m for m in matches.values() if m.get("matchEnded") and not SKIP.search(m.get("name", ""))
             and not (SC_DIR / f"{m['id']}.json").exists()]
     todo = [m for m in todo if (m.get("date") or m.get("dateTimeGMT") or "")[:10] >= SINCE]
+    todo, saved = worth_a_hit(todo)
+    print(f"{len(todo)} men's matches worth an API hit ({saved} skipped: already in Cricsheet, youth/A sides, or no roster nations).")
 
     def rank(m):          # India/IPL games first, other white-ball next, red-ball domestic last
         n = m.get("name", "").lower()
-        return 2 if re.search(r"ranji|duleep|irani|nayudu", n) else 0 if re.search(r"india|asian games", n) else 1
+        return 2 if re.search(r"ranji|duleep|irani|nayudu", n) else 0 if re.search(r"india|asian games|mushtaq", n) else 1
     todo.sort(key=lambda m: m.get("dateTimeGMT") or m.get("date") or "", reverse=True)
     todo.sort(key=rank)
     got = 0
@@ -186,6 +231,55 @@ def dup(i, have):
     """Same match already present? Same opponent and the date within a day (sources differ by time zone)."""
     d = datetime.date.fromisoformat(i["date"][:10])
     return not i.get("inn") and any(o == i.get("opponent") and abs((datetime.date.fromisoformat(x[:10]) - d).days) <= 1 for x, o in have)
+
+
+def ipl_last(form, roster):
+    """Season totals for the most recent IPL (from every innings and spell held before the per-player trim),
+    plus the match-by-match rows for released players."""
+    recs = [(w, k, i) for w, v in form.items() for k in ("bat", "bowl") for i in v[k]
+            if "indian premier league" in (i.get("competition") or "").lower() and not i.get("dnb")]
+    if not recs:
+        return {"season": "", "stats": {}, "matches": {}}
+    season = max(recs, key=lambda r: r[2]["date"])[2]["competition"]
+    recs = [r for r in recs if r[2]["competition"] == season]
+    released = {p["name"] for p in roster.get("players", []) if p.get("released")}
+    stats, matches = {}, {}
+    for who, k, i in recs:
+        st = stats.setdefault(who, {"m": set(), "bat": {"inn": 0, "runs": 0, "balls": 0, "outs": 0, "hs": -1, "hsno": False, "f": 0, "h": 0},
+                                    "bowl": {"inn": 0, "balls": 0, "runs": 0, "wkts": 0, "best": (-1, 0)}, "potm": set()})
+        st["m"].add((i["date"], i.get("opponent")))
+        if i.get("potm"):
+            st["potm"].add((i["date"], i.get("opponent")))
+        if k == "bat":
+            b = st["bat"]; r = int(i.get("runs") or 0)
+            b["inn"] += 1; b["runs"] += r; b["balls"] += int(i.get("balls") or 0); b["outs"] += 1 if i.get("out") else 0
+            b["f"] += 1 if 50 <= r < 100 else 0; b["h"] += 1 if r >= 100 else 0
+            if r > b["hs"] or (r == b["hs"] and not i.get("out")):
+                b["hs"], b["hsno"] = r, not i.get("out")
+        else:
+            w = st["bowl"]; ov = i.get("overs") or 0
+            legal = int(ov) * 6 + round((ov - int(ov)) * 10)
+            w["inn"] += 1; w["balls"] += legal; w["runs"] += int(i.get("runs") or 0); w["wkts"] += int(i.get("wkts") or 0)
+            if (i["wkts"], -i["runs"]) > (w["best"][0], -w["best"][1]) if w["best"][0] >= 0 else True:
+                w["best"] = (int(i["wkts"]), int(i["runs"]))
+        if who in released:
+            matches.setdefault(who, {"bat": [], "bowl": []})[k].append(i)
+    out = {}
+    for who, st in stats.items():
+        b, w = st["bat"], st["bowl"]
+        row = {"m": len(st["m"]), "potm": len(st["potm"])}
+        if b["inn"]:
+            row["bat"] = {"inn": b["inn"], "runs": b["runs"], "balls": b["balls"], "outs": b["outs"], "hs": b["hs"], "hsno": b["hsno"], "f": b["f"], "h": b["h"],
+                          "avg": round(b["runs"] / b["outs"], 1) if b["outs"] else None, "sr": round(b["runs"] * 100 / b["balls"], 1) if b["balls"] else None}
+        if w["inn"] and w["balls"]:
+            row["bowl"] = {"inn": w["inn"], "overs": f"{w['balls'] // 6}.{w['balls'] % 6}", "runs": w["runs"], "wkts": w["wkts"],
+                           "econ": round(w["runs"] * 6 / w["balls"], 2), "avg": round(w["runs"] / w["wkts"], 1) if w["wkts"] else None,
+                           "best": f"{w['best'][0]}/{w['best'][1]}"}
+        out[who] = row
+    for who, v in matches.items():
+        for k in ("bat", "bowl"):
+            v[k].sort(key=lambda i: i["date"], reverse=True)
+    return {"season": season, "stats": out, "matches": matches}
 
 
 def build(use_cricsheet=True):
@@ -283,6 +377,7 @@ def build(use_cricsheet=True):
         for k in ("bat", "bowl"):
             have = {(i["date"], i.get("opponent")) for i in f[k]}
             f[k] += [i for i in lists.get(k, []) if not dup(i, have)]
+    last = ipl_last(form, load_json(DATA / "roster.json", {"players": []}))
     for who in form:
         for k in ("bat", "bowl"):
             form[who][k].sort(key=lambda i: (i["date"], i.get("inn", 0)), reverse=True)
@@ -291,7 +386,8 @@ def build(use_cricsheet=True):
     (DATA / "form.js").write_text(
         "// Generated by scripts/update_form.py. Do not edit by hand.\n"
         "window.IPL_FORM = " + json.dumps(form, indent=1) + ";\n"
-        "window.IPL_FORM_META = " + json.dumps(meta) + ";\n")
+        "window.IPL_FORM_META = " + json.dumps(meta) + ";\n"
+        "window.IPL_LAST = " + json.dumps(last, separators=(",", ":")) + ";\n")
     print(f"Wrote form for {len(form)} roster players from {used} API scorecards + {cs_used} Cricsheet matches.")
     for line in report:
         print(line)
@@ -304,18 +400,45 @@ if __name__ == "__main__":
     CACHE.mkdir(parents=True, exist_ok=True)
     SC_DIR.mkdir(parents=True, exist_ok=True)
     args = sys.argv[1:]
+    try:        # Highlightly scorecards shipped in data/hl-cache.json (GitHub starts with an empty cache each time)
+        _m = load_json(CACHE / "matches.json", {})
+        _n = highlightly.import_cache(SC_DIR, _m, DATA / "hl-cache.json")
+        if _n:
+            (CACHE / "matches.json").write_text(json.dumps(_m))
+            print(f"Loaded {_n} Highlightly scorecards from data/hl-cache.json.")
+    except Exception as e:
+        print(f"hl-cache import problem (ignored): {e}")
     if "--build-only" not in args:
         if "--no-cricsheet" not in args:
             print("Cricsheet:")
             cricsheet.download(CACHE, DATA / "cricsheet.txt")
         if "--no-api" not in args:
-            c = Client(load_key())
             try:
-                fetch(c)
-            except Quota:
-                print("Daily free quota reached. Run again tomorrow; progress is saved.")
-            except RuntimeError as e:
-                print(f"API problem: {e}")
-            if c.left is not None:
-                print(f"Hits left today: about {c.left}.")
+                c = Client(load_key())
+            except SystemExit as e:
+                print(f"CricketData skipped: {e}")
+                c = None
+            if c:
+                try:
+                    fetch(c)
+                except Quota:
+                    print("CricketData daily free quota reached. Run again tomorrow; progress is saved.")
+                except RuntimeError as e:
+                    print(f"CricketData problem: {e}")
+                if c.left is not None:
+                    print(f"CricketData hits left today: about {c.left}.")
+            if "--no-hl" not in args:
+                try:
+                    mj = load_json(CACHE / "matches.json", {})
+                    known = [((m.get("date") or "")[:10], m.get("teams") or []) for k, m in mj.items() if not k.startswith("hl_") and (SC_DIR / f"{k}.json").exists()]
+                    known += cricsheet.covered(CACHE, SINCE)
+                    highlightly.fetch(ROOT, CACHE, SC_DIR, mj, DATA / "hl-follow.txt", known)
+                    (CACHE / "matches.json").write_text(json.dumps(mj))
+                except Exception as e:
+                    print(f"Highlightly problem (ignored): {e}")
+            try:
+                _m = load_json(CACHE / "matches.json", {})
+                print(f"Saved {highlightly.export_cache(SC_DIR, _m, DATA / 'hl-cache.json')} Highlightly scorecards to data/hl-cache.json (upload this file to GitHub).")
+            except Exception as e:
+                print(f"hl-cache export problem (ignored): {e}")
     build(use_cricsheet="--no-cricsheet" not in args)
