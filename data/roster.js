@@ -17,13 +17,16 @@ window.IPL_ROSTER = {
    "name": "Matthew Short",
    "team": "CSK",
    "role": "AR",
-   "country": "au"
+   "country": "au",
+   "released": true
   },
   {
    "name": "MS Dhoni",
    "team": "CSK",
    "role": "WK",
-   "country": "in"
+   "country": "in",
+   "released": true,
+   "note": "Retired from IPL; CSK mentor from 2027"
   },
   {
    "name": "Gurjapneet Singh",
@@ -34,7 +37,8 @@ window.IPL_ROSTER = {
   {
    "name": "Kuldip Yadav",
    "team": "CSK",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Sanju Samson",
@@ -52,13 +56,15 @@ window.IPL_ROSTER = {
    "name": "Prashant Veer",
    "team": "CSK",
    "role": "AR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Dian Forrester",
    "team": "CSK",
    "role": "BOWL",
-   "country": "za"
+   "country": "za",
+   "released": true
   },
   {
    "name": "Noor Ahmad",
@@ -70,7 +76,8 @@ window.IPL_ROSTER = {
    "name": "Akash Madhwal",
    "team": "CSK",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Rahul Chahar",
@@ -94,13 +101,15 @@ window.IPL_ROSTER = {
    "name": "Aman Hakim Khan",
    "team": "CSK",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Matt Henry",
    "team": "CSK",
    "role": "BOWL",
-   "country": "nz"
+   "country": "nz",
+   "released": true
   },
   {
    "name": "Shivam Dube",
@@ -117,7 +126,8 @@ window.IPL_ROSTER = {
   {
    "name": "Macneil Noronha",
    "team": "CSK",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Ruturaj Gaikwad",
@@ -130,7 +140,8 @@ window.IPL_ROSTER = {
    "name": "Zak Foulkes",
    "team": "CSK",
    "role": "BOWL",
-   "country": "nz"
+   "country": "nz",
+   "released": true
   },
   {
    "name": "Urvil Patel",
@@ -142,7 +153,8 @@ window.IPL_ROSTER = {
    "name": "Spencer Johnson",
    "team": "CSK",
    "role": "BOWL",
-   "country": "au"
+   "country": "au",
+   "released": true
   },
   {
    "name": "Anshul Kamboj",
@@ -165,35 +177,30 @@ window.IPL_ROSTER = {
   {
    "name": "Ramakrishna Ghosh",
    "team": "CSK",
-   "withdrawn": true,
    "role": "AR",
    "country": "in"
   },
   {
    "name": "Ayush Mhatre",
    "team": "CSK",
-   "withdrawn": true,
    "role": "BAT",
    "country": "in"
   },
   {
    "name": "Khaleel Ahmed",
    "team": "SRH",
-   "withdrawn": true,
    "role": "BOWL",
    "country": "in"
   },
   {
    "name": "Nathan Ellis",
    "team": "SRH",
-   "withdrawn": true,
    "role": "BOWL",
    "country": "au"
   },
   {
    "name": "Jamie Overton",
    "team": "CSK",
-   "withdrawn": true,
    "role": "AR",
    "country": "gb-eng"
   },
@@ -238,7 +245,8 @@ window.IPL_ROSTER = {
    "name": "Abhishek Porel",
    "team": "DC",
    "role": "WK",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Vipraj Nigam",
@@ -256,7 +264,8 @@ window.IPL_ROSTER = {
    "name": "Nitish Rana",
    "team": "DC",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mukesh Kumar",
@@ -274,7 +283,8 @@ window.IPL_ROSTER = {
    "name": "Mitchell Starc",
    "team": "DC",
    "role": "BOWL",
-   "country": "au"
+   "country": "au",
+   "released": true
   },
   {
    "name": "Ashutosh Sharma",
@@ -286,13 +296,15 @@ window.IPL_ROSTER = {
    "name": "Rehan Ahmed",
    "team": "DC",
    "role": "AR",
-   "country": "gb-eng"
+   "country": "gb-eng",
+   "released": true
   },
   {
    "name": "Dushmantha Chameera",
    "team": "DC",
    "role": "BOWL",
-   "country": "lk"
+   "country": "lk",
+   "released": true
   },
   {
    "name": "Kyle Jamieson",
@@ -304,13 +316,15 @@ window.IPL_ROSTER = {
    "name": "Ajay Mandal",
    "team": "DC",
    "role": "AR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Pathum Nissanka",
    "team": "DC",
    "role": "BAT",
-   "country": "lk"
+   "country": "lk",
+   "released": true
   },
   {
    "name": "Auqib Nabi",
@@ -322,7 +336,8 @@ window.IPL_ROSTER = {
    "name": "Karun Nair",
    "team": "DC",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "T Natarajan",
@@ -334,7 +349,8 @@ window.IPL_ROSTER = {
    "name": "Sahil Parakh",
    "team": "DC",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Prithvi Shaw",
@@ -350,9 +366,9 @@ window.IPL_ROSTER = {
   {
    "name": "Ben Duckett",
    "team": "DC",
-   "withdrawn": true,
    "role": "BAT",
-   "country": "gb-eng"
+   "country": "gb-eng",
+   "released": true
   },
   {
    "name": "Shubman Gill",
@@ -437,7 +453,8 @@ window.IPL_ROSTER = {
    "name": "Shahrukh Khan",
    "team": "GT",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Kagiso Rabada",
@@ -473,7 +490,8 @@ window.IPL_ROSTER = {
    "name": "Ishant Sharma",
    "team": "GT",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Ashok Sharma",
@@ -485,13 +503,15 @@ window.IPL_ROSTER = {
    "name": "Prithvi Raj Yarra",
    "team": "GT",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Luke Wood",
    "team": "GT",
    "role": "BOWL",
-   "country": "gb-eng"
+   "country": "gb-eng",
+   "released": true
   },
   {
    "name": "Rahul Tewatia",
@@ -510,7 +530,7 @@ window.IPL_ROSTER = {
    "team": "KKR",
    "role": "BAT",
    "country": "in",
-   "captain": true
+   "released": true
   },
   {
    "name": "Sarthak Ranjan",
@@ -522,7 +542,8 @@ window.IPL_ROSTER = {
    "name": "Rachin Ravindra",
    "team": "KKR",
    "role": "AR",
-   "country": "nz"
+   "country": "nz",
+   "released": true
   },
   {
    "name": "Manish Pandey",
@@ -557,19 +578,22 @@ window.IPL_ROSTER = {
   {
    "name": "Tejasvi Singh",
    "team": "KKR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Navdeep Saini",
    "team": "KKR",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Umran Malik",
    "team": "KKR",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Kartik Tyagi",
@@ -581,7 +605,8 @@ window.IPL_ROSTER = {
    "name": "Rahul Tripathi",
    "team": "KKR",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Varun Chakravarthy",
@@ -605,7 +630,8 @@ window.IPL_ROSTER = {
    "name": "Blessing Muzarabani",
    "team": "KKR",
    "role": "BOWL",
-   "country": "zw"
+   "country": "zw",
+   "released": true
   },
   {
    "name": "Cameron Green",
@@ -634,7 +660,8 @@ window.IPL_ROSTER = {
   {
    "name": "Daksh Kamra",
    "team": "KKR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Sunil Narine",
@@ -646,7 +673,8 @@ window.IPL_ROSTER = {
    "name": "Luvnith Sisodia",
    "team": "KKR",
    "role": "WK",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Prashant Solanki",
@@ -657,30 +685,29 @@ window.IPL_ROSTER = {
   {
    "name": "Harshit Rana",
    "team": "KKR",
-   "withdrawn": true,
    "role": "BOWL",
    "country": "in"
   },
   {
    "name": "Matheesha Pathirana",
    "team": "KKR",
-   "withdrawn": true,
    "role": "BOWL",
-   "country": "lk"
+   "country": "lk",
+   "released": true
   },
   {
    "name": "Akash Deep",
    "team": "KKR",
-   "withdrawn": true,
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mustafizur Rahman",
    "team": "KKR",
-   "withdrawn": true,
    "role": "BOWL",
-   "country": "bd"
+   "country": "bd",
+   "released": true
   },
   {
    "name": "Abdul Samad",
@@ -698,11 +725,12 @@ window.IPL_ROSTER = {
    "name": "Avesh Khan",
    "team": "LSG",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mohammed Shami",
-   "team": "LSG",
+   "team": "RR",
    "role": "BOWL",
    "country": "in"
   },
@@ -716,13 +744,15 @@ window.IPL_ROSTER = {
    "name": "Matthew Breetzke",
    "team": "LSG",
    "role": "BAT",
-   "country": "za"
+   "country": "za",
+   "released": true
   },
   {
    "name": "Anrich Nortje",
    "team": "LSG",
    "role": "BOWL",
-   "country": "za"
+   "country": "za",
+   "released": true
   },
   {
    "name": "Shahbaz Ahmed",
@@ -750,7 +780,7 @@ window.IPL_ROSTER = {
   },
   {
    "name": "Manimaran Siddharth",
-   "team": "LSG",
+   "team": "RR",
    "role": "BOWL",
    "country": "in"
   },
@@ -764,7 +794,8 @@ window.IPL_ROSTER = {
    "name": "Naman Tiwari",
    "team": "LSG",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mayank Yadav",
@@ -788,7 +819,8 @@ window.IPL_ROSTER = {
    "name": "Himmat Singh",
    "team": "LSG",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Akash Singh",
@@ -824,26 +856,27 @@ window.IPL_ROSTER = {
    "name": "George Linde",
    "team": "LSG",
    "role": "AR",
-   "country": "za"
+   "country": "za",
+   "released": true
   },
   {
    "name": "Mitchell Marsh",
    "team": "LSG",
-   "withdrawn": true,
    "role": "AR",
    "country": "au"
   },
   {
    "name": "Wanindu Hasaranga",
    "team": "LSG",
-   "withdrawn": true,
    "role": "AR",
-   "country": "lk"
+   "country": "lk",
+   "released": true
   },
   {
    "name": "Krish Bhagat",
    "team": "MI",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Tilak Varma",
@@ -855,13 +888,15 @@ window.IPL_ROSTER = {
    "name": "Robin Minz",
    "team": "MI",
    "role": "WK",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Trent Boult",
    "team": "MI",
    "role": "BOWL",
-   "country": "nz"
+   "country": "nz",
+   "released": true
   },
   {
    "name": "Naman Dhir",
@@ -915,7 +950,8 @@ window.IPL_ROSTER = {
    "name": "Deepak Chahar",
    "team": "MI",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Suryakumar Yadav",
@@ -938,49 +974,57 @@ window.IPL_ROSTER = {
   {
    "name": "Ruchit Ahir",
    "team": "MI",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Allah Ghazanfar",
    "team": "MI",
    "role": "BOWL",
-   "country": "af"
+   "country": "af",
+   "released": true
   },
   {
    "name": "Mohammad Izhar",
    "team": "MI",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mahipal Lomror",
    "team": "MI",
    "role": "AR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Keshav Maharaj",
    "team": "MI",
    "role": "BOWL",
-   "country": "za"
+   "country": "za",
+   "released": true
   },
   {
    "name": "Danish Malewar",
    "team": "MI",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mayank Markande",
    "team": "MI",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Mayank Rawat",
    "team": "MI",
    "role": "AR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Raghu Sharma",
@@ -991,28 +1035,25 @@ window.IPL_ROSTER = {
   {
    "name": "Raj Angad Bawa",
    "team": "MI",
-   "withdrawn": true,
    "role": "AR",
    "country": "in"
   },
   {
    "name": "Mitchell Santner",
    "team": "MI",
-   "withdrawn": true,
    "role": "AR",
    "country": "nz"
   },
   {
    "name": "Atharva Ankolekar",
    "team": "MI",
-   "withdrawn": true,
    "role": "AR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Quinton de Kock",
    "team": "MI",
-   "withdrawn": true,
    "role": "WK",
    "country": "za"
   },
@@ -1056,7 +1097,8 @@ window.IPL_ROSTER = {
    "name": "Lockie Ferguson",
    "team": "PBKS",
    "role": "BOWL",
-   "country": "nz"
+   "country": "nz",
+   "released": true
   },
   {
    "name": "Marco Jansen",
@@ -1074,7 +1116,8 @@ window.IPL_ROSTER = {
    "name": "Mitchell Owen",
    "team": "PBKS",
    "role": "AR",
-   "country": "au"
+   "country": "au",
+   "released": true
   },
   {
    "name": "Musheer Khan",
@@ -1086,7 +1129,8 @@ window.IPL_ROSTER = {
    "name": "Nehal Wadhera",
    "team": "PBKS",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Prabhsimran Singh",
@@ -1097,7 +1141,8 @@ window.IPL_ROSTER = {
   {
    "name": "Praveen Dubey",
    "team": "PBKS",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Priyansh Arya",
@@ -1109,7 +1154,8 @@ window.IPL_ROSTER = {
    "name": "Pyla Avinash",
    "team": "PBKS",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Shashank Singh",
@@ -1140,7 +1186,8 @@ window.IPL_ROSTER = {
    "name": "Vishal Nishad",
    "team": "PBKS",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Vishnu Vinod",
@@ -1212,7 +1259,8 @@ window.IPL_ROSTER = {
    "name": "Swapnil Singh",
    "team": "RCB",
    "role": "AR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Venkatesh Iyer",
@@ -1278,19 +1326,22 @@ window.IPL_ROSTER = {
    "name": "Satvik Deswal",
    "team": "RCB",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Vihaan Malhotra",
    "team": "RCB",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Richard Gleeson",
    "team": "RCB",
    "role": "BOWL",
-   "country": "gb-eng"
+   "country": "gb-eng",
+   "released": true
   },
   {
    "name": "Vicky Ostwal",
@@ -1302,26 +1353,25 @@ window.IPL_ROSTER = {
    "name": "Mangesh Yadav",
    "team": "RCB",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Jacob Bethell",
    "team": "RCB",
-   "withdrawn": true,
    "role": "AR",
-   "country": "gb-eng"
+   "country": "gb-eng",
+   "released": true
   },
   {
    "name": "Yash Dayal",
    "team": "RCB",
-   "withdrawn": true,
    "role": "BOWL",
    "country": "in"
   },
   {
    "name": "Nuwan Thushara",
    "team": "RCB",
-   "withdrawn": true,
    "role": "BOWL",
    "country": "lk"
   },
@@ -1347,7 +1397,8 @@ window.IPL_ROSTER = {
    "name": "Ravi Singh",
    "team": "RR",
    "role": "WK",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Aman Perala",
@@ -1359,7 +1410,8 @@ window.IPL_ROSTER = {
    "name": "Shimron Hetmyer",
    "team": "RR",
    "role": "BAT",
-   "country": "gy"
+   "country": "gy",
+   "released": true
   },
   {
    "name": "Shubham Dubey",
@@ -1388,7 +1440,8 @@ window.IPL_ROSTER = {
   {
    "name": "Emanjot Chahal",
    "team": "RR",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Ravindra Jadeja",
@@ -1407,13 +1460,15 @@ window.IPL_ROSTER = {
    "name": "Yudhvir Singh",
    "team": "RR",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Adam Milne",
    "team": "RR",
    "role": "BOWL",
-   "country": "nz"
+   "country": "nz",
+   "released": true
   },
   {
    "name": "Brijesh Sharma",
@@ -1431,13 +1486,15 @@ window.IPL_ROSTER = {
    "name": "Kuldeep Sen",
    "team": "RR",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Kwena Maphaka",
    "team": "RR",
    "role": "BOWL",
-   "country": "za"
+   "country": "za",
+   "released": true
   },
   {
    "name": "Nandre Burger",
@@ -1467,13 +1524,15 @@ window.IPL_ROSTER = {
    "name": "Tushar Deshpande",
    "team": "RR",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Vignesh Puthur",
    "team": "RR",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Yash Punja",
@@ -1485,7 +1544,8 @@ window.IPL_ROSTER = {
    "name": "Travis Head",
    "team": "SRH",
    "role": "BAT",
-   "country": "au"
+   "country": "au",
+   "released": true
   },
   {
    "name": "Aniket Verma",
@@ -1533,7 +1593,8 @@ window.IPL_ROSTER = {
    "name": "Shivam Mavi",
    "team": "SRH",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Shivang Kumar",
@@ -1562,7 +1623,8 @@ window.IPL_ROSTER = {
    "name": "Kamindu Mendis",
    "team": "SRH",
    "role": "AR",
-   "country": "lk"
+   "country": "lk",
+   "released": true
   },
   {
    "name": "Jack Edwards",
@@ -1579,7 +1641,7 @@ window.IPL_ROSTER = {
   },
   {
    "name": "Harshal Patel",
-   "team": "SRH",
+   "team": "GT",
    "role": "BOWL",
    "country": "in"
   },
@@ -1587,7 +1649,8 @@ window.IPL_ROSTER = {
    "name": "Jaydev Unadkat",
    "team": "SRH",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Eshan Malinga",
@@ -1605,7 +1668,8 @@ window.IPL_ROSTER = {
    "name": "Onkar Tarmale",
    "team": "SRH",
    "role": "BOWL",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Sakib Hussain",
@@ -1617,7 +1681,8 @@ window.IPL_ROSTER = {
    "name": "David Payne",
    "team": "SRH",
    "role": "BOWL",
-   "country": "gb-eng"
+   "country": "gb-eng",
+   "released": true
   },
   {
    "name": "Zeeshan Ansari",
@@ -1628,13 +1693,20 @@ window.IPL_ROSTER = {
   {
    "name": "Amit Kumar",
    "team": "SRH",
-   "country": "in"
+   "country": "in",
+   "released": true
   },
   {
    "name": "Krains Fuletra",
    "team": "SRH",
    "role": "BOWL",
    "country": "in"
+  },
+  {
+   "name": "Sam Curran",
+   "team": "LSG",
+   "role": "AR",
+   "country": "gb-eng"
   }
  ],
  "colors": {

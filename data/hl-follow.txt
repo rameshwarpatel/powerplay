@@ -1,0 +1,4 @@
+# One line per competition: name | season.  "scan | N" also looks at every match of the last N days (men's, senior cricket only).
+# Each competition costs 1-2 requests to list plus 1 per finished match not already held. Free plan = 100 requests a day.
+Syed Mushtaq Ali Trophy | 2026
+scan | 7
