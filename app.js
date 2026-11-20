@@ -227,12 +227,11 @@ function renderReleased(q, main) {
 
 function render() {
   const q = document.getElementById("q").value.toLowerCase();
-  if (team === "COMPARE" && PPusers.list().length < 2) team = "HOME";
   const tabs = document.getElementById("tabs"); tabs.innerHTML = "";
   const FAV = getFav();
   document.documentElement.style.setProperty("--fav", FAV ? ((R.colors || {})[FAV] || "transparent") : "transparent");
   document.documentElement.classList.toggle("has-fav", !!FAV);
-  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "BUILD", "PREDICT", ...(PPusers.list().length > 1 ? ["COMPARE"] : [])].forEach(t => {
+  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "BUILD", "PREDICT", "COMPARE"].forEach(t => {
     const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t; b.className = t === team ? "on" : "";
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
@@ -269,6 +268,10 @@ function render() {
     pc.innerHTML = `<span class="cta-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v3a5 5 0 0 1-4 4.9V15h3v2H8v-2h3v-3.1A5 5 0 0 1 7 7zM5 5h2v2a3 3 0 0 1-2-2zm14 0a3 3 0 0 1-2 2V5z"/></svg></span><span class="cta-t"><b>Predict IPL 2027</b><small>Pick the bracket, the champion and both caps. No money, only bragging rights.</small></span><span class="cta-go"><span>Predict </span>→</span>`;
     pc.onclick = () => { team = "PREDICT"; render(); window.scrollTo(0, 0); };
     main.appendChild(pc);
+    const cc = document.createElement("button"); cc.className = "cta cmpc";
+    cc.innerHTML = `<span class="cta-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm7 1.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 19c0-3 2.7-5 6-5s6 2 6 5v1H3zm13.2-4.8c2.6.2 4.8 1.8 4.8 4.3V20h-4v-1c0-1.7-.3-3-.8-4.8z"/></svg></span><span class="cta-t"><b>Compare with friends</b><small>See everyone's predictions and playing XIs side by side. Share your picks with a link.</small></span><span class="cta-go"><span>Compare </span>→</span>`;
+    cc.onclick = () => { team = "COMPARE"; render(); window.scrollTo(0, 0); };
+    main.appendChild(cc);
     const g = document.createElement("div"); g.className = "tiles";
     Object.entries(R.teams).sort(([x], [y]) => (y === FAV) - (x === FAV)).forEach(([c, n]) => {
       const col = (R.colors || {})[c] || "#0b1f4d";
@@ -283,6 +286,17 @@ function render() {
     });
     main.appendChild(g); return;
   }
+  const teamInfo = c => {
+    const I = (window.IPL_TEAMINFO || {})[c]; if (!I) return null;
+    const ll = I.lat.toFixed(4) + "° N, " + I.lon.toFixed(4) + "° E";
+    const url = "https://www.google.com/maps/search/?api=1&query=" + I.lat + "," + I.lon;
+    const d = document.createElement("div"); d.className = "tinfo";
+    d.innerHTML = `<div class="ti-g"><span class="ti-l">Home ground</span><b>${esc(I.ground)}</b><small>${esc(I.city)}</small>` +
+      `<a class="ti-map" href="${url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>${ll}</span><em>Open in Google Maps</em></a></div>` +
+      `<div class="ti-s"><span class="ti-l">Coaching staff</span><ul>${I.staff.map(([r, nm]) => `<li><b>${esc(nm)}</b><small>${esc(r)}</small></li>`).join("")}</ul>` +
+      (I.note ? `<p class="ti-n">${esc(I.note)}</p>` : "") + `</div>`;
+    return d;
+  };
   Object.entries(R.teams).filter(([c]) => team === "ALL" || team === "HOME" || c === team).forEach(([c, n]) => {
     const ps = R.players.filter(p => p.team === c && p.name.toLowerCase().includes(q)).map(p => {
       const b = list(p.name, "bat"), w = list(p.name, "bowl");
@@ -319,6 +333,7 @@ function render() {
     wireCards(grid);
     return grid; };
     const cur = ps.filter(x => !x.p.released), rel = ps.filter(x => x.p.released);
+    if (team === c) { const ti = teamInfo(c); if (ti) s.appendChild(ti); }
     s.appendChild(mkGrid(cur));
     if (rel.length) {
       const d = document.createElement("details"); d.className = "rel"; d.open = !!q;
@@ -366,26 +381,26 @@ document.getElementById("sort").onchange = e => { sortBy = e.target.value; rende
 document.getElementById("group").onchange = e => { groupBy = e.target.value; e.target.classList.toggle("on", groupBy !== "none"); render(); };
 // ---- Players: several people can build XIIs and predictions on one device ----
 const PPusers = (() => {
-  const K = "pp-users", MAX = 6, COLORS = ["#2f6bff", "#ff7a1a", "#1fb86a", "#e0408f", "#8a5cf6", "#0fb5c4"];
+  const K = "pp-users", MAX = 6, FMAX = 8, COLORS = ["#2f6bff", "#ff7a1a", "#1fb86a", "#e0408f", "#8a5cf6", "#0fb5c4"];
   let st = {list: [{id: "u1", name: "Me", c: COLORS[0]}], active: "u1"}, mode = null;
   try { const j = JSON.parse(localStorage.getItem(K) || "null");
     if (j && Array.isArray(j.list) && j.list.length) st = j; } catch {}
-  if (!st.list.some(u => u.id === st.active)) st.active = st.list[0].id;
+  if (!st.list.some(u => u.id === st.active && !u.f)) st.active = (st.list.find(u => !u.f) || st.list[0]).id;
   const persist = () => { try { localStorage.setItem(K, JSON.stringify(st)); } catch {} };
   // the first player keeps the original storage keys, so nothing saved earlier is lost
   const key = (base, id = st.active) => id === "u1" ? base : base + "@" + id;
-  const list = () => st.list, active = () => st.list.find(u => u.id === st.active);
+  const own = () => st.list.filter(u => !u.f), list = () => own(), everyone = () => st.list, active = () => st.list.find(u => u.id === st.active);
   const ini = n => (n.trim()[0] || "?").toUpperCase();
   const wipe = id => { try { Object.keys(localStorage).forEach(k => {
     if (id === "u1" ? (k === "pp-predict-2027" || /^ipl-xii-[A-Za-z0-9]+$/.test(k)) : k.endsWith("@" + id)) localStorage.removeItem(k); }); } catch {} };
   const uniq = (n, skip) => { let b = n, i = 2; while (st.list.some(u => u.id !== skip && u.name.toLowerCase() === n.toLowerCase())) n = b + " " + i++; return n; };
   const bar = () => {
     const a = active();
-    const chips = st.list.map(u => `<button type="button" class="ub-c${u.id === st.active ? " on" : ""}" data-u="${u.id}" style="--c:${u.c};--ink:${ink(u.c)}" aria-pressed="${u.id === st.active}"><i>${esc(ini(u.name))}</i>${esc(u.name)}</button>`).join("");
-    const add = st.list.length < MAX ? `<button type="button" class="ub-add" data-act="add">+ Add player</button>` : "";
+    const chips = own().map(u => `<button type="button" class="ub-c${u.id === st.active ? " on" : ""}" data-u="${u.id}" style="--c:${u.c};--ink:${ink(u.c)}" aria-pressed="${u.id === st.active}"><i>${esc(ini(u.name))}</i>${esc(u.name)}</button>`).join("");
+    const add = own().length < MAX ? `<button type="button" class="ub-add" data-act="add">+ Add player</button>` : "";
     let form = "";
     if (mode === "add") form = `<form class="ub-f" data-form="add"><input name="n" maxlength="14" placeholder="Name, e.g. Dad" aria-label="New player name" autocomplete="off"><button class="ub-go">Add</button><button type="button" class="ub-x" data-act="cancel">Cancel</button></form>`;
-    if (mode === "edit") form = `<form class="ub-f" data-form="edit"><input name="n" maxlength="14" value="${esc(a.name)}" aria-label="Player name" autocomplete="off"><button class="ub-go">Rename</button>${st.list.length > 1 ? `<button type="button" class="ub-del" data-act="del">Remove</button>` : ""}<button type="button" class="ub-x" data-act="cancel">Cancel</button></form>`;
+    if (mode === "edit") form = `<form class="ub-f" data-form="edit"><input name="n" maxlength="14" value="${esc(a.name)}" aria-label="Player name" autocomplete="off"><button class="ub-go">Rename</button>${own().length > 1 ? `<button type="button" class="ub-del" data-act="del">Remove</button>` : ""}<button type="button" class="ub-x" data-act="cancel">Cancel</button></form>`;
     if (mode === "del") form = `<div class="ub-f"><span class="ub-msg">Remove <b>${esc(a.name)}</b> and all their saved picks?</span><button type="button" class="ub-del solid" data-act="del2">Remove</button><button type="button" class="ub-x" data-act="cancel">Cancel</button></div>`;
     return `<div class="ubar"><div class="ub-row"><span class="ub-l">Playing as</span><div class="ub-chips">${chips}</div>${add}</div>${form}</div>`;
   };
@@ -404,17 +419,35 @@ const PPusers = (() => {
         else if (a === "cancel") { mode = null; paint(); }
         else if (a === "del") { mode = "del"; paint(); }
         else if (a === "del2") {
-          const id = st.active; wipe(id); st.list = st.list.filter(u => u.id !== id); st.active = st.list[0].id; mode = null; persist(); onChange(); } });
+          const id = st.active; wipe(id); st.list = st.list.filter(u => u.id !== id); st.active = own()[0].id; mode = null; persist(); onChange(); } });
       host.querySelectorAll("form").forEach(f => f.onsubmit = e => {
         e.preventDefault(); const n = f.n.value.trim().slice(0, 14); if (!n) return f.n.focus();
         if (f.dataset.form === "add") {
-          const used = new Set(st.list.map(u => u.c)), u = {id: "u" + Date.now().toString(36), name: uniq(n), c: COLORS.find(c => !used.has(c)) || COLORS[st.list.length % COLORS.length]};
+          const used = new Set(st.list.map(u => u.c)), u = {id: "u" + Date.now().toString(36), name: uniq(n), c: COLORS.find(c => !used.has(c)) || COLORS[own().length % COLORS.length]};
           st.list.push(u); st.active = u.id; mode = null; persist(); onChange();
         } else { active().name = uniq(n, st.active); mode = null; persist(); onChange(); } });
     };
     paint();
   }
-  return {key, list, active, mount, ini};
+  // friends: picks that arrived through a shared link; shown in Compare only
+  const addFriend = (name, picks, xiByTeam) => {
+    name = String(name || "Friend").trim().slice(0, 14) || "Friend";
+    let u = st.list.find(x => x.f && x.name.toLowerCase() === name.toLowerCase());
+    if (!u) {
+      if (st.list.filter(x => x.f).length >= FMAX) return null;
+      const used = new Set(st.list.map(x => x.c)), others = COLORS.concat(["#c9a227", "#7a8b99"]);
+      u = {id: "f" + Date.now().toString(36), name: uniq(name), c: others.find(c => !used.has(c)) || others[st.list.length % others.length], f: 1};
+      st.list.push(u);
+    }
+    try {
+      localStorage.setItem(key("pp-predict-2027", u.id), JSON.stringify(picks));
+      Object.keys(localStorage).filter(k => k.startsWith("ipl-xii-") && k.endsWith("@" + u.id)).forEach(k => localStorage.removeItem(k));
+      Object.entries(xiByTeam || {}).forEach(([t, x]) => localStorage.setItem(key("ipl-xii-" + t, u.id), JSON.stringify(x)));
+    } catch {}
+    persist(); return u;
+  };
+  const removeFriend = id => { wipe(id); st.list = st.list.filter(u => u.id !== id); persist(); };
+  return {key, list, everyone, active, mount, ini, addFriend, removeFriend};
 })();
 
 // Playing-XII builder: 11 + Impact Player, IPL squad rules, drag-and-drop (desktop) and tap (phone).
@@ -466,8 +499,9 @@ const PPusers = (() => {
     if (wk) parts.push(`${(rc / wk).toFixed(0)} bowl`);
     return parts.join(" · ") || "no recent data";
   };
+  const plane = '<svg class="plane" viewBox="0 0 24 24" role="img" aria-label="Overseas player"><title>Overseas player</title><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>';
   const pill = (p, extra = "") => `<span class="b-av">${esc(p.name.split(/\s+/).map(x => x[0]).slice(0, 2).join("").toUpperCase())}${photo(p.name)}</span>` +
-    `<span class="b-nm"><b>${esc(p.name)}${capBadge(p)}</b><small>${flag(p.country)}${roleBadge(p.role)}<span>${esc(statOf(p))}</span></small></span>${extra}`;
+    `<span class="b-nm"><b>${esc(p.name)}${capBadge(p)}</b><small>${flag(p.country)}${isOS(p) ? plane : ""}${roleBadge(p.role)}<span>${esc(statOf(p))}</span></small></span>${extra}`;
 
   function checks() {
     const c = counts(slots), n = c.xi.length, imp = slots[11];
@@ -576,7 +610,9 @@ render();
   const KEY = () => PPusers.key("pp-predict-2027");
   const blank = () => ({top4: [null, null, null, null], q1: null, el: null, q2: null, fin: null, orange: [null, null, null], orangeRuns: "", purple: [null, null, null], purpleWkts: ""});
   let S = blank(), cq = {orange: "", purple: ""}, copied = "", lu = PPusers.active().id;
-  const reload = () => { lu = PPusers.active().id; cq = {orange: "", purple: ""}; try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY()) || "{}")); } catch { S = blank(); } };
+  const live = n => { const q = n && R.players.find(x => x.name === n); return q && !q.released && !q.withdrawn ? n : null; };
+  const reload = () => { lu = PPusers.active().id; cq = {orange: "", purple: ""}; try { S = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY()) || "{}")); } catch { S = blank(); }
+    S.orange = [0, 1, 2].map(i => live(S.orange && S.orange[i])); S.purple = [0, 1, 2].map(i => live(S.purple && S.purple[i])); };
   reload();
   const save = () => { try { localStorage.setItem(KEY(), JSON.stringify(S)); } catch {} };
   const col = t => (R.colors || {})[t] || "#2f6bff";
@@ -613,9 +649,9 @@ render();
   function capBlock(kind) {
     const orange = kind === "orange", key = orange ? "orange" : "purple", k = orange ? "bat" : "bowl";
     const picks = S[key], q = cq[key].trim().toLowerCase();
-    let pool = R.players.filter(p => !p.withdrawn && !picks.includes(p.name));
+    let pool = R.players.filter(p => !p.withdrawn && !p.released && !picks.includes(p.name));
     pool = pool.filter(p => orange ? p.role !== "BOWL" : p.role !== "BAT" && p.role !== "WK");
-    if (q) pool = R.players.filter(p => !p.withdrawn && !picks.includes(p.name) && p.name.toLowerCase().includes(q));
+    if (q) pool = R.players.filter(p => !p.withdrawn && !p.released && !picks.includes(p.name) && p.name.toLowerCase().includes(q));
     pool = pool.sort((x, y) => formScore(y, k) - formScore(x, k) || x.name.localeCompare(y.name)).slice(0, q ? 12 : 10);
     const slot = i => { const n = picks[i], p = n && R.players.find(x => x.name === n); const lab = ["Winner", "2nd", "3rd"][i];
       return `<li class="cp-s${p ? " has" : ""}${i === 0 ? " top" : ""}" data-dz="cap:${key}:${i}"${p ? ` data-dg="cap|${key}|${esc(p.name)}|${i}"` : ""}><span class="cp-r">${lab}</span>` + (p ?
@@ -774,7 +810,9 @@ render();
 // ---- Compare: every player's picks side by side ----
 (() => {
   const blankP = () => ({top4: [null, null, null, null], q1: null, el: null, q2: null, fin: null, orange: [null, null, null], orangeRuns: "", purple: [null, null, null], purpleWkts: ""});
-  const readP = id => { try { return Object.assign(blankP(), JSON.parse(localStorage.getItem(PPusers.key("pp-predict-2027", id)) || "{}")); } catch { return blankP(); } };
+  const liveN = n => { const q = n && R.players.find(x => x.name === n); return q && !q.released && !q.withdrawn ? n : null; };
+  const readP = id => { let p; try { p = Object.assign(blankP(), JSON.parse(localStorage.getItem(PPusers.key("pp-predict-2027", id)) || "{}")); } catch { p = blankP(); }
+    p.orange = [0, 1, 2].map(i => liveN(p.orange && p.orange[i])); p.purple = [0, 1, 2].map(i => liveN(p.purple && p.purple[i])); return p; };
   const readX = (id, t) => { try { const x = JSON.parse(localStorage.getItem(PPusers.key("ipl-xii-" + t, id)) || "null"); return Array.isArray(x) && x.length === 12 && x.some(Boolean) ? x : null; } catch { return null; } };
   const col = t => (R.colors || {})[t] || "#2f6bff";
   const chip = t => t ? `<span class="pt" style="--c:${col(t)};--ink:${ink(col(t))}"><b>${esc(t)}</b></span>` : '<span class="dim">–</span>';
@@ -782,20 +820,32 @@ render();
   const head = us => `<thead><tr><th></th>${us.map(u => `<th><span class="cmp-u" style="--c:${u.c};--ink:${ink(u.c)}"><i>${esc(PPusers.ini(u.name))}</i>${esc(u.name)}</span></th>`).join("")}</tr></thead>`;
   let tab = "pred", ct = null;
 
+  const pinfo = n => R.players.find(x => x.name === n);
+  const planeI = '<svg class="plane" viewBox="0 0 24 24" role="img" aria-label="Overseas player"><title>Overseas player</title><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>';
+  const capCell = (cls, unit) => (v, p) => {
+    if (!v) return '<span class="dim">–</span>';
+    const q = pinfo(v), num = cls === "ora" ? p.orangeRuns : p.purpleWkts;
+    return `<div class="cap-c"><b class="cmp-n">${esc(v)}</b><span class="cap-m">${q ? flag(q.country) + chip(q.team) : ""}</span>` +
+      (num ? `<span class="cap-v ${cls}"><b>${esc(num)}</b> ${unit}</span>` : `<span class="cap-v none">no ${unit} guess</span>`) + `</div>`;
+  };
+  const champ = v => v ? `<span class="cmp-champ">${chip(v)}<small>${esc(R.teams[v] || "")}</small></span>` : '<span class="dim">–</span>';
+
   function predTable(us) {
     const P = us.map(u => readP(u.id));
     const runner = p => p.fin && p.q1 && p.q2 ? (p.fin === p.q1 ? p.q2 : p.q1) : null;
-    const rows = [
-      ...["1st", "2nd", "3rd", "4th"].map((l, i) => [l + " place", p => p.top4[i], chip]),
-      ["Champion", p => p.fin, chip], ["Runner-up", runner, chip],
-      ["Orange Cap", p => p.orange[0], (v, p) => pl(v, p.orangeRuns ? p.orangeRuns + " runs" : "")],
-      ["Purple Cap", p => p.purple[0], (v, p) => pl(v, p.purpleWkts ? p.purpleWkts + " wkts" : "")]];
+    const groups = [
+      ["Final standings", [
+        ...["1st", "2nd", "3rd", "4th"].map((l, i) => [l + " place", p => p.top4[i], chip]),
+        ["Champion", p => p.fin, champ, "gold"], ["Runner-up", runner, champ]]],
+      ["Caps", [
+        ["Orange Cap", p => p.orange[0], capCell("ora", "runs")], ["Purple Cap", p => p.purple[0], capCell("pur", "wkts")]]]];
+    const rows = groups.flatMap(g => g[1]);
     let agree = 0;
-    const body = rows.map(([label, get, cell]) => {
+    const body = groups.map(([title, rs]) => `<tr class="sec"><th colspan="${us.length + 1}">${title}</th></tr>` + rs.map(([label, get, cell, kind]) => {
       const v = P.map(get), same = v.every(Boolean) && v.every(x => x === v[0]);
       if (same) agree++;
-      return `<tr class="${same ? "agree" : ""}"><th>${label}${same ? "<small>✓ agree</small>" : ""}</th>${v.map((x, i) => `<td>${cell(x, P[i])}</td>`).join("")}</tr>`;
-    }).join("");
+      return `<tr class="${same ? "agree" : ""}${kind ? " " + kind : ""}"><th>${label}${same ? "<small>✓ agree</small>" : ""}</th>${v.map((x, i) => `<td>${cell(x, P[i])}</td>`).join("")}</tr>`;
+    }).join("")).join("");
     const filled = P.map(p => rows.filter(([, get]) => get(p)).length);
     const empty = us.filter((u, i) => !filled[i]).map(u => u.name);
     return `<p class="cmp-sum">${agree ? `You all agree on <b>${agree}</b> of ${rows.length} calls.` : "No calls match yet."}${empty.length ? ` ${esc(empty.join(", "))} ${empty.length > 1 ? "haven't" : "hasn't"} made predictions yet.` : ""}</p>` +
@@ -811,21 +861,99 @@ render();
     const common = have.length > 1 ? [...sets[0]].filter(n => sets.every(s => s.has(n))) : [];
     const pills = `<div class="b-teams cmp-teams">${teams.map(t => `<button type="button" class="${t === ct ? "on" : ""}" data-ct="${t}" style="--c:${col(t)};--ink:${ink(col(t))}">${t}</button>`).join("")}</div>`;
     const rows = Array.from({length: 12}, (_, i) => `<tr class="${i === 11 ? "imp" : ""}"><th>${i === 11 ? "Impact" : i + 1}</th>${X.map(x => { const n = x && x[i];
-      return `<td class="${n && common.includes(n) ? "common" : ""}">${n ? `<b class="cmp-n">${esc(n)}</b>` : '<span class="dim">–</span>'}</td>`; }).join("")}</tr>`).join("");
+      return `<td class="${n && common.includes(n) ? "common" : ""}">${n ? `<span class="xi-n"><b class="cmp-n">${esc(n)}</b>${(q => q && (q.country || "in") !== "in" ? planeI : "")(pinfo(n))}</span>` : '<span class="dim">–</span>'}</td>`; }).join("")}</tr>`).join("");
     const missing = us.filter((u, i) => !X[i]).map(u => u.name);
     return pills + `<p class="cmp-sum">${have.length > 1 ? `<b>${common.length}</b> of 12 players picked by everyone who built a ${esc(R.teams[ct])} XII.` : `Only one ${esc(R.teams[ct])} XII so far.`}${missing.length ? ` ${esc(missing.join(", "))} ${missing.length > 1 ? "haven't" : "hasn't"} built one for this team.` : ""}</p>` +
       `<div class="cmp-wrap"><table class="cmp" style="--n:${us.length}">${head(us)}<tbody>${rows}</tbody></table></div>`;
   }
 
   window.renderCompare = () => {
-    const main = document.getElementById("teams"), us = PPusers.list();
+    const main = document.getElementById("teams"), us = PPusers.everyone();
     main.innerHTML = `<div class="cmp-page"><div class="b-head"><h2>Compare picks</h2><div class="b-teams cmp-tabs" style="--c:var(--primary);--ink:#fff">` +
       `<button type="button" class="${tab === "pred" ? "on" : ""}" data-tab="pred">Predictions</button><button type="button" class="${tab === "xii" ? "on" : ""}" data-tab="xii">Playing XII</button></div></div>` +
-      `<p class="b-help">Everyone's picks from this device, side by side. Switch player in Build XII or Predict 2027 to change anyone's picks.</p>` +
-      (tab === "pred" ? predTable(us) : xiTable(us)) + `</div>`;
+      `<p class="b-help">Everyone's picks side by side: players on this device, and friends who sent you a link. Switch player in Build XII or Predict 2027 to change your own picks.</p>` +
+      (tab === "pred" ? predTable(us) : xiTable(us)) + window.PPfriends.panel() + `</div>`;
+    window.PPfriends.wire(main, () => window.renderCompare());
     main.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; window.renderCompare(); });
     main.querySelectorAll("[data-ct]").forEach(b => b.onclick = () => { ct = b.dataset.ct; window.renderCompare(); });
   };
+})();
+
+// ---- Friends: share picks as a link (nothing is stored on a server) and add friends' links to Compare ----
+(() => {
+  const b64e = o => btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const b64d = t => JSON.parse(decodeURIComponent(escape(atob(t.replace(/-/g, "+").replace(/_/g, "/")))));
+  const blank = () => ({top4: [null, null, null, null], q1: null, el: null, q2: null, fin: null, orange: [null, null, null], orangeRuns: "", purple: [null, null, null], purpleWkts: ""});
+  const rd = k => { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch { return null; } };
+  const hasP = p => p.top4.some(Boolean) || p.fin || p.orange.some(Boolean) || p.purple.some(Boolean);
+  const mine = () => {
+    const u = PPusers.active(), p = Object.assign(blank(), rd(PPusers.key("pp-predict-2027", u.id)) || {}), x = {};
+    Object.keys(R.teams).forEach(t => { const v = rd(PPusers.key("ipl-xii-" + t, u.id)); if (Array.isArray(v) && v.length === 12 && v.some(Boolean)) x[t] = v; });
+    return {u, p, x, any: hasP(p) || Object.keys(x).length > 0};
+  };
+  const link = () => { const m = mine(); return location.origin + location.pathname + "#join=" + b64e({v: 1, n: m.u.name, p: m.p, x: m.x}); };
+  const tm = t => t && R.teams[t] ? t : null;
+  const pn = n => { const q = R.players.find(p => p.name === n); return q ? q.name : null; };
+  const clean = j => {          // anything arriving from a link is checked before it is stored
+    if (!j || typeof j !== "object" || !j.p) return null;
+    const p = blank(), a = j.p;
+    p.top4 = [0, 1, 2, 3].map(i => tm(a.top4 && a.top4[i])); ["q1", "el", "q2", "fin"].forEach(k => { p[k] = tm(a[k]); });
+    p.orange = [0, 1, 2].map(i => pn(a.orange && a.orange[i])); p.purple = [0, 1, 2].map(i => pn(a.purple && a.purple[i]));
+    p.orangeRuns = String(a.orangeRuns || "").replace(/\D/g, "").slice(0, 5); p.purpleWkts = String(a.purpleWkts || "").replace(/\D/g, "").slice(0, 3);
+    const x = {};
+    Object.entries(j.x || {}).forEach(([t, v]) => { if (R.teams[t] && Array.isArray(v) && v.length === 12) x[t] = v.map(n => (typeof n === "string" ? pn(n) : null)); });
+    return {n: String(j.n || "Friend").replace(/[<>]/g, "").trim().slice(0, 14) || "Friend", p, x};
+  };
+  const parse = text => {
+    const m = String(text || "").match(/join=([A-Za-z0-9_-]+)/) || String(text || "").trim().match(/^([A-Za-z0-9_-]{20,})$/);
+    if (!m) return null; try { return clean(b64d(m[1])); } catch { return null; }
+  };
+  const summary = j => {
+    const bits = []; if (j.p.fin) bits.push("champion " + j.p.fin); if (j.p.orange[0]) bits.push("Orange Cap " + j.p.orange[0]); if (j.p.purple[0]) bits.push("Purple Cap " + j.p.purple[0]);
+    const n = Object.keys(j.x).length; if (n) bits.push(n + " playing XII" + (n === 1 ? "" : "s"));
+    return bits.join(" · ") || "no picks yet";
+  };
+  const add = j => { const u = PPusers.addFriend(j.n, j.p, j.x); return u; };
+  const toast = (box, msg, bad) => { box.textContent = msg; box.className = "fr-msg" + (bad ? " bad" : ""); };
+
+  window.PPfriends = {
+    panel() {
+      const m = mine(), fr = PPusers.everyone().filter(u => u.f);
+      return `<section class="fr"><h3>Play with friends</h3>` +
+        `<p>Send your picks as a link. Your friend opens it and your predictions and playing XIs appear in their Compare tab. Their picks come to you the same way. Everything stays on each person's own phone.</p>` +
+        (m.any ? `<div class="fr-row"><button type="button" class="fr-b main" data-fr="share">Share my picks</button><a class="fr-b" data-fr="wa" target="_blank" rel="noopener">WhatsApp</a><button type="button" class="fr-b" data-fr="copy">Copy link</button></div>`
+          : `<p class="fr-note">Make some picks first (Predict 2027 or Build XII), then you can share them from here.</p>`) +
+        `<form class="fr-join" data-fr="join"><input name="l" placeholder="Paste a friend's link here" aria-label="Friend's link" autocomplete="off"><button class="fr-b main">Add friend</button></form>` +
+        `<div class="fr-msg" role="status"></div>` +
+        (fr.length ? `<div class="fr-list">${fr.map(u => `<span class="fr-chip" style="--c:${u.c};--ink:${ink(u.c)}"><i>${esc(PPusers.ini(u.name))}</i>${esc(u.name)}<button type="button" data-fr="rm" data-id="${u.id}" aria-label="Remove ${esc(u.name)}">×</button></span>`).join("")}</div>` : "") + `</section>`;
+    },
+    wire(root, again) {
+      const msg = root.querySelector(".fr-msg"), wa = root.querySelector('[data-fr="wa"]');
+      const text = () => `${mine().u.name} wants to compare IPL 2027 predictions on Powerplay. Open this to see my picks and add yours:\n${link()}`;
+      if (wa) wa.href = "https://wa.me/?text=" + encodeURIComponent(text());
+      const sh = root.querySelector('[data-fr="share"]');
+      if (sh) sh.onclick = async () => { try { if (navigator.share) { await navigator.share({title: "Powerplay picks", text: `${mine().u.name}'s IPL 2027 picks`, url: link()}); return; } } catch { return; } copy(); };
+      const copy = async () => { try { await navigator.clipboard.writeText(link()); toast(msg, "Link copied. Paste it into a message to your friend."); } catch { window.prompt("Copy this link", link()); } };
+      const cp = root.querySelector('[data-fr="copy"]'); if (cp) cp.onclick = copy;
+      const jf = root.querySelector('[data-fr="join"]');
+      if (jf) jf.onsubmit = e => { e.preventDefault(); const j = parse(jf.l.value); if (!j) return toast(msg, "That doesn't look like a Powerplay link. Paste the whole link your friend sent.", true);
+        if (!add(j)) return toast(msg, "You already have the maximum number of friends. Remove one first.", true); again(); };
+      root.querySelectorAll('[data-fr="rm"]').forEach(b => b.onclick = () => { PPusers.removeFriend(b.dataset.id); again(); });
+    },
+    open() {      // a friend's link was opened: ask before adding
+      const m = location.hash.match(/join=([A-Za-z0-9_-]+)/); if (!m) return;
+      const j = parse(m[0]), clear = () => { try { history.replaceState(null, "", location.pathname + location.search); } catch {} };
+      if (!j) { clear(); return; }
+      const ov = document.createElement("div"); ov.className = "fr-ov";
+      const have = PPusers.everyone().some(u => u.f && u.name.toLowerCase() === j.n.toLowerCase());
+      ov.innerHTML = `<div class="fr-card" role="dialog" aria-modal="true"><h3>${esc(j.n)} shared their picks</h3><p>${esc(summary(j))}</p><p class="fr-s">${have ? "This replaces the picks you saved earlier from " + esc(j.n) + "." : "They will show up in your Compare tab."}</p><div class="fr-row"><button type="button" class="fr-b main" data-a="y">${have ? "Update" : "Add to Compare"}</button><button type="button" class="fr-b" data-a="n">Not now</button></div></div>`;
+      document.body.appendChild(ov);
+      ov.onclick = e => { const a = e.target.closest("[data-a]"); if (!a && e.target !== ov) return; ov.remove(); clear();
+        if (a && a.dataset.a === "y") { add(j); team = "COMPARE"; render(); window.scrollTo(0, 0); } };
+    }
+  };
+  setTimeout(() => window.PPfriends.open(), 60);
+  window.addEventListener("hashchange", () => window.PPfriends.open());
 })();
 
 // ---------- Share cards: render a picture of the XII or the predictions, then share or download it ----------
