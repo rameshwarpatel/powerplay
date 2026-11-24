@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: update-form
@@ -48,7 +49,10 @@ jobs:
           V=$(date +%Y%m%d%H)
           sed -i -E "s#(data/(form|roster)\.js\?v=)[^\"]*#\1$V#" index.html
 
-      - name: Commit changes
+      # main is protected, so the daily refresh goes through a pull request like any other change
+      - name: Commit to a branch and open a pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "powerplay-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -56,6 +60,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing changed."
           else
+            B="data/auto-update-$(date -u +%Y%m%d-%H%M)"
+            git switch -c "$B"
             git commit -m "Update form data $(date -u +%F)"
-            git push
+            git push -u origin "$B"
+            gh pr create --base main --head "$B" --title "Update form data $(date -u +%F)" --body "Automated daily refresh of match data."
+            gh pr merge "$B" --squash --delete-branch
           fi
