@@ -18,3 +18,15 @@ Irani Cup
 Ranji Trophy
 Syed Mushtaq Ali Trophy
 Vijay Hazare Trophy
+
+# Added Nov 2026: India A in the Rising Stars Asia Cup
+Asia Cup Rising Stars
+
+# All India men's domestic/A-team tournaments
+Duleep Trophy
+Deodhar Trophy
+Irani Cup
+Vijay Hazare Trophy
+Ranji Trophy
+Syed Mushtaq Ali
+India A

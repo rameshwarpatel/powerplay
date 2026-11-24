@@ -123,14 +123,16 @@ function catchup() {
     (byTeam[p.team] = byTeam[p.team] || []).push({p, bat: played, bowl, n: games.size, runs, avg: outs ? runs / outs : null, wk, rc,
       last: [...bat, ...bowl].map(i => i.date).sort().pop()});
   });
-  const teams = Object.keys(R.teams).filter(t => byTeam[t]);
+  Object.values(byTeam).forEach(a => a.forEach(r => { r.bat = [...r.bat].sort((a, b) => b.date.localeCompare(a.date)); r.bowl = [...r.bowl].sort((a, b) => b.date.localeCompare(a.date)); }));   // newest match first
+  const latest = t => byTeam[t].reduce((m, r) => r.last > m ? r.last : m, "");
+  const teams = Object.keys(R.teams).filter(t => byTeam[t]).sort((a, b) => latest(b).localeCompare(latest(a)) || R.teams[a].localeCompare(R.teams[b]));
   const total = teams.reduce((s, t) => s + byTeam[t].length, 0);
   const btn = d => `<button class="${d === catchDays ? "on" : ""}" data-d="${d}">${d} days</button>`;
   let h = `<div class="catch-h"><div><h2>Weekly catch-up</h2><p>${total} player${total === 1 ? "" : "s"} played between ${esc(cut)} and ${esc(today)}</p></div><div class="catch-d">${[7, 14, 30].map(btn).join("")}</div></div>`;
   if (!teams.length) h += `<div class="empty">Nobody in the data played in the last ${catchDays} days. Try a longer range, or run the updater for fresher matches.</div>`;
   teams.forEach(t => {
     const col = (R.colors || {})[t] || "#2f6bff";
-    byTeam[t].sort((x, y) => (y.runs + y.wk * 20) - (x.runs + x.wk * 20) || x.p.name.localeCompare(y.p.name));
+    byTeam[t].sort((x, y) => y.last.localeCompare(x.last) || (y.runs + y.wk * 20) - (x.runs + x.wk * 20) || x.p.name.localeCompare(y.p.name));
     h += `<div class="ct" style="--c:${col};--ink:${ink(col)}"><div class="ct-h"><span class="ct-mark">${esc(t)}</span><b>${esc(R.teams[t])}</b><small>${byTeam[t].length} player${byTeam[t].length === 1 ? "" : "s"}${byTeam[t].some(r => r.p.released) ? " · " + byTeam[t].filter(r => r.p.released).length + " released" : ""}</small></div>` +
       `<div class="ct-wrap"><table><thead><tr><th>Player</th><th>M</th><th>Batting</th><th>Bowling</th></tr></thead><tbody>` +
       byTeam[t].map(r => {
@@ -354,7 +356,7 @@ function sgShow() {
   if (t.length < 3) return sgHide();
   sgList = R.players.filter(p => p.name.toLowerCase().includes(t))
     .sort((x, y) => (x.name.toLowerCase().startsWith(t) ? 0 : 1) - (y.name.toLowerCase().startsWith(t) ? 0 : 1) || x.name.localeCompare(y.name)).slice(0, 8);
-  sg.innerHTML = sgList.length ? sgList.map((p, i) => `<li role="option" data-i="${i}" style="--c:${(R.colors || {})[p.team] || "#2f6bff"};--ink:${ink((R.colors || {})[p.team] || "#2f6bff")}"><b>${esc(p.name)}</b><span>${flag(p.country)}${roleBadge(p.role)}<em>${esc(p.team)}</em></span></li>`).join("")
+  sg.innerHTML = sgList.length ? sgList.map((p, i) => `<li role="option" data-i="${i}" style="--c:${(R.colors || {})[p.team] || "#2f6bff"};--ink:${ink((R.colors || {})[p.team] || "#2f6bff")}"><b>${esc(p.name)}</b><span>${flag(p.country)}${roleBadge(p.role)}<em>${p.released ? "Released · " + esc(p.team) : esc(p.team)}</em></span></li>`).join("")
     : '<li class="none">No player found</li>';
   sg.hidden = false; sgIdx = -1;
 }

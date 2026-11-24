@@ -790,3 +790,6 @@ nav#tabs button.predict{width:auto;max-width:none;margin:0;padding:0 16px;flex:n
 html[data-theme="light"] .ti-s li{background:#0000000a}
 .ti-s li b{font-size:14px}.ti-s li small{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant)}
 .ti-n{margin:10px 0 0;font-size:12px;color:var(--on-surface-variant)}
+
+/* sort + group now sit directly under the search box */
+#pin .controls{margin:8px 0 2px}

@@ -1,0 +1,6 @@
+api-key*
+data/cache/
+data/archive/
+data/last-run.log
+.env
+.DS_Store

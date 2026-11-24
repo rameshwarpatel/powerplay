@@ -2,8 +2,8 @@ name: Update IPL form data
 
 on:
   schedule:
-    - cron: "17 11 * * *"
-  workflow_dispatch:
+    - cron: "17 11 * * *"   # every day, 11:17 UTC (about 6:17 am Toronto)
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
 
 permissions:
   contents: write
@@ -23,6 +23,7 @@ jobs:
         with:
           python-version: "3.11"
 
+      # keeps downloaded scorecards and Cricsheet files between runs (saves API hits)
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -33,11 +34,12 @@ jobs:
       - name: Fetch new matches and rebuild data
         env:
           CRICAPI_KEY: ${{ secrets.CRICAPI_KEY }}
+          HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
         run: |
-          if [ -n "$CRICAPI_KEY" ]; then
+          if [ -n "$CRICAPI_KEY" ] || [ -n "$HIGHLIGHTLY_KEY" ]; then
             python3 scripts/update_form.py
           else
-            echo "No CRICAPI_KEY secret set, using Cricsheet only."
+            echo "No API secrets set, using Cricsheet only."
             python3 scripts/update_form.py --no-api
           fi
 
