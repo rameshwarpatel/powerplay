@@ -84,11 +84,13 @@ const pairChip = m => `<span class="pair${(m.b && m.b.potm) || (m.w && m.w.potm)
   `<span class="chip ${m.w ? (m.w.wkts >= 3 ? "hi" : "") : "none"}">${m.w ? m.w.wkts + "/" + m.w.runs : "–"}</span></span>`;
 function detail(name, all) {
   const rows = new Map();
-  const get = i => { const k = [i.date, i.opponent, i.competition, i.inn || ""].join("|");
-    if (!rows.has(k)) rows.set(k, {inn: i.inn, no: i.matchNo, date: i.date, team: i.team, opp: i.opponent, fmt: i.format, comp: i.competition, venue: i.venue, result: i.result});
+  let seen = {};   // data without innings numbers (Tests): the 2nd entry with the same key is the 2nd innings, not a duplicate
+  const get = i => { const b = [i.date, i.opponent, i.competition, i.inn || ""].join("|"), n = seen[b] = (seen[b] || 0) + 1, k = b + "|" + n;
+    if (!rows.has(k)) rows.set(k, {inn: i.inn || (n > 1 ? n : undefined), no: i.matchNo, date: i.date, team: i.team, opp: i.opponent, fmt: i.format, comp: i.competition, venue: i.venue, result: i.result});
     return rows.get(k); };
   list(name, "bat").forEach(i => { const m = get(i); m.bat = `${i.runs}${i.out ? "" : "*"}`; m.batT = batTier(i.runs); m.balls = i.balls; m.top = i.top; if (i.potm) m.potm = true; });
   ((F[name] || {}).bat || []).filter(i => i.dnb && (fmt === "ALL" || i.format === fmt)).forEach(get);
+  seen = {};
   list(name, "bowl").forEach(i => { const m = get(i); m.bowl = `${i.wkts}/${i.runs}`; m.bowlT = bowlTier(i.wkts); m.overs = i.overs; if (i.potm) m.potm = true; });
   const ms = [...rows.values()].sort((x, y) => (y.date || "").localeCompare(x.date || "") || (y.inn || 0) - (x.inn || 0));
   if (!ms.length) return `<div class="empty">No recent matches found for ${esc(name)}${fmt !== "ALL" ? " in " + fmt : ""} yet.</div>`;

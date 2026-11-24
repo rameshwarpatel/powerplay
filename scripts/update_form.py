@@ -338,10 +338,15 @@ def build(use_cricsheet=True):
                 "competition": competition({**sc, **meta}),
                 "venue": str(sc.get("venue") or meta.get("venue") or ""), "result": str(sc.get("status") or meta.get("status") or "")}
         short = lambda t: abbr.get(t.lower(), t) if t else ""
+        _seen, _labels = {}, [str(i.get("inning", "")).lower() for i in innings]
+        _bt = [next((t for t in teams if t.lower() in lb), None) for lb in _labels]
+        _multi = len([b for b in _bt if b]) > len({b for b in _bt if b})      # a team bats twice (Test / first-class): number the innings
         for inn in innings:
             label = str(inn.get("inning", "")).lower()
             bat_team = next((t for t in teams if t.lower() in label), None)
             bowl_team = next((t for t in teams if t != bat_team), None) if bat_team else None
+            _seen[bat_team] = _seen.get(bat_team, 0) + 1
+            tag = {"inn": _seen[bat_team]} if _multi and bat_team else {}
             scores = [int(r["r"]) for r in inn.get("batting") or [] if r.get("r") is not None]
             best = max(scores) if scores else 0      # top score of this team's innings, whoever scored it
             for row in inn.get("batting") or []:
@@ -355,7 +360,7 @@ def build(use_cricsheet=True):
                     continue
                 text = str(row.get("dismissal-text") or row.get("dismissal") or "")
                 form.setdefault(who, {"bat": [], "bowl": []})["bat"].append({
-                    **base, "team": short(bat_team), "opponent": short(bowl_team), "runs": int(row["r"]), "balls": int(row.get("b") or 0),
+                    **base, **tag, "team": short(bat_team), "opponent": short(bowl_team), "runs": int(row["r"]), "balls": int(row.get("b") or 0),
                     "out": bool(text) and "not out" not in text.lower() and text.lower() != "batting",
                     **({"top": True} if best > 0 and int(row["r"]) == best else {})})
             for row in inn.get("bowling") or []:
@@ -367,7 +372,7 @@ def build(use_cricsheet=True):
                 if not who:
                     continue
                 form.setdefault(who, {"bat": [], "bowl": []})["bowl"].append({
-                    **base, "team": short(bowl_team), "opponent": short(bat_team), "overs": row.get("o"), "runs": int(row.get("r") or 0),
+                    **base, **tag, "team": short(bowl_team), "opponent": short(bat_team), "overs": row.get("o"), "runs": int(row.get("r") or 0),
                     "wkts": int(row["w"])})
     # Cricsheet ball-by-ball data is the base; API scorecards and hand-entered matches only fill dates it lacks
     cs_used, report = 0, []

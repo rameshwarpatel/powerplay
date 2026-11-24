@@ -199,10 +199,11 @@ window.IPL_FORM = {
     "competition": "Sri Lanka in Pakistan 2026",
     "venue": "Rawalpindi Cricket Stadium",
     "result": "Pakistan won by 8 wickets",
+    "inn": 2,
     "team": "Sri Lanka",
     "opponent": "Pakistan",
-    "runs": 8,
-    "balls": 16,
+    "runs": 16,
+    "balls": 25,
     "out": true
    },
    {
@@ -211,10 +212,11 @@ window.IPL_FORM = {
     "competition": "Sri Lanka in Pakistan 2026",
     "venue": "Rawalpindi Cricket Stadium",
     "result": "Pakistan won by 8 wickets",
+    "inn": 1,
     "team": "Sri Lanka",
     "opponent": "Pakistan",
-    "runs": 16,
-    "balls": 25,
+    "runs": 8,
+    "balls": 16,
     "out": true
    },
    {
@@ -223,6 +225,7 @@ window.IPL_FORM = {
     "competition": "Sri Lanka in Pakistan 2026",
     "venue": "Rawalpindi Cricket Stadium",
     "result": "Match drawn",
+    "inn": 1,
     "team": "Sri Lanka",
     "opponent": "Pakistan",
     "runs": 58,
@@ -472,10 +475,11 @@ window.IPL_FORM = {
     "competition": "Major League Tournament 2026",
     "venue": "Nondescripts Cricket Club Ground, Colombo",
     "result": "Moors won by an innings and 43 runs",
+    "inn": 2,
     "team": "Sinhalese Sports Club",
     "opponent": "Moors Sports Club",
-    "runs": 41,
-    "balls": 64,
+    "runs": 18,
+    "balls": 19,
     "out": true
    },
    {
@@ -484,10 +488,11 @@ window.IPL_FORM = {
     "competition": "Major League Tournament 2026",
     "venue": "Nondescripts Cricket Club Ground, Colombo",
     "result": "Moors won by an innings and 43 runs",
+    "inn": 1,
     "team": "Sinhalese Sports Club",
     "opponent": "Moors Sports Club",
-    "runs": 18,
-    "balls": 19,
+    "runs": 41,
+    "balls": 64,
     "out": true
    },
    {
@@ -654,6 +659,7 @@ window.IPL_FORM = {
     "competition": "Major League Tournament 2026",
     "venue": "Nondescripts Cricket Club Ground, Colombo",
     "result": "Moors won by an innings and 43 runs",
+    "inn": 1,
     "team": "Sinhalese Sports Club",
     "opponent": "Moors Sports Club",
     "overs": 22,
@@ -1571,6 +1577,7 @@ window.IPL_FORM = {
     "competition": "Sri Lanka in Pakistan 2026",
     "venue": "Rawalpindi Cricket Stadium",
     "result": "Match drawn",
+    "inn": 1,
     "team": "Sri Lanka",
     "opponent": "Pakistan",
     "runs": 0,
@@ -1693,11 +1700,12 @@ window.IPL_FORM = {
     "competition": "Sri Lanka in Pakistan 2026",
     "venue": "Rawalpindi Cricket Stadium",
     "result": "Match drawn",
+    "inn": 2,
     "team": "Sri Lanka",
     "opponent": "Pakistan",
-    "overs": 23,
-    "runs": 108,
-    "wkts": 3
+    "overs": 17,
+    "runs": 68,
+    "wkts": 0
    },
    {
     "date": "2026-11-09",
@@ -1705,11 +1713,12 @@ window.IPL_FORM = {
     "competition": "Sri Lanka in Pakistan 2026",
     "venue": "Rawalpindi Cricket Stadium",
     "result": "Match drawn",
+    "inn": 1,
     "team": "Sri Lanka",
     "opponent": "Pakistan",
-    "overs": 17,
-    "runs": 68,
-    "wkts": 0
+    "overs": 23,
+    "runs": 108,
+    "wkts": 3
    },
    {
     "date": "2026-10-31",
@@ -5765,10 +5774,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 0,
-    "balls": 0,
+    "runs": 2,
+    "balls": 10,
     "out": false
    },
    {
@@ -5777,10 +5787,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 2,
-    "balls": 10,
+    "runs": 0,
+    "balls": 0,
     "out": false
    },
    {
@@ -5815,6 +5826,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
     "runs": 0,
@@ -5827,6 +5839,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "Central Zone",
     "runs": 3,
@@ -5839,6 +5852,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "North East Zone",
     "runs": 7,
@@ -5937,11 +5951,12 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "overs": 17,
-    "runs": 84,
-    "wkts": 2
+    "overs": 10.4,
+    "runs": 33,
+    "wkts": 6
    },
    {
     "date": "2026-10-01",
@@ -5949,11 +5964,12 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "overs": 10.4,
-    "runs": 33,
-    "wkts": 6
+    "overs": 17,
+    "runs": 84,
+    "wkts": 2
    },
    {
     "date": "2026-09-15",
@@ -5987,6 +6003,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
     "overs": 19,
@@ -5999,18 +6016,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
-    "team": "East Zone",
-    "opponent": "Central Zone",
-    "overs": 16,
-    "runs": 56,
-    "wkts": 3
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
     "overs": 12,
@@ -6018,15 +6024,29 @@ window.IPL_FORM = {
     "wkts": 4
    },
    {
+    "date": "2026-08-30",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "East Zone won by 4 wickets",
+    "inn": 1,
+    "team": "East Zone",
+    "opponent": "Central Zone",
+    "overs": 16,
+    "runs": 56,
+    "wkts": 3
+   },
+   {
     "date": "2026-08-23",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 3,
     "team": "North East Zone",
     "opponent": "East Zone",
     "overs": 6,
-    "runs": 9,
+    "runs": 8,
     "wkts": 1
    }
   ]
@@ -6436,10 +6456,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 2,
-    "balls": 13,
+    "runs": 16,
+    "balls": 48,
     "out": true
    },
    {
@@ -6448,10 +6469,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 16,
-    "balls": 48,
+    "runs": 2,
+    "balls": 13,
     "out": true
    },
    {
@@ -6664,10 +6686,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "overs": 9,
-    "runs": 32,
+    "overs": 1,
+    "runs": 0,
     "wkts": 0
    },
    {
@@ -6676,10 +6699,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "overs": 1,
-    "runs": 0,
+    "overs": 9,
+    "runs": 32,
     "wkts": 0
    },
    {
@@ -8590,6 +8614,7 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
     "runs": 2,
@@ -8782,6 +8807,7 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
     "runs": 102,
@@ -9167,6 +9193,7 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
     "runs": 8,
@@ -9354,10 +9381,11 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 2,
     "team": "South Africa",
     "opponent": "Bangladesh",
-    "overs": 25,
-    "runs": 83,
+    "overs": 10,
+    "runs": 30,
     "wkts": 1
    },
    {
@@ -9366,10 +9394,11 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
-    "overs": 10,
-    "runs": 30,
+    "overs": 25,
+    "runs": 83,
     "wkts": 1
    },
    {
@@ -9877,6 +9906,7 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Senwes Park, Potchefstroom",
     "result": "Match drawn",
+    "inn": 1,
     "team": "Lions",
     "opponent": "North West",
     "runs": 57,
@@ -9953,6 +9983,7 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Senwes Park, Potchefstroom",
     "result": "Match drawn",
+    "inn": 1,
     "team": "Lions",
     "opponent": "North West",
     "overs": 15,
@@ -12763,10 +12794,11 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Kingsmead, Durban",
     "result": "Dolphins won by 25 runs",
+    "inn": 2,
     "team": "Dolphins",
     "opponent": "Western Province",
-    "runs": 16,
-    "balls": 18,
+    "runs": 21,
+    "balls": 34,
     "out": true
    },
    {
@@ -12775,10 +12807,11 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Kingsmead, Durban",
     "result": "Dolphins won by 25 runs",
+    "inn": 1,
     "team": "Dolphins",
     "opponent": "Western Province",
-    "runs": 21,
-    "balls": 34,
+    "runs": 16,
+    "balls": 18,
     "out": true
    },
    {
@@ -12864,11 +12897,12 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Kingsmead, Durban",
     "result": "Dolphins won by 25 runs",
+    "inn": 2,
     "team": "Dolphins",
     "opponent": "Western Province",
-    "overs": 26,
-    "runs": 67,
-    "wkts": 5
+    "overs": 49,
+    "runs": 101,
+    "wkts": 6
    },
    {
     "date": "2026-11-19",
@@ -12876,11 +12910,12 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Kingsmead, Durban",
     "result": "Dolphins won by 25 runs",
+    "inn": 1,
     "team": "Dolphins",
     "opponent": "Western Province",
-    "overs": 49,
-    "runs": 101,
-    "wkts": 6
+    "overs": 26,
+    "runs": 67,
+    "wkts": 5
    },
    {
     "date": "2026-10-09",
@@ -12990,11 +13025,13 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 2,
     "team": "South Africa",
     "opponent": "Bangladesh",
-    "runs": 4,
-    "balls": 8,
-    "out": true
+    "runs": 8,
+    "balls": 9,
+    "out": false,
+    "top": true
    },
    {
     "date": "2026-11-15",
@@ -13002,12 +13039,12 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
-    "runs": 8,
-    "balls": 9,
-    "out": false,
-    "top": true
+    "runs": 4,
+    "balls": 8,
+    "out": true
    },
    {
     "date": "2026-10-27",
@@ -13180,10 +13217,11 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 2,
     "team": "South Africa",
     "opponent": "Bangladesh",
     "overs": 1,
-    "runs": 1,
+    "runs": 3,
     "wkts": 0
    },
    {
@@ -13192,10 +13230,11 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
     "overs": 1,
-    "runs": 3,
+    "runs": 1,
     "wkts": 0
    },
    {
@@ -13369,10 +13408,11 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 2,
     "team": "Warriors",
     "opponent": "Titans",
-    "runs": 28,
-    "balls": 68,
+    "runs": 7,
+    "balls": 8,
     "out": true
    },
    {
@@ -13381,10 +13421,11 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 1,
     "team": "Warriors",
     "opponent": "Titans",
-    "runs": 7,
-    "balls": 8,
+    "runs": 28,
+    "balls": 68,
     "out": true
    },
    {
@@ -13556,6 +13597,7 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 2,
     "team": "Warriors",
     "opponent": "Titans",
     "overs": 12,
@@ -14470,11 +14512,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 26,
-    "runs": 100,
-    "wkts": 1
+    "overs": 19,
+    "runs": 23,
+    "wkts": 2
    },
    {
     "date": "2026-11-18",
@@ -14482,11 +14525,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 19,
-    "runs": 23,
-    "wkts": 2
+    "overs": 26,
+    "runs": 100,
+    "wkts": 1
    },
    {
     "date": "2026-11-07",
@@ -15049,10 +15093,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 0,
-    "balls": 5,
+    "runs": 7,
+    "balls": 7,
     "out": true
    },
    {
@@ -15061,10 +15106,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 7,
-    "balls": 7,
+    "runs": 0,
+    "balls": 5,
     "out": true
    },
    {
@@ -15171,11 +15217,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "overs": 23,
-    "runs": 88,
-    "wkts": 4
+    "overs": 7,
+    "runs": 22,
+    "wkts": 1
    },
    {
     "date": "2026-08-30",
@@ -15183,11 +15230,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
-    "overs": 7,
-    "runs": 22,
-    "wkts": 1
+    "overs": 23,
+    "runs": 88,
+    "wkts": 4
    },
    {
     "date": "2026-07-19",
@@ -16141,6 +16189,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 98,
@@ -16634,10 +16683,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 5,
-    "balls": 18,
+    "runs": 66,
+    "balls": 70,
     "out": true
    },
    {
@@ -16646,10 +16696,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 66,
-    "balls": 70,
+    "runs": 5,
+    "balls": 18,
     "out": true
    },
    {
@@ -16958,6 +17009,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 136,
@@ -17152,6 +17204,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 38,
@@ -17188,10 +17241,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 2,
-    "balls": 11,
+    "runs": 36,
+    "balls": 29,
     "out": true
    },
    {
@@ -17200,10 +17254,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 36,
-    "balls": 29,
+    "runs": 2,
+    "balls": 11,
     "out": true
    },
    {
@@ -17212,24 +17267,26 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
+    "team": "North Zone",
+    "opponent": "West Zone",
+    "runs": 22,
+    "balls": 28,
+    "out": true
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "West Zone",
     "runs": 60,
     "balls": 52,
     "out": true,
     "top": true
-   },
-   {
-    "date": "2026-08-23",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "North Zone won by 52 runs",
-    "team": "North Zone",
-    "opponent": "West Zone",
-    "runs": 22,
-    "balls": 28,
-    "out": true
    },
    {
     "date": "2026-05-21",
@@ -17287,11 +17344,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 23,
-    "runs": 69,
-    "wkts": 2
+    "overs": 22,
+    "runs": 45,
+    "wkts": 1
    },
    {
     "date": "2026-11-18",
@@ -17299,11 +17357,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 22,
-    "runs": 45,
-    "wkts": 1
+    "overs": 23,
+    "runs": 69,
+    "wkts": 2
    },
    {
     "date": "2026-11-07",
@@ -17347,18 +17406,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
-    "team": "North Zone",
-    "opponent": "South Zone",
-    "overs": 24,
-    "runs": 58,
-    "wkts": 2
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
     "overs": 5,
@@ -17366,15 +17414,16 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
-    "date": "2026-08-23",
+    "date": "2026-08-30",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
-    "result": "North Zone won by 52 runs",
+    "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
-    "opponent": "West Zone",
-    "overs": 14,
-    "runs": 38,
+    "opponent": "South Zone",
+    "overs": 24,
+    "runs": 58,
     "wkts": 2
    },
    {
@@ -17383,11 +17432,25 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "West Zone",
     "overs": 8,
     "runs": 37,
     "wkts": 1
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
+    "team": "North Zone",
+    "opponent": "West Zone",
+    "overs": 14,
+    "runs": 38,
+    "wkts": 2
    },
    {
     "date": "2026-05-21",
@@ -17483,6 +17546,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
     "runs": 1,
@@ -17584,11 +17648,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "South Zone",
     "opponent": "East Zone",
-    "overs": 25,
-    "runs": 140,
-    "wkts": 0
+    "overs": 16,
+    "runs": 47,
+    "wkts": 1
    },
    {
     "date": "2026-09-06",
@@ -17596,11 +17661,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
-    "overs": 16,
-    "runs": 47,
-    "wkts": 1
+    "overs": 25,
+    "runs": 140,
+    "wkts": 0
    },
    {
     "date": "2026-08-23",
@@ -19005,11 +19071,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 10,
-    "balls": 2,
-    "out": false
+    "runs": 12,
+    "balls": 9,
+    "out": true
    },
    {
     "date": "2026-08-30",
@@ -19017,8 +19084,22 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
+    "runs": 10,
+    "balls": 2,
+    "out": false
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 2,
+    "team": "North Zone",
+    "opponent": "West Zone",
     "runs": 12,
     "balls": 9,
     "out": true
@@ -19029,22 +19110,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "West Zone",
     "runs": 4,
     "balls": 12,
-    "out": true
-   },
-   {
-    "date": "2026-08-23",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "North Zone won by 52 runs",
-    "team": "North Zone",
-    "opponent": "West Zone",
-    "runs": 12,
-    "balls": 9,
     "out": true
    },
    {
@@ -19960,6 +20030,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
     "overs": 1,
@@ -20162,11 +20233,13 @@ window.IPL_FORM = {
     "competition": "Afghanistan v Zimbabwe 2026",
     "venue": "Sharjah Cricket Stadium",
     "result": "Zimbabwe won by 57 runs",
+    "inn": 2,
     "team": "Zimbabwe",
     "opponent": "Afghanistan",
-    "runs": 9,
-    "balls": 13,
-    "out": true
+    "runs": 59,
+    "balls": 93,
+    "out": true,
+    "top": true
    },
    {
     "date": "2026-11-13",
@@ -20174,12 +20247,12 @@ window.IPL_FORM = {
     "competition": "Afghanistan v Zimbabwe 2026",
     "venue": "Sharjah Cricket Stadium",
     "result": "Zimbabwe won by 57 runs",
+    "inn": 1,
     "team": "Zimbabwe",
     "opponent": "Afghanistan",
-    "runs": 59,
-    "balls": 93,
-    "out": true,
-    "top": true
+    "runs": 9,
+    "balls": 13,
+    "out": true
    },
    {
     "date": "2026-09-20",
@@ -20310,10 +20383,11 @@ window.IPL_FORM = {
     "competition": "Afghanistan v Zimbabwe 2026",
     "venue": "Sharjah Cricket Stadium",
     "result": "Zimbabwe won by 57 runs",
+    "inn": 2,
     "team": "Zimbabwe",
     "opponent": "Afghanistan",
-    "overs": 17,
-    "runs": 38,
+    "overs": 36,
+    "runs": 89,
     "wkts": 3
    },
    {
@@ -20322,10 +20396,11 @@ window.IPL_FORM = {
     "competition": "Afghanistan v Zimbabwe 2026",
     "venue": "Sharjah Cricket Stadium",
     "result": "Zimbabwe won by 57 runs",
+    "inn": 1,
     "team": "Zimbabwe",
     "opponent": "Afghanistan",
-    "overs": 36,
-    "runs": 89,
+    "overs": 17,
+    "runs": 38,
     "wkts": 3
    },
    {
@@ -20692,11 +20767,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "New Zealand",
     "opponent": "India",
-    "runs": 118,
-    "balls": 216,
-    "out": true
+    "runs": 26,
+    "balls": 126,
+    "out": false
    },
    {
     "date": "2026-11-18",
@@ -20704,11 +20780,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
-    "runs": 26,
-    "balls": 126,
-    "out": false
+    "runs": 118,
+    "balls": 216,
+    "out": true
    },
    {
     "date": "2026-11-07",
@@ -20881,6 +20958,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "overs": 24,
@@ -21983,10 +22061,11 @@ window.IPL_FORM = {
     "competition": "Sheffield Shield 2026",
     "venue": "Cricket Central, Sydney",
     "result": "NSW won by 98 runs",
+    "inn": 2,
     "team": "New South Wales",
     "opponent": "South Australia",
-    "runs": 17,
-    "balls": 39,
+    "runs": 18,
+    "balls": 43,
     "out": true
    },
    {
@@ -21995,10 +22074,11 @@ window.IPL_FORM = {
     "competition": "Sheffield Shield 2026",
     "venue": "Cricket Central, Sydney",
     "result": "NSW won by 98 runs",
+    "inn": 1,
     "team": "New South Wales",
     "opponent": "South Australia",
-    "runs": 18,
-    "balls": 43,
+    "runs": 17,
+    "balls": 39,
     "out": true
    },
    {
@@ -22169,11 +22249,12 @@ window.IPL_FORM = {
     "competition": "Sheffield Shield 2026",
     "venue": "Cricket Central, Sydney",
     "result": "NSW won by 98 runs",
+    "inn": 2,
     "team": "New South Wales",
     "opponent": "South Australia",
-    "overs": 12.5,
-    "runs": 72,
-    "wkts": 3
+    "overs": 9,
+    "runs": 42,
+    "wkts": 0
    },
    {
     "date": "2026-11-10",
@@ -22181,11 +22262,12 @@ window.IPL_FORM = {
     "competition": "Sheffield Shield 2026",
     "venue": "Cricket Central, Sydney",
     "result": "NSW won by 98 runs",
+    "inn": 1,
     "team": "New South Wales",
     "opponent": "South Australia",
-    "overs": 9,
-    "runs": 42,
-    "wkts": 0
+    "overs": 12.5,
+    "runs": 72,
+    "wkts": 3
    },
    {
     "date": "2026-10-30",
@@ -24152,10 +24234,11 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 2,
     "team": "Titans",
     "opponent": "Warriors",
-    "runs": 39,
-    "balls": 60,
+    "runs": 9,
+    "balls": 15,
     "out": true
    },
    {
@@ -24164,10 +24247,11 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 1,
     "team": "Titans",
     "opponent": "Warriors",
-    "runs": 9,
-    "balls": 15,
+    "runs": 39,
+    "balls": 60,
     "out": true
    },
    {
@@ -24353,6 +24437,7 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Senwes Park, Potchefstroom",
     "result": "Match drawn",
+    "inn": 1,
     "team": "Lions",
     "opponent": "North West",
     "runs": 10,
@@ -24908,10 +24993,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "South Zone",
-    "runs": 44,
-    "balls": 37,
+    "runs": 8,
+    "balls": 16,
     "out": true
    },
    {
@@ -24920,10 +25006,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
-    "runs": 8,
-    "balls": 16,
+    "runs": 44,
+    "balls": 37,
     "out": true
    },
    {
@@ -24932,10 +25019,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
-    "runs": 92,
-    "balls": 81,
+    "runs": 40,
+    "balls": 43,
     "out": true,
     "top": true
    },
@@ -24945,10 +25033,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "Central Zone",
-    "runs": 40,
-    "balls": 43,
+    "runs": 92,
+    "balls": 81,
     "out": true,
     "top": true
    },
@@ -24958,6 +25047,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "North East Zone",
     "runs": 8,
@@ -24986,6 +25076,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
     "overs": 4,
@@ -24998,6 +25089,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 3,
     "team": "North East Zone",
     "opponent": "East Zone",
     "overs": 3,
@@ -25213,6 +25305,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "South Zone",
     "opponent": "North Zone",
     "overs": 2,
@@ -25607,6 +25700,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 24,
@@ -25790,11 +25884,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 20,
-    "runs": 45,
-    "wkts": 0
+    "overs": 35,
+    "runs": 65,
+    "wkts": 1
    },
    {
     "date": "2026-11-18",
@@ -25802,11 +25897,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 35,
-    "runs": 65,
-    "wkts": 1
+    "overs": 20,
+    "runs": 45,
+    "wkts": 0
    },
    {
     "date": "2026-10-03",
@@ -25950,6 +26046,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 7,
@@ -26000,11 +26097,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 29,
-    "runs": 92,
-    "wkts": 4
+    "overs": 20,
+    "runs": 42,
+    "wkts": 1
    },
    {
     "date": "2026-11-18",
@@ -26012,11 +26110,12 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
-    "overs": 20,
-    "runs": 42,
-    "wkts": 1
+    "overs": 29,
+    "runs": 92,
+    "wkts": 4
    },
    {
     "date": "2026-11-07",
@@ -26975,6 +27074,7 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
     "runs": 72,
@@ -27076,11 +27176,12 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 2,
     "team": "South Africa",
     "opponent": "Bangladesh",
-    "overs": 22,
-    "runs": 70,
-    "wkts": 5
+    "overs": 16,
+    "runs": 48,
+    "wkts": 3
    },
    {
     "date": "2026-11-15",
@@ -27088,11 +27189,12 @@ window.IPL_FORM = {
     "competition": "Bangladesh in South Africa 2026",
     "venue": "The Wanderers Stadium, Johannesburg",
     "result": "South Africa won by 9 wickets",
+    "inn": 1,
     "team": "South Africa",
     "opponent": "Bangladesh",
-    "overs": 16,
-    "runs": 48,
-    "wkts": 3
+    "overs": 22,
+    "runs": 70,
+    "wkts": 5
    },
    {
     "date": "2026-10-27",
@@ -27760,6 +27862,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "runs": 1,
@@ -27864,6 +27967,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "overs": 33,
@@ -28594,6 +28698,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "runs": 4,
@@ -28680,6 +28785,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "overs": 33,
@@ -29232,6 +29338,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "runs": 11,
@@ -29347,6 +29454,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "overs": 31,
@@ -30352,10 +30460,11 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "New Zealand",
     "opponent": "India",
-    "runs": 15,
-    "balls": 50,
+    "runs": 37,
+    "balls": 129,
     "out": true
    },
    {
@@ -30364,10 +30473,11 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
-    "runs": 37,
-    "balls": 129,
+    "runs": 15,
+    "balls": 50,
     "out": true
    },
    {
@@ -30536,6 +30646,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "New Zealand",
     "opponent": "India",
     "overs": 10,
@@ -33601,11 +33712,13 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 2,
     "team": "Titans",
     "opponent": "Warriors",
-    "runs": 9,
-    "balls": 23,
-    "out": true
+    "runs": 120,
+    "balls": 158,
+    "out": true,
+    "top": true
    },
    {
     "date": "2026-11-19",
@@ -33613,12 +33726,12 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 1,
     "team": "Titans",
     "opponent": "Warriors",
-    "runs": 120,
-    "balls": 158,
-    "out": true,
-    "top": true
+    "runs": 9,
+    "balls": 23,
+    "out": true
    },
    {
     "date": "2026-09-04",
@@ -33791,11 +33904,12 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 2,
     "team": "Titans",
     "opponent": "Warriors",
-    "overs": 6,
-    "runs": 14,
-    "wkts": 1
+    "overs": 3,
+    "runs": 8,
+    "wkts": 0
    },
    {
     "date": "2026-11-19",
@@ -33803,11 +33917,12 @@ window.IPL_FORM = {
     "competition": "CSA 4-Day Series Division 1 2026",
     "venue": "Tuks Cricket Oval",
     "result": "Titans won by 294 runs",
+    "inn": 1,
     "team": "Titans",
     "opponent": "Warriors",
-    "overs": 3,
-    "runs": 8,
-    "wkts": 0
+    "overs": 6,
+    "runs": 14,
+    "wkts": 1
    }
   ]
  },
@@ -34549,10 +34664,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 27,
-    "balls": 38,
+    "runs": 24,
+    "balls": 51,
     "out": true
    },
    {
@@ -34561,10 +34677,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 24,
-    "balls": 51,
+    "runs": 27,
+    "balls": 38,
     "out": true
    },
    {
@@ -34647,10 +34764,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "overs": 16,
-    "runs": 66,
+    "overs": 14,
+    "runs": 53,
     "wkts": 4
    },
    {
@@ -34659,10 +34777,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "overs": 14,
-    "runs": 53,
+    "overs": 16,
+    "runs": 66,
     "wkts": 4
    },
    {
@@ -35564,6 +35683,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 80,
@@ -35588,6 +35708,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
     "runs": 62,
@@ -35755,6 +35876,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
     "overs": 1,
@@ -35767,6 +35889,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
     "overs": 4,
@@ -35870,10 +35993,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 12,
-    "balls": 41,
+    "runs": 5,
+    "balls": 19,
     "out": true
    },
    {
@@ -35882,10 +36006,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 5,
-    "balls": 19,
+    "runs": 12,
+    "balls": 41,
     "out": true
    },
    {
@@ -36574,12 +36699,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 60,
-    "balls": 88,
-    "out": true,
-    "top": true
+    "runs": 20,
+    "balls": 32,
+    "out": true
    },
    {
     "date": "2026-08-30",
@@ -36587,11 +36712,13 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 20,
-    "balls": 32,
-    "out": true
+    "runs": 60,
+    "balls": 88,
+    "out": true,
+    "top": true
    },
    {
     "date": "2026-07-26",
@@ -37421,11 +37548,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 10,
-    "balls": 27,
-    "out": true
+    "runs": 0,
+    "balls": 0,
+    "out": false
    },
    {
     "date": "2026-08-23",
@@ -37433,11 +37561,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 0,
-    "balls": 0,
-    "out": false
+    "runs": 10,
+    "balls": 27,
+    "out": true
    },
    {
     "date": "2026-05-24",
@@ -37543,11 +37672,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "overs": 11,
-    "runs": 38,
-    "wkts": 1
+    "overs": 3,
+    "runs": 20,
+    "wkts": 0
    },
    {
     "date": "2026-08-23",
@@ -37555,11 +37685,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "overs": 3,
-    "runs": 20,
-    "wkts": 0
+    "overs": 11,
+    "runs": 38,
+    "wkts": 1
    },
    {
     "date": "2026-05-24",
@@ -38680,10 +38811,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "South Zone",
-    "runs": 45,
-    "balls": 98,
+    "runs": 64,
+    "balls": 112,
     "out": true
    },
    {
@@ -38692,10 +38824,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
-    "runs": 64,
-    "balls": 112,
+    "runs": 45,
+    "balls": 98,
     "out": true
    },
    {
@@ -38704,22 +38837,24 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
-    "team": "East Zone",
-    "opponent": "Central Zone",
-    "runs": 16,
-    "balls": 33,
-    "out": true
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
     "runs": 0,
     "balls": 1,
+    "out": true
+   },
+   {
+    "date": "2026-08-30",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "East Zone won by 4 wickets",
+    "inn": 1,
+    "team": "East Zone",
+    "opponent": "Central Zone",
+    "runs": 16,
+    "balls": 33,
     "out": true
    },
    {
@@ -38728,6 +38863,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "North East Zone",
     "runs": 37,
@@ -38862,18 +38998,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
-    "team": "East Zone",
-    "opponent": "Central Zone",
-    "overs": 20,
-    "runs": 79,
-    "wkts": 0
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
     "overs": 7.2,
@@ -38881,16 +39006,17 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
-    "date": "2026-08-23",
+    "date": "2026-08-30",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
-    "result": "East Zone won by an innings and 210 runs",
-    "team": "North East Zone",
-    "opponent": "East Zone",
-    "overs": 8,
-    "runs": 25,
-    "wkts": 1
+    "result": "East Zone won by 4 wickets",
+    "inn": 1,
+    "team": "East Zone",
+    "opponent": "Central Zone",
+    "overs": 20,
+    "runs": 79,
+    "wkts": 0
    },
    {
     "date": "2026-08-23",
@@ -38898,11 +39024,25 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 3,
     "team": "North East Zone",
     "opponent": "East Zone",
     "overs": 15,
     "runs": 37,
     "wkts": 5
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "East Zone won by an innings and 210 runs",
+    "inn": 2,
+    "team": "North East Zone",
+    "opponent": "East Zone",
+    "overs": 8,
+    "runs": 25,
+    "wkts": 1
    },
    {
     "date": "2026-05-24",
@@ -39088,10 +39228,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 45,
-    "balls": 97,
+    "runs": 0,
+    "balls": 5,
     "out": true
    },
    {
@@ -39100,10 +39241,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 0,
-    "balls": 5,
+    "runs": 45,
+    "balls": 97,
     "out": true
    },
    {
@@ -40008,6 +40150,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 85,
@@ -40194,6 +40337,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
     "overs": 2,
@@ -40223,6 +40367,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 78,
@@ -40410,6 +40555,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
     "overs": 1,
@@ -40917,6 +41063,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Holkar Stadium, Indore",
     "result": "Tamil Nadu won by 99 runs",
+    "inn": 1,
     "team": "Tamil Nadu",
     "opponent": "Bihar",
     "runs": 8,
@@ -40991,6 +41138,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Holkar Stadium, Indore",
     "result": "Tamil Nadu won by 99 runs",
+    "inn": 2,
     "team": "Bihar",
     "opponent": "Tamil Nadu",
     "overs": 1,
@@ -42472,6 +42620,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 128,
@@ -42484,10 +42633,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 10,
-    "balls": 36,
+    "runs": 8,
+    "balls": 18,
     "out": true
    },
    {
@@ -42496,10 +42646,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 8,
-    "balls": 18,
+    "runs": 10,
+    "balls": 36,
     "out": true
    },
    {
@@ -42699,10 +42850,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 2,
-    "balls": 6,
+    "runs": 31,
+    "balls": 37,
     "out": true
    },
    {
@@ -42711,10 +42863,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 31,
-    "balls": 37,
+    "runs": 2,
+    "balls": 6,
     "out": true
    },
    {
@@ -42723,24 +42876,26 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
-    "team": "North Zone",
-    "opponent": "West Zone",
-    "runs": 51,
-    "balls": 57,
-    "out": true
-   },
-   {
-    "date": "2026-08-23",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "West Zone",
     "runs": 50,
     "balls": 62,
     "out": true,
     "top": true
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
+    "team": "North Zone",
+    "opponent": "West Zone",
+    "runs": 51,
+    "balls": 57,
+    "out": true
    },
    {
     "date": "2026-05-23",
@@ -42871,10 +43026,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "overs": 6,
-    "runs": 21,
+    "overs": 2,
+    "runs": 11,
     "wkts": 0
    },
    {
@@ -42883,10 +43039,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
-    "overs": 2,
-    "runs": 11,
+    "overs": 6,
+    "runs": 21,
     "wkts": 0
    },
    {
@@ -42895,6 +43052,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "West Zone",
     "overs": 1,
@@ -43070,10 +43228,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Jammu & Kashmir",
     "opponent": "Rest of India",
-    "runs": 57,
-    "balls": 88,
+    "runs": 20,
+    "balls": 42,
     "out": true
    },
    {
@@ -43082,10 +43241,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Jammu & Kashmir",
     "opponent": "Rest of India",
-    "runs": 20,
-    "balls": 42,
+    "runs": 57,
+    "balls": 88,
     "out": true
    },
    {
@@ -43094,10 +43254,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "runs": 16,
-    "balls": 19,
+    "runs": 14,
+    "balls": 11,
     "out": true
    }
   ],
@@ -43132,6 +43293,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "West Zone",
     "overs": 1,
@@ -43196,6 +43358,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "North East Zone",
     "runs": 167,
@@ -43283,11 +43446,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 3,
     "team": "North East Zone",
     "opponent": "East Zone",
-    "overs": 10,
-    "runs": 20,
-    "wkts": 3
+    "overs": 15,
+    "runs": 53,
+    "wkts": 1
    },
    {
     "date": "2026-08-23",
@@ -43295,11 +43459,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 2,
     "team": "North East Zone",
     "opponent": "East Zone",
-    "overs": 15,
-    "runs": 53,
-    "wkts": 1
+    "overs": 10,
+    "runs": 20,
+    "wkts": 3
    },
    {
     "date": "2026-05-19",
@@ -43395,18 +43560,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
-    "team": "East Zone",
-    "opponent": "South Zone",
-    "runs": 28,
-    "balls": 51,
-    "out": true
-   },
-   {
-    "date": "2026-09-06",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "South Zone",
     "runs": 0,
@@ -43414,15 +43568,29 @@ window.IPL_FORM = {
     "out": false
    },
    {
+    "date": "2026-09-06",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
+    "team": "East Zone",
+    "opponent": "South Zone",
+    "runs": 28,
+    "balls": 51,
+    "out": true
+   },
+   {
     "date": "2026-08-30",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
-    "runs": 6,
-    "balls": 12,
+    "runs": 8,
+    "balls": 5,
     "out": false
    },
    {
@@ -43431,10 +43599,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "Central Zone",
-    "runs": 8,
-    "balls": 5,
+    "runs": 6,
+    "balls": 12,
     "out": false
    },
    {
@@ -43443,6 +43612,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "North East Zone",
     "runs": 11,
@@ -43613,6 +43783,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
     "overs": 16,
@@ -43625,18 +43796,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
-    "team": "East Zone",
-    "opponent": "Central Zone",
-    "overs": 16,
-    "runs": 42,
-    "wkts": 2
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
     "overs": 16,
@@ -43644,15 +43804,29 @@ window.IPL_FORM = {
     "wkts": 3
    },
    {
+    "date": "2026-08-30",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "East Zone won by 4 wickets",
+    "inn": 1,
+    "team": "East Zone",
+    "opponent": "Central Zone",
+    "overs": 16,
+    "runs": 42,
+    "wkts": 2
+   },
+   {
     "date": "2026-08-23",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 3,
     "team": "North East Zone",
     "opponent": "East Zone",
-    "overs": 9,
-    "runs": 36,
+    "overs": 5,
+    "runs": 10,
     "wkts": 0
    },
    {
@@ -43661,10 +43835,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 2,
     "team": "North East Zone",
     "opponent": "East Zone",
-    "overs": 5,
-    "runs": 10,
+    "overs": 9,
+    "runs": 36,
     "wkts": 0
    },
    {
@@ -45685,10 +45860,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "South Zone",
-    "runs": 101,
-    "balls": 132,
+    "runs": 46,
+    "balls": 75,
     "out": true
    },
    {
@@ -45697,10 +45873,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "South Zone",
-    "runs": 46,
-    "balls": 75,
+    "runs": 101,
+    "balls": 132,
     "out": true
    },
    {
@@ -45709,22 +45886,24 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
-    "team": "East Zone",
-    "opponent": "Central Zone",
-    "runs": 0,
-    "balls": 1,
-    "out": true
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "East Zone",
     "opponent": "Central Zone",
     "runs": 22,
     "balls": 40,
+    "out": true
+   },
+   {
+    "date": "2026-08-30",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "East Zone won by 4 wickets",
+    "inn": 1,
+    "team": "East Zone",
+    "opponent": "Central Zone",
+    "runs": 0,
+    "balls": 1,
     "out": true
    },
    {
@@ -45733,6 +45912,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by an innings and 210 runs",
+    "inn": 1,
     "team": "East Zone",
     "opponent": "North East Zone",
     "runs": 55,
@@ -45786,10 +45966,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 18,
-    "balls": 23,
+    "runs": 5,
+    "balls": 18,
     "out": true
    },
    {
@@ -45798,10 +45979,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 5,
-    "balls": 18,
+    "runs": 18,
+    "balls": 23,
     "out": true
    },
    {
@@ -45896,11 +46078,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "overs": 15,
-    "runs": 57,
-    "wkts": 4
+    "overs": 8,
+    "runs": 36,
+    "wkts": 0
    },
    {
     "date": "2026-08-23",
@@ -45908,11 +46091,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "overs": 8,
-    "runs": 36,
-    "wkts": 0
+    "overs": 15,
+    "runs": 57,
+    "wkts": 4
    },
    {
     "date": "2026-05-29",
@@ -46316,6 +46500,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Holkar Stadium, Indore",
     "result": "Tamil Nadu won by 99 runs",
+    "inn": 2,
     "team": "Bihar",
     "opponent": "Tamil Nadu",
     "overs": 4,
@@ -46820,6 +47005,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Holkar Stadium, Indore",
     "result": "Tamil Nadu won by 99 runs",
+    "inn": 2,
     "team": "Bihar",
     "opponent": "Tamil Nadu",
     "overs": 2,
@@ -47924,6 +48110,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 1,
     "team": "Karnataka",
     "opponent": "Chandigarh",
     "runs": 25,
@@ -48013,6 +48200,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 2,
     "team": "Chandigarh",
     "opponent": "Karnataka",
     "overs": 1,
@@ -48065,10 +48253,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 2,
-    "balls": 14,
+    "runs": 11,
+    "balls": 50,
     "out": true
    },
    {
@@ -48077,10 +48266,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 11,
-    "balls": 50,
+    "runs": 2,
+    "balls": 14,
     "out": true
    },
    {
@@ -48089,23 +48279,25 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
-    "team": "West Zone",
-    "opponent": "North Zone",
-    "runs": 0,
-    "balls": 1,
-    "out": false
-   },
-   {
-    "date": "2026-08-23",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
     "runs": 0,
     "balls": 3,
     "out": true
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
+    "team": "West Zone",
+    "opponent": "North Zone",
+    "runs": 0,
+    "balls": 1,
+    "out": false
    },
    {
     "date": "2026-05-21",
@@ -48211,18 +48403,7 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
-    "team": "Rest of India",
-    "opponent": "Jammu & Kashmir",
-    "overs": 19,
-    "runs": 78,
-    "wkts": 5
-   },
-   {
-    "date": "2026-10-01",
-    "format": "TEST",
-    "competition": "Irani Cup 2026",
-    "venue": "Sher-i-Kashmir Stadium, Srinagar",
-    "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
     "overs": 8,
@@ -48230,16 +48411,17 @@ window.IPL_FORM = {
     "wkts": 1
    },
    {
-    "date": "2026-08-23",
+    "date": "2026-10-01",
     "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "North Zone won by 52 runs",
-    "team": "West Zone",
-    "opponent": "North Zone",
-    "overs": 11,
-    "runs": 47,
-    "wkts": 1
+    "competition": "Irani Cup 2026",
+    "venue": "Sher-i-Kashmir Stadium, Srinagar",
+    "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
+    "team": "Rest of India",
+    "opponent": "Jammu & Kashmir",
+    "overs": 19,
+    "runs": 78,
+    "wkts": 5
    },
    {
     "date": "2026-08-23",
@@ -48247,11 +48429,25 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
     "overs": 4,
     "runs": 12,
     "wkts": 0
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
+    "team": "West Zone",
+    "opponent": "North Zone",
+    "overs": 11,
+    "runs": 47,
+    "wkts": 1
    },
    {
     "date": "2026-05-21",
@@ -48311,6 +48507,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 1,
     "team": "Karnataka",
     "opponent": "Chandigarh",
     "runs": 0,
@@ -48325,6 +48522,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 2,
     "team": "Chandigarh",
     "opponent": "Karnataka",
     "overs": 4,
@@ -48917,10 +49115,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 0,
-    "balls": 2,
+    "runs": 25,
+    "balls": 35,
     "out": true
    },
    {
@@ -48929,10 +49128,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 25,
-    "balls": 35,
+    "runs": 0,
+    "balls": 2,
     "out": true
    },
    {
@@ -49759,6 +49959,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 1,
     "team": "Karnataka",
     "opponent": "Chandigarh",
     "runs": 3,
@@ -49884,18 +50085,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
-    "team": "North Zone",
-    "opponent": "South Zone",
-    "runs": 5,
-    "balls": 11,
-    "out": true
-   },
-   {
-    "date": "2026-08-30",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
     "runs": 35,
@@ -49903,15 +50093,16 @@ window.IPL_FORM = {
     "out": false
    },
    {
-    "date": "2026-08-23",
+    "date": "2026-08-30",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
-    "result": "North Zone won by 52 runs",
+    "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
-    "opponent": "West Zone",
-    "runs": 15,
-    "balls": 14,
+    "opponent": "South Zone",
+    "runs": 5,
+    "balls": 11,
     "out": true
    },
    {
@@ -49920,10 +50111,24 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "West Zone",
     "runs": 44,
     "balls": 71,
+    "out": true
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
+    "team": "North Zone",
+    "opponent": "West Zone",
+    "runs": 15,
+    "balls": 14,
     "out": true
    },
    {
@@ -50042,10 +50247,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "South Zone",
-    "overs": 11,
-    "runs": 27,
+    "overs": 4,
+    "runs": 15,
     "wkts": 0
    },
    {
@@ -50054,10 +50260,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "North Zone",
     "opponent": "South Zone",
-    "overs": 4,
-    "runs": 15,
+    "overs": 11,
+    "runs": 27,
     "wkts": 0
    },
    {
@@ -50066,23 +50273,25 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
-    "team": "North Zone",
-    "opponent": "West Zone",
-    "overs": 3,
-    "runs": 25,
-    "wkts": 0
-   },
-   {
-    "date": "2026-08-23",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "North Zone",
     "opponent": "West Zone",
     "overs": 15.3,
     "runs": 59,
     "wkts": 2
+   },
+   {
+    "date": "2026-08-23",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "North Zone won by 52 runs",
+    "inn": 1,
+    "team": "North Zone",
+    "opponent": "West Zone",
+    "overs": 3,
+    "runs": 25,
+    "wkts": 0
    }
   ]
  },
@@ -50396,10 +50605,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 30,
-    "balls": 26,
+    "runs": 4,
+    "balls": 14,
     "out": false
    },
    {
@@ -50408,10 +50618,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "runs": 4,
-    "balls": 14,
+    "runs": 30,
+    "balls": 26,
     "out": false
    }
   ],
@@ -50458,11 +50669,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 2,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "overs": 15,
-    "runs": 66,
-    "wkts": 3
+    "overs": 6,
+    "runs": 37,
+    "wkts": 1
    },
    {
     "date": "2026-08-30",
@@ -50470,11 +50682,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "East Zone won by 4 wickets",
+    "inn": 1,
     "team": "Central Zone",
     "opponent": "East Zone",
-    "overs": 6,
-    "runs": 37,
-    "wkts": 1
+    "overs": 15,
+    "runs": 66,
+    "wkts": 3
    },
    {
     "date": "2026-07-26",
@@ -50936,6 +51149,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
     "runs": 1,
@@ -50950,11 +51164,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "South Zone",
     "opponent": "East Zone",
-    "overs": 42,
-    "runs": 180,
-    "wkts": 4
+    "overs": 23,
+    "runs": 127,
+    "wkts": 1
    },
    {
     "date": "2026-09-06",
@@ -50962,11 +51177,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
-    "overs": 23,
-    "runs": 127,
-    "wkts": 1
+    "overs": 42,
+    "runs": 180,
+    "wkts": 4
    },
    {
     "date": "2026-05-17",
@@ -51153,6 +51369,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 1,
     "team": "Karnataka",
     "opponent": "Chandigarh",
     "runs": 14,
@@ -51570,10 +51787,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 22,
-    "balls": 21,
+    "runs": 6,
+    "balls": 30,
     "out": true
    },
    {
@@ -51582,10 +51800,11 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 6,
-    "balls": 30,
+    "runs": 22,
+    "balls": 21,
     "out": true
    }
   ],
@@ -51660,11 +51879,13 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 31,
+    "runs": 96,
     "balls": 126,
-    "out": true
+    "out": true,
+    "top": true
    },
    {
     "date": "2026-08-23",
@@ -51672,12 +51893,12 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 1,
     "team": "West Zone",
     "opponent": "North Zone",
-    "runs": 96,
+    "runs": 31,
     "balls": 126,
-    "out": true,
-    "top": true
+    "out": true
    }
   ],
   "bowl": [
@@ -51723,6 +51944,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "North Zone won by 52 runs",
+    "inn": 2,
     "team": "West Zone",
     "opponent": "North Zone",
     "overs": 5,
@@ -51821,6 +52043,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 1,
     "team": "Karnataka",
     "opponent": "Chandigarh",
     "runs": 16,
@@ -51871,6 +52094,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 2,
     "team": "Chandigarh",
     "opponent": "Karnataka",
     "overs": 1,
@@ -51923,6 +52147,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
+    "inn": 1,
     "team": "India",
     "opponent": "New Zealand",
     "runs": 13,
@@ -51935,10 +52160,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 22,
-    "balls": 24,
+    "runs": 1,
+    "balls": 7,
     "out": true
    },
    {
@@ -51947,10 +52173,11 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
-    "runs": 1,
-    "balls": 7,
+    "runs": 22,
+    "balls": 24,
     "out": true
    }
   ],
@@ -51961,18 +52188,7 @@ window.IPL_FORM = {
     "competition": "India in New Zealand 2026",
     "venue": "Basin Reserve, Wellington",
     "result": "Match drawn",
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 23,
-    "runs": 53,
-    "wkts": 3
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
+    "inn": 2,
     "team": "India",
     "opponent": "New Zealand",
     "overs": 20,
@@ -51980,15 +52196,16 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
-    "date": "2026-10-01",
+    "date": "2026-11-18",
     "format": "TEST",
-    "competition": "Irani Cup 2026",
-    "venue": "Sher-i-Kashmir Stadium, Srinagar",
-    "result": "Rest of Ind won by 167 runs",
-    "team": "Rest of India",
-    "opponent": "Jammu & Kashmir",
-    "overs": 14.2,
-    "runs": 43,
+    "competition": "India in New Zealand 2026",
+    "venue": "Basin Reserve, Wellington",
+    "result": "Match drawn",
+    "inn": 1,
+    "team": "India",
+    "opponent": "New Zealand",
+    "overs": 23,
+    "runs": 53,
     "wkts": 3
    },
    {
@@ -51997,10 +52214,24 @@ window.IPL_FORM = {
     "competition": "Irani Cup 2026",
     "venue": "Sher-i-Kashmir Stadium, Srinagar",
     "result": "Rest of Ind won by 167 runs",
+    "inn": 2,
     "team": "Rest of India",
     "opponent": "Jammu & Kashmir",
     "overs": 9,
     "runs": 25,
+    "wkts": 3
+   },
+   {
+    "date": "2026-10-01",
+    "format": "TEST",
+    "competition": "Irani Cup 2026",
+    "venue": "Sher-i-Kashmir Stadium, Srinagar",
+    "result": "Rest of Ind won by 167 runs",
+    "inn": 1,
+    "team": "Rest of India",
+    "opponent": "Jammu & Kashmir",
+    "overs": 14.2,
+    "runs": 43,
     "wkts": 3
    }
   ]
@@ -53193,6 +53424,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "East Zone",
     "runs": 26,
@@ -53205,6 +53437,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 1,
     "team": "South Zone",
     "opponent": "North Zone",
     "runs": 87,
@@ -53219,18 +53452,7 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "Match drawn (East Zone won on 1st innings)",
-    "team": "South Zone",
-    "opponent": "East Zone",
-    "overs": 42,
-    "runs": 165,
-    "wkts": 2
-   },
-   {
-    "date": "2026-09-06",
-    "format": "TEST",
-    "competition": "Duleep Trophy 2026",
-    "venue": "",
-    "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 2,
     "team": "South Zone",
     "opponent": "East Zone",
     "overs": 23,
@@ -53238,16 +53460,17 @@ window.IPL_FORM = {
     "wkts": 0
    },
    {
-    "date": "2026-08-30",
+    "date": "2026-09-06",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
     "venue": "",
-    "result": "South Zone won by 7 wickets",
+    "result": "Match drawn (East Zone won on 1st innings)",
+    "inn": 1,
     "team": "South Zone",
-    "opponent": "North Zone",
-    "overs": 10,
-    "runs": 24,
-    "wkts": 1
+    "opponent": "East Zone",
+    "overs": 42,
+    "runs": 165,
+    "wkts": 2
    },
    {
     "date": "2026-08-30",
@@ -53255,11 +53478,25 @@ window.IPL_FORM = {
     "competition": "Duleep Trophy 2026",
     "venue": "",
     "result": "South Zone won by 7 wickets",
+    "inn": 2,
     "team": "South Zone",
     "opponent": "North Zone",
     "overs": 20,
     "runs": 86,
     "wkts": 2
+   },
+   {
+    "date": "2026-08-30",
+    "format": "TEST",
+    "competition": "Duleep Trophy 2026",
+    "venue": "",
+    "result": "South Zone won by 7 wickets",
+    "inn": 1,
+    "team": "South Zone",
+    "opponent": "North Zone",
+    "overs": 10,
+    "runs": 24,
+    "wkts": 1
    }
   ]
  },
@@ -53438,6 +53675,7 @@ window.IPL_FORM = {
     "competition": "Syed Mushtaq Ali Trophy Elite 2026",
     "venue": "Sharad Pawar Cricket Academy BKC, Mumbai",
     "result": "Chandigarh won by 7 wkts",
+    "inn": 1,
     "team": "Karnataka",
     "opponent": "Chandigarh",
     "runs": 18,
