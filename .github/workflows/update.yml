@@ -2,7 +2,7 @@ name: Update IPL form data
 
 on:
   schedule:
-    - cron: "17 11 * * *"   # every day, 11:17 UTC (about 6:17 am Toronto)
+    - cron: "30 21 * * *"   # 21:30 UTC = 3:00 AM IST (4:30 PM Toronto in winter, 5:30 PM in summer)
   workflow_dispatch:          # lets you run it by hand from the Actions tab
 
 permissions:
