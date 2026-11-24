@@ -368,7 +368,8 @@ window.IPL_ROSTER = {
    "team": "DC",
    "role": "BAT",
    "country": "gb-eng",
-   "released": true
+   "released": true,
+   "note": "Withdrew from IPL 2026; banned from IPL until 2029 (reported)"
   },
   {
    "name": "Shubman Gill",
@@ -1707,6 +1708,41 @@ window.IPL_ROSTER = {
    "team": "LSG",
    "role": "AR",
    "country": "gb-eng"
+  },
+  {
+   "name": "Connor Esterhuizen",
+   "team": "GT",
+   "role": "WK",
+   "country": "za",
+   "released": true
+  },
+  {
+   "name": "Kulwant Khejroliya",
+   "team": "GT",
+   "role": "BOWL",
+   "country": "in",
+   "released": true
+  },
+  {
+   "name": "Dilshan Madushanka",
+   "team": "SRH",
+   "role": "BOWL",
+   "country": "lk",
+   "released": true
+  },
+  {
+   "name": "Gerald Coetzee",
+   "team": "SRH",
+   "role": "BOWL",
+   "country": "za",
+   "released": true
+  },
+  {
+   "name": "RS Ambrish",
+   "team": "SRH",
+   "role": "BAT",
+   "country": "in",
+   "released": true
   }
  ],
  "colors": {
