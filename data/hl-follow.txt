@@ -2,3 +2,7 @@
 # Each competition costs 1-2 requests to list plus 1 per finished match not already held. Free plan = 100 requests a day.
 Syed Mushtaq Ali Trophy | 2026
 scan | 7
+Asia Cup Rising Stars | 2026
+Duleep Trophy | 2026
+Vijay Hazare Trophy | 2026
+Irani Cup | 2026

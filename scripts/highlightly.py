@@ -57,6 +57,23 @@ def terms(path):
 
 
 YOUTH = re.compile(r"\b(women|womens|girls|under[- ]?\d+|u-?\d{2}|emerging|academy|shaheens|legends|masters|veterans|e-?sports)\b|\bA\b|-W\b", re.I)
+# Men's "India A" games and the Rising Stars Asia Cup are full of IPL players, so they are NOT treated as youth cricket
+ALLOW_A = re.compile(r"rising stars|\bindia a\b", re.I)
+INDIA = re.compile(r"\bindia\b", re.I)
+WOMEN = re.compile(r"\b(women|womens|girls)\b|-W\b", re.I)
+
+
+def _youth(ln, tm):
+    txt = " ".join([ln] + list(tm))
+    if WOMEN.search(txt):
+        return True
+    if INDIA.search(txt) and not re.search(r"under[- ]?\d+|\bu-?\d{2}\b", txt, re.I):
+        return False   # every men's India fixture (India, India A/B/C/D, any competition)
+    if ALLOW_A.search(txt):
+        return False
+    return bool(YOUTH.search(ln) or any(YOUTH.search(t) for t in tm))
+
+
 NO_ROSTER = {"nepal", "united arab emirates", "uae", "namibia", "oman", "usa", "united states", "canada", "ireland", "scotland", "netherlands", "japan",
              "hong kong", "kuwait", "qatar", "bahrain", "saudi arabia", "malaysia", "singapore", "thailand", "italy", "germany", "denmark", "uganda", "kenya",
              "tanzania", "nigeria", "rwanda", "botswana", "malawi", "papua new guinea", "pakistan"}
@@ -180,7 +197,7 @@ def fetch(root, cache, sc_dir, matches, follow_file, known_dates):
             ln = str((m.get("league") or {}).get("name") or "")
             if (m.get("state") or {}).get("description") != "Finished" or _held(sc_dir / f"hl_{m['id']}.json"):
                 continue
-            if YOUTH.search(ln) or any(YOUTH.search(t) for t in tm) or all(t.lower() in NO_ROSTER for t in tm):
+            if _youth(ln, tm) or all(t.lower() in NO_ROSTER for t in tm):
                 continue
             todo.append(m)
         todo.sort(key=lambda m: m.get("startTime") or "", reverse=True)

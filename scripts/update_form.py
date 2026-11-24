@@ -149,7 +149,9 @@ def worth_a_hit(todo):
     for m in todo:
         d = (m.get("date") or m.get("dateTimeGMT") or "")[:10]
         teams = m.get("teams") or []
-        if YOUTH_A.search(m.get("name", "")):
+        nm = m.get("name", "")
+        a_ok = re.search(r"rising stars|\bindia\b", nm, re.I) and not re.search(r"\b(women|womens|girls)\b|-W\b", nm, re.I)
+        if YOUTH_A.search(nm) and not a_ok:
             continue
         if len(teams) == 2 and all(" ".join(norm(t)) in NO_ROSTER for t in teams):
             continue
@@ -310,8 +312,22 @@ def build(use_cricsheet=True):
 
     matches = load_json(CACHE / "matches.json", {})
     form, unmatched, used = {}, {}, 0
+    # The same game can arrive from two APIs under different names ("Pakistan A" v "Pakistan Shaheens"). Keep one copy: the Highlightly one,
+    # because CricketData sometimes caches a scorecard taken mid-match.
+    _canon = lambda t: frozenset(w for w in ("a" if x == "shaheens" else x for x in norm(t)) if w not in {"team", "the"})
+    _hl = [(m.get("date"), {_canon(t) for t in m.get("teams") or []}) for k, m in matches.items()
+           if k.startswith("hl_") and isinstance(load_json(SC_DIR / f"{k}.json", {}), dict) and load_json(SC_DIR / f"{k}.json", {}).get("scorecard")]
+    def _dup(k, meta):
+        if k.startswith("hl_") or len(meta.get("teams") or []) != 2:
+            return False
+        ts = {_canon(t) for t in meta["teams"]}
+        return any(d == meta.get("date") and ts == t2 for d, t2 in _hl)
+    dups = 0
     for f in SC_DIR.glob("*.json"):
         sc, meta = load_json(f, {}), matches.get(f.stem, {})
+        if _dup(f.stem, meta):
+            dups += 1
+            continue
         innings = sc.get("scorecard") if isinstance(sc, dict) else None
         if not innings or SKIP.search(str(sc.get("name", "")) + " " + str(meta.get("name", ""))):
             continue
@@ -388,6 +404,7 @@ def build(use_cricsheet=True):
         "window.IPL_FORM = " + json.dumps(form, indent=1) + ";\n"
         "window.IPL_FORM_META = " + json.dumps(meta) + ";\n"
         "window.IPL_LAST = " + json.dumps(last, separators=(",", ":")) + ";\n")
+    print(f"Skipped {dups} duplicate scorecards of games held from two sources.") if dups else None
     print(f"Wrote form for {len(form)} roster players from {used} API scorecards + {cs_used} Cricsheet matches.")
     for line in report:
         print(line)
