@@ -2376,6 +2376,19 @@ window.IPL_FORM = {
  "Jaydev Unadkat": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "Tamil Nadu won by 38 runs",
+    "team": "Saurashtra",
+    "opponent": "Tamil Nadu",
+    "runs": 40,
+    "balls": 26,
+    "out": true,
+    "top": true
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -2437,6 +2450,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "Tamil Nadu won by 38 runs",
+    "team": "Saurashtra",
+    "opponent": "Tamil Nadu",
+    "overs": 4,
+    "runs": 36,
+    "wkts": 1
+   },
    {
     "date": "2026-11-24",
     "format": "T20",
@@ -2606,18 +2631,6 @@ window.IPL_FORM = {
     "overs": 3.5,
     "runs": 50,
     "wkts": 0
-   },
-   {
-    "date": "2026-04-02",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Eden Gardens, Kolkata",
-    "result": "Sunrisers Hyderabad won by 65 runs",
-    "team": "SRH",
-    "opponent": "KKR",
-    "overs": 3,
-    "runs": 21,
-    "wkts": 3
    }
   ]
  },
@@ -3301,6 +3314,19 @@ window.IPL_FORM = {
  "Abhinandan Singh": {
   "bat": [],
   "bowl": [
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 1,
+    "team": "Uttar Pradesh",
+    "opponent": "Mizoram",
+    "overs": 3,
+    "runs": 26,
+    "wkts": 1
+   },
    {
     "date": "2026-04-10",
     "format": "T20",
@@ -10408,6 +10434,19 @@ window.IPL_FORM = {
   ],
   "bowl": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 1,
+    "team": "Uttar Pradesh",
+    "opponent": "Mizoram",
+    "overs": 4,
+    "runs": 23,
+    "wkts": 1
+   },
+   {
     "date": "2026-05-24",
     "format": "T20",
     "competition": "Indian Premier League 2026",
@@ -15143,6 +15182,19 @@ window.IPL_FORM = {
   ],
   "bowl": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Eden Gardens, Kolkata",
+    "result": "Gujarat won by 32 runs",
+    "inn": 2,
+    "team": "Goa",
+    "opponent": "Gujarat",
+    "overs": 3,
+    "runs": 23,
+    "wkts": 1
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -15309,18 +15361,6 @@ window.IPL_FORM = {
     "overs": 1,
     "runs": 10,
     "wkts": 0
-   },
-   {
-    "date": "2026-07-26",
-    "format": "T20I",
-    "competition": "India tour of Zimbabwe 2026",
-    "venue": "Harare Sports Club",
-    "result": "India won by 35 runs",
-    "team": "IND",
-    "opponent": "ZIM",
-    "overs": 4,
-    "runs": 24,
-    "wkts": 1
    }
   ]
  },
@@ -25683,6 +25723,30 @@ window.IPL_FORM = {
  "Mukesh Kumar": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Indian Softball Cricket League 2026",
+    "venue": "Acharya Stadium, Bengaluru",
+    "result": "Haryana Phoenix won by 39 runs",
+    "team": "Andaman Admirals",
+    "opponent": "Haryana Phoenix",
+    "runs": 4,
+    "balls": 5,
+    "out": true
+   },
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Indian Softball Cricket League 2026",
+    "venue": "Acharya Stadium, Bengaluru",
+    "result": "UP Kings won by 50 runs",
+    "team": "Andaman Admirals",
+    "opponent": "UP Kings",
+    "runs": 1,
+    "balls": 2,
+    "out": true
+   },
+   {
     "date": "2026-11-14",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -26767,6 +26831,19 @@ window.IPL_FORM = {
   ],
   "bowl": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 1,
+    "team": "Uttar Pradesh",
+    "opponent": "Mizoram",
+    "overs": 4,
+    "runs": 31,
+    "wkts": 2
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -26934,19 +27011,6 @@ window.IPL_FORM = {
     "overs": 10,
     "runs": 65,
     "wkts": 2
-   },
-   {
-    "date": "2026-09-27",
-    "format": "ODI",
-    "competition": "West Indies tour of India 2026/27",
-    "venue": "Greenfield International Stadium, Thiruvananthapuram",
-    "result": "India won by 8 wickets",
-    "team": "IND",
-    "opponent": "WI",
-    "overs": 10,
-    "runs": 40,
-    "wkts": 4,
-    "potm": true
    }
   ]
  },
@@ -27761,6 +27825,20 @@ window.IPL_FORM = {
  "Sameer Rizvi": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 2,
+    "team": "Mizoram",
+    "opponent": "Uttar Pradesh",
+    "runs": 100,
+    "balls": 46,
+    "out": false,
+    "top": true
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -27932,18 +28010,6 @@ window.IPL_FORM = {
     "balls": 24,
     "out": false,
     "top": true
-   },
-   {
-    "date": "2026-04-27",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Arun Jaitley Stadium, Delhi",
-    "result": "Royal Challengers Bengaluru won by 9 wickets",
-    "team": "DC",
-    "opponent": "RCB",
-    "runs": 0,
-    "balls": 1,
-    "out": true
    }
   ],
   "bowl": []
@@ -28928,6 +28994,19 @@ window.IPL_FORM = {
  "Prashant Veer": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 2,
+    "team": "Mizoram",
+    "opponent": "Uttar Pradesh",
+    "runs": 27,
+    "balls": 23,
+    "out": false
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -29094,21 +29173,22 @@ window.IPL_FORM = {
     "runs": 13,
     "balls": 10,
     "out": false
-   },
-   {
-    "date": "2026-05-10",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Chennai Super Kings won by 5 wickets",
-    "team": "CSK",
-    "opponent": "LSG",
-    "runs": 17,
-    "balls": 12,
-    "out": false
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 1,
+    "team": "Uttar Pradesh",
+    "opponent": "Mizoram",
+    "overs": 4,
+    "runs": 26,
+    "wkts": 1
+   },
    {
     "date": "2026-11-24",
     "format": "T20",
@@ -33507,6 +33587,20 @@ window.IPL_FORM = {
  "Ashutosh Sharma": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Eden Gardens, Kolkata",
+    "result": "Gujarat won by 32 runs",
+    "inn": 1,
+    "team": "Gujarat",
+    "opponent": "Goa",
+    "runs": 48,
+    "balls": 18,
+    "out": false,
+    "top": true
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -33675,21 +33769,22 @@ window.IPL_FORM = {
     "runs": 14,
     "balls": 5,
     "out": true
-   },
-   {
-    "date": "2026-05-01",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Sawai Mansingh Stadium, Jaipur",
-    "result": "Delhi Capitals won by 7 wickets",
-    "team": "DC",
-    "opponent": "RR",
-    "runs": 25,
-    "balls": 15,
-    "out": false
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Eden Gardens, Kolkata",
+    "result": "Gujarat won by 32 runs",
+    "inn": 2,
+    "team": "Goa",
+    "opponent": "Gujarat",
+    "overs": 1,
+    "runs": 12,
+    "wkts": 0
+   },
    {
     "date": "2026-11-24",
     "format": "T20",
@@ -34147,6 +34242,18 @@ window.IPL_FORM = {
   ],
   "bowl": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "Tamil Nadu won by 38 runs",
+    "team": "Tamil Nadu",
+    "opponent": "Saurashtra",
+    "overs": 3,
+    "runs": 25,
+    "wkts": 2
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -34314,18 +34421,6 @@ window.IPL_FORM = {
     "overs": 3,
     "runs": 34,
     "wkts": 0
-   },
-   {
-    "date": "2026-05-05",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "Arun Jaitley Stadium, Delhi",
-    "result": "Chennai Super Kings won by 8 wickets",
-    "team": "CSK",
-    "opponent": "DC",
-    "overs": 4,
-    "runs": 29,
-    "wkts": 1
    }
   ]
  },
@@ -38612,6 +38707,19 @@ window.IPL_FORM = {
  "Urvil Patel": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Eden Gardens, Kolkata",
+    "result": "Gujarat won by 32 runs",
+    "inn": 1,
+    "team": "Gujarat",
+    "opponent": "Goa",
+    "runs": 38,
+    "balls": 18,
+    "out": true
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -38782,19 +38890,6 @@ window.IPL_FORM = {
     "runs": 6,
     "balls": 7,
     "out": true
-   },
-   {
-    "date": "2026-05-10",
-    "format": "T20",
-    "competition": "Indian Premier League 2026",
-    "venue": "MA Chidambaram Stadium, Chennai",
-    "result": "Chennai Super Kings won by 5 wickets",
-    "team": "CSK",
-    "opponent": "LSG",
-    "runs": 65,
-    "balls": 23,
-    "out": true,
-    "top": true
    }
   ],
   "bowl": []
@@ -49888,6 +49983,18 @@ window.IPL_FORM = {
  "Krains Fuletra": {
   "bat": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "Tamil Nadu won by 38 runs",
+    "team": "Saurashtra",
+    "opponent": "Tamil Nadu",
+    "runs": 0,
+    "balls": 2,
+    "out": true
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -49937,6 +50044,18 @@ window.IPL_FORM = {
    }
   ],
   "bowl": [
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "Tamil Nadu won by 38 runs",
+    "team": "Saurashtra",
+    "opponent": "Tamil Nadu",
+    "overs": 4,
+    "runs": 28,
+    "wkts": 1
+   },
    {
     "date": "2026-11-24",
     "format": "T20",
@@ -50086,6 +50205,18 @@ window.IPL_FORM = {
  },
  "Ruchit Ahir": {
   "bat": [
+   {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Holkar Stadium, Indore",
+    "result": "Tamil Nadu won by 38 runs",
+    "team": "Saurashtra",
+    "opponent": "Tamil Nadu",
+    "runs": 6,
+    "balls": 4,
+    "out": true
+   },
    {
     "date": "2026-11-24",
     "format": "T20",
@@ -53817,6 +53948,19 @@ window.IPL_FORM = {
   ],
   "bowl": [
    {
+    "date": "2026-11-26",
+    "format": "T20",
+    "competition": "Syed Mushtaq Ali Trophy Elite 2026",
+    "venue": "Wankhede Stadium, Mumbai",
+    "result": "Uttar Pradesh won by 6 wkts",
+    "inn": 2,
+    "team": "Uttar Pradesh",
+    "opponent": "Mizoram",
+    "overs": 3,
+    "runs": 8,
+    "wkts": 2
+   },
+   {
     "date": "2026-11-24",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026",
@@ -54337,5 +54481,5 @@ window.IPL_FORM = {
   ]
  }
 };
-window.IPL_FORM_META = {"updated": "2026-11-26", "since": "2026-03-28", "matches": 1055, "players": 256};
+window.IPL_FORM_META = {"updated": "2026-11-27", "since": "2026-03-28", "matches": 1061, "players": 256};
 window.IPL_LAST = {"season":"Indian Premier League 2026","stats":{"Travis Head":{"m":15,"potm":0,"bat":{"inn":15,"runs":410,"balls":241,"outs":15,"hs":76,"hsno":false,"f":2,"h":0,"avg":27.3,"sr":170.1},"bowl":{"inn":1,"overs":"1.0","runs":7,"wkts":1,"econ":7.0,"avg":7.0,"best":"1/7"}},"Abhishek Sharma":{"m":15,"potm":1,"bat":{"inn":15,"runs":563,"balls":275,"outs":14,"hs":135,"hsno":true,"f":4,"h":1,"avg":40.2,"sr":204.7},"bowl":{"inn":4,"overs":"4.5","runs":49,"wkts":0,"econ":10.14,"avg":null,"best":"0/7"}},"Ishan Kishan":{"m":15,"potm":3,"bat":{"inn":15,"runs":602,"balls":330,"outs":15,"hs":91,"hsno":false,"f":6,"h":0,"avg":40.1,"sr":182.4}},"Nitish Kumar Reddy":{"m":14,"potm":1,"bat":{"inn":13,"runs":302,"balls":176,"outs":10,"hs":56,"hsno":false,"f":1,"h":0,"avg":30.2,"sr":171.6},"bowl":{"inn":14,"overs":"31.0","runs":323,"wkts":8,"econ":10.42,"avg":40.4,"best":"2/17"}},"Heinrich Klaasen":{"m":15,"potm":1,"bat":{"inn":15,"runs":624,"balls":390,"outs":13,"hs":69,"hsno":false,"f":6,"h":0,"avg":48.0,"sr":160.0}},"Salil Arora":{"m":11,"potm":0,"bat":{"inn":11,"runs":156,"balls":98,"outs":7,"hs":35,"hsno":false,"f":0,"h":0,"avg":22.3,"sr":159.2}},"Aniket Verma":{"m":8,"potm":0,"bat":{"inn":8,"runs":79,"balls":54,"outs":6,"hs":43,"hsno":false,"f":0,"h":0,"avg":13.2,"sr":146.3}},"Harsh Dubey":{"m":8,"potm":0,"bat":{"inn":5,"runs":13,"balls":9,"outs":2,"hs":9,"hsno":true,"f":0,"h":0,"avg":6.5,"sr":144.4},"bowl":{"inn":8,"overs":"22.0","runs":228,"wkts":8,"econ":10.36,"avg":28.5,"best":"3/12"}},"Harshal Patel":{"m":5,"potm":0,"bat":{"inn":3,"runs":10,"balls":9,"outs":3,"hs":6,"hsno":false,"f":0,"h":0,"avg":3.3,"sr":111.1},"bowl":{"inn":5,"overs":"13.4","runs":148,"wkts":0,"econ":10.83,"avg":null,"best":"0/16"}},"David Payne":{"m":2,"potm":0,"bat":{"inn":1,"runs":6,"balls":5,"outs":0,"hs":6,"hsno":true,"f":0,"h":0,"avg":null,"sr":120.0},"bowl":{"inn":2,"overs":"5.0","runs":70,"wkts":2,"econ":14.0,"avg":35.0,"best":"2/35"}},"Jaydev Unadkat":{"m":4,"potm":0,"bat":{"inn":1,"runs":4,"balls":3,"outs":0,"hs":4,"hsno":true,"f":0,"h":0,"avg":null,"sr":133.3},"bowl":{"inn":4,"overs":"12.5","runs":140,"wkts":4,"econ":10.91,"avg":35.0,"best":"3/21"}},"Jacob Duffy":{"m":6,"potm":1,"bowl":{"inn":6,"overs":"24.0","runs":263,"wkts":9,"econ":10.96,"avg":29.2,"best":"3/22"}},"Bhuvneshwar Kumar":{"m":16,"potm":1,"bat":{"inn":4,"runs":34,"balls":26,"outs":0,"hs":15,"hsno":true,"f":0,"h":0,"avg":null,"sr":130.8},"bowl":{"inn":16,"overs":"63.0","runs":501,"wkts":28,"econ":7.95,"avg":17.9,"best":"4/23"}},"Abhinandan Singh":{"m":3,"potm":0,"bowl":{"inn":3,"overs":"9.4","runs":122,"wkts":3,"econ":12.62,"avg":40.7,"best":"2/30"}},"Romario Shepherd":{"m":14,"potm":0,"bat":{"inn":7,"runs":83,"balls":66,"outs":4,"hs":23,"hsno":true,"f":0,"h":0,"avg":20.8,"sr":125.8},"bowl":{"inn":13,"overs":"25.0","runs":298,"wkts":7,"econ":11.92,"avg":42.6,"best":"3/54"}},"Suyash Sharma":{"m":12,"potm":0,"bowl":{"inn":12,"overs":"40.5","runs":376,"wkts":9,"econ":9.21,"avg":41.8,"best":"2/47"}},"Krunal Pandya":{"m":16,"potm":0,"bat":{"inn":9,"runs":226,"balls":155,"outs":6,"hs":73,"hsno":false,"f":1,"h":0,"avg":37.7,"sr":145.8},"bowl":{"inn":15,"overs":"50.3","runs":425,"wkts":14,"econ":8.42,"avg":30.4,"best":"2/16"}},"Phil Salt":{"m":6,"potm":1,"bat":{"inn":6,"runs":202,"balls":120,"outs":6,"hs":78,"hsno":false,"f":2,"h":0,"avg":33.7,"sr":168.3}},"Virat Kohli":{"m":16,"potm":3,"bat":{"inn":16,"runs":675,"balls":407,"outs":12,"hs":105,"hsno":true,"f":5,"h":1,"avg":56.2,"sr":165.8}},"Devdutt Padikkal":{"m":15,"potm":0,"bat":{"inn":15,"runs":464,"balls":275,"outs":14,"hs":61,"hsno":false,"f":3,"h":0,"avg":33.1,"sr":168.7}},"Rajat Patidar":{"m":14,"potm":1,"bat":{"inn":14,"runs":501,"balls":260,"outs":12,"hs":93,"hsno":true,"f":5,"h":0,"avg":41.8,"sr":192.7}},"Jitesh Sharma":{"m":12,"potm":0,"bat":{"inn":12,"runs":116,"balls":95,"outs":9,"hs":23,"hsno":false,"f":0,"h":0,"avg":12.9,"sr":122.1}},"Tim David":{"m":15,"potm":1,"bat":{"inn":15,"runs":305,"balls":162,"outs":9,"hs":70,"hsno":true,"f":1,"h":0,"avg":33.9,"sr":188.3},"bowl":{"inn":1,"overs":"1.0","runs":18,"wkts":0,"econ":18.0,"avg":null,"best":"0/18"}},"Eshan Malinga":{"m":15,"potm":1,"bat":{"inn":3,"runs":7,"balls":17,"outs":1,"hs":5,"hsno":false,"f":0,"h":0,"avg":7.0,"sr":41.2},"bowl":{"inn":15,"overs":"54.2","runs":507,"wkts":20,"econ":9.33,"avg":25.4,"best":"4/32"}},"Ajinkya Rahane":{"m":14,"potm":0,"bat":{"inn":14,"runs":335,"balls":248,"outs":13,"hs":67,"hsno":false,"f":2,"h":0,"avg":25.8,"sr":135.1}},"Finn Allen":{"m":11,"potm":1,"bat":{"inn":11,"runs":349,"balls":163,"outs":10,"hs":100,"hsno":true,"f":1,"h":1,"avg":34.9,"sr":214.1}},"Cameron Green":{"m":14,"potm":0,"bat":{"inn":14,"runs":322,"balls":221,"outs":10,"hs":79,"hsno":false,"f":2,"h":0,"avg":32.2,"sr":145.7},"bowl":{"inn":10,"overs":"22.0","runs":234,"wkts":7,"econ":10.64,"avg":33.4,"best":"2/23"}},"Angkrish Raghuvanshi":{"m":12,"potm":0,"bat":{"inn":12,"runs":422,"balls":288,"outs":10,"hs":82,"hsno":true,"f":5,"h":0,"avg":42.2,"sr":146.5}},"Rinku Singh":{"m":11,"potm":1,"bat":{"inn":11,"runs":295,"balls":198,"outs":5,"hs":83,"hsno":true,"f":2,"h":0,"avg":59.0,"sr":149.0}},"Ramandeep Singh":{"m":6,"potm":0,"bat":{"inn":6,"runs":82,"balls":68,"outs":5,"hs":35,"hsno":false,"f":0,"h":0,"avg":16.4,"sr":120.6},"bowl":{"inn":2,"overs":"2.4","runs":31,"wkts":1,"econ":11.62,"avg":31.0,"best":"1/5"}},"Trent Boult":{"m":5,"potm":0,"bat":{"inn":2,"runs":8,"balls":4,"outs":1,"hs":7,"hsno":true,"f":0,"h":0,"avg":8.0,"sr":200.0},"bowl":{"inn":5,"overs":"16.1","runs":188,"wkts":2,"econ":11.63,"avg":94.0,"best":"1/41"}},"Hardik Pandya":{"m":10,"potm":0,"bat":{"inn":10,"runs":206,"balls":149,"outs":9,"hs":40,"hsno":false,"f":0,"h":0,"avg":22.9,"sr":138.3},"bowl":{"inn":9,"overs":"22.4","runs":259,"wkts":4,"econ":11.43,"avg":64.8,"best":"1/18"}},"Allah Ghazanfar":{"m":11,"potm":0,"bat":{"inn":1,"runs":2,"balls":3,"outs":0,"hs":2,"hsno":true,"f":0,"h":0,"avg":null,"sr":66.7},"bowl":{"inn":11,"overs":"38.5","runs":389,"wkts":15,"econ":10.02,"avg":25.9,"best":"2/17"}},"Jasprit Bumrah":{"m":13,"potm":0,"bat":{"inn":2,"runs":7,"balls":7,"outs":1,"hs":5,"hsno":true,"f":0,"h":0,"avg":7.0,"sr":100.0},"bowl":{"inn":13,"overs":"49.0","runs":410,"wkts":4,"econ":8.37,"avg":102.5,"best":"1/15"}},"Shardul Thakur":{"m":8,"potm":1,"bat":{"inn":3,"runs":24,"balls":30,"outs":2,"hs":10,"hsno":true,"f":0,"h":0,"avg":12.0,"sr":80.0},"bowl":{"inn":7,"overs":"22.0","runs":270,"wkts":12,"econ":12.27,"avg":22.5,"best":"4/39"}},"Mayank Markande":{"m":3,"potm":0,"bowl":{"inn":3,"overs":"5.0","runs":76,"wkts":0,"econ":15.2,"avg":null,"best":"0/16"}},"Ryan Rickelton":{"m":12,"potm":1,"bat":{"inn":12,"runs":448,"balls":240,"outs":11,"hs":123,"hsno":true,"f":2,"h":1,"avg":40.7,"sr":186.7}},"Rohit Sharma":{"m":9,"potm":0,"bat":{"inn":9,"runs":283,"balls":180,"outs":8,"hs":84,"hsno":false,"f":2,"h":0,"avg":35.4,"sr":157.2}},"Suryakumar Yadav":{"m":13,"potm":0,"bat":{"inn":13,"runs":270,"balls":183,"outs":13,"hs":60,"hsno":false,"f":2,"h":0,"avg":20.8,"sr":147.5}},"Tilak Varma":{"m":14,"potm":2,"bat":{"inn":14,"runs":359,"balls":246,"outs":12,"hs":101,"hsno":true,"f":2,"h":1,"avg":29.9,"sr":145.9}},"Naman Dhir":{"m":14,"potm":0,"bat":{"inn":14,"runs":318,"balls":216,"outs":12,"hs":57,"hsno":false,"f":2,"h":0,"avg":26.5,"sr":147.2}},"Vaibhav Arora":{"m":10,"potm":0,"bat":{"inn":2,"runs":1,"balls":3,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":33.3},"bowl":{"inn":10,"overs":"38.0","runs":390,"wkts":11,"econ":10.26,"avg":35.5,"best":"2/24"}},"Blessing Muzarabani":{"m":2,"potm":0,"bowl":{"inn":2,"overs":"7.0","runs":75,"wkts":4,"econ":10.71,"avg":18.8,"best":"4/41"}},"Varun Chakravarthy":{"m":11,"potm":2,"bat":{"inn":2,"runs":5,"balls":6,"outs":2,"hs":5,"hsno":false,"f":0,"h":0,"avg":2.5,"sr":83.3},"bowl":{"inn":11,"overs":"41.0","runs":360,"wkts":11,"econ":8.78,"avg":32.7,"best":"3/14"}},"Kartik Tyagi":{"m":13,"potm":0,"bat":{"inn":3,"runs":11,"balls":10,"outs":3,"hs":6,"hsno":false,"f":0,"h":0,"avg":3.7,"sr":110.0},"bowl":{"inn":13,"overs":"51.0","runs":498,"wkts":18,"econ":9.76,"avg":27.7,"best":"3/22"}},"Sunil Narine":{"m":13,"potm":1,"bat":{"inn":4,"runs":40,"balls":32,"outs":3,"hs":24,"hsno":false,"f":0,"h":0,"avg":13.3,"sr":125.0},"bowl":{"inn":13,"overs":"51.0","runs":339,"wkts":15,"econ":6.65,"avg":22.6,"best":"2/26"}},"Anukul Roy":{"m":13,"potm":0,"bat":{"inn":7,"runs":52,"balls":39,"outs":4,"hs":29,"hsno":true,"f":0,"h":0,"avg":13.0,"sr":133.3},"bowl":{"inn":12,"overs":"27.1","runs":261,"wkts":9,"econ":9.61,"avg":29.0,"best":"2/31"}},"Sanju Samson":{"m":14,"potm":3,"bat":{"inn":14,"runs":477,"balls":288,"outs":11,"hs":115,"hsno":true,"f":1,"h":2,"avg":43.4,"sr":165.6}},"Ruturaj Gaikwad":{"m":14,"potm":1,"bat":{"inn":14,"runs":337,"balls":273,"outs":12,"hs":74,"hsno":true,"f":2,"h":0,"avg":28.1,"sr":123.4}},"Ayush Mhatre":{"m":6,"potm":0,"bat":{"inn":6,"runs":201,"balls":113,"outs":6,"hs":73,"hsno":false,"f":2,"h":0,"avg":33.5,"sr":177.9}},"Matthew Short":{"m":3,"potm":0,"bat":{"inn":3,"runs":60,"balls":51,"outs":3,"hs":34,"hsno":false,"f":0,"h":0,"avg":20.0,"sr":117.6},"bowl":{"inn":2,"overs":"3.1","runs":39,"wkts":0,"econ":12.32,"avg":null,"best":"0/1"}},"Sarfaraz Khan":{"m":7,"potm":0,"bat":{"inn":7,"runs":161,"balls":95,"outs":7,"hs":50,"hsno":false,"f":1,"h":0,"avg":23.0,"sr":169.5}},"Kartik Sharma":{"m":11,"potm":0,"bat":{"inn":11,"runs":295,"balls":216,"outs":9,"hs":71,"hsno":false,"f":2,"h":0,"avg":32.8,"sr":136.6}},"Shivam Dube":{"m":12,"potm":0,"bat":{"inn":12,"runs":270,"balls":170,"outs":7,"hs":47,"hsno":false,"f":0,"h":0,"avg":38.6,"sr":158.8},"bowl":{"inn":4,"overs":"5.0","runs":64,"wkts":1,"econ":12.8,"avg":64.0,"best":"1/30"}},"Jamie Overton":{"m":10,"potm":1,"bat":{"inn":6,"runs":136,"balls":86,"outs":5,"hs":43,"hsno":false,"f":0,"h":0,"avg":27.2,"sr":158.1},"bowl":{"inn":10,"overs":"28.0","runs":249,"wkts":14,"econ":8.89,"avg":17.8,"best":"4/18"}},"Noor Ahmad":{"m":14,"potm":1,"bat":{"inn":4,"runs":11,"balls":23,"outs":3,"hs":8,"hsno":false,"f":0,"h":0,"avg":3.7,"sr":47.8},"bowl":{"inn":14,"overs":"51.0","runs":428,"wkts":13,"econ":8.39,"avg":32.9,"best":"3/21"}},"Matt Henry":{"m":3,"potm":0,"bat":{"inn":2,"runs":7,"balls":10,"outs":2,"hs":5,"hsno":false,"f":0,"h":0,"avg":3.5,"sr":70.0},"bowl":{"inn":3,"overs":"10.0","runs":130,"wkts":2,"econ":13.0,"avg":65.0,"best":"2/54"}},"Anshul Kamboj":{"m":14,"potm":0,"bat":{"inn":4,"runs":58,"balls":38,"outs":1,"hs":19,"hsno":true,"f":0,"h":0,"avg":58.0,"sr":152.6},"bowl":{"inn":14,"overs":"50.2","runs":530,"wkts":21,"econ":10.53,"avg":25.2,"best":"3/22"}},"Jofra Archer":{"m":16,"potm":1,"bat":{"inn":10,"runs":64,"balls":47,"outs":6,"hs":32,"hsno":false,"f":0,"h":0,"avg":10.7,"sr":136.2},"bowl":{"inn":16,"overs":"60.0","runs":559,"wkts":25,"econ":9.32,"avg":22.4,"best":"3/17"}},"Nandre Burger":{"m":13,"potm":1,"bat":{"inn":3,"runs":14,"balls":9,"outs":1,"hs":10,"hsno":true,"f":0,"h":0,"avg":14.0,"sr":155.6},"bowl":{"inn":13,"overs":"43.3","runs":440,"wkts":14,"econ":10.11,"avg":31.4,"best":"2/21"}},"Brijesh Sharma":{"m":13,"potm":0,"bat":{"inn":2,"runs":2,"balls":4,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":50.0},"bowl":{"inn":13,"overs":"45.3","runs":450,"wkts":14,"econ":9.89,"avg":32.1,"best":"2/18"}},"Sandeep Sharma":{"m":6,"potm":0,"bowl":{"inn":6,"overs":"19.4","runs":224,"wkts":5,"econ":11.39,"avg":44.8,"best":"2/26"}},"Ravi Bishnoi":{"m":9,"potm":1,"bat":{"inn":2,"runs":0,"balls":3,"outs":2,"hs":0,"hsno":false,"f":0,"h":0,"avg":0.0,"sr":0.0},"bowl":{"inn":9,"overs":"26.0","runs":257,"wkts":11,"econ":9.88,"avg":23.4,"best":"4/41"}},"Ravindra Jadeja":{"m":13,"potm":1,"bat":{"inn":11,"runs":266,"balls":197,"outs":4,"hs":45,"hsno":true,"f":0,"h":0,"avg":66.5,"sr":135.0},"bowl":{"inn":12,"overs":"33.0","runs":277,"wkts":10,"econ":8.39,"avg":27.7,"best":"2/8"}},"Yashasvi Jaiswal":{"m":16,"potm":1,"bat":{"inn":16,"runs":427,"balls":280,"outs":14,"hs":77,"hsno":true,"f":3,"h":0,"avg":30.5,"sr":152.5}},"Vaibhav Sooryavanshi":{"m":16,"potm":3,"bat":{"inn":16,"runs":776,"balls":327,"outs":16,"hs":103,"hsno":false,"f":5,"h":1,"avg":48.5,"sr":237.3}},"Dhruv Jurel":{"m":16,"potm":0,"bat":{"inn":16,"runs":515,"balls":333,"outs":14,"hs":81,"hsno":true,"f":6,"h":0,"avg":36.8,"sr":154.7}},"Riyan Parag":{"m":14,"potm":0,"bat":{"inn":14,"runs":309,"balls":196,"outs":13,"hs":90,"hsno":false,"f":2,"h":0,"avg":23.8,"sr":157.7},"bowl":{"inn":4,"overs":"4.0","runs":38,"wkts":2,"econ":9.5,"avg":19.0,"best":"1/5"}},"Khaleel Ahmed":{"m":5,"potm":0,"bowl":{"inn":5,"overs":"16.5","runs":146,"wkts":2,"econ":8.67,"avg":73.0,"best":"1/24"}},"Sai Sudharsan":{"m":17,"potm":0,"bat":{"inn":17,"runs":722,"balls":457,"outs":16,"hs":100,"hsno":false,"f":8,"h":1,"avg":45.1,"sr":158.0}},"Shubman Gill":{"m":16,"potm":2,"bat":{"inn":16,"runs":732,"balls":449,"outs":16,"hs":104,"hsno":false,"f":6,"h":1,"avg":45.8,"sr":163.0}},"Jos Buttler":{"m":17,"potm":0,"bat":{"inn":17,"runs":526,"balls":345,"outs":14,"hs":60,"hsno":false,"f":4,"h":0,"avg":37.6,"sr":152.5}},"Glenn Phillips":{"m":5,"potm":0,"bat":{"inn":5,"runs":67,"balls":54,"outs":4,"hs":25,"hsno":false,"f":0,"h":0,"avg":16.8,"sr":124.1}},"Washington Sundar":{"m":16,"potm":0,"bat":{"inn":16,"runs":377,"balls":251,"outs":10,"hs":55,"hsno":false,"f":3,"h":0,"avg":37.7,"sr":150.2},"bowl":{"inn":5,"overs":"9.1","runs":84,"wkts":1,"econ":9.16,"avg":84.0,"best":"1/27"}},"Shahrukh Khan":{"m":5,"potm":0,"bat":{"inn":5,"runs":43,"balls":33,"outs":4,"hs":17,"hsno":false,"f":0,"h":0,"avg":10.8,"sr":130.3}},"Rahul Tewatia":{"m":15,"potm":0,"bat":{"inn":15,"runs":190,"balls":132,"outs":7,"hs":68,"hsno":false,"f":1,"h":0,"avg":27.1,"sr":143.9}},"Rashid Khan":{"m":17,"potm":2,"bat":{"inn":6,"runs":50,"balls":41,"outs":4,"hs":24,"hsno":false,"f":0,"h":0,"avg":12.5,"sr":122.0},"bowl":{"inn":17,"overs":"56.5","runs":516,"wkts":21,"econ":9.08,"avg":24.6,"best":"4/33"}},"Arshdeep Singh":{"m":14,"potm":1,"bat":{"inn":1,"runs":1,"balls":1,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":100.0},"bowl":{"inn":14,"overs":"53.0","runs":541,"wkts":14,"econ":10.21,"avg":38.6,"best":"3/22"}},"Xavier Bartlett":{"m":9,"potm":0,"bat":{"inn":3,"runs":29,"balls":13,"outs":1,"hs":18,"hsno":true,"f":0,"h":0,"avg":29.0,"sr":223.1},"bowl":{"inn":9,"overs":"33.3","runs":388,"wkts":5,"econ":11.58,"avg":77.6,"best":"2/9"}},"Marco Jansen":{"m":12,"potm":0,"bat":{"inn":5,"runs":51,"balls":45,"outs":4,"hs":20,"hsno":false,"f":0,"h":0,"avg":12.8,"sr":113.3},"bowl":{"inn":12,"overs":"47.2","runs":483,"wkts":9,"econ":10.2,"avg":53.7,"best":"2/33"}},"Vijaykumar Vyshak":{"m":9,"potm":0,"bat":{"inn":2,"runs":2,"balls":4,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":50.0},"bowl":{"inn":9,"overs":"31.0","runs":330,"wkts":9,"econ":10.65,"avg":36.7,"best":"3/34"}},"Yuzvendra Chahal":{"m":12,"potm":0,"bowl":{"inn":12,"overs":"41.0","runs":385,"wkts":12,"econ":9.39,"avg":32.1,"best":"3/36"}},"Priyansh Arya":{"m":13,"potm":2,"bat":{"inn":13,"runs":364,"balls":172,"outs":13,"hs":93,"hsno":false,"f":3,"h":0,"avg":28.0,"sr":211.6}},"Prabhsimran Singh":{"m":13,"potm":0,"bat":{"inn":13,"runs":510,"balls":302,"outs":12,"hs":80,"hsno":true,"f":6,"h":0,"avg":42.5,"sr":168.9}},"Cooper Connolly":{"m":13,"potm":1,"bat":{"inn":13,"runs":491,"balls":301,"outs":11,"hs":107,"hsno":true,"f":2,"h":1,"avg":44.6,"sr":163.1}},"Shreyas Iyer":{"m":13,"potm":2,"bat":{"inn":13,"runs":498,"balls":295,"outs":9,"hs":101,"hsno":true,"f":5,"h":1,"avg":55.3,"sr":168.8}},"Nehal Wadhera":{"m":6,"potm":0,"bat":{"inn":6,"runs":65,"balls":57,"outs":6,"hs":25,"hsno":false,"f":0,"h":0,"avg":10.8,"sr":114.0}},"Shashank Singh":{"m":11,"potm":0,"bat":{"inn":9,"runs":132,"balls":70,"outs":6,"hs":56,"hsno":false,"f":1,"h":0,"avg":22.0,"sr":188.6},"bowl":{"inn":4,"overs":"10.0","runs":88,"wkts":4,"econ":8.8,"avg":22.0,"best":"2/20"}},"Marcus Stoinis":{"m":10,"potm":0,"bat":{"inn":9,"runs":216,"balls":120,"outs":6,"hs":62,"hsno":true,"f":1,"h":0,"avg":36.0,"sr":180.0},"bowl":{"inn":4,"overs":"7.5","runs":98,"wkts":2,"econ":12.51,"avg":49.0,"best":"1/26"}},"Mohammed Siraj":{"m":17,"potm":1,"bat":{"inn":2,"runs":5,"balls":16,"outs":2,"hs":5,"hsno":false,"f":0,"h":0,"avg":2.5,"sr":31.2},"bowl":{"inn":17,"overs":"62.0","runs":562,"wkts":19,"econ":9.06,"avg":29.6,"best":"3/26"}},"Kagiso Rabada":{"m":17,"potm":2,"bat":{"inn":4,"runs":47,"balls":38,"outs":2,"hs":23,"hsno":true,"f":0,"h":0,"avg":23.5,"sr":123.7},"bowl":{"inn":17,"overs":"64.4","runs":626,"wkts":29,"econ":9.68,"avg":21.6,"best":"3/25"}},"Ashok Sharma":{"m":6,"potm":0,"bat":{"inn":2,"runs":1,"balls":4,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":25.0},"bowl":{"inn":6,"overs":"21.0","runs":228,"wkts":6,"econ":10.86,"avg":38.0,"best":"2/32"}},"Prasidh Krishna":{"m":12,"potm":1,"bat":{"inn":1,"runs":6,"balls":7,"outs":0,"hs":6,"hsno":true,"f":0,"h":0,"avg":null,"sr":85.7},"bowl":{"inn":12,"overs":"39.0","runs":407,"wkts":16,"econ":10.44,"avg":25.4,"best":"4/28"}},"Mitchell Marsh":{"m":13,"potm":2,"bat":{"inn":13,"runs":563,"balls":345,"outs":13,"hs":111,"hsno":false,"f":3,"h":1,"avg":43.3,"sr":163.2}},"Rishabh Pant":{"m":13,"potm":0,"bat":{"inn":13,"runs":312,"balls":226,"outs":11,"hs":68,"hsno":true,"f":1,"h":0,"avg":28.4,"sr":138.1}},"Aiden Markram":{"m":11,"potm":0,"bat":{"inn":11,"runs":231,"balls":167,"outs":9,"hs":45,"hsno":false,"f":0,"h":0,"avg":25.7,"sr":138.3},"bowl":{"inn":5,"overs":"6.0","runs":83,"wkts":0,"econ":13.83,"avg":null,"best":"0/9"}},"Ayush Badoni":{"m":10,"potm":0,"bat":{"inn":10,"runs":215,"balls":141,"outs":10,"hs":54,"hsno":false,"f":1,"h":0,"avg":21.5,"sr":152.5},"bowl":{"inn":1,"overs":"1.0","runs":14,"wkts":0,"econ":14.0,"avg":null,"best":"0/14"}},"Nicholas Pooran":{"m":14,"potm":0,"bat":{"inn":14,"runs":234,"balls":183,"outs":13,"hs":63,"hsno":false,"f":1,"h":0,"avg":18.0,"sr":127.9}},"Abdul Samad":{"m":8,"potm":0,"bat":{"inn":8,"runs":116,"balls":88,"outs":6,"hs":37,"hsno":true,"f":0,"h":0,"avg":19.3,"sr":131.8},"bowl":{"inn":1,"overs":"0.1","runs":6,"wkts":0,"econ":36.0,"avg":null,"best":"0/6"}},"Shahbaz Ahmed":{"m":5,"potm":0,"bat":{"inn":2,"runs":58,"balls":41,"outs":0,"hs":43,"hsno":true,"f":0,"h":0,"avg":null,"sr":141.5},"bowl":{"inn":5,"overs":"11.1","runs":130,"wkts":5,"econ":11.64,"avg":26.0,"best":"2/30"}},"Mohammed Shami":{"m":13,"potm":1,"bat":{"inn":7,"runs":31,"balls":22,"outs":5,"hs":12,"hsno":true,"f":0,"h":0,"avg":6.2,"sr":140.9},"bowl":{"inn":13,"overs":"51.0","runs":459,"wkts":12,"econ":9.0,"avg":38.2,"best":"2/9"}},"Anrich Nortje":{"m":1,"potm":0,"bat":{"inn":1,"runs":0,"balls":1,"outs":1,"hs":0,"hsno":false,"f":0,"h":0,"avg":0.0,"sr":0.0},"bowl":{"inn":1,"overs":"4.0","runs":39,"wkts":0,"econ":9.75,"avg":null,"best":"0/39"}},"Mohsin Khan":{"m":7,"potm":0,"bat":{"inn":2,"runs":0,"balls":4,"outs":2,"hs":0,"hsno":false,"f":0,"h":0,"avg":0.0,"sr":0.0},"bowl":{"inn":7,"overs":"28.0","runs":228,"wkts":11,"econ":8.14,"avg":20.7,"best":"5/23"}},"Mukesh Kumar":{"m":10,"potm":0,"bowl":{"inn":10,"overs":"31.2","runs":353,"wkts":6,"econ":11.27,"avg":58.8,"best":"2/26"}},"Lungi Ngidi":{"m":11,"potm":0,"bat":{"inn":3,"runs":4,"balls":7,"outs":2,"hs":3,"hsno":false,"f":0,"h":0,"avg":2.0,"sr":57.1},"bowl":{"inn":11,"overs":"41.2","runs":340,"wkts":13,"econ":8.23,"avg":26.2,"best":"3/27"}},"Axar Patel":{"m":14,"potm":0,"bat":{"inn":11,"runs":173,"balls":132,"outs":9,"hs":56,"hsno":false,"f":1,"h":0,"avg":19.2,"sr":131.1},"bowl":{"inn":13,"overs":"44.0","runs":360,"wkts":11,"econ":8.18,"avg":32.7,"best":"2/18"}},"T Natarajan":{"m":10,"potm":0,"bat":{"inn":1,"runs":1,"balls":2,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":50.0},"bowl":{"inn":10,"overs":"31.5","runs":356,"wkts":5,"econ":11.18,"avg":71.2,"best":"3/29"}},"Kuldeep Yadav":{"m":12,"potm":1,"bat":{"inn":4,"runs":9,"balls":21,"outs":3,"hs":4,"hsno":false,"f":0,"h":0,"avg":3.0,"sr":42.9},"bowl":{"inn":11,"overs":"37.0","runs":381,"wkts":10,"econ":10.3,"avg":38.1,"best":"3/29"}},"Vipraj Nigam":{"m":5,"potm":0,"bat":{"inn":2,"runs":15,"balls":10,"outs":1,"hs":12,"hsno":false,"f":0,"h":0,"avg":15.0,"sr":150.0},"bowl":{"inn":5,"overs":"9.0","runs":113,"wkts":2,"econ":12.56,"avg":56.5,"best":"1/24"}},"KL Rahul":{"m":14,"potm":2,"bat":{"inn":14,"runs":593,"balls":340,"outs":13,"hs":152,"hsno":true,"f":5,"h":1,"avg":45.6,"sr":174.4}},"Pathum Nissanka":{"m":10,"potm":0,"bat":{"inn":10,"runs":278,"balls":175,"outs":10,"hs":62,"hsno":false,"f":2,"h":0,"avg":27.8,"sr":158.9}},"Nitish Rana":{"m":9,"potm":0,"bat":{"inn":9,"runs":225,"balls":149,"outs":9,"hs":91,"hsno":false,"f":2,"h":0,"avg":25.0,"sr":151.0},"bowl":{"inn":1,"overs":"4.0","runs":55,"wkts":0,"econ":13.75,"avg":null,"best":"0/55"}},"Sameer Rizvi":{"m":9,"potm":2,"bat":{"inn":9,"runs":252,"balls":171,"outs":7,"hs":90,"hsno":false,"f":2,"h":0,"avg":36.0,"sr":147.4}},"Tristan Stubbs":{"m":13,"potm":1,"bat":{"inn":13,"runs":275,"balls":216,"outs":8,"hs":60,"hsno":true,"f":2,"h":0,"avg":34.4,"sr":127.3}},"Prince Yadav":{"m":14,"potm":0,"bat":{"inn":1,"runs":0,"balls":1,"outs":0,"hs":0,"hsno":true,"f":0,"h":0,"avg":null,"sr":0.0},"bowl":{"inn":14,"overs":"52.0","runs":459,"wkts":16,"econ":8.83,"avg":28.7,"best":"3/32"}},"Shivang Kumar":{"m":13,"potm":0,"bat":{"inn":6,"runs":53,"balls":46,"outs":6,"hs":27,"hsno":false,"f":0,"h":0,"avg":8.8,"sr":115.2},"bowl":{"inn":13,"overs":"39.0","runs":375,"wkts":9,"econ":9.62,"avg":41.7,"best":"3/33"}},"Prashant Veer":{"m":6,"potm":0,"bat":{"inn":5,"runs":90,"balls":67,"outs":2,"hs":43,"hsno":false,"f":0,"h":0,"avg":45.0,"sr":134.3},"bowl":{"inn":1,"overs":"2.0","runs":25,"wkts":0,"econ":12.5,"avg":null,"best":"0/25"}},"Rahul Chahar":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"4.0","runs":46,"wkts":0,"econ":11.5,"avg":null,"best":"0/46"}},"Sherfane Rutherford":{"m":7,"potm":0,"bat":{"inn":7,"runs":123,"balls":75,"outs":5,"hs":71,"hsno":true,"f":1,"h":0,"avg":24.6,"sr":164.0}},"Mitchell Santner":{"m":4,"potm":0,"bat":{"inn":2,"runs":26,"balls":19,"outs":0,"hs":18,"hsno":true,"f":0,"h":0,"avg":null,"sr":136.8},"bowl":{"inn":4,"overs":"14.0","runs":125,"wkts":5,"econ":8.93,"avg":25.0,"best":"2/16"}},"Corbin Bosch":{"m":6,"potm":0,"bat":{"inn":4,"runs":50,"balls":31,"outs":1,"hs":32,"hsno":true,"f":0,"h":0,"avg":50.0,"sr":161.3},"bowl":{"inn":6,"overs":"20.1","runs":195,"wkts":12,"econ":9.67,"avg":16.2,"best":"4/26"}},"David Miller":{"m":10,"potm":0,"bat":{"inn":10,"runs":211,"balls":137,"outs":6,"hs":51,"hsno":false,"f":1,"h":0,"avg":35.2,"sr":154.0}},"Deepak Chahar":{"m":8,"potm":0,"bat":{"inn":4,"runs":25,"balls":19,"outs":2,"hs":10,"hsno":false,"f":0,"h":0,"avg":12.5,"sr":131.6},"bowl":{"inn":8,"overs":"25.3","runs":265,"wkts":8,"econ":10.39,"avg":33.1,"best":"2/33"}},"Shimron Hetmyer":{"m":7,"potm":0,"bat":{"inn":7,"runs":78,"balls":69,"outs":6,"hs":22,"hsno":false,"f":0,"h":0,"avg":13.0,"sr":113.0}},"Donovan Ferreira":{"m":13,"potm":1,"bat":{"inn":13,"runs":317,"balls":177,"outs":9,"hs":69,"hsno":false,"f":2,"h":0,"avg":35.2,"sr":179.1},"bowl":{"inn":3,"overs":"3.0","runs":41,"wkts":1,"econ":13.67,"avg":41.0,"best":"1/14"}},"Kumar Kushagra":{"m":1,"potm":0,"bat":{"inn":1,"runs":18,"balls":14,"outs":1,"hs":18,"hsno":false,"f":0,"h":0,"avg":18.0,"sr":128.6}},"Tushar Deshpande":{"m":7,"potm":0,"bat":{"inn":2,"runs":26,"balls":14,"outs":2,"hs":25,"hsno":false,"f":0,"h":0,"avg":13.0,"sr":185.7},"bowl":{"inn":7,"overs":"23.0","runs":275,"wkts":4,"econ":11.96,"avg":68.8,"best":"1/24"}},"Liam Livingstone":{"m":2,"potm":0,"bat":{"inn":2,"runs":15,"balls":25,"outs":2,"hs":14,"hsno":false,"f":0,"h":0,"avg":7.5,"sr":60.0}},"Digvesh Rathi":{"m":10,"potm":0,"bat":{"inn":2,"runs":2,"balls":5,"outs":0,"hs":2,"hsno":true,"f":0,"h":0,"avg":null,"sr":40.0},"bowl":{"inn":10,"overs":"39.0","runs":397,"wkts":5,"econ":10.18,"avg":79.4,"best":"2/45"}},"Manimaran Siddharth":{"m":4,"potm":0,"bowl":{"inn":4,"overs":"15.0","runs":145,"wkts":6,"econ":9.67,"avg":24.2,"best":"2/35"}},"Avesh Khan":{"m":7,"potm":0,"bat":{"inn":4,"runs":6,"balls":6,"outs":1,"hs":4,"hsno":true,"f":0,"h":0,"avg":6.0,"sr":100.0},"bowl":{"inn":7,"overs":"24.4","runs":273,"wkts":6,"econ":11.07,"avg":45.5,"best":"2/23"}},"Rovman Powell":{"m":7,"potm":0,"bat":{"inn":7,"runs":190,"balls":141,"outs":5,"hs":40,"hsno":false,"f":0,"h":0,"avg":38.0,"sr":134.8}},"Navdeep Saini":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"3.0","runs":37,"wkts":0,"econ":12.33,"avg":null,"best":"0/37"}},"Venkatesh Iyer":{"m":6,"potm":1,"bat":{"inn":6,"runs":209,"balls":112,"outs":4,"hs":73,"hsno":true,"f":1,"h":0,"avg":52.2,"sr":186.6}},"Josh Hazlewood":{"m":13,"potm":2,"bat":{"inn":1,"runs":0,"balls":1,"outs":1,"hs":0,"hsno":false,"f":0,"h":0,"avg":0.0,"sr":0.0},"bowl":{"inn":13,"overs":"51.3","runs":494,"wkts":15,"econ":9.59,"avg":32.9,"best":"4/12"}},"Auqib Nabi":{"m":5,"potm":0,"bat":{"inn":2,"runs":14,"balls":4,"outs":1,"hs":10,"hsno":true,"f":0,"h":0,"avg":14.0,"sr":350.0},"bowl":{"inn":5,"overs":"13.0","runs":149,"wkts":0,"econ":11.46,"avg":null,"best":"0/17"}},"Ashutosh Sharma":{"m":8,"potm":0,"bat":{"inn":8,"runs":171,"balls":94,"outs":5,"hs":39,"hsno":false,"f":0,"h":0,"avg":34.2,"sr":181.9}},"Akeal Hosein":{"m":7,"potm":0,"bat":{"inn":3,"runs":5,"balls":3,"outs":0,"hs":3,"hsno":true,"f":0,"h":0,"avg":null,"sr":166.7},"bowl":{"inn":7,"overs":"24.4","runs":198,"wkts":8,"econ":8.03,"avg":24.8,"best":"4/17"}},"Gurjapneet Singh":{"m":8,"potm":0,"bowl":{"inn":8,"overs":"25.1","runs":233,"wkts":4,"econ":9.26,"avg":58.2,"best":"1/7"}},"George Linde":{"m":3,"potm":0,"bat":{"inn":3,"runs":31,"balls":21,"outs":3,"hs":16,"hsno":false,"f":0,"h":0,"avg":10.3,"sr":147.6},"bowl":{"inn":3,"overs":"6.1","runs":55,"wkts":1,"econ":8.92,"avg":55.0,"best":"1/18"}},"Rasikh Salam":{"m":12,"potm":0,"bat":{"inn":2,"runs":3,"balls":2,"outs":0,"hs":3,"hsno":true,"f":0,"h":0,"avg":null,"sr":150.0},"bowl":{"inn":12,"overs":"42.5","runs":405,"wkts":19,"econ":9.46,"avg":21.3,"best":"4/24"}},"Lhuan-dre Pretorius":{"m":2,"potm":0,"bat":{"inn":2,"runs":7,"balls":8,"outs":2,"hs":7,"hsno":false,"f":0,"h":0,"avg":3.5,"sr":87.5}},"Praful Hinge":{"m":7,"potm":1,"bat":{"inn":2,"runs":3,"balls":9,"outs":1,"hs":3,"hsno":false,"f":0,"h":0,"avg":3.0,"sr":33.3},"bowl":{"inn":7,"overs":"26.0","runs":305,"wkts":14,"econ":11.73,"avg":21.8,"best":"4/34"}},"Sakib Hussain":{"m":11,"potm":0,"bat":{"inn":1,"runs":5,"balls":7,"outs":0,"hs":5,"hsno":true,"f":0,"h":0,"avg":null,"sr":71.4},"bowl":{"inn":11,"overs":"42.0","runs":397,"wkts":15,"econ":9.45,"avg":26.5,"best":"4/24"}},"Dewald Brevis":{"m":8,"potm":0,"bat":{"inn":8,"runs":151,"balls":118,"outs":8,"hs":44,"hsno":false,"f":0,"h":0,"avg":18.9,"sr":128.0}},"Quinton de Kock":{"m":3,"potm":0,"bat":{"inn":3,"runs":132,"balls":81,"outs":2,"hs":112,"hsno":true,"f":0,"h":1,"avg":66.0,"sr":163.0}},"Mayank Rawat":{"m":1,"potm":0,"bat":{"inn":1,"runs":0,"balls":0,"outs":0,"hs":0,"hsno":true,"f":0,"h":0,"avg":null,"sr":null}},"Tim Seifert":{"m":3,"potm":0,"bat":{"inn":3,"runs":19,"balls":18,"outs":3,"hs":19,"hsno":false,"f":0,"h":0,"avg":6.3,"sr":105.6}},"Karun Nair":{"m":2,"potm":0,"bat":{"inn":2,"runs":18,"balls":18,"outs":2,"hs":13,"hsno":false,"f":0,"h":0,"avg":9.0,"sr":100.0}},"Mukesh Choudhary":{"m":8,"potm":0,"bat":{"inn":1,"runs":2,"balls":2,"outs":0,"hs":2,"hsno":true,"f":0,"h":0,"avg":null,"sr":100.0},"bowl":{"inn":8,"overs":"28.0","runs":249,"wkts":8,"econ":8.89,"avg":31.1,"best":"2/21"}},"Yash Punja":{"m":8,"potm":0,"bowl":{"inn":8,"overs":"30.0","runs":279,"wkts":9,"econ":9.3,"avg":31.0,"best":"2/35"}},"Himmat Singh":{"m":5,"potm":0,"bat":{"inn":5,"runs":92,"balls":69,"outs":3,"hs":40,"hsno":true,"f":0,"h":0,"avg":30.7,"sr":133.3}},"Danish Malewar":{"m":2,"potm":0,"bat":{"inn":2,"runs":2,"balls":5,"outs":2,"hs":2,"hsno":false,"f":0,"h":0,"avg":1.0,"sr":40.0}},"Krish Bhagat":{"m":3,"potm":0,"bat":{"inn":2,"runs":10,"balls":21,"outs":1,"hs":7,"hsno":false,"f":0,"h":0,"avg":10.0,"sr":47.6},"bowl":{"inn":3,"overs":"6.0","runs":63,"wkts":0,"econ":10.5,"avg":null,"best":"0/10"}},"Ashwani Kumar":{"m":3,"potm":0,"bat":{"inn":1,"runs":1,"balls":6,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":16.7},"bowl":{"inn":3,"overs":"10.0","runs":102,"wkts":6,"econ":10.2,"avg":17.0,"best":"4/24"}},"Dilshan Madushanka":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"4.0","runs":36,"wkts":1,"econ":9.0,"avg":36.0,"best":"1/36"}},"Jason Holder":{"m":11,"potm":2,"bat":{"inn":7,"runs":65,"balls":52,"outs":5,"hs":23,"hsno":true,"f":0,"h":0,"avg":13.0,"sr":125.0},"bowl":{"inn":11,"overs":"38.2","runs":290,"wkts":17,"econ":7.57,"avg":17.1,"best":"4/24"}},"Jacob Bethell":{"m":7,"potm":0,"bat":{"inn":7,"runs":96,"balls":77,"outs":7,"hs":27,"hsno":false,"f":0,"h":0,"avg":13.7,"sr":124.7}},"Manav Suthar":{"m":3,"potm":0,"bowl":{"inn":3,"overs":"6.0","runs":68,"wkts":2,"econ":11.33,"avg":34.0,"best":"1/19"}},"Pat Cummins":{"m":8,"potm":1,"bat":{"inn":3,"runs":30,"balls":19,"outs":3,"hs":19,"hsno":false,"f":0,"h":0,"avg":10.0,"sr":157.9},"bowl":{"inn":8,"overs":"32.0","runs":307,"wkts":8,"econ":9.59,"avg":38.4,"best":"3/28"}},"Urvil Patel":{"m":7,"potm":0,"bat":{"inn":7,"runs":129,"balls":64,"outs":7,"hs":65,"hsno":false,"f":1,"h":0,"avg":18.4,"sr":201.6}},"Mohd Arshad Khan":{"m":6,"potm":0,"bat":{"inn":2,"runs":23,"balls":11,"outs":1,"hs":15,"hsno":false,"f":0,"h":0,"avg":23.0,"sr":209.1},"bowl":{"inn":6,"overs":"17.2","runs":172,"wkts":6,"econ":9.92,"avg":28.7,"best":"3/22"}},"Sahil Parakh":{"m":4,"potm":0,"bat":{"inn":4,"runs":46,"balls":33,"outs":4,"hs":24,"hsno":false,"f":0,"h":0,"avg":11.5,"sr":139.4}},"Abhishek Porel":{"m":4,"potm":0,"bat":{"inn":4,"runs":108,"balls":88,"outs":4,"hs":51,"hsno":false,"f":1,"h":0,"avg":27.0,"sr":122.7}},"Kyle Jamieson":{"m":2,"potm":0,"bat":{"inn":1,"runs":12,"balls":13,"outs":1,"hs":12,"hsno":false,"f":0,"h":0,"avg":12.0,"sr":92.3},"bowl":{"inn":2,"overs":"7.0","runs":90,"wkts":2,"econ":12.86,"avg":45.0,"best":"1/42"}},"Dushmantha Chameera":{"m":1,"potm":0,"bat":{"inn":1,"runs":0,"balls":3,"outs":0,"hs":0,"hsno":true,"f":0,"h":0,"avg":null,"sr":0.0},"bowl":{"inn":1,"overs":"2.0","runs":18,"wkts":0,"econ":9.0,"avg":null,"best":"0/18"}},"Suryansh Shedge":{"m":7,"potm":0,"bat":{"inn":7,"runs":158,"balls":90,"outs":4,"hs":57,"hsno":false,"f":1,"h":0,"avg":39.5,"sr":175.6}},"Lockie Ferguson":{"m":3,"potm":0,"bowl":{"inn":3,"overs":"11.0","runs":141,"wkts":1,"econ":12.82,"avg":141.0,"best":"1/41"}},"Harpreet Brar":{"m":2,"potm":0,"bat":{"inn":1,"runs":5,"balls":3,"outs":0,"hs":5,"hsno":true,"f":0,"h":0,"avg":null,"sr":166.7},"bowl":{"inn":2,"overs":"8.0","runs":60,"wkts":2,"econ":7.5,"avg":30.0,"best":"2/35"}},"Will Jacks":{"m":7,"potm":0,"bat":{"inn":7,"runs":139,"balls":76,"outs":5,"hs":46,"hsno":false,"f":0,"h":0,"avg":27.8,"sr":182.9},"bowl":{"inn":6,"overs":"8.5","runs":94,"wkts":2,"econ":10.64,"avg":47.0,"best":"1/12"}},"Robin Minz":{"m":2,"potm":0,"bat":{"inn":2,"runs":6,"balls":4,"outs":1,"hs":5,"hsno":false,"f":0,"h":0,"avg":6.0,"sr":150.0}},"Mitchell Starc":{"m":6,"potm":1,"bat":{"inn":2,"runs":0,"balls":2,"outs":1,"hs":0,"hsno":true,"f":0,"h":0,"avg":0.0,"sr":0.0},"bowl":{"inn":6,"overs":"22.0","runs":224,"wkts":11,"econ":10.18,"avg":20.4,"best":"4/40"}},"Ramakrishna Ghosh":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"3.0","runs":24,"wkts":1,"econ":8.0,"avg":24.0,"best":"1/24"}},"Raghu Sharma":{"m":5,"potm":0,"bowl":{"inn":5,"overs":"15.0","runs":130,"wkts":1,"econ":8.67,"avg":130.0,"best":"1/36"}},"Smaran Ravichandran":{"m":4,"potm":0,"bat":{"inn":4,"runs":19,"balls":25,"outs":3,"hs":9,"hsno":false,"f":0,"h":0,"avg":6.3,"sr":76.0}},"Nishant Sindhu":{"m":5,"potm":0,"bat":{"inn":5,"runs":63,"balls":50,"outs":5,"hs":22,"hsno":false,"f":0,"h":0,"avg":12.6,"sr":126.0}},"Josh Inglis":{"m":5,"potm":0,"bat":{"inn":5,"runs":266,"balls":143,"outs":5,"hs":85,"hsno":false,"f":3,"h":0,"avg":53.2,"sr":186.0}},"Akshat Raghuwanshi":{"m":2,"potm":0,"bat":{"inn":2,"runs":29,"balls":25,"outs":2,"hs":18,"hsno":false,"f":0,"h":0,"avg":14.5,"sr":116.0}},"Arshin Kulkarni":{"m":2,"potm":0,"bat":{"inn":2,"runs":17,"balls":25,"outs":2,"hs":17,"hsno":false,"f":0,"h":0,"avg":8.5,"sr":68.0}},"Dasun Shanaka":{"m":6,"potm":0,"bat":{"inn":5,"runs":63,"balls":46,"outs":5,"hs":29,"hsno":false,"f":0,"h":0,"avg":12.6,"sr":137.0},"bowl":{"inn":3,"overs":"6.0","runs":60,"wkts":1,"econ":10.0,"avg":60.0,"best":"1/29"}},"Sai Kishore":{"m":2,"potm":0,"bowl":{"inn":2,"overs":"4.0","runs":46,"wkts":1,"econ":11.5,"avg":46.0,"best":"1/38"}},"Raj Angad Bawa":{"m":2,"potm":0,"bat":{"inn":1,"runs":16,"balls":14,"outs":1,"hs":16,"hsno":false,"f":0,"h":0,"avg":16.0,"sr":114.3},"bowl":{"inn":2,"overs":"4.0","runs":50,"wkts":2,"econ":12.5,"avg":25.0,"best":"1/11"}},"Madhav Tiwari":{"m":3,"potm":1,"bat":{"inn":1,"runs":18,"balls":8,"outs":0,"hs":18,"hsno":true,"f":0,"h":0,"avg":null,"sr":225.0},"bowl":{"inn":3,"overs":"10.0","runs":87,"wkts":4,"econ":8.7,"avg":21.8,"best":"2/27"}},"Yash Thakur":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"4.0","runs":55,"wkts":2,"econ":13.75,"avg":27.5,"best":"2/55"}},"Ben Dwarshuis":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"4.0","runs":51,"wkts":1,"econ":12.75,"avg":51.0,"best":"1/51"}},"Azmatullah Omarzai":{"m":3,"potm":0,"bat":{"inn":2,"runs":52,"balls":27,"outs":2,"hs":38,"hsno":false,"f":0,"h":0,"avg":26.0,"sr":192.6},"bowl":{"inn":3,"overs":"11.0","runs":103,"wkts":3,"econ":9.36,"avg":34.3,"best":"2/36"}},"Vishnu Vinod":{"m":1,"potm":0,"bat":{"inn":1,"runs":15,"balls":8,"outs":0,"hs":15,"hsno":true,"f":0,"h":0,"avg":null,"sr":187.5}},"Akash Singh":{"m":2,"potm":0,"bowl":{"inn":2,"overs":"7.0","runs":80,"wkts":4,"econ":11.43,"avg":20.0,"best":"3/26"}},"Spencer Johnson":{"m":3,"potm":0,"bat":{"inn":1,"runs":0,"balls":1,"outs":1,"hs":0,"hsno":false,"f":0,"h":0,"avg":0.0,"sr":0.0},"bowl":{"inn":3,"overs":"11.0","runs":112,"wkts":2,"econ":10.18,"avg":56.0,"best":"1/39"}},"Matheesha Pathirana":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"1.2","runs":9,"wkts":0,"econ":6.75,"avg":null,"best":"0/9"}},"Ravi Singh":{"m":1,"potm":0,"bat":{"inn":1,"runs":4,"balls":2,"outs":1,"hs":4,"hsno":false,"f":0,"h":0,"avg":4.0,"sr":200.0}},"Adam Milne":{"m":1,"potm":0,"bat":{"inn":1,"runs":2,"balls":2,"outs":0,"hs":2,"hsno":true,"f":0,"h":0,"avg":null,"sr":100.0},"bowl":{"inn":1,"overs":"3.2","runs":41,"wkts":0,"econ":12.3,"avg":null,"best":"0/41"}},"Tripurana Vijay":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"2.0","runs":29,"wkts":0,"econ":14.5,"avg":null,"best":"0/29"}},"Sushant Mishra":{"m":2,"potm":0,"bat":{"inn":1,"runs":1,"balls":3,"outs":0,"hs":1,"hsno":true,"f":0,"h":0,"avg":null,"sr":33.3},"bowl":{"inn":2,"overs":"6.2","runs":67,"wkts":2,"econ":10.58,"avg":33.5,"best":"2/21"}},"Manish Pandey":{"m":2,"potm":1,"bat":{"inn":2,"runs":70,"balls":49,"outs":2,"hs":45,"hsno":false,"f":0,"h":0,"avg":35.0,"sr":142.9}},"Arjun Tendulkar":{"m":1,"potm":0,"bat":{"inn":1,"runs":5,"balls":5,"outs":0,"hs":5,"hsno":true,"f":0,"h":0,"avg":null,"sr":100.0},"bowl":{"inn":1,"overs":"4.0","runs":36,"wkts":1,"econ":9.0,"avg":36.0,"best":"1/36"}},"Kulwant Khejroliya":{"m":1,"potm":0,"bowl":{"inn":1,"overs":"2.0","runs":31,"wkts":0,"econ":15.5,"avg":null,"best":"0/31"}}},"matches":{"Travis Head":{"bat":[{"date":"2026-05-27","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Rajasthan Royals won by 47 runs","team":"SRH","opponent":"RR","runs":17,"balls":8,"out":true},{"date":"2026-05-22","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 55 runs","team":"SRH","opponent":"RCB","runs":26,"balls":16,"out":true},{"date":"2026-05-18","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Sunrisers Hyderabad won by 5 wickets","team":"SRH","opponent":"CSK","runs":6,"balls":6,"out":true},{"date":"2026-05-12","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 82 runs","team":"SRH","opponent":"GT","runs":0,"balls":4,"out":true},{"date":"2026-05-06","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 33 runs","team":"SRH","opponent":"PBKS","runs":38,"balls":19,"out":true},{"date":"2026-05-03","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Kolkata Knight Riders won by 7 wickets","team":"SRH","opponent":"KKR","runs":61,"balls":28,"out":true,"top":true},{"date":"2026-04-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Sunrisers Hyderabad won by 6 wickets","team":"SRH","opponent":"MI","runs":76,"balls":30,"out":true,"top":true},{"date":"2026-04-25","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Sunrisers Hyderabad won by 5 wickets","team":"SRH","opponent":"RR","runs":6,"balls":5,"out":true},{"date":"2026-04-21","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 47 runs","team":"SRH","opponent":"DC","runs":37,"balls":26,"out":true},{"date":"2026-04-18","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 10 runs","team":"SRH","opponent":"CSK","runs":23,"balls":20,"out":true},{"date":"2026-04-13","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 57 runs","team":"SRH","opponent":"RR","runs":18,"balls":18,"out":true},{"date":"2026-04-11","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 6 wickets","team":"SRH","opponent":"PBKS","runs":38,"balls":23,"out":true},{"date":"2026-04-05","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Lucknow Super Giants won by 5 wickets","team":"SRH","opponent":"LSG","runs":7,"balls":8,"out":true},{"date":"2026-04-02","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Sunrisers Hyderabad won by 65 runs","team":"SRH","opponent":"KKR","runs":46,"balls":21,"out":true},{"date":"2026-03-28","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 6 wickets","team":"SRH","opponent":"RCB","runs":11,"balls":9,"out":true}],"bowl":[{"date":"2026-05-22","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 55 runs","team":"SRH","opponent":"RCB","overs":1,"runs":7,"wkts":1}]},"David Payne":{"bat":[{"date":"2026-03-28","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 6 wickets","team":"SRH","opponent":"RCB","runs":6,"balls":5,"out":false}],"bowl":[{"date":"2026-04-02","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Sunrisers Hyderabad won by 65 runs","team":"SRH","opponent":"KKR","overs":2,"runs":35,"wkts":0},{"date":"2026-03-28","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 6 wickets","team":"SRH","opponent":"RCB","overs":3,"runs":35,"wkts":2}]},"Jaydev Unadkat":{"bat":[{"date":"2026-03-28","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 6 wickets","team":"SRH","opponent":"RCB","runs":4,"balls":3,"out":false}],"bowl":[{"date":"2026-04-11","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 6 wickets","team":"SRH","opponent":"PBKS","overs":3,"runs":40,"wkts":0},{"date":"2026-04-05","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Lucknow Super Giants won by 5 wickets","team":"SRH","opponent":"LSG","overs":3.5,"runs":50,"wkts":0},{"date":"2026-04-02","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Sunrisers Hyderabad won by 65 runs","team":"SRH","opponent":"KKR","overs":3,"runs":21,"wkts":3},{"date":"2026-03-28","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 6 wickets","team":"SRH","opponent":"RCB","overs":3,"runs":29,"wkts":1}]},"Ajinkya Rahane":{"bat":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Delhi Capitals won by 40 runs","team":"KKR","opponent":"DC","runs":63,"balls":39,"out":true,"top":true},{"date":"2026-05-20","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 4 wickets","team":"KKR","opponent":"MI","runs":21,"balls":17,"out":true},{"date":"2026-05-16","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 29 runs","team":"KKR","opponent":"GT","runs":14,"balls":14,"out":true},{"date":"2026-05-13","format":"T20","competition":"Indian Premier League 2026","venue":"Shaheed Veer Narayan Singh International Stadium, Raipur","result":"Royal Challengers Bengaluru won by 6 wickets","team":"KKR","opponent":"RCB","runs":19,"balls":13,"out":true},{"date":"2026-05-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Kolkata Knight Riders won by 8 wickets","team":"KKR","opponent":"DC","runs":13,"balls":9,"out":true},{"date":"2026-05-03","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Kolkata Knight Riders won by 7 wickets","team":"KKR","opponent":"SRH","runs":43,"balls":36,"out":true},{"date":"2026-04-26","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"tie","team":"KKR","opponent":"LSG","runs":10,"balls":15,"out":true},{"date":"2026-04-19","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 4 wickets","team":"KKR","opponent":"RR","runs":0,"balls":2,"out":true},{"date":"2026-04-17","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 5 wickets","team":"KKR","opponent":"GT","runs":0,"balls":1,"out":true},{"date":"2026-04-14","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 32 runs","team":"KKR","opponent":"CSK","runs":28,"balls":22,"out":true},{"date":"2026-04-09","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Lucknow Super Giants won by 3 wickets","team":"KKR","opponent":"LSG","runs":41,"balls":24,"out":true},{"date":"2026-04-06","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"no result","team":"KKR","opponent":"PBKS","runs":8,"balls":6,"out":false,"top":true},{"date":"2026-04-02","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Sunrisers Hyderabad won by 65 runs","team":"KKR","opponent":"SRH","runs":8,"balls":10,"out":true},{"date":"2026-03-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"KKR","opponent":"MI","runs":67,"balls":40,"out":true,"top":true}],"bowl":[]},"Trent Boult":{"bat":[{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"MI","opponent":"CSK","runs":7,"balls":2,"out":false},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"MI","opponent":"RR","runs":1,"balls":2,"out":true}],"bowl":[{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"MI","opponent":"CSK","overs":3.1,"runs":37,"wkts":0},{"date":"2026-04-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Sunrisers Hyderabad won by 6 wickets","team":"MI","opponent":"SRH","overs":4,"runs":41,"wkts":1},{"date":"2026-04-12","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Royal Challengers Bengaluru won by 18 runs","team":"MI","opponent":"RCB","overs":4,"runs":50,"wkts":1},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"MI","opponent":"RR","overs":1,"runs":22,"wkts":0},{"date":"2026-03-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"MI","opponent":"KKR","overs":4,"runs":38,"wkts":0}]},"Allah Ghazanfar":{"bat":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Rajasthan Royals won by 30 runs","team":"MI","opponent":"RR","runs":2,"balls":3,"out":false}],"bowl":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Rajasthan Royals won by 30 runs","team":"MI","opponent":"RR","overs":3,"runs":45,"wkts":1},{"date":"2026-05-20","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 4 wickets","team":"MI","opponent":"KKR","overs":4,"runs":25,"wkts":1},{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"Shaheed Veer Narayan Singh International Stadium, Raipur","result":"Royal Challengers Bengaluru won by 2 wickets","team":"MI","opponent":"RCB","overs":3,"runs":33,"wkts":1},{"date":"2026-05-04","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"MI","opponent":"LSG","overs":4,"runs":50,"wkts":1},{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"MI","opponent":"CSK","overs":4,"runs":40,"wkts":1},{"date":"2026-04-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Sunrisers Hyderabad won by 6 wickets","team":"MI","opponent":"SRH","overs":4,"runs":51,"wkts":2},{"date":"2026-04-23","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Chennai Super Kings won by 103 runs","team":"MI","opponent":"CSK","overs":4,"runs":25,"wkts":2},{"date":"2026-04-20","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Mumbai Indians won by 99 runs","team":"MI","opponent":"GT","overs":2.5,"runs":17,"wkts":2},{"date":"2026-04-16","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Punjab Kings won by 7 wickets","team":"MI","opponent":"PBKS","overs":4,"runs":31,"wkts":2},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"MI","opponent":"RR","overs":2,"runs":21,"wkts":2},{"date":"2026-03-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"MI","opponent":"KKR","overs":4,"runs":51,"wkts":0}]},"Mayank Markande":{"bat":[],"bowl":[{"date":"2026-04-12","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Royal Challengers Bengaluru won by 18 runs","team":"MI","opponent":"RCB","overs":2,"runs":40,"wkts":0},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 6 wickets","team":"MI","opponent":"DC","overs":2,"runs":20,"wkts":0},{"date":"2026-03-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"MI","opponent":"KKR","overs":1,"runs":16,"wkts":0}]},"Blessing Muzarabani":{"bat":[],"bowl":[{"date":"2026-04-02","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Sunrisers Hyderabad won by 65 runs","team":"KKR","opponent":"SRH","overs":4,"runs":41,"wkts":4},{"date":"2026-03-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"KKR","opponent":"MI","overs":3,"runs":34,"wkts":0}]},"Matthew Short":{"bat":[{"date":"2026-05-21","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 89 runs","team":"CSK","opponent":"GT","runs":24,"balls":14,"out":true},{"date":"2026-04-18","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 10 runs","team":"CSK","opponent":"SRH","runs":34,"balls":30,"out":true,"top":true},{"date":"2026-03-30","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 8 wickets","team":"CSK","opponent":"RR","runs":2,"balls":7,"out":true}],"bowl":[{"date":"2026-04-18","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 10 runs","team":"CSK","opponent":"SRH","overs":3,"runs":38,"wkts":0},{"date":"2026-03-30","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 8 wickets","team":"CSK","opponent":"RR","overs":0.1,"runs":1,"wkts":0}]},"Matt Henry":{"bat":[{"date":"2026-04-05","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 43 runs","team":"CSK","opponent":"RCB","runs":2,"balls":3,"out":true},{"date":"2026-03-30","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 8 wickets","team":"CSK","opponent":"RR","runs":5,"balls":7,"out":true}],"bowl":[{"date":"2026-04-05","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 43 runs","team":"CSK","opponent":"RCB","overs":3,"runs":36,"wkts":0},{"date":"2026-04-03","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Punjab Kings won by 5 wickets","team":"CSK","opponent":"PBKS","overs":4,"runs":54,"wkts":2},{"date":"2026-03-30","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 8 wickets","team":"CSK","opponent":"RR","overs":3,"runs":40,"wkts":0}]},"Shahrukh Khan":{"bat":[{"date":"2026-04-30","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 4 wickets","team":"GT","opponent":"RCB","runs":8,"balls":8,"out":true},{"date":"2026-04-20","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Mumbai Indians won by 99 runs","team":"GT","opponent":"MI","runs":17,"balls":13,"out":true},{"date":"2026-04-17","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 5 wickets","team":"GT","opponent":"KKR","runs":3,"balls":2,"out":false},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Rajasthan Royals won by 6 runs","team":"GT","opponent":"RR","runs":11,"balls":4,"out":true},{"date":"2026-03-31","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 3 wickets","team":"GT","opponent":"PBKS","runs":4,"balls":6,"out":true}],"bowl":[]},"Nehal Wadhera":{"bat":[{"date":"2026-05-03","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 4 wickets","team":"PBKS","opponent":"GT","runs":0,"balls":6,"out":true},{"date":"2026-04-25","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Punjab Kings won by 6 wickets","team":"PBKS","opponent":"DC","runs":25,"balls":15,"out":true},{"date":"2026-04-19","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 54 runs","team":"PBKS","opponent":"LSG","runs":13,"balls":7,"out":true},{"date":"2026-04-11","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 6 wickets","team":"PBKS","opponent":"SRH","runs":14,"balls":14,"out":true},{"date":"2026-04-03","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Punjab Kings won by 5 wickets","team":"PBKS","opponent":"CSK","runs":10,"balls":9,"out":true},{"date":"2026-03-31","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 3 wickets","team":"PBKS","opponent":"GT","runs":3,"balls":6,"out":true}],"bowl":[]},"Anrich Nortje":{"bat":[{"date":"2026-04-01","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Delhi Capitals won by 6 wickets","team":"LSG","opponent":"DC","runs":0,"balls":1,"out":true}],"bowl":[{"date":"2026-04-01","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Delhi Capitals won by 6 wickets","team":"LSG","opponent":"DC","overs":4,"runs":39,"wkts":0}]},"Pathum Nissanka":{"bat":[{"date":"2026-05-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Kolkata Knight Riders won by 8 wickets","team":"DC","opponent":"KKR","runs":50,"balls":29,"out":true,"top":true},{"date":"2026-05-05","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Chennai Super Kings won by 8 wickets","team":"DC","opponent":"CSK","runs":19,"balls":15,"out":true},{"date":"2026-05-01","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Delhi Capitals won by 7 wickets","team":"DC","opponent":"RR","runs":62,"balls":33,"out":true},{"date":"2026-04-25","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Punjab Kings won by 6 wickets","team":"DC","opponent":"PBKS","runs":11,"balls":7,"out":true},{"date":"2026-04-21","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 47 runs","team":"DC","opponent":"SRH","runs":8,"balls":6,"out":true},{"date":"2026-04-18","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Delhi Capitals won by 6 wickets","team":"DC","opponent":"RCB","runs":1,"balls":2,"out":true},{"date":"2026-04-11","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 23 runs","team":"DC","opponent":"CSK","runs":41,"balls":24,"out":true},{"date":"2026-04-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Gujarat Titans won by 1 runs","team":"DC","opponent":"GT","runs":41,"balls":24,"out":true},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 6 wickets","team":"DC","opponent":"MI","runs":44,"balls":30,"out":true},{"date":"2026-04-01","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Delhi Capitals won by 6 wickets","team":"DC","opponent":"LSG","runs":1,"balls":5,"out":true}],"bowl":[]},"Nitish Rana":{"bat":[{"date":"2026-05-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Kolkata Knight Riders won by 8 wickets","team":"DC","opponent":"KKR","runs":8,"balls":10,"out":true},{"date":"2026-05-05","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Chennai Super Kings won by 8 wickets","team":"DC","opponent":"CSK","runs":15,"balls":13,"out":true},{"date":"2026-05-01","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Delhi Capitals won by 7 wickets","team":"DC","opponent":"RR","runs":33,"balls":17,"out":true},{"date":"2026-04-27","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Royal Challengers Bengaluru won by 9 wickets","team":"DC","opponent":"RCB","runs":1,"balls":9,"out":true},{"date":"2026-04-25","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Punjab Kings won by 6 wickets","team":"DC","opponent":"PBKS","runs":91,"balls":44,"out":true},{"date":"2026-04-21","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 47 runs","team":"DC","opponent":"SRH","runs":57,"balls":30,"out":true,"top":true},{"date":"2026-04-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Gujarat Titans won by 1 runs","team":"DC","opponent":"GT","runs":5,"balls":6,"out":true},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 6 wickets","team":"DC","opponent":"MI","runs":0,"balls":3,"out":true},{"date":"2026-04-01","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Delhi Capitals won by 6 wickets","team":"DC","opponent":"LSG","runs":15,"balls":17,"out":true}],"bowl":[{"date":"2026-04-21","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 47 runs","team":"DC","opponent":"SRH","overs":4,"runs":55,"wkts":0}]},"Prashant Veer":{"bat":[{"date":"2026-05-18","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Sunrisers Hyderabad won by 5 wickets","team":"CSK","opponent":"SRH","runs":11,"balls":9,"out":true},{"date":"2026-05-15","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Lucknow Super Giants won by 7 wickets","team":"CSK","opponent":"LSG","runs":13,"balls":10,"out":false},{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 5 wickets","team":"CSK","opponent":"LSG","runs":17,"balls":12,"out":false},{"date":"2026-04-05","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 43 runs","team":"CSK","opponent":"RCB","runs":43,"balls":29,"out":true},{"date":"2026-04-03","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Punjab Kings won by 5 wickets","team":"CSK","opponent":"PBKS","runs":6,"balls":7,"out":false}],"bowl":[{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"CSK","opponent":"MI","overs":2,"runs":25,"wkts":0}]},"Deepak Chahar":{"bat":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Rajasthan Royals won by 30 runs","team":"MI","opponent":"RR","runs":8,"balls":5,"out":true},{"date":"2026-05-20","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 4 wickets","team":"MI","opponent":"KKR","runs":10,"balls":7,"out":true},{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"Shaheed Veer Narayan Singh International Stadium, Raipur","result":"Royal Challengers Bengaluru won by 2 wickets","team":"MI","opponent":"RCB","runs":1,"balls":2,"out":false},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"MI","opponent":"RR","runs":6,"balls":5,"out":false}],"bowl":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Rajasthan Royals won by 30 runs","team":"MI","opponent":"RR","overs":4,"runs":43,"wkts":2},{"date":"2026-05-20","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 4 wickets","team":"MI","opponent":"KKR","overs":3,"runs":23,"wkts":1},{"date":"2026-05-14","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Mumbai Indians won by 6 wickets","team":"MI","opponent":"PBKS","overs":4,"runs":36,"wkts":2},{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"Shaheed Veer Narayan Singh International Stadium, Raipur","result":"Royal Challengers Bengaluru won by 2 wickets","team":"MI","opponent":"RCB","overs":4,"runs":33,"wkts":2},{"date":"2026-05-04","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"MI","opponent":"LSG","overs":4,"runs":43,"wkts":0},{"date":"2026-04-16","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Punjab Kings won by 7 wickets","team":"MI","opponent":"PBKS","overs":2.3,"runs":45,"wkts":0},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"MI","opponent":"RR","overs":1,"runs":22,"wkts":0},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 6 wickets","team":"MI","opponent":"DC","overs":3,"runs":20,"wkts":1}]},"Shimron Hetmyer":{"bat":[{"date":"2026-05-09","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Gujarat Titans won by 77 runs","team":"RR","opponent":"GT","runs":6,"balls":7,"out":true},{"date":"2026-04-25","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Sunrisers Hyderabad won by 5 wickets","team":"RR","opponent":"SRH","runs":11,"balls":10,"out":true},{"date":"2026-04-22","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Rajasthan Royals won by 40 runs","team":"RR","opponent":"LSG","runs":22,"balls":18,"out":true},{"date":"2026-04-19","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 4 wickets","team":"RR","opponent":"KKR","runs":15,"balls":18,"out":true},{"date":"2026-04-10","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 6 wickets","team":"RR","opponent":"RCB","runs":0,"balls":1,"out":true},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"RR","opponent":"MI","runs":6,"balls":7,"out":false},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Rajasthan Royals won by 6 runs","team":"RR","opponent":"GT","runs":18,"balls":8,"out":true}],"bowl":[]},"Tushar Deshpande":{"bat":[{"date":"2026-05-09","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Gujarat Titans won by 77 runs","team":"RR","opponent":"GT","runs":1,"balls":3,"out":true},{"date":"2026-04-13","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 57 runs","team":"RR","opponent":"SRH","runs":25,"balls":11,"out":true}],"bowl":[{"date":"2026-05-29","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Gujarat Titans won by 7 wickets","team":"RR","opponent":"GT","overs":3,"runs":34,"wkts":0},{"date":"2026-05-09","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Gujarat Titans won by 77 runs","team":"RR","opponent":"GT","overs":4,"runs":52,"wkts":0},{"date":"2026-05-01","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Delhi Capitals won by 7 wickets","team":"RR","opponent":"DC","overs":4,"runs":38,"wkts":1},{"date":"2026-04-25","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Sunrisers Hyderabad won by 5 wickets","team":"RR","opponent":"SRH","overs":3,"runs":43,"wkts":0},{"date":"2026-04-13","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 57 runs","team":"RR","opponent":"SRH","overs":4,"runs":55,"wkts":1},{"date":"2026-04-07","format":"T20","competition":"Indian Premier League 2026","venue":"Barsapara Cricket Stadium, Guwahati","result":"Rajasthan Royals won by 27 runs","team":"RR","opponent":"MI","overs":2,"runs":29,"wkts":1},{"date":"2026-04-04","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Rajasthan Royals won by 6 runs","team":"RR","opponent":"GT","overs":3,"runs":24,"wkts":1}]},"Avesh Khan":{"bat":[{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 5 wickets","team":"LSG","opponent":"CSK","runs":0,"balls":0,"out":false},{"date":"2026-04-15","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 5 wickets","team":"LSG","opponent":"RCB","runs":1,"balls":2,"out":true},{"date":"2026-04-12","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Gujarat Titans won by 7 wickets","team":"LSG","opponent":"GT","runs":4,"balls":1,"out":false},{"date":"2026-04-09","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Lucknow Super Giants won by 3 wickets","team":"LSG","opponent":"KKR","runs":1,"balls":3,"out":false}],"bowl":[{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 5 wickets","team":"LSG","opponent":"CSK","overs":4,"runs":44,"wkts":1},{"date":"2026-05-04","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"LSG","opponent":"MI","overs":3.4,"runs":56,"wkts":0},{"date":"2026-04-19","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 54 runs","team":"LSG","opponent":"PBKS","overs":3,"runs":46,"wkts":0},{"date":"2026-04-15","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 5 wickets","team":"LSG","opponent":"RCB","overs":4,"runs":23,"wkts":2},{"date":"2026-04-12","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Gujarat Titans won by 7 wickets","team":"LSG","opponent":"GT","overs":2,"runs":24,"wkts":0},{"date":"2026-04-09","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Lucknow Super Giants won by 3 wickets","team":"LSG","opponent":"KKR","overs":4,"runs":44,"wkts":1},{"date":"2026-04-05","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Lucknow Super Giants won by 5 wickets","team":"LSG","opponent":"SRH","overs":4,"runs":36,"wkts":2}]},"Navdeep Saini":{"bat":[],"bowl":[{"date":"2026-04-09","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Lucknow Super Giants won by 3 wickets","team":"KKR","opponent":"LSG","overs":3,"runs":37,"wkts":0}]},"George Linde":{"bat":[{"date":"2026-04-26","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"tie","team":"LSG","opponent":"KKR","runs":8,"balls":4,"out":true},{"date":"2026-04-15","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 5 wickets","team":"LSG","opponent":"RCB","runs":7,"balls":7,"out":true},{"date":"2026-04-12","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Gujarat Titans won by 7 wickets","team":"LSG","opponent":"GT","runs":16,"balls":10,"out":true}],"bowl":[{"date":"2026-04-26","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"tie","team":"LSG","opponent":"KKR","overs":2,"runs":18,"wkts":1},{"date":"2026-04-15","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 5 wickets","team":"LSG","opponent":"RCB","overs":1.1,"runs":9,"wkts":0},{"date":"2026-04-12","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Gujarat Titans won by 7 wickets","team":"LSG","opponent":"GT","overs":3,"runs":28,"wkts":0}]},"Mayank Rawat":{"bat":[{"date":"2026-04-16","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Punjab Kings won by 7 wickets","team":"MI","opponent":"PBKS","runs":0,"balls":0,"out":false}],"bowl":[]},"Karun Nair":{"bat":[{"date":"2026-05-05","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Chennai Super Kings won by 8 wickets","team":"DC","opponent":"CSK","runs":13,"balls":13,"out":true},{"date":"2026-04-18","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Delhi Capitals won by 6 wickets","team":"DC","opponent":"RCB","runs":5,"balls":5,"out":true}],"bowl":[]},"Himmat Singh":{"bat":[{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 5 wickets","team":"LSG","opponent":"CSK","runs":17,"balls":12,"out":true},{"date":"2026-05-04","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Mumbai Indians won by 6 wickets","team":"LSG","opponent":"MI","runs":40,"balls":31,"out":false},{"date":"2026-04-26","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"tie","team":"LSG","opponent":"KKR","runs":19,"balls":10,"out":true},{"date":"2026-04-22","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Rajasthan Royals won by 40 runs","team":"LSG","opponent":"RR","runs":15,"balls":15,"out":true},{"date":"2026-04-19","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Punjab Kings won by 54 runs","team":"LSG","opponent":"PBKS","runs":1,"balls":1,"out":false}],"bowl":[]},"Danish Malewar":{"bat":[{"date":"2026-04-23","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Chennai Super Kings won by 103 runs","team":"MI","opponent":"CSK","runs":0,"balls":1,"out":true},{"date":"2026-04-20","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Mumbai Indians won by 99 runs","team":"MI","opponent":"GT","runs":2,"balls":4,"out":true}],"bowl":[]},"Krish Bhagat":{"bat":[{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"MI","opponent":"CSK","runs":3,"balls":6,"out":false},{"date":"2026-04-23","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Chennai Super Kings won by 103 runs","team":"MI","opponent":"CSK","runs":7,"balls":15,"out":true}],"bowl":[{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"MI","opponent":"CSK","overs":2,"runs":22,"wkts":0},{"date":"2026-04-23","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Chennai Super Kings won by 103 runs","team":"MI","opponent":"CSK","overs":2,"runs":31,"wkts":0},{"date":"2026-04-20","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Mumbai Indians won by 99 runs","team":"MI","opponent":"GT","overs":2,"runs":10,"wkts":0}]},"Dilshan Madushanka":{"bat":[],"bowl":[{"date":"2026-04-21","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 47 runs","team":"SRH","opponent":"DC","overs":4,"runs":36,"wkts":1}]},"Jacob Bethell":{"bat":[{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Royal Challengers Bengaluru won by 23 runs","team":"RCB","opponent":"PBKS","runs":11,"balls":7,"out":true},{"date":"2026-05-13","format":"T20","competition":"Indian Premier League 2026","venue":"Shaheed Veer Narayan Singh International Stadium, Raipur","result":"Royal Challengers Bengaluru won by 6 wickets","team":"RCB","opponent":"KKR","runs":15,"balls":12,"out":true},{"date":"2026-05-10","format":"T20","competition":"Indian Premier League 2026","venue":"Shaheed Veer Narayan Singh International Stadium, Raipur","result":"Royal Challengers Bengaluru won by 2 wickets","team":"RCB","opponent":"MI","runs":27,"balls":27,"out":true},{"date":"2026-05-07","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Lucknow Super Giants won by 9 runs","team":"RCB","opponent":"LSG","runs":4,"balls":5,"out":true},{"date":"2026-04-30","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 4 wickets","team":"RCB","opponent":"GT","runs":5,"balls":5,"out":true},{"date":"2026-04-27","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Royal Challengers Bengaluru won by 9 wickets","team":"RCB","opponent":"DC","runs":20,"balls":11,"out":true},{"date":"2026-04-24","format":"T20","competition":"Indian Premier League 2026","venue":"M Chinnaswamy Stadium, Bengaluru","result":"Royal Challengers Bengaluru won by 5 wickets","team":"RCB","opponent":"GT","runs":14,"balls":10,"out":true}],"bowl":[]},"Sahil Parakh":{"bat":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Delhi Capitals won by 40 runs","team":"DC","opponent":"KKR","runs":24,"balls":17,"out":true},{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 5 wickets","team":"DC","opponent":"RR","runs":9,"balls":8,"out":true},{"date":"2026-05-11","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Delhi Capitals won by 3 wickets","team":"DC","opponent":"PBKS","runs":13,"balls":6,"out":true},{"date":"2026-04-27","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Royal Challengers Bengaluru won by 9 wickets","team":"DC","opponent":"RCB","runs":0,"balls":2,"out":true}],"bowl":[]},"Abhishek Porel":{"bat":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Delhi Capitals won by 40 runs","team":"DC","opponent":"KKR","runs":22,"balls":18,"out":true},{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 5 wickets","team":"DC","opponent":"RR","runs":51,"balls":31,"out":true},{"date":"2026-05-11","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Delhi Capitals won by 3 wickets","team":"DC","opponent":"PBKS","runs":5,"balls":6,"out":true},{"date":"2026-04-27","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Royal Challengers Bengaluru won by 9 wickets","team":"DC","opponent":"RCB","runs":30,"balls":33,"out":true,"top":true}],"bowl":[]},"Dushmantha Chameera":{"bat":[{"date":"2026-04-27","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Royal Challengers Bengaluru won by 9 wickets","team":"DC","opponent":"RCB","runs":0,"balls":3,"out":false}],"bowl":[{"date":"2026-04-27","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Royal Challengers Bengaluru won by 9 wickets","team":"DC","opponent":"RCB","overs":2,"runs":18,"wkts":0}]},"Lockie Ferguson":{"bat":[],"bowl":[{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Royal Challengers Bengaluru won by 23 runs","team":"PBKS","opponent":"RCB","overs":3,"runs":43,"wkts":0},{"date":"2026-05-06","format":"T20","competition":"Indian Premier League 2026","venue":"Rajiv Gandhi International Stadium, Uppal, Hyderabad","result":"Sunrisers Hyderabad won by 33 runs","team":"PBKS","opponent":"SRH","overs":4,"runs":41,"wkts":1},{"date":"2026-04-28","format":"T20","competition":"Indian Premier League 2026","venue":"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh","result":"Rajasthan Royals won by 6 wickets","team":"PBKS","opponent":"RR","overs":4,"runs":57,"wkts":0}]},"Robin Minz":{"bat":[{"date":"2026-05-02","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Chennai Super Kings won by 8 wickets","team":"MI","opponent":"CSK","runs":5,"balls":3,"out":true},{"date":"2026-04-29","format":"T20","competition":"Indian Premier League 2026","venue":"Wankhede Stadium, Mumbai","result":"Sunrisers Hyderabad won by 6 wickets","team":"MI","opponent":"SRH","runs":1,"balls":1,"out":false}],"bowl":[]},"Mitchell Starc":{"bat":[{"date":"2026-05-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Kolkata Knight Riders won by 8 wickets","team":"DC","opponent":"KKR","runs":0,"balls":2,"out":true},{"date":"2026-05-05","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Chennai Super Kings won by 8 wickets","team":"DC","opponent":"CSK","runs":0,"balls":0,"out":false}],"bowl":[{"date":"2026-05-24","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Delhi Capitals won by 40 runs","team":"DC","opponent":"KKR","overs":3,"runs":26,"wkts":2},{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 5 wickets","team":"DC","opponent":"RR","overs":4,"runs":40,"wkts":4,"potm":true},{"date":"2026-05-11","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Delhi Capitals won by 3 wickets","team":"DC","opponent":"PBKS","overs":4,"runs":57,"wkts":2},{"date":"2026-05-08","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Kolkata Knight Riders won by 8 wickets","team":"DC","opponent":"KKR","overs":3,"runs":31,"wkts":0},{"date":"2026-05-05","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Chennai Super Kings won by 8 wickets","team":"DC","opponent":"CSK","overs":4,"runs":30,"wkts":0},{"date":"2026-05-01","format":"T20","competition":"Indian Premier League 2026","venue":"Sawai Mansingh Stadium, Jaipur","result":"Delhi Capitals won by 7 wickets","team":"DC","opponent":"RR","overs":4,"runs":40,"wkts":3}]},"Spencer Johnson":{"bat":[{"date":"2026-05-21","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 89 runs","team":"CSK","opponent":"GT","runs":0,"balls":1,"out":true}],"bowl":[{"date":"2026-05-21","format":"T20","competition":"Indian Premier League 2026","venue":"Narendra Modi Stadium, Ahmedabad","result":"Gujarat Titans won by 89 runs","team":"CSK","opponent":"GT","overs":4,"runs":47,"wkts":1},{"date":"2026-05-18","format":"T20","competition":"Indian Premier League 2026","venue":"MA Chidambaram Stadium, Chennai","result":"Sunrisers Hyderabad won by 5 wickets","team":"CSK","opponent":"SRH","overs":3,"runs":26,"wkts":0},{"date":"2026-05-15","format":"T20","competition":"Indian Premier League 2026","venue":"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow","result":"Lucknow Super Giants won by 7 wickets","team":"CSK","opponent":"LSG","overs":4,"runs":39,"wkts":1}]},"Matheesha Pathirana":{"bat":[],"bowl":[{"date":"2026-05-16","format":"T20","competition":"Indian Premier League 2026","venue":"Eden Gardens, Kolkata","result":"Kolkata Knight Riders won by 29 runs","team":"KKR","opponent":"GT","overs":1.2,"runs":9,"wkts":0}]},"Ravi Singh":{"bat":[{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 5 wickets","team":"RR","opponent":"DC","runs":4,"balls":2,"out":true}],"bowl":[]},"Adam Milne":{"bat":[{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 5 wickets","team":"RR","opponent":"DC","runs":2,"balls":2,"out":false}],"bowl":[{"date":"2026-05-17","format":"T20","competition":"Indian Premier League 2026","venue":"Arun Jaitley Stadium, Delhi","result":"Delhi Capitals won by 5 wickets","team":"RR","opponent":"DC","overs":3.2,"runs":41,"wkts":0}]},"Kulwant Khejroliya":{"bat":[],"bowl":[{"date":"2026-05-26","format":"T20","competition":"Indian Premier League 2026","venue":"Himachal Pradesh Cricket Association Stadium, Dharamsala","result":"Royal Challengers Bengaluru won by 92 runs","team":"GT","opponent":"RCB","overs":2,"runs":31,"wkts":0}]}}};
