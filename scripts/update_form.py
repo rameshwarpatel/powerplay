@@ -437,7 +437,8 @@ def build(use_cricsheet=True):
         if who.startswith("_") or who not in form:
             continue
         bad = lambda i: any(w.lower() in (i.get("competition") or "").lower() for w in rule.get("drop_competitions", [])) or \
-                        any(w.lower() in str(i.get(f) or "").lower() for w in rule.get("drop_teams", []) for f in ("team", "opponent"))
+                        any(w.lower() in str(i.get(f) or "").lower() for w in rule.get("drop_teams", []) for f in ("team", "opponent")) or \
+                        any(w.lower() in str(i.get("team") or "").lower() for w in rule.get("drop_own_teams", []))   # own team only, so real matches against that country stay
         for k in ("bat", "bowl"):
             form[who][k] = [i for i in form[who][k] if not bad(i)]
     last = ipl_last(form, load_json(DATA / "roster.json", {"players": []}))
