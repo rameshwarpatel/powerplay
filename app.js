@@ -1108,62 +1108,6 @@ render();
   };
 })();
 
-// ---------- Quote of the day, tied to "on this day" in cricket history ----------
-(() => {
-  // Short quotes, each credited to a cricketer by multiple sources. Add more here any time.
-  const Q = [
-    ["Whatever level you reach, getting better never stops.", "Sachin Tendulkar"],
-    ["Keep it simple and just go out and play.", "Shane Warne"],
-    ["I have failed at times, but I never stopped trying.", "Rahul Dravid"],
-    ["I was always fiercely determined and driven to succeed.", "Ricky Ponting"],
-    ["Frankly speaking, I don't understand Duckworth Lewis. I just wait for the umpire's decision.", "MS Dhoni"],
-    ["When people throw stones at you, you turn them into milestones.", "Sachin Tendulkar"],
-    ["I have always tried to move on from disappointments as fast as I can.", "Shane Warne"],
-    ["I have never tried to compare myself to anyone else.", "Sachin Tendulkar"],
-    ["You can't afford to live your life with regrets.", "Shane Warne"],
-    ["Never give up; just absolutely never give up.", "Shane Warne"]
-  ];
-  // Landmark days in cricket history, keyed by month-day. "who" picks a matching quote when we have one.
-  const EV = {
-    "01-05": [1971, "The first one-day international is played, at the MCG in Melbourne."],
-    "01-11": [1973, "Rahul Dravid is born in Indore.", "Rahul Dravid"],
-    "02-07": [1999, "Anil Kumble takes all 10 wickets in a Test innings against Pakistan in Delhi."],
-    "02-24": [2010, "Sachin Tendulkar scores the first double century in men's ODI cricket, in Gwalior.", "Sachin Tendulkar"],
-    "03-15": [1877, "The first Test match begins, Australia v England in Melbourne."],
-    "04-02": [2011, "India win the ODI World Cup at the Wankhede in Mumbai."],
-    "04-12": [2004, "Brian Lara scores 400 not out against England in Antigua, a Test record."],
-    "04-18": [2008, "The first IPL match is played in Bengaluru."],
-    "04-24": [1973, "Sachin Tendulkar is born in Mumbai.", "Sachin Tendulkar"],
-    "06-04": [1993, "Shane Warne bowls the 'Ball of the Century' to Mike Gatting at Old Trafford.", "Shane Warne"],
-    "06-25": [1983, "India win the World Cup at Lord's."],
-    "07-07": [1981, "MS Dhoni is born in Ranchi.", "MS Dhoni"],
-    "08-14": [1948, "Don Bradman plays his final Test innings at The Oval, finishing on 99.94."],
-    "08-15": [2020, "MS Dhoni announces his retirement from international cricket.", "MS Dhoni"],
-    "08-27": [1908, "Don Bradman is born in Cootamundra, New South Wales."],
-    "09-13": [1969, "Shane Warne is born in Melbourne.", "Shane Warne"],
-    "09-24": [2007, "India win the first T20 World Cup, in Johannesburg."],
-    "11-05": [1988, "Virat Kohli is born in Delhi."],
-    "11-15": [1989, "Sachin Tendulkar makes his Test debut, aged 16, in Karachi.", "Sachin Tendulkar"],
-    "12-19": [1974, "Ricky Ponting is born in Launceston.", "Ricky Ponting"]
-  };
-  const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  let shown = "";
-  function dayQuote() {
-    const d = new Date(), mm = String(d.getMonth() + 1).padStart(2, "0"), dd = String(d.getDate()).padStart(2, "0"), key = mm + "-" + dd;
-    if (key === shown && document.getElementById("dayq")) return;
-    shown = key;
-    const doy = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 864e5), ev = EV[key];
-    const mine = ev && ev[2] ? Q.filter(q => q[1] === ev[2]) : [];
-    const q = mine.length ? mine[doy % mine.length] : Q[doy % Q.length];
-    let box = document.getElementById("dayq");
-    if (!box) { box = document.createElement("aside"); box.id = "dayq"; const f = document.getElementById("note"); f.parentNode.insertBefore(box, f); }
-    box.innerHTML = `<small>${ev ? "On this day" : "Quote of the day"} · ${d.getDate()} ${MON[d.getMonth()]}</small>` +
-      (ev ? `<p class="dq-ev"><b>${ev[0]}</b> ${esc(ev[1])}</p>` : "") +
-      `<blockquote><em>“${esc(q[0])}”</em><cite>${esc(q[1])}</cite></blockquote>`;
-  }
-  dayQuote(); setInterval(dayQuote, 60000);
-})();
-
 // Tapping the "Powerplay" title always returns to Home
 (() => {
   const h = document.querySelector("header h1"); if (!h) return;

@@ -540,19 +540,7 @@ h1,h2,h3,.hero-txt h2,.champ b,.cta-t b,.pc-h h3,.ps-h h3,.mc-main b,.tile b{fon
 .clk b{font-family:var(--font-num)}
 
 /* quote of the day */
-#dayq{max-width:1100px;margin:8px auto 0;padding:20px 22px;border-radius:var(--r-xl);background:var(--surface-container);box-shadow:inset 0 0 0 var(--hair) var(--outline-variant);box-sizing:border-box;width:calc(100% - 48px)}
-#dayq small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-#dayq .dq-ev{margin:8px 0 0;font-size:13px;color:var(--on-surface-variant)}#dayq .dq-ev b{font-family:var(--font-num);color:var(--on-surface);margin-right:6px}
-#dayq blockquote{margin:12px 0 0;padding:0}
-#dayq blockquote em{display:block;font-style:italic;font-size:20px;line-height:28px;font-weight:500;color:var(--on-surface)}
-#dayq cite{display:block;margin-top:8px;font-style:normal;font-size:13px;font-weight:600;color:var(--on-surface-variant)}
-#dayq cite::before{content:"— "}
-@media(max-width:600px){#dayq{width:calc(100% - 24px);padding:16px 16px}#dayq blockquote em{font-size:18px;line-height:26px}}
-#dayq{text-align:center}
-#dayq blockquote{text-wrap:balance}
 /* quote in New York (Apple's serif, reached through ui-serif); Georgia elsewhere */
-#dayq blockquote em{font-family:ui-serif,"New York","Iowan Old Style","Palatino Linotype",Georgia,serif;font-style:italic;font-weight:400;font-size:22px;line-height:30px;letter-spacing:0}
-@media(max-width:600px){#dayq blockquote em{font-size:20px;line-height:28px}}
 
 /* Player of the Match */
 .tro{width:1em;height:1em;fill:currentColor;vertical-align:-.12em}
