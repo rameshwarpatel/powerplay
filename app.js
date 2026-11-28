@@ -70,7 +70,21 @@ const fdate = d => String(d || "–").slice(0, 10);
 const batAvgTier = a => a == null ? "" : a >= 35 ? "t5" : a >= 28 ? "t4" : a >= 20 ? "t3" : a >= 12 ? "t2" : "t1";
 const bowlAvgTier = a => a == null ? "" : a <= 15 ? "t5" : a <= 22 ? "t4" : a <= 30 ? "t3" : a <= 40 ? "t2" : "t1";
 const batTier = r => r >= 100 ? "t5" : r >= 50 ? "t4" : r >= 30 ? "t3" : r >= 10 ? "t2" : "t1";
-const bowlTier = w => w >= 4 ? "t5" : w >= 3 ? "t4" : w >= 2 ? "t3" : w >= 1 ? "t2" : "t1";
+// bowling spell tier: wickets set the base (t1 red .. t5 bright green); a tight economy lifts it a step, a very expensive spell with little to show drops it
+const bowlTier = (w, runs, overs) => {
+  let t = w >= 4 ? 5 : w >= 3 ? 4 : w >= 2 ? 3 : w >= 1 ? 2 : 1;
+  const o = +overs, balls = isNaN(o) ? 0 : Math.floor(o) * 6 + Math.round((o % 1) * 10), eco = balls >= 12 ? runs * 6 / balls : null;
+  if (eco != null && eco <= 6 && t < 5) t++;
+  else if (eco != null && eco >= 11 && w <= 1 && t > 1) t--;
+  return "t" + t;
+};
+// a card is coloured by what the player does for a living: a bowler by his bowling, a batter by his batting, an all-rounder by the better of the two
+const cardTier = (m, role) => {
+  const n = x => +String(x || "t0").slice(1);
+  if (role === "BOWL") return m.bowl ? m.bowlT : (m.batT || "t0");
+  if (role === "BAT" || role === "WK") return m.bat ? m.batT : (m.bowlT || "t0");
+  return "t" + Math.max(n(m.batT), n(m.bowlT));
+};
 
 // All-rounders: one entry per match, batting and bowling of the same match side by side
 function pairs(name) {
@@ -92,13 +106,14 @@ function detail(name, all) {
   list(name, "bat").forEach(i => { const m = get(i); m.bat = `${i.runs}${i.out ? "" : "*"}`; m.batT = batTier(i.runs); m.balls = i.balls; m.top = i.top; if (i.potm) m.potm = true; });
   ((F[name] || {}).bat || []).filter(i => i.dnb && (fmt === "ALL" || i.format === fmt)).forEach(get);
   seen = {};
-  list(name, "bowl").forEach(i => { const m = get(i); m.bowl = `${i.wkts}/${i.runs}`; m.bowlT = bowlTier(i.wkts); m.overs = i.overs; if (i.potm) m.potm = true; });
+  list(name, "bowl").forEach(i => { const m = get(i); m.bowl = `${i.wkts}/${i.runs}`; m.bowlT = bowlTier(i.wkts, i.runs, i.overs); m.overs = i.overs; if (i.potm) m.potm = true; });
   const ms = [...rows.values()].sort((x, y) => (y.date || "").localeCompare(x.date || "") || (y.inn || 0) - (x.inn || 0));
   if (!ms.length) return `<div class="empty">No recent matches found for ${esc(name)}${fmt !== "ALL" ? " in " + fmt : ""} yet.</div>`;
+  const role = ((R.players.find(p => p.name === name)) || {}).role;
   const shown = all ? ms.slice(0, 30) : ms.slice(0, 5);
   const vs = m => esc(m.team ? m.team + " vs " + (m.opp || "?") : "vs " + (m.opp || "?"));
   const fm = m => esc((m.fmt || "–") + (m.no ? " # " + m.no : "") + (m.inn ? " · inns " + m.inn : ""));
-  const body = '<div class="mcards">' + shown.map(m => `<div class="mc ${m.batT || m.bowlT || "t0"}" title="${esc(m.result || "")}">` +
+  const body = '<div class="mcards">' + shown.map(m => `<div class="mc ${cardTier(m, role)}" title="${esc(m.result || "")}">` +
     `<div class="mc-top"><span>${esc(fdate(m.date))}</span><span class="tag">${m.potm ? `<span class="potm-b" title="Player of the Match">${TROPHY}POTM</span> ` : ""}${m.top ? `<span class="star" title="Top scorer for ${esc(m.team || "his team")} in this match">★</span> ` : ""}${fm(m)}</span></div>` +
     `<div class="mc-main"><div><b class="${m.bat ? m.batT : "none"}">${m.bat || (m.bowl ? "DNB" : "--")}</b><small>${m.bat ? "bat" : (m.bowl ? "did not bat" : "no score")}${m.balls != null && m.bat ? " · " + m.balls + " balls" : ""}</small></div>` +
     (m.bowl ? `<div><b class="${m.bowlT}">${m.bowl}</b><small>bowl${m.overs != null ? " · " + m.overs + " ov" : ""}</small></div>` : "") + `</div>` +
