@@ -44,6 +44,7 @@ const flag = c => c ? `<img class="flag" src="assets/flags/${c}.svg" alt="${CNAM
 const capBadge = p => p.captain ? '<span class="cap" title="Captain">C</span>' : "";
 const roleBadge = r => ROLE[r] ? `<span class="role" title="${ROLE[r][0]}">${ROLE[r][1].map(k => ICON[k]).join("")}</span>` : "";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const latestMatch = () => { let d = ""; Object.values(F).forEach(p => ["bat", "bowl"].forEach(k => (p[k] || []).forEach(i => { if (i.date && i.date > d) d = i.date; }))); return d.slice(0, 10); };
 const list = (name, kind) => ((F[name] || {})[kind] || []).filter(i => !i.dnb && (fmt === "ALL" || i.format === fmt));
 const avg = a => a.length ? a.reduce((s, i) => s + i.runs, 0) / a.length : null;
 const cls = r => r >= 50 ? "hi" : r >= 30 ? "mid" : r < 10 ? "lo" : "";
@@ -248,7 +249,7 @@ function render() {
   document.getElementById("banner").innerHTML = Object.keys(F).length ? "" :
     "<b>No form data loaded yet.</b> Put your API key in <code>api-key.txt</code>, then double-click <code>update-form.command</code> and reload this page.";
   document.getElementById("note").textContent = META.updated
-    ? `Form data updated ${META.updated} from ${META.matches} scorecards. Chips: batting runs (* = not out) and bowling wickets/runs, newest first.`
+    ? `Data refreshed ${META.updated} (UTC) · latest match ${latestMatch() || "n/a"} · ${META.matches} scorecards. Chips: batting runs (* = not out) and bowling wickets/runs, newest first.`
     : "Chips will show batting runs (* = not out) and bowling wickets/runs, newest first.";
   const main = document.getElementById("teams"); main.innerHTML = "";
   let bb = document.getElementById("backbar");

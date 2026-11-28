@@ -2,7 +2,7 @@ name: Update IPL form data
 
 on:
   schedule:
-    - cron: "30 21 * * *"   # 21:30 UTC = 3:00 AM IST (4:30 PM Toronto in winter, 5:30 PM in summer)
+    - cron: "30 0 * * *"    # 00:30 UTC = 6:00 AM IST (7:30 PM Toronto in winter); just after the API quotas reset at 00:00 UTC
   workflow_dispatch:          # lets you run it by hand from the Actions tab
 
 permissions:
