@@ -266,10 +266,12 @@ function renderAuction(main) {
 function render() {
   const q = document.getElementById("q").value.toLowerCase();
   const tabs = document.getElementById("tabs"); tabs.innerHTML = "";
+  const rowMain = document.createElement("div"), rowTeams = document.createElement("div");
+  rowMain.className = "tg tg-main"; rowTeams.className = "tg tg-teams"; tabs.append(rowMain, rowTeams);
   const FAV = getFav();
   document.documentElement.style.setProperty("--fav", FAV ? ((R.colors || {})[FAV] || "transparent") : "transparent");
   document.documentElement.classList.toggle("has-fav", !!FAV);
-  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].forEach(t => {
+  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].sort((x, y) => (R.teams[x] ? 1 : 0) - (R.teams[y] ? 1 : 0)).forEach(t => {
     const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction 2027" : t; b.className = t === team ? "on" : "";
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
@@ -279,7 +281,7 @@ function render() {
     if (col) { b.style.setProperty("--c", col); b.style.setProperty("--ink", ink(col)); b.classList.add("tm"); }
     if (t === FAV) { b.classList.add("fav"); b.innerHTML = STAR + b.textContent; b.title = "Your favourite team"; }
     if (t === team) setTimeout(() => b.scrollIntoView({inline: "center", block: "nearest"}), 0);
-    b.onclick = () => { if (t === "BUILD" && R.teams[team]) window.buildTeam = team; team = t; render(); }; tabs.appendChild(b); });
+    b.onclick = () => { if (t === "BUILD" && R.teams[team]) window.buildTeam = team; team = t; render(); }; (R.teams[t] ? rowTeams : rowMain).appendChild(b); });
   document.getElementById("banner").innerHTML = Object.keys(F).length ? "" :
     "<b>No form data loaded yet.</b> Put your API key in <code>api-key.txt</code>, then double-click <code>update-form.command</code> and reload this page.";
   document.getElementById("note").textContent = META.updated

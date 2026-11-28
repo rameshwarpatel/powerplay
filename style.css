@@ -875,3 +875,10 @@ html[data-theme="light"] .au-open{color:#0a8a5f}
 .fl-c{align-self:flex-end;margin-bottom:14px;font-family:ui-monospace,Menlo,monospace;font-size:34px;font-weight:700;color:#ffb30099}
 @media(max-width:600px){.fl-d{width:30px;height:46px;line-height:46px;font-size:30px}.fl-c{font-size:24px;margin-bottom:10px}.au-cd{justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){.fl-d.flip{animation:none}}
+
+/* two tab rows: site sections on top, the ten teams below */
+nav#tabs{flex-direction:column;flex-wrap:nowrap;overflow:visible;gap:8px}
+nav#tabs .tg{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+nav#tabs .tg::-webkit-scrollbar{display:none}
+nav#tabs .tg-teams{padding-top:8px;border-top:var(--hair) solid var(--outline-variant)}
+@media(min-width:700px){nav#tabs .tg{flex-wrap:wrap;overflow-x:visible}}
