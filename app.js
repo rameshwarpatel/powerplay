@@ -576,7 +576,7 @@ const PPusers = (() => {
       `<p class="b-help">Pick 11 plus an Impact Player. Drag players from the squad into the order you want, or tap a player to add them. Rule: only ${MAX_OS_12} overseas players in the whole XII.</p>` +
       (msg ? `<div class="b-toast" role="alert">${esc(msg)}</div>` : "") +
       `<div class="b-grid"><section class="b-col"><div class="b-sh"><h3>${esc(R.teams[bteam])} squad <small>${pool.length}</small></h3>` +
-      `</div><div class="b-roles" role="group" aria-label="Filter squad by role">${[["BAT", "Batters"], ["BOWL", "Bowlers"], ["AR", "All-rounders"], ["WK", "Wicketkeepers"]].map(([r, l]) => `<button type="button" class="b-role r-${r}${q === r ? " on" : ""}" data-r="${r}" aria-pressed="${q === r}">${l}</button>`).join("")}</div>` +
+      `</div><div class="b-roles" role="group" aria-label="Filter squad by role">${[["BAT", "Batters"], ["BOWL", "Bowlers"], ["AR", "All-rounders"], ["WK", "Wicketkeepers"]].map(([r, l]) => `<button type="button" class="b-role${q === r ? " on" : ""}" data-r="${r}" aria-pressed="${q === r}">${roleBadge(r)}<span>${l}</span></button>`).join("")}</div>` +
       `<ul class="b-pool" data-drop="pool">${pool.map((p, i) => (i === 0 || ORD(pool[i - 1]) !== ORD(p) ? `<li class="b-grp">${GROUP[p.role || ""] || GROUP[""]}</li>` : "") +
         `<li class="b-p" draggable="true" data-n="${esc(p.name)}" tabindex="0">${pill(p)}</li>`).join("") || '<li class="b-none">Everyone is selected.</li>'}</ul></section>` +
       `<section class="b-col"><div class="b-sh"><h3>Your XII</h3><span><button class="b-act share" id="bshare">Share</button><button class="b-act" id="bcopy">Copy</button><button class="b-act" id="bclr">Clear</button></span></div>` +
