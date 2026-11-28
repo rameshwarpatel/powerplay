@@ -1,5 +1,5 @@
 {
- "_note": "Scorecards identify players by name only, so two different people with one name get merged. List entries to drop for a roster player: any team or competition that contains one of these words.",
+ "_note": "Scorecards identify players by name only, so two different people with one name get merged. List entries to drop for a roster player: any team or competition that contains one of these words. drop_own_teams matches only the player's own team (not the opponent).",
  "Rashid Khan": {
   "drop_competitions": [
    "Nepal Premier League",
@@ -8,6 +8,12 @@
   "drop_teams": [
    "Nepal",
    "Kathmandu"
+  ]
+ },
+ "Abdul Samad": {
+  "drop_own_teams": [
+   "Hong Kong",
+   "Pakistan"
   ]
  }
 }
