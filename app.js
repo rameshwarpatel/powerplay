@@ -263,6 +263,16 @@ function renderAuction(main) {
   main.insertAdjacentHTML("beforeend", `<p class="au-n">Purse in crore rupees from ₹${A.purseCap} cr. A squad holds up to ${A.squadMax} players, at most ${OS_MAX} of them overseas. </p>`);
 }
 
+const TI = d => `<svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
+const TABICON = {
+  HOME: TI("M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"),
+  CATCHUP: TI("M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 10h14v10H5zm2 2v2h4v-2z"),
+  ALL: TI("M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13zm8 0c-.3 0-.6 0-1 .1 1.2.8 2 2 2 3.4V19h6v-2.5c0-2.3-4.7-3.5-7-3.5z"),
+  RELEASED: TI("M10 17l5-5-5-5v3H3v4h7zM19 3h-7v2h7v14h-7v2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"),
+  AUCTION: TI("M1 21h12v2H1zM5.24 8.07l2.83-2.83 14.14 14.14-2.83 2.83zM12.32 1l5.66 5.66-2.83 2.83-5.66-5.66zM3.83 9.48l5.66 5.66-2.83 2.83L1 12.31z"),
+  PREDICT: TI("M7 4h10v3a5 5 0 0 1-4 4.9V15h3v2H8v-2h3v-3.1A5 5 0 0 1 7 7zM5 5h2v2a3 3 0 0 1-2-2zm14 0a3 3 0 0 1-2 2V5z"),
+  COMPARE: TI("M6.99 11 3 15l3.99 4v-3H14v-2H6.99zM21 9l-3.99-4v3H10v2h7.01v3z")
+};
 function render() {
   const q = document.getElementById("q").value.toLowerCase();
   const tabs = document.getElementById("tabs"); tabs.innerHTML = "";
@@ -273,6 +283,7 @@ function render() {
   document.documentElement.classList.toggle("has-fav", !!FAV);
   [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].sort((x, y) => (R.teams[x] ? 1 : 0) - (R.teams[y] ? 1 : 0)).forEach(t => {
     const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction 2027" : t; b.className = t === team ? "on" : "";
+    if (TABICON[t]) b.innerHTML = TABICON[t] + esc(b.textContent);
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
     if (t === "AUCTION") b.classList.add("auct");

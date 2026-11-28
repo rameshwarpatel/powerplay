@@ -901,3 +901,5 @@ html[data-theme="light"] .b-role .role{color:#0a8a5f}
 
 .ti-s li b{display:flex;align-items:center;gap:8px}
 .ti-s li b img.flag{width:22px;height:16px}
+
+nav#tabs button svg.ti{flex:none;width:16px;height:16px;fill:currentColor}
