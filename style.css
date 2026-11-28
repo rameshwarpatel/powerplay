@@ -908,3 +908,12 @@ nav#tabs button svg.ti{flex:none;width:16px;height:16px;fill:currentColor}
 .pair.potm .chip{box-shadow:none}
 .pair.potm .chip+.chip{box-shadow:inset 1.5px 0 0 #ffb300}
 .pair.potm::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1.5px #ffb300;pointer-events:none;z-index:2}
+
+/* collapse button at the right end of a team heading */
+.h2-col{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;margin-left:8px;padding:0;border:var(--hair) solid currentColor;border-radius:50%;background:transparent;color:inherit;cursor:pointer;opacity:.85;transition:background-color .2s var(--ease),opacity .2s var(--ease)}
+.h2-col:hover{opacity:1;background:color-mix(in srgb,currentColor 14%,transparent)}
+.h2-col svg{width:18px;height:18px;transition:transform .2s var(--ease)}
+.rel-n+.h2-col{margin-left:auto}
+section.collapsed .h2-col svg{transform:rotate(-90deg)}
+section.collapsed>:not(h2){display:none}
+@media(prefers-reduced-motion:reduce){.h2-col svg{transition:none}}
