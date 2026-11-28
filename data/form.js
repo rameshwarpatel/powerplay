@@ -3197,19 +3197,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 4,
-    "balls": 12,
-    "out": true
-   },
-   {
     "date": "2026-11-15",
     "format": "ODI",
     "competition": "India tour of New Zealand 2026/27",
@@ -3295,19 +3282,6 @@ window.IPL_FORM = {
     "runs": 201,
     "wkts": 1,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "overs": 33,
-    "runs": 201,
-    "wkts": 1
    },
    {
     "date": "2026-11-15",
@@ -5642,19 +5616,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 80,
-    "balls": 175,
-    "out": true
-   },
-   {
     "date": "2026-09-06",
     "format": "TEST",
     "competition": "Duleep Trophy 2026",
@@ -5906,19 +5867,6 @@ window.IPL_FORM = {
     "runs": 2,
     "wkts": 0,
     "inn": 2
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 1,
-    "runs": 2,
-    "wkts": 0
    },
    {
     "date": "2026-09-06",
@@ -9772,19 +9720,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 7,
-    "balls": 5,
-    "out": false
-   },
-   {
     "date": "2026-07-16",
     "format": "ODI",
     "competition": "India tour of England 2026",
@@ -9847,32 +9782,6 @@ window.IPL_FORM = {
     "runs": 92,
     "wkts": 4,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 20,
-    "runs": 42,
-    "wkts": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 29,
-    "runs": 92,
-    "wkts": 4
    },
    {
     "date": "2026-10-03",
@@ -16633,19 +16542,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 1,
-    "balls": 9,
-    "out": true
-   },
-   {
     "date": "2026-11-13",
     "format": "ODI",
     "competition": "India tour of New Zealand 2026/27",
@@ -16750,19 +16646,6 @@ window.IPL_FORM = {
     "runs": 94,
     "wkts": 1,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "overs": 33,
-    "runs": 94,
-    "wkts": 1
    },
    {
     "date": "2026-11-13",
@@ -16907,19 +16790,6 @@ window.IPL_FORM = {
     "balls": 42,
     "out": true,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 38,
-    "balls": 42,
-    "out": true
    },
    {
     "date": "2026-11-07",
@@ -17073,32 +16943,6 @@ window.IPL_FORM = {
     "runs": 69,
     "wkts": 2,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 22,
-    "runs": 45,
-    "wkts": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 23,
-    "runs": 69,
-    "wkts": 2
    },
    {
     "date": "2026-11-07",
@@ -19427,19 +19271,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 85,
-    "balls": 89,
-    "out": true
-   },
-   {
     "date": "2026-08-23",
     "format": "Test",
     "competition": "India tour of Sri Lanka 2026",
@@ -19686,19 +19517,6 @@ window.IPL_FORM = {
     "runs": 4,
     "wkts": 0,
     "inn": 2
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 2,
-    "runs": 4,
-    "wkts": 0
    },
    {
     "date": "2026-08-23",
@@ -20141,19 +19959,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 78,
-    "balls": 79,
-    "out": true
-   },
-   {
     "date": "2026-08-23",
     "format": "Test",
     "competition": "India tour of Sri Lanka 2026",
@@ -20402,19 +20207,6 @@ window.IPL_FORM = {
     "runs": 1,
     "wkts": 0,
     "inn": 2
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 1,
-    "runs": 1,
-    "wkts": 0
    },
    {
     "date": "2026-08-23",
@@ -20948,19 +20740,6 @@ window.IPL_FORM = {
     "balls": 146,
     "out": true,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 98,
-    "balls": 146,
-    "out": true
    },
    {
     "date": "2026-11-07",
@@ -21704,32 +21483,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 26,
-    "balls": 126,
-    "out": false
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 118,
-    "balls": 216,
-    "out": true
-   },
-   {
     "date": "2026-11-07",
     "format": "ODI",
     "competition": "India tour of New Zealand 2026/27",
@@ -21945,19 +21698,6 @@ window.IPL_FORM = {
     "runs": 154,
     "wkts": 3,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "overs": 24,
-    "runs": 154,
-    "wkts": 3
    }
   ]
  },
@@ -21975,19 +21715,6 @@ window.IPL_FORM = {
     "balls": 26,
     "out": true,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 24,
-    "balls": 26,
-    "out": true
    },
    {
     "date": "2026-10-01",
@@ -22270,32 +21997,6 @@ window.IPL_FORM = {
     "runs": 45,
     "wkts": 0,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 35,
-    "runs": 65,
-    "wkts": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 20,
-    "runs": 45,
-    "wkts": 0
    },
    {
     "date": "2026-10-03",
@@ -28351,32 +28052,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 19,
-    "runs": 23,
-    "wkts": 2
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 26,
-    "runs": 100,
-    "wkts": 1
-   },
-   {
     "date": "2026-09-30",
     "format": "ODI",
     "competition": "West Indies tour of India 2026/27",
@@ -29026,19 +28701,6 @@ window.IPL_FORM = {
     "balls": 153,
     "out": true,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 128,
-    "balls": 153,
-    "out": true
    },
    {
     "date": "2026-10-01",
@@ -33624,20 +33286,6 @@ window.IPL_FORM = {
     "balls": 290,
     "out": true,
     "inn": 1,
-    "top": true
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 136,
-    "balls": 290,
-    "out": true,
     "top": true
    },
    {
@@ -45814,19 +45462,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 11,
-    "balls": 21,
-    "out": true
-   },
-   {
     "date": "2026-11-13",
     "format": "ODI",
     "competition": "India tour of New Zealand 2026/27",
@@ -45941,19 +45576,6 @@ window.IPL_FORM = {
     "runs": 88,
     "wkts": 1,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "overs": 31,
-    "runs": 88,
-    "wkts": 1
    },
    {
     "date": "2026-11-13",
@@ -54532,32 +54154,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 37,
-    "balls": 129,
-    "out": true
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "runs": 15,
-    "balls": 50,
-    "out": true
-   },
-   {
     "date": "2026-06-25",
     "format": "Test",
     "competition": "New Zealand tour of England 2026",
@@ -54664,19 +54260,6 @@ window.IPL_FORM = {
     "inn": 1
    },
    {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "New Zealand",
-    "opponent": "India",
-    "overs": 10,
-    "runs": 44,
-    "wkts": 2
-   },
-   {
     "date": "2026-06-17",
     "format": "Test",
     "competition": "New Zealand tour of England 2026",
@@ -54718,19 +54301,6 @@ window.IPL_FORM = {
     "balls": 5,
     "out": true,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "runs": 13,
-    "balls": 5,
-    "out": true
    },
    {
     "date": "2026-10-01",
@@ -54785,32 +54355,6 @@ window.IPL_FORM = {
     "runs": 53,
     "wkts": 3,
     "inn": 1
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 2,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 20,
-    "runs": 47,
-    "wkts": 0
-   },
-   {
-    "date": "2026-11-18",
-    "format": "TEST",
-    "competition": "India in New Zealand 2026",
-    "venue": "Basin Reserve, Wellington",
-    "result": "Match drawn",
-    "inn": 1,
-    "team": "India",
-    "opponent": "New Zealand",
-    "overs": 23,
-    "runs": 53,
-    "wkts": 3
    },
    {
     "date": "2026-10-01",
