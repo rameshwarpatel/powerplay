@@ -882,3 +882,13 @@ nav#tabs .tg{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-wid
 nav#tabs .tg::-webkit-scrollbar{display:none}
 nav#tabs .tg-teams{padding-top:8px;border-top:var(--hair) solid var(--outline-variant)}
 @media(min-width:700px){nav#tabs .tg{flex-wrap:wrap;overflow-x:visible}}
+
+/* colour for every site-section tab (top row) */
+nav#tabs button.sx{border:0;font-weight:800}
+nav#tabs button.sx.on{box-shadow:0 0 0 2px #fff5,0 4px 14px #0006}
+nav#tabs button.sx-home{background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff}
+nav#tabs button.sx-catchup{background:linear-gradient(135deg,#f43f5e,#fb923c);color:#fff}
+nav#tabs button.sx-all{background:linear-gradient(135deg,#22d3ee,#0ea5e9);color:#04202c}
+nav#tabs button.sx-released{background:linear-gradient(135deg,#94a3b8,#64748b);color:#fff}
+nav#tabs button.sx-compare{background:linear-gradient(135deg,#f472b6,#a855f7);color:#fff}
+nav#tabs button.sx.on{filter:saturate(1.15) brightness(1.08)}
