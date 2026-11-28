@@ -29943,30 +29943,6 @@ window.IPL_FORM = {
     "out": false
    },
    {
-    "date": "2026-11-24",
-    "format": "ODI",
-    "competition": "Asia Cup Rising Stars 2026",
-    "venue": "University of Doha for Science and Technology",
-    "result": "Pakistan A won by 96 runs",
-    "team": "Pakistan Shaheens",
-    "opponent": "Nepal",
-    "runs": 13,
-    "balls": 26,
-    "out": true
-   },
-   {
-    "date": "2026-11-23",
-    "format": "ODI",
-    "competition": "Asia Cup Rising Stars 2026",
-    "venue": "University of Doha for Science and Technology",
-    "result": "AFG A won by 7 wickets (with 238 balls remaining)",
-    "team": "Hong Kong",
-    "opponent": "Afghanistan A",
-    "runs": 2,
-    "balls": 8,
-    "out": true
-   },
-   {
     "date": "2026-11-22",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -29981,30 +29957,6 @@ window.IPL_FORM = {
     "potm": true
    },
    {
-    "date": "2026-11-22",
-    "format": "ODI",
-    "competition": "Asia Cup Rising Stars 2026",
-    "venue": "West End Park International Cricket Stadium, Doha",
-    "result": "Pakistan A won by 48 runs",
-    "team": "Pakistan Shaheens",
-    "opponent": "India A",
-    "runs": 28,
-    "balls": 35,
-    "out": true
-   },
-   {
-    "date": "2026-11-21",
-    "format": "ODI",
-    "competition": "Asia Cup Rising Stars 2026",
-    "venue": "University of Doha for Science and Technology",
-    "result": "Sri Lanka A won by 24 runs",
-    "team": "Hong Kong",
-    "opponent": "Sri Lanka A",
-    "runs": 21,
-    "balls": 24,
-    "out": true
-   },
-   {
     "date": "2026-11-20",
     "format": "T20",
     "competition": "Syed Mushtaq Ali Trophy 2026/27",
@@ -30017,30 +29969,6 @@ window.IPL_FORM = {
     "out": true,
     "top": true,
     "potm": true
-   },
-   {
-    "date": "2026-11-20",
-    "format": "ODI",
-    "competition": "Asia Cup Rising Stars 2026",
-    "venue": "University of Doha for Science and Technology",
-    "result": "Pakistan A won by 61 runs",
-    "team": "Pakistan Shaheens",
-    "opponent": "United Arab Emirates",
-    "runs": 39,
-    "balls": 49,
-    "out": true
-   },
-   {
-    "date": "2026-11-19",
-    "format": "ODI",
-    "competition": "Asia Cup Rising Stars 2026",
-    "venue": "University of Doha for Science and Technology",
-    "result": "Bangladesh A won by 8 wickets (with 54 balls remaining)",
-    "team": "Hong Kong",
-    "opponent": "Bangladesh A",
-    "runs": 1,
-    "balls": 2,
-    "out": true
    },
    {
     "date": "2026-11-18",
@@ -30080,18 +30008,6 @@ window.IPL_FORM = {
     "out": true
    },
    {
-    "date": "2026-10-03",
-    "format": "",
-    "competition": "Asian Games in Japan 2026",
-    "venue": "Korogi Sports Park, Nisshin",
-    "result": "India won by 19 runs",
-    "team": "Pakistan",
-    "opponent": "India",
-    "runs": 9,
-    "balls": 9,
-    "out": true
-   },
-   {
     "date": "2026-10-01",
     "format": "TEST",
     "competition": "Irani Cup 2026",
@@ -30116,19 +30032,6 @@ window.IPL_FORM = {
     "runs": 57,
     "balls": 88,
     "out": true
-   },
-   {
-    "date": "2026-10-01",
-    "format": "",
-    "competition": "Asian Games in Japan 2026",
-    "venue": "Korogi Sports Park, Nisshin",
-    "result": "Pakistan won by 6 wkts (13 overs game due to rain)",
-    "team": "Pakistan",
-    "opponent": "Bangladesh",
-    "runs": 30,
-    "balls": 15,
-    "out": false,
-    "top": true
    },
    {
     "date": "2026-08-30",
