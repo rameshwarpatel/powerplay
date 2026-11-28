@@ -230,14 +230,39 @@ function renderReleased(q, main) {
   if (!shown.length) main.insertAdjacentHTML("beforeend", '<p class="b-help">No released player matches that search.</p>');
 }
 
+function renderAuction(main) {
+  const A = window.IPL_AUCTION; if (!A) { main.innerHTML = '<p class="b-help">Auction data not loaded.</p>'; return; }
+  const rows = Object.entries(A.teams).sort(([, x], [, y]) => y.purse - x.purse);
+  const tot = rows.reduce((s, [, t]) => ({p: s.p + t.purse, s: s.s + t.slots, o: s.o + t.os}), {p: 0, s: 0, o: 0});
+  const max = Math.max(...rows.map(([, t]) => t.purse));
+  const head = document.createElement("div"); head.className = "rel-head";
+  head.innerHTML = `<h2>Auction: purse and squad slots</h2><p>What each team has left for the IPL 2027 auction (${esc(A.auction)}), as of ${esc(A.asof)}. Purse is in crore rupees; the full purse was ₹${A.purseCap} crore and a squad holds up to ${A.squadMax} players. Slots and overseas places are what is still open.</p>`;
+  main.appendChild(head);
+  const sum = document.createElement("div"); sum.className = "au-sum";
+  sum.innerHTML = `<div><b>₹${tot.p.toFixed(2)} cr</b><small>left across all teams</small></div><div><b>${tot.s}</b><small>open squad slots</small></div><div><b>${tot.o}</b><small>open overseas places</small></div>`;
+  main.appendChild(sum);
+  const list = document.createElement("div"); list.className = "au-list";
+  list.innerHTML = rows.map(([c, t]) => {
+    const col = (R.colors || {})[c] || "#1d4ea2";
+    const per = t.slots ? t.purse / t.slots : 0;
+    return `<article class="au-row" style="--c:${col};--ink:${ink(col)}"><span class="lm sm" aria-hidden="true">${LM[c] || ""}</span>` +
+      `<div class="au-n"><b>${esc(R.teams[c] || c)}</b><div class="au-bar"><i style="width:${(t.purse / max * 100).toFixed(1)}%"></i></div></div>` +
+      `<div class="au-s"><b>₹${t.purse.toFixed(2)} cr</b><small>purse left</small></div>` +
+      `<div class="au-s"><b>${t.slots}</b><small>slots (${A.squadMax - t.slots} filled)</small></div>` +
+      `<div class="au-s"><b>${t.os}</b><small>overseas open</small></div>` +
+      `<div class="au-s au-h"><b>₹${per.toFixed(1)} cr</b><small>per open slot</small></div></article>`;
+  }).join("");
+  main.appendChild(list);
+}
+
 function render() {
   const q = document.getElementById("q").value.toLowerCase();
   const tabs = document.getElementById("tabs"); tabs.innerHTML = "";
   const FAV = getFav();
   document.documentElement.style.setProperty("--fav", FAV ? ((R.colors || {})[FAV] || "transparent") : "transparent");
   document.documentElement.classList.toggle("has-fav", !!FAV);
-  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "BUILD", "PREDICT", "COMPARE"].forEach(t => {
-    const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t; b.className = t === team ? "on" : "";
+  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].forEach(t => {
+    const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction" : t; b.className = t === team ? "on" : "";
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
     if (t === "BUILD") { b.classList.add("build"); b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Build XII'; }
@@ -260,6 +285,7 @@ function render() {
   if (team === "PREDICT") { window.renderPredict(); return; }
   if (team === "COMPARE") { window.renderCompare(); return; }
   if (team === "RELEASED") { renderReleased(q, main); return; }
+  if (team === "AUCTION") { renderAuction(main); return; }
   if (team === "CATCHUP") { main.appendChild(catchup()); return; }
   if (team === "HOME" && !q) {
     const hero = document.createElement("div"); hero.className = "hero";

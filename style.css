@@ -793,3 +793,26 @@ html[data-theme="light"] .ti-s li{background:#0000000a}
 
 /* sort + group now sit directly under the search box */
 #pin .controls{margin:8px 0 2px}
+
+/* auction tab */
+.au-sum{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 14px}
+.au-sum div{background:var(--surface-container);border-radius:var(--r-md);padding:12px 14px}
+.au-sum b{display:block;font-size:20px;font-weight:800;line-height:26px}
+.au-sum small,.au-s small{display:block;color:var(--on-surface-variant);font-size:11px;line-height:15px}
+.au-list{display:flex;flex-direction:column;gap:8px}
+.au-row{display:grid;grid-template-columns:64px minmax(130px,1.6fr) repeat(4,minmax(72px,1fr));align-items:center;gap:12px;background:var(--surface-low);border-left:6px solid var(--c);border-radius:var(--r-md);padding:10px 14px}
+.au-row .lm.sm{width:64px;height:42px;--bg:color-mix(in srgb,var(--c) 18%,var(--surface-low))}
+.au-n b{display:block;font-size:14px;font-weight:700}
+.au-bar{height:6px;border-radius:99px;background:var(--surface-high);margin-top:6px;overflow:hidden}
+.au-bar i{display:block;height:100%;background:var(--c);border-radius:99px}
+html[data-theme="light"] .au-bar i{background:var(--c)}
+.au-s{text-align:right}
+.au-s b{font-size:16px;font-weight:800;font-variant-numeric:tabular-nums}
+nav#tabs button.auct{border-style:dashed}
+@media(max-width:640px){
+  .au-row{grid-template-columns:52px 1fr 1fr;row-gap:8px}
+  .au-row .lm.sm{width:52px;height:34px}
+  .au-n{grid-column:2/4}
+  .au-s{text-align:left}
+  .au-h{display:none}
+}
