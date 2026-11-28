@@ -210,6 +210,23 @@ function releasedCard(p) {
     (!st && !last ? `<div class="row"><span class="lbl">Data</span><span>${dash}</span></div>` : "") +
     `<div class="more"></div></article>`;
 }
+// Collapse / expand a team's section (All players and Released tabs). The choice is remembered on this device.
+const COLKEY = "pp-collapsed";
+const colState = (() => { try { return JSON.parse(localStorage.getItem(COLKEY) || "{}") || {}; } catch { return {}; } })();
+function addCollapse(sec, tab, c, q) {
+  const h = sec.querySelector("h2"); if (!h) return;
+  const isC = () => (colState[tab] || []).includes(c);
+  const b = document.createElement("button"); b.type = "button"; b.className = "h2-col";
+  b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const sync = () => { const on = sec.classList.contains("collapsed"); b.setAttribute("aria-expanded", String(!on)); b.title = on ? "Show players" : "Hide players"; b.setAttribute("aria-label", b.title + ", " + c); };
+  if (isC() && !q) sec.classList.add("collapsed");
+  b.onclick = () => {
+    const s = new Set(colState[tab] || []); s.has(c) ? s.delete(c) : s.add(c); colState[tab] = [...s];
+    try { localStorage.setItem(COLKEY, JSON.stringify(colState)); } catch {}
+    sec.classList.toggle("collapsed", s.has(c)); sync();
+  };
+  sync(); h.appendChild(b);
+}
 function renderReleased(q, main) {
   const all = R.players.filter(p => p.released), shown = all.filter(p => p.name.toLowerCase().includes(q));
   const played = all.filter(p => L.stats[p.name]).length;
@@ -224,6 +241,7 @@ function renderReleased(q, main) {
     const sec = document.createElement("section");
     const col = (R.colors || {})[c]; if (col) { sec.style.setProperty("--c", col); sec.style.setProperty("--ink", ink(col)); }
     sec.innerHTML = `<h2><span class="lm sm" aria-hidden="true">${LM[c] || ""}</span>${esc(n)} (${c}) <small class="rel-n">${ps.length} released</small></h2>`;
+    addCollapse(sec, "RELEASED", c, q);
     const grid = document.createElement("div"); grid.className = "cards"; grid.innerHTML = ps.map(releasedCard).join("");
     wireCards(grid); sec.appendChild(grid); main.appendChild(sec);
   });
@@ -365,6 +383,7 @@ function render() {
     s.innerHTML = `<h2><span class="lm sm" aria-hidden="true">${LM[c] || ""}</span>${esc(n)} (${c})<button class="h2-fav${getFav() === c ? " on" : ""}" data-t="${c}" aria-pressed="${getFav() === c}">${STAR}${getFav() === c ? "Favourite" : "Set as favourite"}</button><button class="h2-build" data-t="${c}">★ Build XII</button></h2>`;
     s.querySelector(".h2-fav").onclick = () => { setFav(getFav() === c ? null : c); render(); };
     s.querySelector(".h2-build").onclick = () => { window.buildTeam = c; team = "BUILD"; render(); window.scrollTo(0, 0); };
+    if (team === "ALL") addCollapse(s, "ALL", c, q);
     const mkGrid = ps => {
     const grid = document.createElement("div"); grid.className = "cards";
     grid.innerHTML = ps.map(({p, b, w, a, ba}, idx) => {
