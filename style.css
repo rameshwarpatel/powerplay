@@ -821,7 +821,7 @@ nav#tabs button.auct.on{box-shadow:0 0 0 2px #fff4}
 .au-m b,.au-o b{font-weight:800}
 .au-n{margin:14px 0 0;color:var(--on-surface-variant);font-size:12px;line-height:18px}
 
-.au-tb{margin:22px 0 0;background:var(--surface-container);border-radius:var(--r-lg);padding:16px 8px 8px;box-shadow:inset 0 0 0 var(--hair) var(--outline-variant)}
+.au-tb{margin:0 0 24px;background:var(--surface-container);border-radius:var(--r-lg);padding:16px 8px 8px;box-shadow:inset 0 0 0 var(--hair) var(--outline-variant)}
 .au-tb h3{margin:0 0 10px 12px;font-size:20px;font-weight:800}
 .au-scroll{overflow-x:auto}
 .au-tb table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}
