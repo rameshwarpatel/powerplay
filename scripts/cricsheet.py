@@ -24,23 +24,45 @@ def terms(path):
     return [l.strip() for l in path.read_text().splitlines() if l.strip() and not l.lstrip().startswith("#")]
 
 
+def _is_zip(path):
+    try:
+        with zipfile.ZipFile(path) as z:
+            return z.testzip() is None and bool(z.namelist())
+    except Exception:
+        return False
+
+
 def download(cache, listfile):
-    """Fetch the zips named in data/cricsheet.txt (e.g. ipl, odis). Failures are reported, never fatal."""
+    """Fetch the zips named in data/cricsheet.txt (e.g. ipl, odis). Failures are reported, never fatal.
+    A cached file only counts as up to date if it is recent AND a valid zip (a bad cache is re-downloaded)."""
     d = cache / "cricsheet"
     d.mkdir(parents=True, exist_ok=True)
     for t in terms(listfile):
         f = d / f"{t}_json.zip"
-        if f.exists() and time.time() - f.stat().st_mtime < MAX_AGE:
+        if f.exists() and time.time() - f.stat().st_mtime < MAX_AGE and _is_zip(f):
             print(f"  cricsheet {t}: up to date")
             continue
-        try:
-            req = urllib.request.Request(BASE + f"{t}_json.zip", headers={"User-Agent": "ipl-form-site/1.0"})
-            with urllib.request.urlopen(req, timeout=120) as r:
-                data = r.read()
-            f.write_bytes(data)
-            print(f"  cricsheet {t}: downloaded {len(data) // 1024} KB")
-        except Exception as e:
-            print(f"  cricsheet {t}: could not download ({e})")
+        if f.exists() and not _is_zip(f):
+            print(f"  cricsheet {t}: cached file is not a valid zip, downloading again")
+        for attempt in (1, 2, 3):
+            try:
+                req = urllib.request.Request(BASE + f"{t}_json.zip", headers={"User-Agent": "Mozilla/5.0 (ipl-form-site)"})
+                with urllib.request.urlopen(req, timeout=120) as r:
+                    data = r.read()
+                tmp = f.with_suffix(".tmp")
+                tmp.write_bytes(data)
+                if not _is_zip(tmp):
+                    tmp.unlink()
+                    raise ValueError(f"response was not a zip ({len(data)} bytes)")
+                tmp.replace(f)
+                print(f"  cricsheet {t}: downloaded {len(data) // 1024} KB")
+                break
+            except Exception as e:
+                print(f"  cricsheet {t}: attempt {attempt} failed ({e})")
+                time.sleep(3 * attempt)
+        else:
+            if f.exists() and not _is_zip(f):
+                f.unlink()          # never keep a broken file around
 
 
 class Matcher:
