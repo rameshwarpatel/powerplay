@@ -39,7 +39,7 @@ const ICON = {
   BOWL: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6.2 5.2c3.4 3.6 3.4 10 0 13.6M17.8 5.2c-3.4 3.6-3.4 10 0 13.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
   WK: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 22v-6.5L4.6 10.2a1.3 1.3 0 0 1 2.3-1.1L8.4 12V4.6a1.3 1.3 0 0 1 2.6 0V10h.5V3.2a1.3 1.3 0 0 1 2.6 0V10h.5V4.4a1.3 1.3 0 0 1 2.6 0V11h.4V7.6a1.3 1.3 0 0 1 2.6 0V16c0 3.4-2.2 6-5.4 6z"/></svg>'};
 const ROLE = {BAT: ["Batter", ["BAT"]], BOWL: ["Bowler", ["BOWL"]], AR: ["All-rounder", ["BAT", "BOWL"]], WK: ["Wicket-keeper", ["WK"]]};
-const CNAME = {in:"India",au:"Australia",za:"South Africa",nz:"New Zealand","gb-eng":"England",af:"Afghanistan",lk:"Sri Lanka",tt:"Trinidad & Tobago",gy:"Guyana",jm:"Jamaica",bb:"Barbados",bd:"Bangladesh",zw:"Zimbabwe"};
+const CNAME = {nl:"Netherlands",in:"India",au:"Australia",za:"South Africa",nz:"New Zealand","gb-eng":"England",af:"Afghanistan",lk:"Sri Lanka",tt:"Trinidad & Tobago",gy:"Guyana",jm:"Jamaica",bb:"Barbados",bd:"Bangladesh",zw:"Zimbabwe"};
 const flag = c => c ? `<img class="flag" src="assets/flags/${c}.svg" alt="${CNAME[c] || c}" title="${CNAME[c] || c}" onerror="this.remove()">` : "";
 const capBadge = p => p.captain ? '<span class="cap" title="Captain">C</span>' : "";
 const roleBadge = r => ROLE[r] ? `<span class="role" title="${ROLE[r][0]}">${ROLE[r][1].map(k => ICON[k]).join("")}</span>` : "";
@@ -336,7 +336,7 @@ function render() {
     const d = document.createElement("div"); d.className = "tinfo";
     d.innerHTML = `<div class="ti-g"><span class="ti-l">Home ground</span><b>${esc(I.ground)}</b><small>${esc(I.city)}</small>` +
       `<a class="ti-map" href="${url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>${ll}</span><em>Open in Google Maps</em></a></div>` +
-      `<div class="ti-s"><span class="ti-l">Coaching staff</span><ul>${I.staff.map(([r, nm]) => `<li><b>${esc(nm)}</b><small>${esc(r)}</small></li>`).join("")}</ul>` +
+      `<div class="ti-s"><span class="ti-l">Coaching staff</span><ul>${I.staff.map(([r, nm, cc]) => `<li><b>${flag(cc)}${esc(nm)}</b><small>${esc(r)}</small></li>`).join("")}</ul>` +
       (I.note ? `<p class="ti-n">${esc(I.note)}</p>` : "") + `</div>`;
     return d;
   };

@@ -910,3 +910,6 @@ html[data-theme="light"] .b-role .role{color:#0a8a5f}
 
 .b-role .plus{font-style:normal;font-weight:800;font-size:16px;line-height:1;margin:0 1px}
 @media(max-width:360px){.b-role .role svg{width:18px;height:18px}}
+
+.ti-s li b{display:flex;align-items:center;gap:8px}
+.ti-s li b img.flag{width:22px;height:16px}
