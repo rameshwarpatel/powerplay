@@ -39,7 +39,7 @@ const ICON = {
   BOWL: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6.2 5.2c3.4 3.6 3.4 10 0 13.6M17.8 5.2c-3.4 3.6-3.4 10 0 13.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
   WK: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 22v-6.5L4.6 10.2a1.3 1.3 0 0 1 2.3-1.1L8.4 12V4.6a1.3 1.3 0 0 1 2.6 0V10h.5V3.2a1.3 1.3 0 0 1 2.6 0V10h.5V4.4a1.3 1.3 0 0 1 2.6 0V11h.4V7.6a1.3 1.3 0 0 1 2.6 0V16c0 3.4-2.2 6-5.4 6z"/></svg>'};
 const ROLE = {BAT: ["Batter", ["BAT"]], BOWL: ["Bowler", ["BOWL"]], AR: ["All-rounder", ["BAT", "BOWL"]], WK: ["Wicket-keeper", ["WK"]]};
-const CNAME = {in:"India",au:"Australia",za:"South Africa",nz:"New Zealand","gb-eng":"England",af:"Afghanistan",lk:"Sri Lanka",tt:"Trinidad & Tobago",gy:"Guyana",jm:"Jamaica",bb:"Barbados",bd:"Bangladesh",zw:"Zimbabwe"};
+const CNAME = {nl:"Netherlands",in:"India",au:"Australia",za:"South Africa",nz:"New Zealand","gb-eng":"England",af:"Afghanistan",lk:"Sri Lanka",tt:"Trinidad & Tobago",gy:"Guyana",jm:"Jamaica",bb:"Barbados",bd:"Bangladesh",zw:"Zimbabwe"};
 const flag = c => c ? `<img class="flag" src="assets/flags/${c}.svg" alt="${CNAME[c] || c}" title="${CNAME[c] || c}" onerror="this.remove()">` : "";
 const capBadge = p => p.captain ? '<span class="cap" title="Captain">C</span>' : "";
 const roleBadge = r => ROLE[r] ? `<span class="role" title="${ROLE[r][0]}">${ROLE[r][1].map(k => ICON[k]).join("")}</span>` : "";
@@ -263,23 +263,37 @@ function renderAuction(main) {
   main.insertAdjacentHTML("beforeend", `<p class="au-n">Purse in crore rupees from ₹${A.purseCap} cr. A squad holds up to ${A.squadMax} players, at most ${OS_MAX} of them overseas. </p>`);
 }
 
+const TI = d => `<svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
+const TABICON = {
+  HOME: TI("M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"),
+  CATCHUP: TI("M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 10h14v10H5zm2 2v2h4v-2z"),
+  ALL: TI("M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13zm8 0c-.3 0-.6 0-1 .1 1.2.8 2 2 2 3.4V19h6v-2.5c0-2.3-4.7-3.5-7-3.5z"),
+  RELEASED: TI("M10 17l5-5-5-5v3H3v4h7zM19 3h-7v2h7v14h-7v2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"),
+  AUCTION: TI("M1 21h12v2H1zM5.24 8.07l2.83-2.83 14.14 14.14-2.83 2.83zM12.32 1l5.66 5.66-2.83 2.83-5.66-5.66zM3.83 9.48l5.66 5.66-2.83 2.83L1 12.31z"),
+  PREDICT: TI("M7 4h10v3a5 5 0 0 1-4 4.9V15h3v2H8v-2h3v-3.1A5 5 0 0 1 7 7zM5 5h2v2a3 3 0 0 1-2-2zm14 0a3 3 0 0 1-2 2V5z"),
+  COMPARE: TI("M6.99 11 3 15l3.99 4v-3H14v-2H6.99zM21 9l-3.99-4v3H10v2h7.01v3z")
+};
 function render() {
   const q = document.getElementById("q").value.toLowerCase();
   const tabs = document.getElementById("tabs"); tabs.innerHTML = "";
+  const rowMain = document.createElement("div"), rowTeams = document.createElement("div");
+  rowMain.className = "tg tg-main"; rowTeams.className = "tg tg-teams"; tabs.append(rowMain, rowTeams);
   const FAV = getFav();
   document.documentElement.style.setProperty("--fav", FAV ? ((R.colors || {})[FAV] || "transparent") : "transparent");
   document.documentElement.classList.toggle("has-fav", !!FAV);
-  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].forEach(t => {
+  [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].sort((x, y) => (R.teams[x] ? 1 : 0) - (R.teams[y] ? 1 : 0)).forEach(t => {
     const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction 2027" : t; b.className = t === team ? "on" : "";
+    if (TABICON[t]) b.innerHTML = TABICON[t] + esc(b.textContent);
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
     if (t === "AUCTION") b.classList.add("auct");
+    if (!R.teams[t]) b.classList.add("sx", "sx-" + t.toLowerCase());
     if (t === "BUILD") { b.classList.add("build"); b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Build XII'; }
     const col = (R.colors || {})[t];
     if (col) { b.style.setProperty("--c", col); b.style.setProperty("--ink", ink(col)); b.classList.add("tm"); }
     if (t === FAV) { b.classList.add("fav"); b.innerHTML = STAR + b.textContent; b.title = "Your favourite team"; }
     if (t === team) setTimeout(() => b.scrollIntoView({inline: "center", block: "nearest"}), 0);
-    b.onclick = () => { if (t === "BUILD" && R.teams[team]) window.buildTeam = team; team = t; render(); }; tabs.appendChild(b); });
+    b.onclick = () => { if (t === "BUILD" && R.teams[team]) window.buildTeam = team; team = t; render(); }; (R.teams[t] ? rowTeams : rowMain).appendChild(b); });
   document.getElementById("banner").innerHTML = Object.keys(F).length ? "" :
     "<b>No form data loaded yet.</b> Put your API key in <code>api-key.txt</code>, then double-click <code>update-form.command</code> and reload this page.";
   document.getElementById("note").textContent = META.updated
@@ -333,7 +347,7 @@ function render() {
     const d = document.createElement("div"); d.className = "tinfo";
     d.innerHTML = `<div class="ti-g"><span class="ti-l">Home ground</span><b>${esc(I.ground)}</b><small>${esc(I.city)}</small>` +
       `<a class="ti-map" href="${url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>${ll}</span><em>Open in Google Maps</em></a></div>` +
-      `<div class="ti-s"><span class="ti-l">Coaching staff</span><ul>${I.staff.map(([r, nm]) => `<li><b>${esc(nm)}</b><small>${esc(r)}</small></li>`).join("")}</ul>` +
+      `<div class="ti-s"><span class="ti-l">Coaching staff</span><ul>${I.staff.map(([r, nm, cc]) => `<li><b>${flag(cc)}${esc(nm)}</b><small>${esc(r)}</small></li>`).join("")}</ul>` +
       (I.note ? `<p class="ti-n">${esc(I.note)}</p>` : "") + `</div>`;
     return d;
   };
@@ -374,6 +388,10 @@ function render() {
     return grid; };
     const cur = ps.filter(x => !x.p.released), rel = ps.filter(x => x.p.released);
     if (team === c) { const ti = teamInfo(c); if (ti) s.appendChild(ti); }
+    const gb = document.createElement("div"); gb.className = "grp-bar";
+    gb.innerHTML = `<select class="grp-sel${groupBy !== "none" ? " on" : ""}" aria-label="Group players"><option value="none">No grouping</option><option value="role">Group by role</option></select>`;
+    const gs = gb.firstChild; gs.value = groupBy; gs.onchange = () => { groupBy = gs.value; render(); };
+    s.appendChild(gb);
     s.appendChild(mkGrid(cur));
     if (rel.length) {
       const d = document.createElement("details"); d.className = "rel"; d.open = !!q;
@@ -417,8 +435,6 @@ qEl.onkeydown = e => {
   else if (e.key === "Enter") { e.preventDefault(); focusPlayer(sgList[sgIdx >= 0 ? sgIdx : 0]); }
   else if (e.key === "Escape") sgHide();
 };
-document.getElementById("sort").onchange = e => { sortBy = e.target.value; render(); };
-document.getElementById("group").onchange = e => { groupBy = e.target.value; e.target.classList.toggle("on", groupBy !== "none"); render(); };
 // ---- Players: several people can build XIIs and predictions on one device ----
 const PPusers = (() => {
   const K = "pp-users", MAX = 6, FMAX = 8, COLORS = ["#2f6bff", "#ff7a1a", "#1fb86a", "#e0408f", "#8a5cf6", "#0fb5c4"];
@@ -556,7 +572,7 @@ const PPusers = (() => {
   function render() {
     const main = document.getElementById("teams"); if (!main) return;
     const col = R.colors[bteam] || "#2f6bff";
-    const pool = squad(bteam).filter(p => !slots.includes(p.name) && p.name.toLowerCase().includes(q.toLowerCase()))
+    const pool = squad(bteam).filter(p => !slots.includes(p.name) && (!q || p.role === q))
       .sort((a, b) => ORD(a) - ORD(b) || a.name.localeCompare(b.name));
     const slotHtml = i => { const n = slots[i], p = n && byName(n);
       const label = i === 11 ? "Impact" : i + 1;
@@ -571,7 +587,7 @@ const PPusers = (() => {
       `<p class="b-help">Pick 11 plus an Impact Player. Drag players from the squad into the order you want, or tap a player to add them. Rule: only ${MAX_OS_12} overseas players in the whole XII.</p>` +
       (msg ? `<div class="b-toast" role="alert">${esc(msg)}</div>` : "") +
       `<div class="b-grid"><section class="b-col"><div class="b-sh"><h3>${esc(R.teams[bteam])} squad <small>${pool.length}</small></h3>` +
-      `<input id="bq" placeholder="Filter squad" value="${esc(q)}" aria-label="Filter squad"></div>` +
+      `</div><div class="b-roles" role="group" aria-label="Filter squad by role">${[["BAT", "Batters"], ["BOWL", "Bowlers"], ["AR", "All-rounders"], ["WK", "Wicketkeepers"]].map(([r, l]) => `<button type="button" class="b-role${q === r ? " on" : ""}" data-r="${r}" aria-pressed="${q === r}" aria-label="${l}" title="${l}">${r === "AR" ? `<span class="role">${ICON.BAT}<i class="plus">+</i>${ICON.BOWL}</span>` : roleBadge(r)}</button>`).join("")}</div>` +
       `<ul class="b-pool" data-drop="pool">${pool.map((p, i) => (i === 0 || ORD(pool[i - 1]) !== ORD(p) ? `<li class="b-grp">${GROUP[p.role || ""] || GROUP[""]}</li>` : "") +
         `<li class="b-p" draggable="true" data-n="${esc(p.name)}" tabindex="0">${pill(p)}</li>`).join("") || '<li class="b-none">Everyone is selected.</li>'}</ul></section>` +
       `<section class="b-col"><div class="b-sh"><h3>Your XII</h3><span><button class="b-act share" id="bshare">Share</button><button class="b-act" id="bcopy">Copy</button><button class="b-act" id="bclr">Clear</button></span></div>` +
@@ -582,7 +598,7 @@ const PPusers = (() => {
 
   function wire(main) {
     main.querySelectorAll(".b-teams button").forEach(b => b.onclick = () => { bteam = b.dataset.t; q = ""; load(bteam); render(); });
-    const bq = main.querySelector("#bq"); bq.oninput = () => { q = bq.value; const pos = bq.selectionStart; render(); const n = document.getElementById("bq"); n.focus(); n.setSelectionRange(pos, pos); };
+    main.querySelectorAll(".b-role").forEach(b => b.onclick = () => { q = q === b.dataset.r ? "" : b.dataset.r; render(); });
     main.querySelectorAll(".b-pool .b-p").forEach(e => { e.onclick = () => addFirst(e.dataset.n);
       e.onkeydown = ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); addFirst(e.dataset.n); } }; });
     main.querySelectorAll("[data-rm]").forEach(b => b.onclick = e => { e.stopPropagation(); remove(+b.dataset.rm); });
@@ -1101,62 +1117,6 @@ render();
     predict: S => run(c => drawPredict(c, S), "powerplay-ipl-2027-predictions.png"),
     _draw: {xii: drawXII, predict: drawPredict}
   };
-})();
-
-// ---------- Quote of the day, tied to "on this day" in cricket history ----------
-(() => {
-  // Short quotes, each credited to a cricketer by multiple sources. Add more here any time.
-  const Q = [
-    ["Whatever level you reach, getting better never stops.", "Sachin Tendulkar"],
-    ["Keep it simple and just go out and play.", "Shane Warne"],
-    ["I have failed at times, but I never stopped trying.", "Rahul Dravid"],
-    ["I was always fiercely determined and driven to succeed.", "Ricky Ponting"],
-    ["Frankly speaking, I don't understand Duckworth Lewis. I just wait for the umpire's decision.", "MS Dhoni"],
-    ["When people throw stones at you, you turn them into milestones.", "Sachin Tendulkar"],
-    ["I have always tried to move on from disappointments as fast as I can.", "Shane Warne"],
-    ["I have never tried to compare myself to anyone else.", "Sachin Tendulkar"],
-    ["You can't afford to live your life with regrets.", "Shane Warne"],
-    ["Never give up; just absolutely never give up.", "Shane Warne"]
-  ];
-  // Landmark days in cricket history, keyed by month-day. "who" picks a matching quote when we have one.
-  const EV = {
-    "01-05": [1971, "The first one-day international is played, at the MCG in Melbourne."],
-    "01-11": [1973, "Rahul Dravid is born in Indore.", "Rahul Dravid"],
-    "02-07": [1999, "Anil Kumble takes all 10 wickets in a Test innings against Pakistan in Delhi."],
-    "02-24": [2010, "Sachin Tendulkar scores the first double century in men's ODI cricket, in Gwalior.", "Sachin Tendulkar"],
-    "03-15": [1877, "The first Test match begins, Australia v England in Melbourne."],
-    "04-02": [2011, "India win the ODI World Cup at the Wankhede in Mumbai."],
-    "04-12": [2004, "Brian Lara scores 400 not out against England in Antigua, a Test record."],
-    "04-18": [2008, "The first IPL match is played in Bengaluru."],
-    "04-24": [1973, "Sachin Tendulkar is born in Mumbai.", "Sachin Tendulkar"],
-    "06-04": [1993, "Shane Warne bowls the 'Ball of the Century' to Mike Gatting at Old Trafford.", "Shane Warne"],
-    "06-25": [1983, "India win the World Cup at Lord's."],
-    "07-07": [1981, "MS Dhoni is born in Ranchi.", "MS Dhoni"],
-    "08-14": [1948, "Don Bradman plays his final Test innings at The Oval, finishing on 99.94."],
-    "08-15": [2020, "MS Dhoni announces his retirement from international cricket.", "MS Dhoni"],
-    "08-27": [1908, "Don Bradman is born in Cootamundra, New South Wales."],
-    "09-13": [1969, "Shane Warne is born in Melbourne.", "Shane Warne"],
-    "09-24": [2007, "India win the first T20 World Cup, in Johannesburg."],
-    "11-05": [1988, "Virat Kohli is born in Delhi."],
-    "11-15": [1989, "Sachin Tendulkar makes his Test debut, aged 16, in Karachi.", "Sachin Tendulkar"],
-    "12-19": [1974, "Ricky Ponting is born in Launceston.", "Ricky Ponting"]
-  };
-  const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  let shown = "";
-  function dayQuote() {
-    const d = new Date(), mm = String(d.getMonth() + 1).padStart(2, "0"), dd = String(d.getDate()).padStart(2, "0"), key = mm + "-" + dd;
-    if (key === shown && document.getElementById("dayq")) return;
-    shown = key;
-    const doy = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 864e5), ev = EV[key];
-    const mine = ev && ev[2] ? Q.filter(q => q[1] === ev[2]) : [];
-    const q = mine.length ? mine[doy % mine.length] : Q[doy % Q.length];
-    let box = document.getElementById("dayq");
-    if (!box) { box = document.createElement("aside"); box.id = "dayq"; const f = document.getElementById("note"); f.parentNode.insertBefore(box, f); }
-    box.innerHTML = `<small>${ev ? "On this day" : "Quote of the day"} · ${d.getDate()} ${MON[d.getMonth()]}</small>` +
-      (ev ? `<p class="dq-ev"><b>${ev[0]}</b> ${esc(ev[1])}</p>` : "") +
-      `<blockquote><em>“${esc(q[0])}”</em><cite>${esc(q[1])}</cite></blockquote>`;
-  }
-  dayQuote(); setInterval(dayQuote, 60000);
 })();
 
 // Tapping the "Powerplay" title always returns to Home

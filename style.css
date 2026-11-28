@@ -231,13 +231,13 @@ img.flag{flex:none;width:20px;height:15px;border-radius:3px;object-fit:cover;box
 .cards .grp{grid-column:1/-1;margin:10px 2px 0;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-surface-variant)}.cards .grp small{font-weight:400}
 
 /* sort + group dropdowns share one look */
-#sort,#group{height:40px;padding:0 36px 0 14px;border:0;border-radius:var(--r-full);background-color:var(--surface-high);color:var(--on-surface);cursor:pointer;
+#sort,#group,.grp-sel{height:40px;padding:0 36px 0 14px;border:0;border-radius:var(--r-full);background-color:var(--surface-high);color:var(--on-surface);cursor:pointer;
   font-size:12px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;-webkit-appearance:none;appearance:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238ea0c4' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 10px center;background-size:20px;transition:background-color .2s var(--ease)}
-#sort:hover,#group:hover{background-color:color-mix(in srgb,var(--primary) 18%,var(--surface-high))}
-#group.on{background-color:var(--primary);color:var(--on-primary)}
-#group option,#sort option{background:var(--surface);color:var(--on-surface);text-transform:none}
+#sort:hover,#group:hover,.grp-sel:hover{background-color:color-mix(in srgb,var(--primary) 18%,var(--surface-high))}
+#group.on,.grp-sel.on{background-color:var(--primary);color:var(--on-primary)}
+#group option,#sort option,.grp-sel option{background:var(--surface);color:var(--on-surface);text-transform:none}
 
 /* all-rounder cards: bat + bowl of one match grouped */
 .ar{margin-top:6px}
@@ -540,19 +540,7 @@ h1,h2,h3,.hero-txt h2,.champ b,.cta-t b,.pc-h h3,.ps-h h3,.mc-main b,.tile b{fon
 .clk b{font-family:var(--font-num)}
 
 /* quote of the day */
-#dayq{max-width:1100px;margin:8px auto 0;padding:20px 22px;border-radius:var(--r-xl);background:var(--surface-container);box-shadow:inset 0 0 0 var(--hair) var(--outline-variant);box-sizing:border-box;width:calc(100% - 48px)}
-#dayq small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-#dayq .dq-ev{margin:8px 0 0;font-size:13px;color:var(--on-surface-variant)}#dayq .dq-ev b{font-family:var(--font-num);color:var(--on-surface);margin-right:6px}
-#dayq blockquote{margin:12px 0 0;padding:0}
-#dayq blockquote em{display:block;font-style:italic;font-size:20px;line-height:28px;font-weight:500;color:var(--on-surface)}
-#dayq cite{display:block;margin-top:8px;font-style:normal;font-size:13px;font-weight:600;color:var(--on-surface-variant)}
-#dayq cite::before{content:"— "}
-@media(max-width:600px){#dayq{width:calc(100% - 24px);padding:16px 16px}#dayq blockquote em{font-size:18px;line-height:26px}}
-#dayq{text-align:center}
-#dayq blockquote{text-wrap:balance}
 /* quote in New York (Apple's serif, reached through ui-serif); Georgia elsewhere */
-#dayq blockquote em{font-family:ui-serif,"New York","Iowan Old Style","Palatino Linotype",Georgia,serif;font-style:italic;font-weight:400;font-size:22px;line-height:30px;letter-spacing:0}
-@media(max-width:600px){#dayq blockquote em{font-size:20px;line-height:28px}}
 
 /* Player of the Match */
 .tro{width:1em;height:1em;fill:currentColor;vertical-align:-.12em}
@@ -875,3 +863,43 @@ html[data-theme="light"] .au-open{color:#0a8a5f}
 .fl-c{align-self:flex-end;margin-bottom:14px;font-family:ui-monospace,Menlo,monospace;font-size:34px;font-weight:700;color:#ffb30099}
 @media(max-width:600px){.fl-d{width:30px;height:46px;line-height:46px;font-size:30px}.fl-c{font-size:24px;margin-bottom:10px}.au-cd{justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){.fl-d.flip{animation:none}}
+
+/* two tab rows: site sections on top, the ten teams below */
+nav#tabs{flex-direction:column;flex-wrap:nowrap;overflow:visible;gap:8px}
+nav#tabs .tg{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+nav#tabs .tg::-webkit-scrollbar{display:none}
+nav#tabs .tg-teams{padding-top:8px;border-top:var(--hair) solid var(--outline-variant)}
+@media(min-width:700px){nav#tabs .tg{flex-wrap:wrap;overflow-x:visible}}
+
+/* colour for every site-section tab (top row) */
+nav#tabs button.sx{border:0;font-weight:800}
+nav#tabs button.sx.on{box-shadow:0 0 0 2px #fff5,0 4px 14px #0006}
+nav#tabs button.sx-home{background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff}
+nav#tabs button.sx-catchup{background:linear-gradient(135deg,#f43f5e,#fb923c);color:#fff}
+nav#tabs button.sx-all{background:linear-gradient(135deg,#22d3ee,#0ea5e9);color:#04202c}
+nav#tabs button.sx-released{background:linear-gradient(135deg,#94a3b8,#64748b);color:#fff}
+nav#tabs button.sx-compare{background:linear-gradient(135deg,#f472b6,#a855f7);color:#fff}
+nav#tabs button.sx.on{filter:saturate(1.15) brightness(1.08)}
+
+.grp-bar{padding:12px 16px 0}
+.grp-sel{min-width:160px}
+/* Playing XII builder: role filter buttons use the same green role icons as the player cards */
+.b-roles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 10px}
+.b-role{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:40px;padding:0 6px;border:var(--hair) solid var(--outline);border-radius:var(--r-full);background:var(--surface-high);color:var(--on-surface);font-size:12px;font-weight:700;letter-spacing:.02em;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease),box-shadow .2s var(--ease)}
+.b-role:hover{background:color-mix(in srgb,var(--accent) 14%,var(--surface-high))}
+.b-role .role{background:transparent;padding:0;gap:2px}
+.b-role .role svg{width:16px;height:16px}
+.b-role.on{background:color-mix(in srgb,var(--accent) 22%,var(--surface-high));border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+html[data-theme="light"] .b-role .role{color:#0a8a5f}
+@media(max-width:480px){.b-roles{grid-template-columns:1fr 1fr}}
+
+.b-role{height:44px}
+.b-role .role svg{width:22px;height:22px}
+
+.b-role .plus{font-style:normal;font-weight:800;font-size:16px;line-height:1;margin:0 1px}
+@media(max-width:360px){.b-role .role svg{width:18px;height:18px}}
+
+.ti-s li b{display:flex;align-items:center;gap:8px}
+.ti-s li b img.flag{width:22px;height:16px}
+
+nav#tabs button svg.ti{flex:none;width:16px;height:16px;fill:currentColor}
