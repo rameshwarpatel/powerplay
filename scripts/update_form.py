@@ -229,9 +229,14 @@ def competition(meta):
     return ", ".join(parts)
 
 
-def _sig(i):
-    """What one innings or spell looks like, whichever API it came from."""
-    return (i.get("runs"), i.get("balls"), i.get("wkts"), i.get("overs"), bool(i.get("dnb")))
+def _same_fig(a, b):
+    """Identical innings or spell; a figure one source leaves out (balls, overs) is not held against it."""
+    if bool(a.get("dnb")) or bool(b.get("dnb")):
+        return False
+    ok = lambda f: a.get(f) is None or b.get(f) is None or a.get(f) == b.get(f)
+    if "wkts" in a or "wkts" in b:
+        return a.get("wkts") == b.get("wkts") and a.get("runs") == b.get("runs") and ok("overs")
+    return a.get("runs") == b.get("runs") and ok("balls")
 
 
 def dup(i, have):
@@ -247,7 +252,7 @@ def dup(i, have):
             continue
         if not i.get("inn") and not x.get("inn") and x.get("opponent") == i.get("opponent"):
             return True
-        same_fig = _sig(x) == _sig(i) and not i.get("dnb")
+        same_fig = _same_fig(x, i)
         if same_fig and (gap == 0 or (x.get("competition") or "")[:12].lower() == (i.get("competition") or "")[:12].lower()):
             return True
     return False
@@ -416,6 +421,14 @@ def build(use_cricsheet=True):
         for k in ("bat", "bowl"):
             have = list(f[k])
             f[k] += [i for i in lists.get(k, []) if not dup(i, have)]
+    # nations are shown with their full names too ("India", not "IND"); IPL franchise codes stay as they are
+    _full = {v: k for k, v in cricsheet.NAT.items()}
+    for v in form.values():
+        for k in ("bat", "bowl"):
+            for i in v[k]:
+                for fld in ("team", "opponent"):
+                    if i.get(fld) in _full:
+                        i[fld] = _full[i[fld]]
     last = ipl_last(form, load_json(DATA / "roster.json", {"players": []}))
     for who in form:
         for k in ("bat", "bowl"):

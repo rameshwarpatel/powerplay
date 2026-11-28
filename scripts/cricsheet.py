@@ -122,7 +122,8 @@ def parse(d, match, abbr, since):
     if date < since:
         return []
     teams = info.get("teams", [])
-    code = lambda n: abbr.get(n.lower()) or FRANCHISE.get(n.lower()) or NAT.get(n) or "".join(w[0] for w in n.split()).upper()
+    # IPL franchises keep their usual codes (RCB, MI...); every other team (nations, state sides, franchise leagues) keeps its full name
+    code = lambda n: abbr.get(n.lower()) or FRANCHISE.get(n.lower()) or n
     ev = info.get("event") or {}
     comp = " ".join(x for x in [ev.get("name") if isinstance(ev, dict) else str(ev), str(info.get("season", ""))
                                 if isinstance(ev, dict) and ev.get("name") and str(info.get("season", "")) not in str(ev.get("name")) else ""] if x)
