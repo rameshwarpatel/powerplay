@@ -820,6 +820,26 @@ nav#tabs button.auct.on{box-shadow:0 0 0 2px #fff4}
 .au-o{opacity:.8;font-size:12px}
 .au-m b,.au-o b{font-weight:800}
 .au-n{margin:14px 0 0;color:var(--on-surface-variant);font-size:12px;line-height:18px}
+
+.au-tb{margin:22px 0 0;background:var(--surface-container);border-radius:var(--r-lg);padding:16px 8px 8px;box-shadow:inset 0 0 0 var(--hair) var(--outline-variant)}
+.au-tb h3{margin:0 0 10px 12px;font-size:20px;font-weight:800}
+.au-scroll{overflow-x:auto}
+.au-tb table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}
+.au-tb th,.au-tb td{padding:12px;text-align:center;white-space:nowrap}
+.au-tb thead th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--on-surface-variant);font-weight:700;border-bottom:1px solid var(--outline-variant)}
+.au-tb th[scope=row],.au-tb thead th:first-child{text-align:left;font-weight:700}
+.au-tb tbody tr{border-bottom:1px solid var(--outline-variant)}
+.au-tb tbody tr:hover{background:color-mix(in srgb,var(--c) 10%,transparent)}
+.au-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:10px;vertical-align:baseline}
+.au-tb td{font-weight:700}
+.au-open{font-size:18px;font-weight:800;color:#19e0a0}
+html[data-theme="light"] .au-open{color:#0a8a5f}
+.au-tb tfoot th,.au-tb tfoot td{border-top:2px solid var(--outline);font-weight:800}
+.au-seg{display:inline-flex;gap:2px;vertical-align:middle}
+.au-seg i{width:6px;height:16px;border-radius:2px;background:var(--surface-high);box-shadow:inset 0 0 0 1px var(--outline)}
+.au-seg i.f{background:var(--c);box-shadow:none}
+.au-tb tr:not([style]) .au-seg i.f{background:var(--on-surface-variant)}
+@media(max-width:900px){.au-sg{display:none}}
 @media(max-width:600px){
   .au-hero{padding:18px 16px}
   .au-d b{font-size:30px;line-height:36px}
@@ -828,5 +848,6 @@ nav#tabs button.auct.on{box-shadow:0 0 0 2px #fff4}
   .au-grid{grid-template-columns:1fr 1fr;gap:10px}
   .au-tile{min-height:150px;padding:12px}
   .au-p{font-size:20px}
+  .au-tb th,.au-tb td{padding:10px 8px;font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){.au-tile:hover{transform:none}}
