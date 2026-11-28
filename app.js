@@ -561,7 +561,7 @@ const PPusers = (() => {
   function render() {
     const main = document.getElementById("teams"); if (!main) return;
     const col = R.colors[bteam] || "#2f6bff";
-    const pool = squad(bteam).filter(p => !slots.includes(p.name) && p.name.toLowerCase().includes(q.toLowerCase()))
+    const pool = squad(bteam).filter(p => !slots.includes(p.name) && (!q || p.role === q))
       .sort((a, b) => ORD(a) - ORD(b) || a.name.localeCompare(b.name));
     const slotHtml = i => { const n = slots[i], p = n && byName(n);
       const label = i === 11 ? "Impact" : i + 1;
@@ -576,7 +576,7 @@ const PPusers = (() => {
       `<p class="b-help">Pick 11 plus an Impact Player. Drag players from the squad into the order you want, or tap a player to add them. Rule: only ${MAX_OS_12} overseas players in the whole XII.</p>` +
       (msg ? `<div class="b-toast" role="alert">${esc(msg)}</div>` : "") +
       `<div class="b-grid"><section class="b-col"><div class="b-sh"><h3>${esc(R.teams[bteam])} squad <small>${pool.length}</small></h3>` +
-      `<input id="bq" placeholder="Filter squad" value="${esc(q)}" aria-label="Filter squad"></div>` +
+      `</div><div class="b-roles" role="group" aria-label="Filter squad by role">${[["BAT", "Batters"], ["BOWL", "Bowlers"], ["AR", "All-rounders"], ["WK", "Wicketkeepers"]].map(([r, l]) => `<button type="button" class="b-role r-${r}${q === r ? " on" : ""}" data-r="${r}" aria-pressed="${q === r}">${l}</button>`).join("")}</div>` +
       `<ul class="b-pool" data-drop="pool">${pool.map((p, i) => (i === 0 || ORD(pool[i - 1]) !== ORD(p) ? `<li class="b-grp">${GROUP[p.role || ""] || GROUP[""]}</li>` : "") +
         `<li class="b-p" draggable="true" data-n="${esc(p.name)}" tabindex="0">${pill(p)}</li>`).join("") || '<li class="b-none">Everyone is selected.</li>'}</ul></section>` +
       `<section class="b-col"><div class="b-sh"><h3>Your XII</h3><span><button class="b-act share" id="bshare">Share</button><button class="b-act" id="bcopy">Copy</button><button class="b-act" id="bclr">Clear</button></span></div>` +
@@ -587,7 +587,7 @@ const PPusers = (() => {
 
   function wire(main) {
     main.querySelectorAll(".b-teams button").forEach(b => b.onclick = () => { bteam = b.dataset.t; q = ""; load(bteam); render(); });
-    const bq = main.querySelector("#bq"); bq.oninput = () => { q = bq.value; const pos = bq.selectionStart; render(); const n = document.getElementById("bq"); n.focus(); n.setSelectionRange(pos, pos); };
+    main.querySelectorAll(".b-role").forEach(b => b.onclick = () => { q = q === b.dataset.r ? "" : b.dataset.r; render(); });
     main.querySelectorAll(".b-pool .b-p").forEach(e => { e.onclick = () => addFirst(e.dataset.n);
       e.onkeydown = ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); addFirst(e.dataset.n); } }; });
     main.querySelectorAll("[data-rm]").forEach(b => b.onclick = e => { e.stopPropagation(); remove(+b.dataset.rm); });

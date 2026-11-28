@@ -895,3 +895,13 @@ nav#tabs button.sx.on{filter:saturate(1.15) brightness(1.08)}
 
 .grp-bar{padding:12px 16px 0}
 .grp-sel{min-width:160px}
+/* Playing XII builder: role buttons replace the squad search box */
+.b-roles{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 10px}
+.b-role{height:36px;padding:0 6px;border:0;border-radius:var(--r-full);color:#fff;font-size:12px;font-weight:800;letter-spacing:.03em;cursor:pointer;white-space:nowrap;opacity:.82;transition:opacity .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease)}
+.b-role:hover{opacity:1}
+.b-role.on{opacity:1;box-shadow:0 0 0 2px #fff6,0 4px 12px #0006;transform:translateY(-1px)}
+.b-role.r-BAT{background:linear-gradient(135deg,#3b82f6,#1d4ed8)}
+.b-role.r-BOWL{background:linear-gradient(135deg,#f43f5e,#be123c)}
+.b-role.r-AR{background:linear-gradient(135deg,#a855f7,#6d28d9)}
+.b-role.r-WK{background:linear-gradient(135deg,#f59e0b,#d97706);color:#1a1100}
+@media(max-width:420px){.b-roles{grid-template-columns:1fr 1fr}}
