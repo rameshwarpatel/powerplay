@@ -273,7 +273,7 @@ function render() {
   document.documentElement.style.setProperty("--fav", FAV ? ((R.colors || {})[FAV] || "transparent") : "transparent");
   document.documentElement.classList.toggle("has-fav", !!FAV);
   [...(FAV ? [FAV] : []), "HOME", "CATCHUP", "ALL", ...Object.keys(R.teams).filter(c => c !== FAV), ...(R.players.some(p => p.released) ? ["RELEASED"] : []), "AUCTION", "BUILD", "PREDICT", "COMPARE"].forEach(t => {
-    const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction" : t; b.className = t === team ? "on" : "";
+    const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction 2027" : t; b.className = t === team ? "on" : "";
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
     if (t === "AUCTION") b.classList.add("auct");
