@@ -229,10 +229,28 @@ def competition(meta):
     return ", ".join(parts)
 
 
+def _sig(i):
+    """What one innings or spell looks like, whichever API it came from."""
+    return (i.get("runs"), i.get("balls"), i.get("wkts"), i.get("overs"), bool(i.get("dnb")))
+
+
 def dup(i, have):
-    """Same match already present? Same opponent and the date within a day (sources differ by time zone)."""
+    """Same match already held? `have` = the player's existing entries. Sources name teams differently ("NZ" v "New Zealand", "CR" v
+    "Chitwan Rhinos") and dates can differ by a day (time zones), so besides the opponent we also compare the innings itself: same
+    day and identical figures, or the next day with identical figures in the same competition. Innings numbers must agree when both have one."""
     d = datetime.date.fromisoformat(i["date"][:10])
-    return not i.get("inn") and any(o == i.get("opponent") and abs((datetime.date.fromisoformat(x[:10]) - d).days) <= 1 for x, o in have)
+    for x in have:
+        gap = abs((datetime.date.fromisoformat(x["date"][:10]) - d).days)
+        if gap > 1:
+            continue
+        if i.get("inn") and x.get("inn") and i["inn"] != x["inn"]:
+            continue
+        if not i.get("inn") and not x.get("inn") and x.get("opponent") == i.get("opponent"):
+            return True
+        same_fig = _sig(x) == _sig(i) and not i.get("dnb")
+        if same_fig and (gap == 0 or (x.get("competition") or "")[:12].lower() == (i.get("competition") or "")[:12].lower()):
+            return True
+    return False
 
 
 def ipl_last(form, roster):
@@ -382,7 +400,7 @@ def build(use_cricsheet=True):
         for who, lists in form.items():
             f = merged.setdefault(who, {"bat": [], "bowl": []})
             for k in ("bat", "bowl"):
-                have = {(i["date"], i.get("opponent")) for i in f[k]}
+                have = list(f[k])
                 f[k] += [i for i in lists[k] if not dup(i, have)]
         form = merged
     # players with nothing recent: fall back to their last-played matches from the full archive
@@ -396,7 +414,7 @@ def build(use_cricsheet=True):
     for who, lists in load_json(DATA / "manual-form.json", {}).items():
         f = form.setdefault(who, {"bat": [], "bowl": []})
         for k in ("bat", "bowl"):
-            have = {(i["date"], i.get("opponent")) for i in f[k]}
+            have = list(f[k])
             f[k] += [i for i in lists.get(k, []) if not dup(i, have)]
     last = ipl_last(form, load_json(DATA / "roster.json", {"players": []}))
     for who in form:
