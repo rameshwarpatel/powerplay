@@ -24,7 +24,7 @@ BASE = "https://api.cricapi.com/v1"
 RESERVE = 5          # hits to leave unused each day
 LIST_PAGES = 2       # pages of the recent-match list per run (25 matches each, 1 hit per page)
 IDS_PER_RUN = 5     # player ids to look up per run for ambiguous names (1 hit each, cached forever)
-KEEP = 15            # innings / spells kept per player
+KEEP = 30            # innings / spells kept per player
 SKIP = re.compile(r"\b(women|womens|girls|ladies)\b", re.I)
 
 
@@ -429,6 +429,14 @@ def build(use_cricsheet=True):
                 for fld in ("team", "opponent"):
                     if i.get(fld) in _full:
                         i[fld] = _full[i[fld]]
+    # different people who share a name (e.g. Afghanistan's Rashid Khan and Nepal's): drop the other person's matches
+    for who, rule in load_json(DATA / "identity-guard.json", {}).items():
+        if who.startswith("_") or who not in form:
+            continue
+        bad = lambda i: any(w.lower() in (i.get("competition") or "").lower() for w in rule.get("drop_competitions", [])) or \
+                        any(w.lower() in str(i.get(f) or "").lower() for w in rule.get("drop_teams", []) for f in ("team", "opponent"))
+        for k in ("bat", "bowl"):
+            form[who][k] = [i for i in form[who][k] if not bad(i)]
     last = ipl_last(form, load_json(DATA / "roster.json", {"players": []}))
     for who in form:
         for k in ("bat", "bowl"):

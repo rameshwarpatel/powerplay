@@ -1,0 +1,13 @@
+{
+ "_note": "Scorecards identify players by name only, so two different people with one name get merged. List entries to drop for a roster player: any team or competition that contains one of these words.",
+ "Rashid Khan": {
+  "drop_competitions": [
+   "Nepal Premier League",
+   "Rising Stars"
+  ],
+  "drop_teams": [
+   "Nepal",
+   "Kathmandu"
+  ]
+ }
+}
