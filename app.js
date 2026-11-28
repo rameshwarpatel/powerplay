@@ -248,7 +248,7 @@ function renderAuction(main) {
     cd.innerHTML = v.map(([l, n]) => `<div><b>${String(n).padStart(2, "0")}</b><small>${l}</small></div>`).join("");
   };
   clearInterval(window.__auT); tick(); window.__auT = setInterval(tick, 1000);
-  const sl = [...rows].sort(([, x], [, y]) => y.slots - x.slots || y.purse - x.purse);
+  const sl = [...rows].sort(([, x], [, y]) => y.purse - x.purse);
   const seg = (c, held) => `<div class="au-seg" title="${held} of ${A.squadMax} filled">` + Array.from({length: A.squadMax}, (_, i) => `<i class="${i < held ? "f" : ""}"></i>`).join("") + "</div>";
   const tb = document.createElement("div"); tb.className = "au-tb";
   tb.innerHTML = `<h3>Money left and squad slots</h3><p class="au-as">As of ${esc(A.asof)}</p><div class="au-scroll"><table><thead><tr><th>Team</th><th>Money left</th><th>Open slots</th><th class="au-sg">Squad of ${A.squadMax}</th><th>Overseas open</th></tr></thead><tbody>` +
