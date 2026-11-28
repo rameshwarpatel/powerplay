@@ -795,24 +795,38 @@ html[data-theme="light"] .ti-s li{background:#0000000a}
 #pin .controls{margin:8px 0 2px}
 
 /* auction tab */
-.au-sum{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 14px}
-.au-sum div{background:var(--surface-container);border-radius:var(--r-md);padding:12px 14px}
-.au-sum b{display:block;font-size:20px;font-weight:800;line-height:26px}
-.au-sum small,.au-s small{display:block;color:var(--on-surface-variant);font-size:11px;line-height:15px}
-.au-list{display:flex;flex-direction:column;gap:8px}
-.au-row{display:grid;grid-template-columns:64px minmax(130px,1.6fr) repeat(4,minmax(72px,1fr));align-items:center;gap:12px;background:var(--surface-low);border-left:6px solid var(--c);border-radius:var(--r-md);padding:10px 14px}
-.au-row .lm.sm{width:64px;height:42px;--bg:color-mix(in srgb,var(--c) 18%,var(--surface-low))}
-.au-n b{display:block;font-size:14px;font-weight:700}
-.au-bar{height:6px;border-radius:99px;background:var(--surface-high);margin-top:6px;overflow:hidden}
-.au-bar i{display:block;height:100%;background:var(--c);border-radius:99px}
-html[data-theme="light"] .au-bar i{background:var(--c)}
-.au-s{text-align:right}
-.au-s b{font-size:16px;font-weight:800;font-variant-numeric:tabular-nums}
-nav#tabs button.auct{border-style:dashed}
-@media(max-width:640px){
-  .au-row{grid-template-columns:52px 1fr 1fr;row-gap:8px}
-  .au-row .lm.sm{width:52px;height:34px}
-  .au-n{grid-column:2/4}
-  .au-s{text-align:left}
-  .au-h{display:none}
+nav#tabs button.auct{background:linear-gradient(135deg,#19e0a0,#0a8fd8);color:#04141c;font-weight:800;border:0}
+nav#tabs button.auct.on{box-shadow:0 0 0 2px #fff4}
+.au-hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:22px 24px;margin:0 0 20px;border-radius:var(--r-lg);color:#fff;background:radial-gradient(120% 140% at 0 0,#3a1c8f 0,#0d1b5e 45%,#050b2e 100%);box-shadow:var(--e2)}
+.au-d small{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:700;color:#ffd54a}
+.au-d b{display:block;font-size:38px;line-height:44px;font-weight:800;letter-spacing:-.01em;margin:4px 0 2px}
+.au-d span{font-size:15px;color:#c7d0ff}
+.au-cd{display:flex;gap:10px}
+.au-cd div{min-width:78px;text-align:center;padding:12px 8px;border-radius:var(--r-md);background:#ffffff14;box-shadow:inset 0 0 0 1px #ffffff26}
+.au-cd b{display:block;font-size:32px;line-height:36px;font-weight:800;font-variant-numeric:tabular-nums}
+.au-cd small{display:block;margin-top:2px;text-transform:uppercase;letter-spacing:.1em;font-size:10px;color:#c7d0ff}
+.au-live{padding:14px 22px;border-radius:var(--r-md);background:linear-gradient(135deg,#ffd54a,#ff9f1c);color:#1a2233;font-size:22px;font-weight:800}
+.au-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin:0 0 12px}
+.au-top h2{margin:0;font-size:24px;font-weight:800}
+.au-top span{color:var(--on-surface-variant);font-size:12px}
+.au-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.au-tile{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:172px;padding:16px;border:0;border-radius:var(--r-md);text-align:left;cursor:pointer;color:var(--ink);background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 70%,#000));box-shadow:var(--e1);transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+.au-tile::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,#ffffff00 0 26px,#ffffff12 26px 52px);pointer-events:none}
+.au-tile:hover{transform:translateY(-2px);box-shadow:var(--e2)}
+.au-lm{width:64px;height:42px;margin-bottom:10px;--bg:#ffffff2e;color:var(--ink)}
+.au-ar{position:absolute;top:14px;right:14px;width:22px;height:22px}
+.au-p{position:relative;font-size:24px;line-height:30px;font-weight:800;font-variant-numeric:tabular-nums}
+.au-m,.au-o{position:relative;font-size:13px;line-height:19px;opacity:.95}
+.au-o{opacity:.8;font-size:12px}
+.au-m b,.au-o b{font-weight:800}
+.au-n{margin:14px 0 0;color:var(--on-surface-variant);font-size:12px;line-height:18px}
+@media(max-width:600px){
+  .au-hero{padding:18px 16px}
+  .au-d b{font-size:30px;line-height:36px}
+  .au-cd{width:100%}.au-cd div{flex:1;min-width:0}
+  .au-cd b{font-size:26px}
+  .au-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .au-tile{min-height:150px;padding:12px}
+  .au-p{font-size:20px}
 }
+@media(prefers-reduced-motion:reduce){.au-tile:hover{transform:none}}

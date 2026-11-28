@@ -234,25 +234,36 @@ function renderAuction(main) {
   const A = window.IPL_AUCTION; if (!A) { main.innerHTML = '<p class="b-help">Auction data not loaded.</p>'; return; }
   const rows = Object.entries(A.teams).sort(([, x], [, y]) => y.purse - x.purse);
   const tot = rows.reduce((s, [, t]) => ({p: s.p + t.purse, s: s.s + t.slots, o: s.o + t.os}), {p: 0, s: 0, o: 0});
-  const max = Math.max(...rows.map(([, t]) => t.purse));
-  const head = document.createElement("div"); head.className = "rel-head";
-  head.innerHTML = `<h2>Auction: purse and squad slots</h2><p>What each team has left for the IPL 2027 auction (${esc(A.auction)}), as of ${esc(A.asof)}. Purse is in crore rupees; the full purse was ₹${A.purseCap} crore and a squad holds up to ${A.squadMax} players. Slots and overseas places are what is still open.</p>`;
-  main.appendChild(head);
-  const sum = document.createElement("div"); sum.className = "au-sum";
-  sum.innerHTML = `<div><b>₹${tot.p.toFixed(2)} cr</b><small>left across all teams</small></div><div><b>${tot.s}</b><small>open squad slots</small></div><div><b>${tot.o}</b><small>open overseas places</small></div>`;
-  main.appendChild(sum);
-  const list = document.createElement("div"); list.className = "au-list";
-  list.innerHTML = rows.map(([c, t]) => {
-    const col = (R.colors || {})[c] || "#1d4ea2";
-    const per = t.slots ? t.purse / t.slots : 0;
-    return `<article class="au-row" style="--c:${col};--ink:${ink(col)}"><span class="lm sm" aria-hidden="true">${LM[c] || ""}</span>` +
-      `<div class="au-n"><b>${esc(R.teams[c] || c)}</b><div class="au-bar"><i style="width:${(t.purse / max * 100).toFixed(1)}%"></i></div></div>` +
-      `<div class="au-s"><b>₹${t.purse.toFixed(2)} cr</b><small>purse left</small></div>` +
-      `<div class="au-s"><b>${t.slots}</b><small>slots (${A.squadMax - t.slots} filled)</small></div>` +
-      `<div class="au-s"><b>${t.os}</b><small>overseas open</small></div>` +
-      `<div class="au-s au-h"><b>₹${per.toFixed(1)} cr</b><small>per open slot</small></div></article>`;
+  const OS_MAX = 8, dt = new Date(A.when);
+  const hero = document.createElement("div"); hero.className = "au-hero";
+  hero.innerHTML = `<div class="au-d"><small>IPL 2027 mini-auction</small><b>${dt.toLocaleDateString("en-GB", {day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Kolkata"}).replace(/^(\d+)/, "$1")}</b><span>${esc(A.auction.replace(/^[^,]*,\s*/, ""))}</span></div>` +
+    `<div class="au-cd" id="au-cd" aria-live="off"></div>`;
+  main.appendChild(hero);
+  const cd = hero.querySelector("#au-cd");
+  const tick = () => {
+    if (!document.body.contains(cd)) { clearInterval(window.__auT); return; }
+    let s = Math.floor((dt - Date.now()) / 1000);
+    if (s <= 0) { cd.innerHTML = '<div class="au-live">Auction day</div>'; clearInterval(window.__auT); return; }
+    const v = [["Days", Math.floor(s / 86400)], ["Hours", Math.floor(s % 86400 / 3600)], ["Mins", Math.floor(s % 3600 / 60)], ["Secs", s % 60]];
+    cd.innerHTML = v.map(([l, n]) => `<div><b>${String(n).padStart(2, "0")}</b><small>${l}</small></div>`).join("");
+  };
+  clearInterval(window.__auT); tick(); window.__auT = setInterval(tick, 1000);
+  const top = document.createElement("div"); top.className = "au-top";
+  top.innerHTML = `<h2>Team Purses</h2><span>₹${tot.p.toFixed(2)} cr left · ${tot.s} open slots · as of ${esc(A.asof)}</span>`;
+  main.appendChild(top);
+  const grid = document.createElement("div"); grid.className = "au-grid";
+  grid.innerHTML = rows.map(([c, t]) => {
+    const col = (R.colors || {})[c] || "#1d4ea2", held = A.squadMax - t.slots, osHeld = OS_MAX - t.os;
+    return `<button class="au-tile" data-t="${c}" style="--c:${col};--ink:${ink(col)}" aria-label="${esc(R.teams[c] || c)}, ₹${t.purse} crore left, open ${t.slots} slots">` +
+      `<span class="lm au-lm" aria-hidden="true">${LM[c] || ""}</span>` +
+      `<svg class="au-ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>` +
+      `<span class="au-p">₹${t.purse} Cr</span>` +
+      `<span class="au-m"><b>${held}</b> players · <b>${osHeld}</b> overseas</span>` +
+      `<span class="au-o"><b>${t.slots}</b> slots open · <b>${t.os}</b> overseas open</span></button>`;
   }).join("");
-  main.appendChild(list);
+  grid.querySelectorAll(".au-tile").forEach(b => b.onclick = () => { team = b.dataset.t; render(); window.scrollTo(0, 0); });
+  main.appendChild(grid);
+  main.insertAdjacentHTML("beforeend", `<p class="au-n">Purse in crore rupees from ₹${A.purseCap} cr. A squad holds up to ${A.squadMax} players, at most ${OS_MAX} of them overseas. Tap a team to see its squad.</p>`);
 }
 
 function render() {
@@ -265,6 +276,7 @@ function render() {
     const b = document.createElement("button"); b.textContent = t === "HOME" ? "Home" : t === "CATCHUP" ? "Weekly catch-up" : t === "ALL" ? "All players" : t === "BUILD" ? "Build XII" : t === "PREDICT" ? "Predict 2027" : t === "COMPARE" ? "Compare" : t === "RELEASED" ? "Released" : t === "AUCTION" ? "Auction" : t; b.className = t === team ? "on" : "";
     if (t === "PREDICT") b.classList.add("predict");
     if (t === "RELEASED") b.classList.add("relt");
+    if (t === "AUCTION") b.classList.add("auct");
     if (t === "BUILD") { b.classList.add("build"); b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Build XII'; }
     const col = (R.colors || {})[t];
     if (col) { b.style.setProperty("--c", col); b.style.setProperty("--ink", ink(col)); b.classList.add("tm"); }
