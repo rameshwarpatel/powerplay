@@ -907,3 +907,6 @@ html[data-theme="light"] .b-role .role{color:#0a8a5f}
 
 .b-role{height:44px}
 .b-role .role svg{width:22px;height:22px}
+
+.b-role .plus{font-style:normal;font-weight:800;font-size:16px;line-height:1;margin:0 1px}
+@media(max-width:360px){.b-role .role svg{width:18px;height:18px}}
