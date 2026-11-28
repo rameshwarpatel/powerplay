@@ -240,12 +240,16 @@ function renderAuction(main) {
     `<div class="au-cd" id="au-cd" aria-live="off"></div>`;
   main.appendChild(hero);
   const cd = hero.querySelector("#au-cd");
+  const LBL = ["Days", "Hours", "Mins", "Secs"];
+  cd.innerHTML = LBL.map(l => `<div class="fl-g"><span class="fl-l">${l}</span><span class="fl-t"><i class="fl-d">0</i><i class="fl-d">0</i></span></div>`).join('<span class="fl-c">:</span>');
+  const tiles = [...cd.querySelectorAll(".fl-d")];
   const tick = () => {
     if (!document.body.contains(cd)) { clearInterval(window.__auT); return; }
-    let s = Math.floor((dt - Date.now()) / 1000);
+    const s = Math.floor((dt - Date.now()) / 1000);
     if (s <= 0) { cd.innerHTML = '<div class="au-live">Auction day</div>'; clearInterval(window.__auT); return; }
-    const v = [["Days", Math.floor(s / 86400)], ["Hours", Math.floor(s % 86400 / 3600)], ["Mins", Math.floor(s % 3600 / 60)], ["Secs", s % 60]];
-    cd.innerHTML = v.map(([l, n]) => `<div><b>${String(n).padStart(2, "0")}</b><small>${l}</small></div>`).join("");
+    const v = [Math.floor(s / 86400), Math.floor(s % 86400 / 3600), Math.floor(s % 3600 / 60), s % 60];
+    const digits = v.map(n => String(n).padStart(2, "0")).join("");
+    [...digits].forEach((ch, k) => { const t = tiles[k]; if (t.textContent !== ch) { t.textContent = ch; t.classList.remove("flip"); void t.offsetWidth; t.classList.add("flip"); } });
   };
   clearInterval(window.__auT); tick(); window.__auT = setInterval(tick, 1000);
   const sl = [...rows].sort(([, x], [, y]) => y.purse - x.purse);
