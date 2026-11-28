@@ -231,13 +231,13 @@ img.flag{flex:none;width:20px;height:15px;border-radius:3px;object-fit:cover;box
 .cards .grp{grid-column:1/-1;margin:10px 2px 0;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-surface-variant)}.cards .grp small{font-weight:400}
 
 /* sort + group dropdowns share one look */
-#sort,#group{height:40px;padding:0 36px 0 14px;border:0;border-radius:var(--r-full);background-color:var(--surface-high);color:var(--on-surface);cursor:pointer;
+#sort,#group,.grp-sel{height:40px;padding:0 36px 0 14px;border:0;border-radius:var(--r-full);background-color:var(--surface-high);color:var(--on-surface);cursor:pointer;
   font-size:12px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;-webkit-appearance:none;appearance:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238ea0c4' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 10px center;background-size:20px;transition:background-color .2s var(--ease)}
-#sort:hover,#group:hover{background-color:color-mix(in srgb,var(--primary) 18%,var(--surface-high))}
-#group.on{background-color:var(--primary);color:var(--on-primary)}
-#group option,#sort option{background:var(--surface);color:var(--on-surface);text-transform:none}
+#sort:hover,#group:hover,.grp-sel:hover{background-color:color-mix(in srgb,var(--primary) 18%,var(--surface-high))}
+#group.on,.grp-sel.on{background-color:var(--primary);color:var(--on-primary)}
+#group option,#sort option,.grp-sel option{background:var(--surface);color:var(--on-surface);text-transform:none}
 
 /* all-rounder cards: bat + bowl of one match grouped */
 .ar{margin-top:6px}
@@ -892,3 +892,6 @@ nav#tabs button.sx-all{background:linear-gradient(135deg,#22d3ee,#0ea5e9);color:
 nav#tabs button.sx-released{background:linear-gradient(135deg,#94a3b8,#64748b);color:#fff}
 nav#tabs button.sx-compare{background:linear-gradient(135deg,#f472b6,#a855f7);color:#fff}
 nav#tabs button.sx.on{filter:saturate(1.15) brightness(1.08)}
+
+.grp-bar{padding:12px 16px 0}
+.grp-sel{min-width:160px}

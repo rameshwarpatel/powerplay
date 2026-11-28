@@ -377,6 +377,10 @@ function render() {
     return grid; };
     const cur = ps.filter(x => !x.p.released), rel = ps.filter(x => x.p.released);
     if (team === c) { const ti = teamInfo(c); if (ti) s.appendChild(ti); }
+    const gb = document.createElement("div"); gb.className = "grp-bar";
+    gb.innerHTML = `<select class="grp-sel${groupBy !== "none" ? " on" : ""}" aria-label="Group players"><option value="none">No grouping</option><option value="role">Group by role</option></select>`;
+    const gs = gb.firstChild; gs.value = groupBy; gs.onchange = () => { groupBy = gs.value; render(); };
+    s.appendChild(gb);
     s.appendChild(mkGrid(cur));
     if (rel.length) {
       const d = document.createElement("details"); d.className = "rel"; d.open = !!q;
@@ -420,8 +424,6 @@ qEl.onkeydown = e => {
   else if (e.key === "Enter") { e.preventDefault(); focusPlayer(sgList[sgIdx >= 0 ? sgIdx : 0]); }
   else if (e.key === "Escape") sgHide();
 };
-document.getElementById("sort").onchange = e => { sortBy = e.target.value; render(); };
-document.getElementById("group").onchange = e => { groupBy = e.target.value; e.target.classList.toggle("on", groupBy !== "none"); render(); };
 // ---- Players: several people can build XIIs and predictions on one device ----
 const PPusers = (() => {
   const K = "pp-users", MAX = 6, FMAX = 8, COLORS = ["#2f6bff", "#ff7a1a", "#1fb86a", "#e0408f", "#8a5cf6", "#0fb5c4"];
