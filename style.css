@@ -904,3 +904,6 @@ nav#tabs button.sx.on{filter:saturate(1.15) brightness(1.08)}
 .b-role.on{background:color-mix(in srgb,var(--accent) 22%,var(--surface-high));border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
 html[data-theme="light"] .b-role .role{color:#0a8a5f}
 @media(max-width:480px){.b-roles{grid-template-columns:1fr 1fr}}
+
+.b-role{height:44px}
+.b-role .role svg{width:22px;height:22px}
