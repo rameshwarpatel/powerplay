@@ -95,7 +95,7 @@ function detail(name, all) {
   list(name, "bowl").forEach(i => { const m = get(i); m.bowl = `${i.wkts}/${i.runs}`; m.bowlT = bowlTier(i.wkts); m.overs = i.overs; if (i.potm) m.potm = true; });
   const ms = [...rows.values()].sort((x, y) => (y.date || "").localeCompare(x.date || "") || (y.inn || 0) - (x.inn || 0));
   if (!ms.length) return `<div class="empty">No recent matches found for ${esc(name)}${fmt !== "ALL" ? " in " + fmt : ""} yet.</div>`;
-  const shown = all ? ms.slice(0, 15) : ms.slice(0, 5);
+  const shown = all ? ms.slice(0, 30) : ms.slice(0, 5);
   const vs = m => esc(m.team ? m.team + " vs " + (m.opp || "?") : "vs " + (m.opp || "?"));
   const fm = m => esc((m.fmt || "–") + (m.no ? " # " + m.no : "") + (m.inn ? " · inns " + m.inn : ""));
   const body = '<div class="mcards">' + shown.map(m => `<div class="mc ${m.batT || m.bowlT || "t0"}" title="${esc(m.result || "")}">` +
