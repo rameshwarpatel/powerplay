@@ -251,27 +251,12 @@ function renderAuction(main) {
   const sl = [...rows].sort(([, x], [, y]) => y.slots - x.slots || y.purse - x.purse);
   const seg = (c, held) => `<div class="au-seg" title="${held} of ${A.squadMax} filled">` + Array.from({length: A.squadMax}, (_, i) => `<i class="${i < held ? "f" : ""}"></i>`).join("") + "</div>";
   const tb = document.createElement("div"); tb.className = "au-tb";
-  tb.innerHTML = `<h3>Squad slots</h3><div class="au-scroll"><table><thead><tr><th>Team</th><th>Filled</th><th>Open</th><th class="au-sg">Squad of ${A.squadMax}</th><th>Overseas held</th><th>Overseas open</th><th>Purse</th></tr></thead><tbody>` +
+  tb.innerHTML = `<h3>Money left and squad slots</h3><p class="au-as">As of ${esc(A.asof)}</p><div class="au-scroll"><table><thead><tr><th>Team</th><th>Money left</th><th>Filled</th><th>Open</th><th class="au-sg">Squad of ${A.squadMax}</th><th>Overseas held</th><th>Overseas open</th></tr></thead><tbody>` +
     sl.map(([c, t]) => { const col = (R.colors || {})[c] || "#1d4ea2", held = A.squadMax - t.slots;
-      return `<tr style="--c:${col}"><th scope="row"><span class="au-dot"></span>${esc(R.teams[c] || c)}</th><td>${held}</td><td class="au-open">${t.slots}</td><td class="au-sg">${seg(c, held)}</td><td>${OS_MAX - t.os}</td><td class="au-open">${t.os}</td><td>₹${t.purse} Cr</td></tr>`; }).join("") +
-    `</tbody><tfoot><tr><th scope="row">All teams</th><td>${A.squadMax * rows.length - tot.s}</td><td class="au-open">${tot.s}</td><td class="au-sg"></td><td>${OS_MAX * rows.length - tot.o}</td><td class="au-open">${tot.o}</td><td>₹${tot.p.toFixed(2)} Cr</td></tr></tfoot></table></div>`;
+      return `<tr style="--c:${col}"><th scope="row"><span class="au-dot"></span>${esc(R.teams[c] || c)}</th><td class="au-money"><span style="--c:${col};--ink:${ink(col)}">₹${t.purse.toFixed(2)} Cr</span></td><td>${held}</td><td class="au-open">${t.slots}</td><td class="au-sg">${seg(c, held)}</td><td>${OS_MAX - t.os}</td><td class="au-open">${t.os}</td></tr>`; }).join("") +
+    `</tbody><tfoot><tr><th scope="row">All teams</th><td class="au-money"><span class="tot">₹${tot.p.toFixed(2)} Cr</span></td><td>${A.squadMax * rows.length - tot.s}</td><td class="au-open">${tot.s}</td><td class="au-sg"></td><td>${OS_MAX * rows.length - tot.o}</td><td class="au-open">${tot.o}</td></tr></tfoot></table></div>`;
   main.appendChild(tb);
-  const top = document.createElement("div"); top.className = "au-top";
-  top.innerHTML = `<h2>Team Purses</h2><span>₹${tot.p.toFixed(2)} cr left · ${tot.s} open slots · as of ${esc(A.asof)}</span>`;
-  main.appendChild(top);
-  const grid = document.createElement("div"); grid.className = "au-grid";
-  grid.innerHTML = rows.map(([c, t]) => {
-    const col = (R.colors || {})[c] || "#1d4ea2", held = A.squadMax - t.slots, osHeld = OS_MAX - t.os;
-    return `<button class="au-tile" data-t="${c}" style="--c:${col};--ink:${ink(col)}" aria-label="${esc(R.teams[c] || c)}, ₹${t.purse} crore left, open ${t.slots} slots">` +
-      `<span class="lm au-lm" aria-hidden="true">${LM[c] || ""}</span>` +
-      `<svg class="au-ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>` +
-      `<span class="au-p">₹${t.purse} Cr</span>` +
-      `<span class="au-m"><b>${held}</b> players · <b>${osHeld}</b> overseas</span>` +
-      `<span class="au-o"><b>${t.slots}</b> slots open · <b>${t.os}</b> overseas open</span></button>`;
-  }).join("");
-  grid.querySelectorAll(".au-tile").forEach(b => b.onclick = () => { team = b.dataset.t; render(); window.scrollTo(0, 0); });
-  main.appendChild(grid);
-  main.insertAdjacentHTML("beforeend", `<p class="au-n">Purse in crore rupees from ₹${A.purseCap} cr. A squad holds up to ${A.squadMax} players, at most ${OS_MAX} of them overseas. Tap a team to see its squad.</p>`);
+  main.insertAdjacentHTML("beforeend", `<p class="au-n">Purse in crore rupees from ₹${A.purseCap} cr. A squad holds up to ${A.squadMax} players, at most ${OS_MAX} of them overseas. </p>`);
 }
 
 function render() {

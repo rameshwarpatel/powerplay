@@ -851,3 +851,12 @@ html[data-theme="light"] .au-open{color:#0a8a5f}
   .au-tb th,.au-tb td{padding:10px 8px;font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){.au-tile:hover{transform:none}}
+
+/* auction table: money left in team colour, site number font */
+.au-tb table,.au-tb .au-hero,.au-cd b,.au-d b{font-family:var(--font-num)}
+.au-tb td,.au-tb tfoot th{font-family:var(--font-num);font-variant-numeric:tabular-nums}
+.au-as{margin:-6px 0 10px 12px;color:var(--on-surface-variant);font-size:12px}
+.au-money span{display:inline-block;min-width:112px;padding:6px 14px;border-radius:var(--r-full);background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 68%,#000));color:var(--ink);font-size:17px;font-weight:800;letter-spacing:.01em;box-shadow:0 2px 10px color-mix(in srgb,var(--c) 40%,transparent)}
+.au-money span.tot{background:var(--surface-high);color:var(--on-surface);box-shadow:inset 0 0 0 1px var(--outline)}
+.au-open{font-family:var(--font-num)}
+@media(max-width:600px){.au-money span{min-width:0;padding:4px 10px;font-size:14px}}
