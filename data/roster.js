@@ -939,7 +939,8 @@ window.IPL_ROSTER = {
    "name": "Rohit Sharma",
    "team": "MI",
    "role": "BAT",
-   "country": "in"
+   "country": "in",
+   "captain": true
   },
   {
    "name": "Shardul Thakur",
