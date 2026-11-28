@@ -253,7 +253,10 @@ def dup(i, have):
         if not i.get("inn") and not x.get("inn") and x.get("opponent") == i.get("opponent"):
             return True
         same_fig = _same_fig(x, i)
-        if same_fig and (gap == 0 or (x.get("competition") or "")[:12].lower() == (i.get("competition") or "")[:12].lower()):
+        # a day apart: same competition, OR the same ground and opponent (Cricsheet and the APIs word Test series differently)
+        vx, vi = (x.get("venue") or "").strip().lower(), (i.get("venue") or "").strip().lower()
+        same_ground = bool(vx) and vx == vi and x.get("opponent") == i.get("opponent")
+        if same_fig and (gap == 0 or same_ground or (x.get("competition") or "")[:12].lower() == (i.get("competition") or "")[:12].lower()):
             return True
     return False
 
